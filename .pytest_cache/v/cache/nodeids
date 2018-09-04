@@ -1,0 +1,3 @@
+[
+  "tests/home/login_test.py::LoginTest::test_validLogin"
+]
