@@ -10,24 +10,44 @@ class LoginPage():
     def __init__(self, driver):
         self.driver = driver
 
+
+    _login_xpath = "//button[text()=' Log In ']"
+    _email_xpath = "//input[@placeholder='Enter E-mail address']"
+    _password_xpath = "//input[@placeholder='Enter password']"
+    _submit_xpath = "//button[text()=' Log In ']"
+
+    # Locators
+    def getLoginButton(self):
+        return self.driver.find_element(By.XPATH, self._login_xpath)
+
+    def getEmailField(self):
+        return self.driver.find_element(By.XPATH, self._email_xpath)
+
+    def getPasswordField(self):
+        return self.driver.find_element(By.XPATH, self._password_xpath)
+
+    def getSubmitButton(self):
+        return self.driver.find_element(By.XPATH, self._submit_xpath)
+
+    # Actions
+    def clickLoginBtn(self):
+        self.getLoginButton().click()
+
+    def enterEmail(self, email):
+        self.getEmailField().send_keys(email)
+
+    def enterPassword(self, password):
+        self.getPasswordField().send_keys(password)
+
+    def clickSubmitBtn(self):
+        self.getSubmitButton().click()
+
     def login(self, email, password):
-        print("Login in def login")
         # Home page
-        time.sleep(5)
-        element = self.driver.find_element(
-            By.XPATH, "//button[@type='submit']")
-        element.click()
+        time.sleep(3)
+        self.clickLoginBtn()
 
-        # Move to page Login
-        # Act on Login page
-        email_el = self.driver.find_element(By.XPATH,
-                                        "//input[@placeholder='Enter E-mail address']")
-        email_el.send_keys(email)
-
-        pwrd_el = self.driver.find_element(By.XPATH,
-                                       "//input[@placeholder='Enter password']")
-        pwrd_el.send_keys(password)
-
-        login_btn = self.driver.find_element(By.XPATH,
-                                         "//button[text()=' Log In ']")
-        login_btn.click()
+        # Login page
+        self.enterEmail(email)
+        self.enterPassword(password)
+        self.clickSubmitBtn()
