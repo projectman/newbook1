@@ -3,11 +3,13 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
+from base.selenium_driver import SeleniumDriver
 
 
-class LoginPage():
+class LoginPage(SeleniumDriver):
 
     def __init__(self, driver):
+        super().__init__(driver)
         self.driver = driver
 
 
@@ -16,38 +18,27 @@ class LoginPage():
     _password_xpath = "//input[@placeholder='Enter password']"
     _submit_xpath = "//button[text()=' Log In ']"
 
-    # Locators
-    def getLoginButton(self):
-        return self.driver.find_element(By.XPATH, self._login_xpath)
-
-    def getEmailField(self):
-        return self.driver.find_element(By.XPATH, self._email_xpath)
-
-    def getPasswordField(self):
-        return self.driver.find_element(By.XPATH, self._password_xpath)
-
-    def getSubmitButton(self):
-        return self.driver.find_element(By.XPATH, self._submit_xpath)
 
     # Actions
-    def clickLoginBtn(self):
-        self.getLoginButton().click()
+    def clickLoginButton(self):
+        self.elementClick(self._login_xpath)
 
     def enterEmail(self, email):
-        self.getEmailField().send_keys(email)
+        self.sendKeys(email, self._email_xpath)
 
     def enterPassword(self, password):
-        self.getPasswordField().send_keys(password)
+        self.sendKeys(password, self._password_xpath)
 
-    def clickSubmitBtn(self):
-        self.getSubmitButton().click()
+    def clickSubmitButton(self):
+        self.elementClick(self._submit_xpath)
 
     def login(self, email, password):
+
         # Home page
         time.sleep(3)
-        self.clickLoginBtn()
+        self.clickLoginButton()
 
         # Login page
         self.enterEmail(email)
         self.enterPassword(password)
-        self.clickSubmitBtn()
+        self.clickSubmitButton()

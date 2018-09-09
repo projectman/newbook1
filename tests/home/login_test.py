@@ -24,7 +24,9 @@ class LoginTest(unittest.TestCase):
         lp.login('man4testing@gmail.com', 'New12345$')
 
         # Confirm login in
-        if 'Search by models’ name' in driver.page_source:
+        time.sleep(5)
+        # Debug print(driver.page_source)
+        if "Search by models’ name" in driver.page_source:
             print("Login successful, found: ", 'Search by models’ name')
         else:
             print("Login failed.")
