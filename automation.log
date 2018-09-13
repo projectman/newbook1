@@ -18,3 +18,221 @@
 09/09/2018 12:54:48 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
 09/09/2018 12:54:48 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
 09/09/2018 12:54:49 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/09/2018 02:04:13 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/09/2018 02:04:13 PM - SeleniumDriver - INFO: Cannot click on the element with locator: //button[text()=' Log In '] locatorType: xpath
+09/09/2018 02:04:18 PM - SeleniumDriver - INFO: Element not found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/09/2018 02:04:18 PM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/09/2018 02:04:23 PM - SeleniumDriver - INFO: Element not found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/09/2018 02:04:23 PM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/09/2018 02:04:23 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/09/2018 02:04:24 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/09/2018 02:04:34 PM - SeleniumDriver - INFO: Element not found with locator: //div[text()='Filter by Category'] and  locatorType: xpath
+09/09/2018 02:04:34 PM - SeleniumDriver - INFO: Element not found
+09/09/2018 02:05:26 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/09/2018 02:05:27 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/09/2018 02:05:27 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/09/2018 02:05:27 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/09/2018 02:05:27 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/09/2018 02:05:27 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/09/2018 02:05:27 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/09/2018 02:05:27 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/09/2018 02:05:32 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()='Filter by Category'] and  locatorType: xpath
+09/09/2018 02:05:32 PM - SeleniumDriver - INFO: Element Found
+09/09/2018 02:16:29 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/09/2018 02:16:30 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/09/2018 02:16:30 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/09/2018 02:16:30 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/09/2018 02:16:30 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/09/2018 02:16:30 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/09/2018 02:16:30 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/09/2018 02:16:30 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/09/2018 02:16:36 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()='Filter by Category'] and  locatorType: xpath
+09/09/2018 02:16:36 PM - SeleniumDriver - INFO: Element with locator: //div[text()='Filter by Category']Found with locator type: xpath
+09/09/2018 02:20:29 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/09/2018 02:20:29 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/09/2018 02:20:29 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/09/2018 02:20:29 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/09/2018 02:20:29 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/09/2018 02:20:29 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/09/2018 02:20:29 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/09/2018 02:20:30 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/09/2018 02:20:35 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/09/2018 02:20:35 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/13/2018 02:26:36 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 02:26:37 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 02:26:37 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/13/2018 02:26:37 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/13/2018 02:26:37 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/13/2018 02:26:37 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/13/2018 02:26:37 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 02:26:37 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 02:26:42 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/13/2018 02:26:42 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/13/2018 03:07:48 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 03:07:49 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 03:07:49 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/13/2018 03:07:49 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/13/2018 03:07:49 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/13/2018 03:07:49 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/13/2018 03:07:49 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 03:07:49 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 03:07:54 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/13/2018 03:07:54 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/13/2018 03:09:45 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 03:09:45 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 03:09:45 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/13/2018 03:09:45 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/13/2018 03:09:45 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/13/2018 03:09:45 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/13/2018 03:09:45 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 03:09:45 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 03:09:50 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/13/2018 03:09:50 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/13/2018 03:10:23 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 03:10:23 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 03:10:23 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/13/2018 03:10:24 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/13/2018 03:10:24 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/13/2018 03:10:24 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/13/2018 03:10:24 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 03:10:24 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 03:10:29 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/13/2018 03:10:29 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/13/2018 03:14:30 PM - SeleniumDriver - INFO: Element not found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 03:14:30 PM - SeleniumDriver - INFO: Cannot click on the element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 03:14:30 PM - SeleniumDriver - INFO: Element not found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/13/2018 03:14:30 PM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/13/2018 03:14:30 PM - SeleniumDriver - INFO: Element not found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/13/2018 03:14:30 PM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/13/2018 03:14:30 PM - SeleniumDriver - INFO: Element not found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 03:14:30 PM - SeleniumDriver - INFO: Cannot click on the element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 03:14:35 PM - SeleniumDriver - INFO: Element not found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/13/2018 03:14:35 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]NOT Found with locator type: xpath
+09/13/2018 03:16:01 PM - SeleniumDriver - INFO: Element not found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 03:16:01 PM - SeleniumDriver - INFO: Cannot click on the element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 03:16:01 PM - SeleniumDriver - INFO: Element not found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/13/2018 03:16:01 PM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/13/2018 03:16:01 PM - SeleniumDriver - INFO: Element not found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/13/2018 03:16:01 PM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/13/2018 03:16:01 PM - SeleniumDriver - INFO: Element not found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 03:16:01 PM - SeleniumDriver - INFO: Cannot click on the element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 03:16:06 PM - SeleniumDriver - INFO: Element not found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/13/2018 03:16:06 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]NOT Found with locator type: xpath
+09/13/2018 03:16:22 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 03:16:22 PM - SeleniumDriver - INFO: Cannot click on the element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 03:16:27 PM - SeleniumDriver - INFO: Element not found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/13/2018 03:16:27 PM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/13/2018 03:16:32 PM - SeleniumDriver - INFO: Element not found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/13/2018 03:16:32 PM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/13/2018 03:16:32 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 03:16:33 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 03:16:43 PM - SeleniumDriver - INFO: Element not found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/13/2018 03:16:43 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]NOT Found with locator type: xpath
+09/13/2018 03:32:20 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 03:32:20 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 03:32:20 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/13/2018 03:32:20 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/13/2018 03:32:20 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/13/2018 03:32:21 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/13/2018 03:32:21 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 03:32:21 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 03:46:39 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 03:46:39 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 03:46:39 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/13/2018 03:46:40 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/13/2018 03:46:40 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/13/2018 03:46:40 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/13/2018 03:46:40 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 03:46:40 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 03:46:45 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/13/2018 03:46:45 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/13/2018 03:48:26 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 03:48:27 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 03:48:27 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/13/2018 03:48:27 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/13/2018 03:48:27 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/13/2018 03:48:27 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/13/2018 03:48:27 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 03:48:27 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 03:48:32 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/13/2018 03:48:32 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/13/2018 03:51:48 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 03:51:49 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 03:51:49 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/13/2018 03:51:49 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/13/2018 03:51:49 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/13/2018 03:51:49 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/13/2018 03:51:49 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 03:51:49 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 03:51:54 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/13/2018 03:51:54 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/13/2018 03:53:24 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 03:53:25 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 03:53:25 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/13/2018 03:53:25 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/13/2018 03:53:25 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/13/2018 03:53:25 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/13/2018 03:53:25 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 03:53:25 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 03:53:30 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/13/2018 03:53:30 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/13/2018 03:59:10 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 03:59:10 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 03:59:10 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/13/2018 03:59:10 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/13/2018 03:59:10 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/13/2018 03:59:10 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/13/2018 03:59:10 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 03:59:11 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 03:59:16 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/13/2018 03:59:16 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/13/2018 04:05:05 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 04:05:05 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 04:05:05 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/13/2018 04:05:05 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/13/2018 04:05:05 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/13/2018 04:05:05 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/13/2018 04:05:05 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 04:05:05 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 04:05:11 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/13/2018 04:05:11 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/13/2018 04:13:56 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 04:13:56 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 04:13:56 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/13/2018 04:13:56 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/13/2018 04:13:56 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/13/2018 04:13:57 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/13/2018 04:13:57 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 04:13:57 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 04:14:02 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/13/2018 04:14:02 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/13/2018 04:14:10 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 04:14:11 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 04:14:11 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/13/2018 04:14:11 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/13/2018 04:14:11 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/13/2018 04:14:11 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/13/2018 04:14:11 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 04:14:11 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 04:14:16 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/13/2018 04:14:16 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/13/2018 04:20:17 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 04:20:18 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 04:20:18 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/13/2018 04:20:18 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/13/2018 04:20:18 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/13/2018 04:20:18 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/13/2018 04:20:18 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 04:20:19 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 04:20:24 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/13/2018 04:20:24 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/13/2018 04:20:32 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 04:20:32 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 04:20:32 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/13/2018 04:20:32 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/13/2018 04:20:32 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/13/2018 04:20:32 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/13/2018 04:20:32 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/13/2018 04:20:32 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/13/2018 04:20:37 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/13/2018 04:20:37 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath

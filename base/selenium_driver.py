@@ -70,13 +70,16 @@ class SeleniumDriver():
         try:
             element = self.getElement(locator, locatorType)
             if element is not None:
-                self.log.info("Element Found")
+                self.log.info("Element with locator: " +
+                              locator + "Found with locator type: " + locatorType)
                 return True
             else:
-                self.log.info("Element not found")
+                self.log.info("Element with locator: " + locator +
+                              "NOT Found with locator type: " + locatorType)
                 return False
         except:
-            self.log.info("Element not found")
+            self.log.info("Element with locator: " + locator +
+                          "NOT Found with locator type: " + locatorType)
             return False
 
     def elementPresenceCheck(self, locator, byType):

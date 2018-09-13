@@ -1,7 +1,4 @@
-import selenium.webdriver as webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+
 import time
 from base.selenium_driver import SeleniumDriver
 
@@ -32,13 +29,19 @@ class LoginPage(SeleniumDriver):
     def clickSubmitButton(self):
         self.elementClick(self._submit_xpath)
 
-    def login(self, email, password):
+    def login(self, email='', password=''):
 
         # Home page
         time.sleep(3)
         self.clickLoginButton()
-
+        print("test print in LoginPage.login")
         # Login page
         self.enterEmail(email)
         self.enterPassword(password)
         self.clickSubmitButton()
+
+    def verifyLoginSuccessful(self):
+        return self.isElementPresent("//div[contains(text(),'Filter by Category')]")
+
+    def verifyLoginFail(self):
+        return self.isElementPresent("//div[text()=' Client Sign In ']")
