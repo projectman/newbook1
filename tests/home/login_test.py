@@ -6,20 +6,19 @@ import pytest
 
 # import time
 
-class LoginTest(unittest.TestCase):
+@pytest.mark.usefixtures("oneTimeSetUp", "setUp")
+class LoginTests(unittest.TestCase):
 
-    home_url = 'https://stage1.fmny.mobi'
-    driver = webdriver.Firefox()
-    driver.get( home_url )
-    driver.implicitly_wait(5)
-    lp = LoginPage(driver)
+    @pytest.fixture(autouse=True)
+    def classSetup(self, oneTimeSetUp):
+        self.lp = LoginPage(self.driver)
 
     @pytest.mark.run(order=2)
     def test_validLogin(self):
         """
         Test Login page with valid credentials.
         """
-        self.lp.login( 'man4testing@gmail.com', 'New12345$' )
+        self.lp.login('man4testing@gmail.com', 'New12345$')
         # Confirm login in
         time.sleep(2)
         # Debug print(driver.page_source)
@@ -30,7 +29,7 @@ class LoginTest(unittest.TestCase):
     @pytest.mark.run(order=1)
     def test_invalidLogin(self):
         """Test Login with invalid login credentials. """
-        self.lp.login()
+        self.lp.login('', '')
         # Confirm login in with empty credential
         time.sleep(2)
         assert self.lp.verifyLoginFail()

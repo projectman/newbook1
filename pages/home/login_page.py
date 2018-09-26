@@ -29,7 +29,7 @@ class LoginPage(SeleniumDriver):
     def clickSubmitButton(self):
         self.elementClick(self._submit_xpath)
 
-    def login(self, email='', password=''):
+    def login(self, email, password):
 
         # Home page
         time.sleep(3)
