@@ -20,12 +20,22 @@ class LoginTest(unittest.TestCase):
         """
         self.lp.login( 'man4testing@gmail.com', 'New12345$' )
         # Confirm login in
-        time.sleep(1)
+        self.lp.waitButtonPortfolio() # make sure that page downloaded.
+
+        # Verify that right title exists on the page.
         res_1 = self.lp.verifyTitle()
-        self.ts.mark(res_1, "Title Verified")
+        self.ts.mark(res_1, "Title Verification.")
+        time.sleep(1)
+
+        # Verify that wrong title doesn't exists on the page.
+        res_2 = self.lp.verifyTitleWrong()
+        self.ts.mark(res_2, "Wrong Title Verification.")
+        time.sleep(1)
+
         # Debug print(driver.page_source)
-        res_2 = self.lp.verifyLoginSuccessful()
-        self.ts.mark(res_2, "Login Successful!")
+        res_3 = self.lp.verifyLoginSuccessful()
+        self.ts.markFinal(
+            "Login frame testing: ", res_3, "Login Successful Verification.")
         time.sleep(1)
         self.driver.close()
 
@@ -33,10 +43,10 @@ class LoginTest(unittest.TestCase):
     def test_invalidLogin(self):
         """Test Login with invalid login credentials. """
         self.lp.login('', '')
-        # Confirm login in with empty credential
+        # Confirm login in with wrong credential
         time.sleep(2)
         res_1 = self.lp.verifyLoginFail()
-        self.ts.markFinal(res_1, "Test verifyed")
+        self.ts.mark(res_1, "Invalid login verification.")
         time.sleep(1)
         # don't close driver. it needs on 2nd test
 

@@ -18,22 +18,25 @@ class SeleniumDriver():
         """
         Takes screenshots of the current open web page.
         """
-        file_name = resultMessage + "." + str(round(time.time()*1000)) +".png"
-        screenshot_dir = "../screenshots"
-        relative_fname = screenshot_dir +file_name
-        current_dir = os.path.dirname(__file__)
-        destinantion_fname = os.path.join(current_dir, relative_fname)
-        destinantion_dir = os.path.join(current_dir, screenshot_dir)
+        cur_time = str(time.ctime())
+
+        file_name = resultMessage + cur_time + ".png"
+        screenshot_dir = "screenshots"
+        relative_fname = os.path.join(screenshot_dir, file_name)
+        cur_dir = os.getcwd()
+        target_dir = os.path.join(cur_dir, relative_fname)
 
         try:
-            if not os.path.exists(destinantion_dir):
-                os.makedirs(destinantion_dir)
-            self.driver.save_screenshot(destinantion_fname)
-            self.log.info("Screenshot saved to directorory:", destinantion_dir)
+            if not os.path.exists(screenshot_dir):
+                os.makedirs(screenshot_dir)
+
+            self.driver.save_screenshot(target_dir)
+            self.log.info("Screenshot: " + str(file_name)
+                          + " saved to directory: ../"
+                          + str(screenshot_dir))
         except:
             self.log.error('### Exception Occurred with screenshot creation!')
             print_stack()
-
 
     def getTitle(self):
         return self.driver.title

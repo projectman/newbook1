@@ -1255,3 +1255,1059 @@
 09/27/2018 07:39:53 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
 09/27/2018 07:39:53 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
 09/27/2018 07:39:53 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Login Successful!
+09/28/2018 12:42:13 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 12:42:13 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 12:42:13 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 12:42:13 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 12:42:13 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 12:42:13 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 12:42:13 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 12:42:14 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 12:42:16 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 12:42:16 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 12:42:16 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Test verifyed
+09/28/2018 12:42:20 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 12:42:20 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 12:42:20 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 12:42:20 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 12:42:20 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 12:42:20 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 12:42:20 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 12:42:21 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 12:42:22 PM - StatusDisplay - INFO: ### VERIFICATION FAILED :: + Title Verified
+09/28/2018 12:42:22 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 12:42:22 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 12:42:22 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Login Successful!
+09/28/2018 12:46:50 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 12:46:50 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 12:46:50 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 12:46:50 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 12:46:50 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 12:46:50 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 12:46:50 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 12:46:51 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 12:46:53 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 12:46:53 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 12:46:53 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Test verifyed
+09/28/2018 12:46:57 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 12:46:57 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 12:46:57 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 12:46:57 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 12:46:57 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 12:46:57 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 12:46:57 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 12:46:58 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 12:46:59 PM - StatusDisplay - INFO: ### VERIFICATION FAILED :: + Title Verified
+09/28/2018 12:46:59 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 12:46:59 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 12:46:59 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Login Successful!
+09/28/2018 12:50:15 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 12:50:15 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 12:50:15 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 12:50:15 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 12:50:15 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 12:50:15 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 12:50:15 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 12:50:16 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 12:50:18 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 12:50:18 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 12:50:18 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Test verifyed
+09/28/2018 12:50:22 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 12:50:22 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 12:50:22 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 12:50:22 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 12:50:22 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 12:50:22 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 12:50:22 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 12:50:22 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 12:50:23 PM - StatusDisplay - INFO: ### VERIFICATION FAILED :: + Title Verified
+09/28/2018 12:50:24 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 12:50:24 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 12:50:24 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Login Successful!
+09/28/2018 01:05:39 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:05:39 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:05:39 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 01:05:39 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 01:05:39 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 01:05:39 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 01:05:39 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:05:40 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:05:42 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 01:05:42 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 01:05:42 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Test verifyed
+09/28/2018 01:05:46 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:05:46 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:05:46 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 01:05:46 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 01:05:46 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 01:05:46 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 01:05:46 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:05:47 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:05:48 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Title Verified
+09/28/2018 01:05:48 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 01:05:48 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 01:05:48 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Login Successful!
+09/28/2018 01:15:31 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:15:32 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:15:32 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 01:15:32 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 01:15:32 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 01:15:32 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 01:15:32 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:15:32 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:15:34 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 01:15:34 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 01:15:34 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Invalid login verified
+09/28/2018 01:15:38 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:15:38 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:15:38 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 01:15:38 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 01:15:38 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 01:15:39 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 01:15:39 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:15:39 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:15:40 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Title Verified
+09/28/2018 01:15:40 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 01:15:40 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 01:15:40 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Login Successful!
+09/28/2018 01:19:23 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:19:24 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:19:24 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 01:19:24 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 01:19:24 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 01:19:24 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 01:19:24 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:19:24 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:19:26 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 01:19:26 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 01:19:26 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Invalid login verified
+09/28/2018 01:19:30 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:19:30 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:19:30 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 01:19:30 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 01:19:30 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 01:19:30 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 01:19:30 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:19:31 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:19:32 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Title Verified
+09/28/2018 01:19:32 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 01:19:32 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 01:19:32 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Login Successful!
+09/28/2018 01:21:08 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:21:09 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:21:09 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 01:21:09 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 01:21:09 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 01:21:09 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 01:21:09 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:21:09 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:21:11 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 01:21:11 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 01:21:11 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Invalid login verified
+09/28/2018 01:21:15 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:21:16 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:21:16 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 01:21:16 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 01:21:16 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 01:21:16 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 01:21:16 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:21:16 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:21:17 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Title Verified
+09/28/2018 01:21:17 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 01:21:17 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 01:21:17 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Login Successful!
+09/28/2018 01:22:37 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:22:37 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:22:37 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 01:22:37 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 01:22:37 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 01:22:38 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 01:22:38 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:22:38 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:22:40 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 01:22:40 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 01:22:40 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Invalid login verified
+09/28/2018 01:22:44 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:22:45 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:22:45 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 01:22:45 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 01:22:45 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 01:22:45 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 01:22:45 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:22:45 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:22:46 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Title Verified
+09/28/2018 01:22:47 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 01:22:47 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 01:22:47 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Login Successful!
+09/28/2018 01:25:16 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:25:16 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:25:16 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 01:25:16 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 01:25:16 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 01:25:16 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 01:25:16 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:25:16 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:25:18 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 01:25:18 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 01:25:18 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Invalid login verified
+09/28/2018 01:25:22 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:25:23 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:25:23 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 01:25:23 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 01:25:23 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 01:25:23 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 01:25:23 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:25:23 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:25:24 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Title Verified
+09/28/2018 01:25:25 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 01:25:25 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 01:25:25 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Login Successful!
+09/28/2018 01:56:39 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:56:40 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:56:40 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 01:56:40 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 01:56:40 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 01:56:40 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 01:56:40 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:56:40 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:56:42 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 01:56:42 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 01:56:42 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Invalid login verified
+09/28/2018 01:56:46 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:56:47 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:56:47 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 01:56:47 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 01:56:47 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 01:56:47 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 01:56:47 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:56:47 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:56:48 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Title Verified
+09/28/2018 01:56:48 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 01:56:48 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 01:56:48 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Login Successful!
+09/28/2018 01:57:36 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:57:36 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:57:36 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 01:57:36 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 01:57:36 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 01:57:36 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 01:57:36 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:57:36 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:57:38 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 01:57:38 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 01:57:38 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Invalid login verified
+09/28/2018 01:57:42 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:57:43 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:57:43 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 01:57:43 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 01:57:43 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 01:57:43 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 01:57:43 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:57:43 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:57:44 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Title Verified
+09/28/2018 01:57:45 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 01:57:45 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 01:57:45 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Login Successful!
+09/28/2018 01:57:45 PM - StatusDisplay - INFO: test_validLogin+ SUCCESSFUL.
+09/28/2018 01:59:30 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:59:30 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:59:30 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 01:59:30 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 01:59:30 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 01:59:30 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 01:59:30 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:59:30 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:59:32 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 01:59:32 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 01:59:32 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Invalid login verified
+09/28/2018 01:59:36 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:59:37 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:59:37 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 01:59:37 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 01:59:37 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 01:59:37 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 01:59:37 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 01:59:37 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 01:59:38 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Title Verified
+09/28/2018 01:59:39 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 01:59:39 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 01:59:39 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Login Successful!
+09/28/2018 01:59:39 PM - StatusDisplay - INFO: test_validLogin+ SUCCESSFUL.
+09/28/2018 02:00:26 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:00:27 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:00:27 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 02:00:27 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 02:00:27 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 02:00:27 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 02:00:27 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:00:27 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:00:29 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 02:00:29 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 02:00:29 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Invalid login verified
+09/28/2018 02:00:33 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:00:33 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:00:33 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 02:00:33 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 02:00:33 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 02:00:33 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 02:00:34 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:00:34 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:00:35 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Title Verified
+09/28/2018 02:00:36 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 02:00:36 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 02:00:36 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Login Successful!
+09/28/2018 02:00:36 PM - StatusDisplay - INFO: test_validLogin+ SUCCESSFUL.
+09/28/2018 02:04:44 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:04:44 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:04:44 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 02:04:44 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 02:04:44 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 02:04:44 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 02:04:44 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:04:45 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:04:47 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 02:04:47 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 02:04:47 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Invalid login verified
+09/28/2018 02:04:51 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:04:51 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:04:51 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 02:04:51 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 02:04:51 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 02:04:51 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 02:04:51 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:04:51 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:04:52 PM - StatusDisplay - INFO: ### VERIFICATION FAILED :: + Title Verified
+09/28/2018 02:04:54 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 02:04:54 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 02:04:54 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Login Successful!
+09/28/2018 02:04:54 PM - StatusDisplay - INFO: test_validLogin ### TEST FAILED.Login Successful!
+09/28/2018 02:08:23 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:08:23 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:08:23 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 02:08:23 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 02:08:23 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 02:08:23 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 02:08:23 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:08:24 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:08:26 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 02:08:26 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 02:08:26 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Invalid login verified
+09/28/2018 02:08:30 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:08:30 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:08:30 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 02:08:30 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 02:08:30 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 02:08:30 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 02:08:30 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:08:31 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:08:32 PM - StatusDisplay - INFO: ### VERIFICATION FAILED :: + Title Verified
+09/28/2018 02:08:32 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 02:08:32 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 02:08:32 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFULL :: +  Login Successful!
+09/28/2018 02:08:32 PM - StatusDisplay - ERROR: test_validLogin ### TEST FAILED.Login Successful!
+09/28/2018 02:14:51 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:14:52 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:14:52 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 02:14:52 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 02:14:52 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 02:14:52 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 02:14:52 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:14:52 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:14:54 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 02:14:54 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 02:14:54 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Invalid login verification.
+09/28/2018 02:14:58 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:14:58 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:14:58 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 02:14:58 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 02:14:58 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 02:14:58 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 02:14:58 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:14:59 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:15:00 PM - StatusDisplay - INFO: ### VERIFICATION FAILED :: + Title Verification.
+09/28/2018 02:15:01 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 02:15:01 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 02:15:01 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Login Verification.
+09/28/2018 02:15:01 PM - StatusDisplay - ERROR: test_validLogin ### TEST FAILED:Login Verification.
+09/28/2018 02:21:50 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:21:51 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:21:51 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 02:21:51 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 02:21:51 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 02:21:51 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 02:21:51 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:21:51 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:21:53 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 02:21:53 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 02:21:53 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Invalid login verification.
+09/28/2018 02:21:57 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:21:57 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:21:57 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 02:21:57 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 02:21:57 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 02:21:57 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 02:21:57 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:21:57 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:21:58 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Title Verification.
+09/28/2018 02:21:59 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 02:21:59 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 02:21:59 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Login Verification.
+09/28/2018 02:21:59 PM - StatusDisplay - INFO: test_validLogin: SUCCESSFUL.
+09/28/2018 02:25:48 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:25:48 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:25:48 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 02:25:48 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 02:25:48 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 02:25:48 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 02:25:48 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:25:48 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:25:50 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 02:25:50 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 02:25:50 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Invalid login verification.
+09/28/2018 02:25:54 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:25:55 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:25:55 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 02:25:55 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 02:25:55 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 02:25:55 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 02:25:55 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:25:55 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:25:56 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Title Verification.
+09/28/2018 02:25:57 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 02:25:57 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 02:25:57 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Login Verification.
+09/28/2018 02:25:57 PM - StatusDisplay - INFO: test_validLogin: SUCCESSFUL.
+09/28/2018 02:28:25 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:28:25 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:28:25 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 02:28:25 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 02:28:25 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 02:28:25 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 02:28:25 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:28:26 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:28:28 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 02:28:28 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 02:28:28 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Invalid login verification.
+09/28/2018 02:28:32 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:28:32 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:28:32 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 02:28:32 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 02:28:32 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 02:28:32 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 02:28:32 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:28:32 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:28:33 PM - StatusDisplay - INFO: ### VERIFICATION FAILED :: + Title Verification.
+09/28/2018 02:28:34 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 02:28:34 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 02:28:34 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Login Successful Verification.
+09/28/2018 02:28:34 PM - StatusDisplay - ERROR: Login frame testing:  : TEST FAILED: Login Successful Verification.
+09/28/2018 02:34:21 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:34:21 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:34:21 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 02:34:21 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 02:34:21 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 02:34:21 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 02:34:21 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:34:22 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:34:24 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 02:34:24 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 02:34:24 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Invalid login verification.
+09/28/2018 02:34:28 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:34:28 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:34:28 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 02:34:28 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 02:34:28 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 02:34:28 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 02:34:28 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:34:29 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:34:30 PM - StatusDisplay - INFO: ### VERIFICATION FAILED :: + Title Verification.
+09/28/2018 02:34:30 PM - StatusDisplay - INFO: ### EXEPTION OCCURED!!!
+09/28/2018 02:39:26 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:39:26 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:39:26 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 02:39:26 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 02:39:26 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 02:39:26 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 02:39:26 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:39:26 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:39:28 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 02:39:28 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 02:39:28 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Invalid login verification.
+09/28/2018 02:39:32 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:39:33 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:39:33 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 02:39:33 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 02:39:33 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 02:39:33 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 02:39:33 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:39:33 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:39:34 PM - StatusDisplay - INFO: ### VERIFICATION FAILED :: + Title Verification.
+09/28/2018 02:39:35 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 02:39:35 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 02:39:35 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Login Successful Verification.
+09/28/2018 02:39:35 PM - StatusDisplay - ERROR: Login frame testing:  : TEST FAILED: Login Successful Verification.
+09/28/2018 02:40:46 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:40:47 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:40:47 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 02:40:47 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 02:40:47 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 02:40:47 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 02:40:47 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:40:47 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:40:49 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 02:40:49 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 02:40:49 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Invalid login verification.
+09/28/2018 02:40:53 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:40:53 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:40:53 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 02:40:53 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 02:40:53 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 02:40:53 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 02:40:53 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:40:54 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:40:55 PM - StatusDisplay - INFO: ### VERIFICATION FAILED :: + Title Verification.
+09/28/2018 02:40:55 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 02:40:55 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 02:40:55 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Login Successful Verification.
+09/28/2018 02:40:55 PM - StatusDisplay - ERROR: Login frame testing:  : TEST FAILED: Login Successful Verification.
+09/28/2018 02:54:26 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:54:26 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:54:26 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 02:54:26 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 02:54:26 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 02:54:26 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 02:54:26 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:54:27 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:54:29 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 02:54:29 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 02:54:29 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Invalid login verification.
+09/28/2018 02:54:33 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:54:33 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:54:33 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 02:54:33 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 02:54:33 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 02:54:33 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 02:54:33 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 02:54:34 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 02:54:35 PM - StatusDisplay - INFO: ### VERIFICATION FAILED :: + Title Verification.
+09/28/2018 02:54:35 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 02:54:35 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 02:54:35 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Login Successful Verification.
+09/28/2018 02:54:35 PM - StatusDisplay - ERROR: Login frame testing:  : TEST FAILED: Login Successful Verification.
+09/28/2018 03:02:27 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 03:02:27 PM - SeleniumDriver - INFO: Cannot click on the element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 03:02:30 PM - SeleniumDriver - INFO: Element not found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 03:02:30 PM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 03:02:33 PM - SeleniumDriver - INFO: Element not found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 03:02:33 PM - SeleniumDriver - INFO: Cannot send data on the element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 03:02:33 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 03:02:34 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 03:02:36 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 03:02:36 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 03:02:36 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Invalid login verification.
+09/28/2018 03:02:40 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 03:02:40 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 03:02:40 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 03:02:40 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 03:02:40 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 03:02:40 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 03:02:40 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 03:02:40 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 03:02:41 PM - StatusDisplay - INFO: ### VERIFICATION FAILED :: + Title Verification.
+09/28/2018 03:02:41 PM - StatusDisplay - INFO: Screenshot saved to directorory:/Users/olegbushmelev/PycharmProjects/newbook/base/../screenshots/
+09/28/2018 03:02:42 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 03:02:42 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 03:02:42 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Login Successful Verification.
+09/28/2018 03:02:42 PM - StatusDisplay - ERROR: Login frame testing:  : TEST FAILED: Login Successful Verification.
+09/28/2018 03:41:40 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 03:41:40 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 03:41:40 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 03:41:40 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 03:41:40 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 03:41:40 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 03:41:40 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 03:41:40 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 03:41:42 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 03:41:42 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 03:41:42 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Invalid login verification.
+09/28/2018 03:41:47 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 03:41:47 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 03:41:47 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 03:41:47 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 03:41:47 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 03:41:47 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 03:41:47 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 03:41:47 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 03:41:48 PM - StatusDisplay - INFO: ### VERIFICATION FAILED :: + Title Verification.
+09/28/2018 03:41:48 PM - StatusDisplay - INFO: ### EXEPTION OCCURED!!!
+09/28/2018 03:42:59 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 03:43:00 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 03:43:00 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 03:43:00 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 03:43:00 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 03:43:00 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 03:43:00 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 03:43:01 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 03:43:03 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 03:43:03 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 03:43:03 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Invalid login verification.
+09/28/2018 03:43:07 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 03:43:07 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 03:43:07 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 03:43:07 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 03:43:07 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 03:43:07 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 03:43:07 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 03:43:07 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 03:43:08 PM - StatusDisplay - INFO: ### VERIFICATION FAILED :: + Title Verification.
+09/28/2018 03:43:08 PM - StatusDisplay - INFO: Screenshot saved to directorory:/Users/olegbushmelev/PycharmProjects/newbook/base/screenshots/
+09/28/2018 03:43:09 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 03:43:09 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 03:43:09 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Login Successful Verification.
+09/28/2018 03:43:09 PM - StatusDisplay - ERROR: Login frame testing:  : TEST FAILED: Login Successful Verification.
+09/28/2018 03:50:17 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 03:50:18 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 03:50:18 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 03:50:18 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 03:50:18 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 03:50:18 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 03:50:18 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 03:50:18 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 03:50:20 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 03:50:20 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 03:50:20 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Invalid login verification.
+09/28/2018 03:50:24 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 03:50:24 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 03:50:24 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 03:50:24 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 03:50:24 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 03:50:24 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 03:50:24 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 03:50:25 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 03:50:26 PM - StatusDisplay - INFO: ### VERIFICATION FAILED :: + Title Verification.
+09/28/2018 03:50:26 PM - StatusDisplay - INFO: Screenshot saved to directorory:/Users/olegbushmelev/PycharmProjects/newbook/base/screenshots/
+09/28/2018 03:50:26 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 03:50:26 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 03:50:26 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Login Successful Verification.
+09/28/2018 03:50:26 PM - StatusDisplay - ERROR: Login frame testing:  : TEST FAILED: Login Successful Verification.
+09/28/2018 03:59:49 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 03:59:49 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 03:59:49 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 03:59:49 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 03:59:49 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 03:59:49 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 03:59:49 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 03:59:49 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 03:59:51 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 03:59:51 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 03:59:51 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Invalid login verification.
+09/28/2018 03:59:55 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 03:59:56 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 03:59:56 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 03:59:56 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 03:59:56 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 03:59:56 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 03:59:56 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 03:59:56 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 03:59:57 PM - StatusDisplay - INFO: ### VERIFICATION FAILED :: + Title Verification.
+09/28/2018 03:59:57 PM - StatusDisplay - INFO: Screenshot saved to directorory:../screenshots/
+09/28/2018 03:59:59 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 03:59:59 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 03:59:59 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Login Successful Verification.
+09/28/2018 03:59:59 PM - StatusDisplay - ERROR: Login frame testing:  : TEST FAILED: Login Successful Verification.
+09/28/2018 04:02:39 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:02:39 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:02:39 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:02:39 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:02:39 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:02:40 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:02:40 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:02:40 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:02:42 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 04:02:42 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 04:02:42 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Invalid login verification.
+09/28/2018 04:02:46 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:02:46 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:02:46 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:02:47 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:02:47 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:02:47 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:02:47 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:02:47 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:02:48 PM - StatusDisplay - INFO: ### VERIFICATION FAILED :: + Title Verification.
+09/28/2018 04:02:48 PM - StatusDisplay - INFO: Screenshot saved to directorory:../screenshots
+09/28/2018 04:02:48 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 04:02:48 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 04:02:48 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Login Successful Verification.
+09/28/2018 04:02:48 PM - StatusDisplay - ERROR: Login frame testing:  : TEST FAILED: Login Successful Verification.
+09/28/2018 04:11:00 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:11:01 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:11:01 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:11:01 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:11:01 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:11:01 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:11:01 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:11:02 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:11:04 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 04:11:04 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 04:11:04 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Invalid login verification.
+09/28/2018 04:11:08 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:11:08 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:11:08 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:11:08 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:11:08 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:11:08 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:11:08 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:11:08 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:11:09 PM - StatusDisplay - INFO: ### VERIFICATION FAILED :: + Title Verification.
+09/28/2018 04:11:09 PM - StatusDisplay - INFO: Screenshot saved to directory:../screenshots
+09/28/2018 04:11:10 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 04:11:10 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 04:11:10 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Login Successful Verification.
+09/28/2018 04:11:10 PM - StatusDisplay - ERROR: Login frame testing:  : TEST FAILED: Login Successful Verification.
+09/28/2018 04:13:57 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:13:57 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:13:57 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:13:57 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:13:57 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:13:57 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:13:57 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:13:57 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:13:59 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 04:13:59 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 04:13:59 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Invalid login verification.
+09/28/2018 04:14:03 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:14:04 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:14:04 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:14:04 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:14:04 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:14:04 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:14:04 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:14:04 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:14:05 PM - StatusDisplay - INFO: ### VERIFICATION FAILED :: + Title Verification.
+09/28/2018 04:14:05 PM - StatusDisplay - ERROR: ### Exception Occurred with screenshot creation!
+09/28/2018 04:14:07 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 04:14:07 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 04:14:07 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Login Successful Verification.
+09/28/2018 04:14:07 PM - StatusDisplay - ERROR: Login frame testing:  : TEST FAILED: Login Successful Verification.
+09/28/2018 04:16:49 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:16:50 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:16:50 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:16:50 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:16:50 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:16:50 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:16:50 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:16:51 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:16:53 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 04:16:53 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 04:16:53 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Invalid login verification.
+09/28/2018 04:16:57 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:16:57 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:16:57 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:16:57 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:16:57 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:16:57 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:16:57 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:16:57 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:16:58 PM - StatusDisplay - INFO: ### VERIFICATION FAILED :: + Title Verification.
+09/28/2018 04:16:58 PM - StatusDisplay - ERROR: ### Exception Occurred with screenshot creation!
+09/28/2018 04:16:59 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 04:16:59 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 04:16:59 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Login Successful Verification.
+09/28/2018 04:16:59 PM - StatusDisplay - ERROR: Login frame testing:  : TEST FAILED: Login Successful Verification.
+09/28/2018 04:18:18 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:18:18 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:18:18 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:18:18 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:18:18 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:18:18 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:18:18 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:18:19 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:18:21 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 04:18:21 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 04:18:21 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Invalid login verification.
+09/28/2018 04:18:25 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:18:25 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:18:25 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:18:25 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:18:25 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:18:25 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:18:25 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:18:25 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:18:26 PM - StatusDisplay - INFO: ### VERIFICATION FAILED :: + Title Verification.
+09/28/2018 04:18:27 PM - StatusDisplay - INFO: Screenshot saved to directory:../screenshots
+09/28/2018 04:18:27 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 04:18:27 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 04:18:27 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Login Successful Verification.
+09/28/2018 04:18:27 PM - StatusDisplay - ERROR: Login frame testing:  : TEST FAILED: Login Successful Verification.
+09/28/2018 04:19:41 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:19:41 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:19:41 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:19:42 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:19:42 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:19:42 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:19:42 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:19:42 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:19:44 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 04:19:44 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 04:19:44 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Invalid login verification.
+09/28/2018 04:19:48 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:19:49 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:19:49 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:19:49 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:19:49 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:19:49 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:19:49 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:19:49 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:19:50 PM - StatusDisplay - INFO: ### VERIFICATION FAILED :: + Title Verification.
+09/28/2018 04:19:50 PM - StatusDisplay - INFO: Screenshot saved to directory:screenshots
+09/28/2018 04:19:50 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 04:19:50 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 04:19:50 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Login Successful Verification.
+09/28/2018 04:19:50 PM - StatusDisplay - ERROR: Login frame testing:  : TEST FAILED: Login Successful Verification.
+09/28/2018 04:22:10 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:22:10 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:22:10 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:22:10 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:22:10 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:22:10 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:22:10 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:22:11 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:22:13 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 04:22:13 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 04:22:13 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Invalid login verification.
+09/28/2018 04:22:17 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:22:17 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:22:17 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:22:17 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:22:17 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:22:17 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:22:17 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:22:17 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:22:18 PM - StatusDisplay - INFO: ### VERIFICATION FAILED :: + Title Verification.
+09/28/2018 04:22:18 PM - StatusDisplay - INFO: Screenshot: Title Verification.Fri Sep 28 16:22:18 2018.png saved to directory:screenshots
+09/28/2018 04:22:19 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 04:22:19 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 04:22:19 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Login Successful Verification.
+09/28/2018 04:22:19 PM - StatusDisplay - ERROR: Login frame testing:  : TEST FAILED: Login Successful Verification.
+09/28/2018 04:24:54 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:24:54 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:24:54 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:24:54 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:24:54 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:24:54 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:24:54 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:24:55 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:24:57 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 04:24:57 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 04:24:57 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Invalid login verification.
+09/28/2018 04:25:01 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:25:01 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:25:01 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:25:01 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:25:01 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:25:01 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:25:01 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:25:02 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:25:02 PM - StatusDisplay - INFO: ### VERIFICATION FAILED :: + Title Verification.
+09/28/2018 04:25:02 PM - StatusDisplay - INFO: Screenshot: Title Verification.Fri Sep 28 16:25:02 2018.png saved to directory:screenshots
+09/28/2018 04:25:12 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 04:25:12 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 04:25:12 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Login Successful Verification.
+09/28/2018 04:25:12 PM - StatusDisplay - ERROR: Login frame testing:  : TEST FAILED: Login Successful Verification.
+09/28/2018 04:36:38 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:36:39 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:36:39 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:36:39 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:36:39 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:36:39 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:36:39 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:36:39 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:36:41 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 04:36:41 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 04:36:41 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Invalid login verification.
+09/28/2018 04:36:45 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:36:46 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:36:46 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:36:46 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:36:46 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:36:46 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:36:46 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:36:46 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:36:50 PM - SeleniumDriver - INFO: Element not found with locator: //button[text()='Advanced Filters'] and  locatorType: xpath
+09/28/2018 04:36:50 PM - SeleniumDriver - INFO: Element with locator: //button[text()='Advanced Filters']NOT Found with locator type: xpath
+09/28/2018 04:36:50 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Title Verification.
+09/28/2018 04:36:51 PM - StatusDisplay - INFO: ### VERIFICATION FAILED :: + Title Verification.
+09/28/2018 04:36:51 PM - StatusDisplay - INFO: Screenshot: Title Verification.Fri Sep 28 16:36:51 2018.png saved to directory:screenshots
+09/28/2018 04:36:52 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 04:36:52 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 04:36:52 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL :: +  Login Successful Verification.
+09/28/2018 04:36:52 PM - StatusDisplay - ERROR: Login frame testing:  : TEST FAILED: Login Successful Verification.
+09/28/2018 04:42:00 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:42:01 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:42:01 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:42:01 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:42:01 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:42:01 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:42:01 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:42:01 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:42:03 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 04:42:03 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 04:42:03 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Invalid login verification.
+09/28/2018 04:42:07 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:42:08 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:42:08 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:42:08 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:42:08 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:42:08 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:42:08 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:42:08 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:42:11 PM - SeleniumDriver - INFO: Element not found with locator: //button[text()='Advanced Filters'] and  locatorType: xpath
+09/28/2018 04:42:11 PM - SeleniumDriver - INFO: Element with locator: //button[text()='Advanced Filters']NOT Found with locator type: xpath
+09/28/2018 04:42:11 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Title Verification.
+09/28/2018 04:42:12 PM - StatusDisplay - INFO: ### VERIFICATION FAILED : Title Verification.
+09/28/2018 04:42:13 PM - StatusDisplay - INFO: Screenshot: Title Verification.Fri Sep 28 16:42:12 2018.png saved to directory: ../screenshots
+09/28/2018 04:42:14 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 04:42:14 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 04:42:14 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Login Successful Verification.
+09/28/2018 04:42:14 PM - StatusDisplay - ERROR: Login frame testing:  : TEST FAILED: Login Successful Verification.
+09/28/2018 04:44:16 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:44:17 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:44:17 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:44:17 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:44:17 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:44:17 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:44:17 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:44:17 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:44:19 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 04:44:19 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 04:44:19 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Invalid login verification.
+09/28/2018 04:44:23 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:44:24 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:44:24 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:44:24 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:44:24 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:44:24 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:44:24 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:44:24 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:44:27 PM - SeleniumDriver - INFO: Element not found with locator: //button[text()='Advanced Filters'] and  locatorType: xpath
+09/28/2018 04:44:27 PM - SeleniumDriver - INFO: Element with locator: //button[text()='Advanced Filters']NOT Found with locator type: xpath
+09/28/2018 04:44:27 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Title Verification.
+09/28/2018 04:44:28 PM - StatusDisplay - INFO: ### VERIFICATION FAILED : Wrong Title Verification.
+09/28/2018 04:44:28 PM - StatusDisplay - INFO: Screenshot: Wrong Title Verification.Fri Sep 28 16:44:28 2018.png saved to directory: ../screenshots
+09/28/2018 04:44:31 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 04:44:31 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 04:44:31 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Login Successful Verification.
+09/28/2018 04:44:31 PM - StatusDisplay - ERROR: Login frame testing:  : TEST FAILED: Login Successful Verification.
+09/28/2018 04:48:12 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:48:12 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:48:12 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:48:12 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:48:12 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:48:12 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:48:12 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:48:13 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:48:15 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 04:48:15 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 04:48:15 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Invalid login verification.
+09/28/2018 04:48:19 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:48:19 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:48:19 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:48:19 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:48:19 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:48:19 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:48:19 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:48:20 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:48:20 PM - SeleniumDriver - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+09/28/2018 04:48:30 PM - SeleniumDriver - INFO: Element not appeared on the web page
+09/28/2018 04:48:30 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Title Verification.
+09/28/2018 04:48:31 PM - StatusDisplay - INFO: ### VERIFICATION FAILED : Wrong Title Verification.
+09/28/2018 04:48:32 PM - StatusDisplay - INFO: Screenshot: Wrong Title Verification.Fri Sep 28 16:48:31 2018.png saved to directory: ../screenshots
+09/28/2018 04:48:33 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 04:48:33 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 04:48:33 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Login Successful Verification.
+09/28/2018 04:48:33 PM - StatusDisplay - ERROR: Login frame testing:  : TEST FAILED: Login Successful Verification.
+09/28/2018 04:50:22 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:50:22 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:50:22 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:50:22 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:50:22 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:50:22 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:50:22 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:50:23 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:50:25 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 04:50:25 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 04:50:25 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Invalid login verification.
+09/28/2018 04:50:29 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:50:29 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:50:29 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:50:30 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:50:30 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:50:30 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:50:30 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:50:30 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:50:30 PM - SeleniumDriver - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+09/28/2018 04:50:40 PM - SeleniumDriver - INFO: Element not appeared on the web page
+09/28/2018 04:50:40 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Title Verification.
+09/28/2018 04:50:41 PM - StatusDisplay - INFO: ### VERIFICATION FAILED : Wrong Title Verification.
+09/28/2018 04:50:42 PM - StatusDisplay - INFO: Screenshot: Wrong Title Verification.Fri Sep 28 16:50:41 2018.png saved to directory: ../screenshots
+09/28/2018 04:50:43 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 04:50:43 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 04:50:43 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Login Successful Verification.
+09/28/2018 04:50:43 PM - StatusDisplay - ERROR: Login frame testing:  : TEST FAILED: Login Successful Verification.
+09/28/2018 04:53:01 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:53:02 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:53:02 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:53:02 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:53:02 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:53:02 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:53:02 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:53:02 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:53:04 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 04:53:04 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 04:53:04 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Invalid login verification.
+09/28/2018 04:53:08 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:53:08 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:53:08 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:53:08 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:53:08 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:53:08 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:53:08 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:53:09 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:53:09 PM - SeleniumDriver - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+09/28/2018 04:53:12 PM - SeleniumDriver - INFO: Element appeared on the web page
+09/28/2018 04:53:12 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Title Verification.
+09/28/2018 04:53:13 PM - StatusDisplay - INFO: ### VERIFICATION FAILED : Wrong Title Verification.
+09/28/2018 04:53:13 PM - StatusDisplay - INFO: Screenshot: Wrong Title Verification.Fri Sep 28 16:53:13 2018.png saved to directory: ../screenshots
+09/28/2018 04:53:14 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 04:53:14 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 04:53:14 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Login Successful Verification.
+09/28/2018 04:53:14 PM - StatusDisplay - ERROR: Login frame testing:  : TEST FAILED: Login Successful Verification.
+09/28/2018 04:55:07 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:55:07 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:55:07 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:55:07 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:55:07 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:55:07 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:55:07 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:55:08 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:55:10 PM - SeleniumDriver - INFO: Element Found with locator: //div[text()=' Client Sign In '] and  locatorType: xpath
+09/28/2018 04:55:10 PM - SeleniumDriver - INFO: Element with locator: //div[text()=' Client Sign In ']Found with locator type: xpath
+09/28/2018 04:55:10 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Invalid login verification.
+09/28/2018 04:55:14 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:55:14 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:55:14 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+09/28/2018 04:55:14 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+09/28/2018 04:55:14 PM - SeleniumDriver - INFO: Element Found with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+09/28/2018 04:55:14 PM - SeleniumDriver - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+09/28/2018 04:55:14 PM - SeleniumDriver - INFO: Element Found with locator: //button[text()=' Log In '] and  locatorType: xpath
+09/28/2018 04:55:14 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+09/28/2018 04:55:14 PM - SeleniumDriver - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+09/28/2018 04:55:18 PM - SeleniumDriver - INFO: Element appeared on the web page
+09/28/2018 04:55:18 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Title Verification.
+09/28/2018 04:55:19 PM - StatusDisplay - INFO: ### VERIFICATION FAILED : Wrong Title Verification.
+09/28/2018 04:55:19 PM - StatusDisplay - INFO: Screenshot: Wrong Title Verification.Fri Sep 28 16:55:19 2018.png saved to directory: ../screenshots
+09/28/2018 04:55:20 PM - SeleniumDriver - INFO: Element Found with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+09/28/2018 04:55:20 PM - SeleniumDriver - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+09/28/2018 04:55:20 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Login Successful Verification.
+09/28/2018 04:55:20 PM - StatusDisplay - ERROR: Login frame testing:  : TEST FAILED: Login Successful Verification.

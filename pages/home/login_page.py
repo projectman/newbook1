@@ -34,11 +34,12 @@ class LoginPage(SeleniumDriver):
         # Home page
         time.sleep(3)
         self.clickLoginButton()
-        print("test print in LoginPage.login")
-        # Login page
         self.enterEmail(email)
         self.enterPassword(password)
         self.clickSubmitButton()
+
+    def waitButtonPortfolio(self):
+        self.waitForElement("//button[text()=' See Portfolio ']")
 
     def verifyLoginSuccessful(self):
         return self.isElementPresent("//div[contains(text(),'Filter by Category')]")
@@ -48,7 +49,14 @@ class LoginPage(SeleniumDriver):
 
     def verifyTitle(self):
         """ Verify that tile after login as it should be. """
-        if "Nebook" in self.getTitle():
+        if "Newbook" in self.getTitle():
+            return True
+        else:
+            return False
+
+    def verifyTitleWrong(self):
+        """ Verify that tile after login NOT like it should be. """
+        if "Nwbook" in self.getTitle():
             return True
         else:
             return False
