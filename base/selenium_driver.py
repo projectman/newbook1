@@ -5,6 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import *
 import utilities.custom_logger as cl
 import logging
+import time, os
 
 class SeleniumDriver():
 
@@ -12,6 +13,30 @@ class SeleniumDriver():
 
     def __init__(self, driver):
         self.driver = driver
+
+    def screenShot(self, resultMessage):
+        """
+        Takes screenshots of the current open web page.
+        """
+        file_name = resultMessage + "." + str(round(time.time()*1000)) +".png"
+        screenshot_dir = "../screenshots"
+        relative_fname = screenshot_dir +file_name
+        current_dir = os.path.dirname(__file__)
+        destinantion_fname = os.path.join(current_dir, relative_fname)
+        destinantion_dir = os.path.join(current_dir, screenshot_dir)
+
+        try:
+            if not os.path.exists(destinantion_dir):
+                os.makedirs(destinantion_dir)
+            self.driver.save_screenshot(destinantion_fname)
+            self.log.info("Screenshot saved to directorory:", destinantion_dir)
+        except:
+            self.log.error('### Exception Occurred with screenshot creation!')
+            print_stack()
+
+
+    def getTitle(self):
+        return self.driver.title
 
     def getByType(self, locatorType):
         locatorType = locatorType.lower()

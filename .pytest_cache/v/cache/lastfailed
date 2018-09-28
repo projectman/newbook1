@@ -1,1 +1,3 @@
-{}
+{
+  "tests/home/login_test.py::LoginTest::test_invalidLogin": true
+}

@@ -29,7 +29,7 @@ class LoginPage(SeleniumDriver):
     def clickSubmitButton(self):
         self.elementClick(self._submit_xpath)
 
-    def login(self, email, password):
+    def login(self, email='', password=''):
 
         # Home page
         time.sleep(3)
@@ -45,3 +45,10 @@ class LoginPage(SeleniumDriver):
 
     def verifyLoginFail(self):
         return self.isElementPresent("//div[text()=' Client Sign In ']")
+
+    def verifyTitle(self):
+        """ Verify that tile after login as it should be. """
+        if "Nebook" in self.getTitle():
+            return True
+        else:
+            return False

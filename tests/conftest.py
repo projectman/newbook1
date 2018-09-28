@@ -1,37 +1,25 @@
 
-
 import pytest
-from selenium import webdriver
+from base.webdriverfactory import WebDriverFactory
 
 @pytest.yield_fixture()
 def setUp():
-    print("Running method level setUp")
+    print("\nRunning method level setUp")
     yield
-    print("Running method level tearDown")
+    print("\nRunning method level tearDown")
 
 
 @pytest.yield_fixture(scope="class")
 def oneTimeSetUp(request, browser):
-    print("Running one time setUp")
-    if browser == 'firefox':
-        baseURL = 'https://stage1.fmny.mobi'
-        driver = webdriver.Firefox()
-        driver.maximize_window()
-        driver.implicitly_wait(3)
-        driver.get(baseURL)
-        print("Running tests on FF")
-    else:
-        baseURL = 'https://stage1.fmny.mobi'
-        driver = webdriver.Chrome()
-        driver.get(baseURL)
-        print("Running tests on chrome")
+    print("\nRunning one time setUp")
+    wdf = WebDriverFactory(browser)
+    driver = wdf.getWebDriverInstance()
 
     if request.cls is not None:
         request.cls.driver = driver
-
     yield driver
     driver.quit()
-    print("Running one time tearDown")
+    print("\nRunning one time tearDown")
 
 def pytest_addoption(parser):
     parser.addoption("--browser")
