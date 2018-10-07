@@ -15,6 +15,10 @@ class LoginPage(SeleniumDriver):
     _password_xpath = "//input[@placeholder='Enter password']"
     _submit_xpath = "//button[text()=' Log In ']"
 
+    def newLogPage(self):
+        """ print empty line in front of every new report. """
+        str_el = "#"*10 + "  New LOG  " + 10*"#"
+        self.specialLogLine(str_el)
 
     # Actions
     def clickLoginButton(self):
@@ -38,8 +42,8 @@ class LoginPage(SeleniumDriver):
         self.enterPassword(password)
         self.clickSubmitButton()
 
-    def waitButtonPortfolio(self):
-        self.waitForElement("//button[text()=' See Portfolio ']")
+    def waitButtonAdvanced(self):
+        self.waitForClickElement("//button/span[text()='Advanced Filters']")
 
     def verifyLoginSuccessful(self):
         return self.isElementPresent("//div[contains(text(),'Filter by Category')]")
@@ -47,16 +51,31 @@ class LoginPage(SeleniumDriver):
     def verifyLoginFail(self):
         return self.isElementPresent("//div[text()=' Client Sign In ']")
 
-    def verifyTitle(self):
+    def verifyTitle(self, expectedTitle):
         """ Verify that tile after login as it should be. """
-        if "Newbook" in self.getTitle():
+        # !!! update with selenium driver class !!!
+        if expectedTitle in self.getTitle():
             return True
         else:
             return False
 
-    def verifyTitleWrong(self):
-        """ Verify that tile after login NOT like it should be. """
-        if "Nwbook" in self.getTitle():
-            return True
-        else:
-            return False
+    def waitClickAvatar(self):
+        # Wait found and click
+        self.waitForClickElement("//div[@class='square-dummy']", True)
+
+    def waitClickLogout(self):
+        element = self.waitForClickElement("//div[@class='link link_type_logout link_active']")
+        self.webScrollElement(element)
+        self.elementClick("//div[@class='link link_type_logout link_active']")
+
+    def waitConfirmLoggedout(self):
+        return self.waitElementLocated("//div[text()=' Client Sign In ']")
+
+
+    def verifyLogoutSuccessfull(self):
+        self.waitClickAvatar()
+        self.waitClickLogout()
+        return self.waitConfirmLoggedout()
+
+
+

@@ -2,16 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da17619f-c3ed-4627-9bb0-a1b1d4995f3f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/base/basepage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/models/models_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utilities/util.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.pytest_cache/v/cache/lastfailed" beforeDir="false" afterPath="$PROJECT_DIR$/.pytest_cache/v/cache/lastfailed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.pytest_cache/v/cache/nodeids" beforeDir="false" afterPath="$PROJECT_DIR$/.pytest_cache/v/cache/nodeids" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/automation.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/selenium_driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/selenium_driver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/webdriverfactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/webdriverfactory.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/geckodriver.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/home/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/home/login_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/home/login_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/research.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/statusdisplay.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/statusdisplay.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wait_types/geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/wait_types/geckodriver.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wait_types/selenium_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/wait_types/selenium_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,48 +24,90 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DockManager">
+    <window id="2">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/wait_types/selenium_test.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="585">
+                    <caret line="42" selection-start-line="42" selection-end-line="42" />
+                    <folding>
+                      <element signature="e#0#30#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+    <window id="3">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/automation.log">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="-1744">
+                    <caret line="3540" column="81" selection-start-line="3540" selection-start-column="81" selection-end-line="3540" selection-end-column="81" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1198964530">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="10" />
-          <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Python" value="55" />
+          <entry key="Image" value="14" />
+          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="Python" value="70" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="93" />
-          <entry key="dummy" value="10" />
-          <entry key="py" value="8836" />
-          <entry key="txt" value="212" />
+          <entry key="Python Console" value="163" />
+          <entry key="dummy" value="17" />
+          <entry key="py" value="12805" />
+          <entry key="txt" value="1430" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="222" />
-          <entry key="Python" value="8929" />
+          <entry key="PLAIN_TEXT" value="1447" />
+          <entry key="Python" value="12968" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="log" value="7" />
-          <entry key="png" value="10" />
-          <entry key="py" value="55" />
+          <entry key="log" value="11" />
+          <entry key="png" value="14" />
+          <entry key="py" value="70" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -71,15 +118,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/home/login_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+            <state relative-caret-position="450">
+              <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
               <folding>
-                <element signature="e#0#46#0" expanded="true" />
-                <element signature="e#399#462#1" />
-                <marker date="1538171569618" expanded="true" signature="311:403" ph="..." />
+                <element signature="e#0#49#0" expanded="true" />
+                <marker date="1538945793647" expanded="true" signature="311:403" ph="..." />
               </folding>
             </state>
           </provider>
@@ -88,15 +134,45 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/home/login_page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="41" column="61" selection-start-line="41" selection-start-column="61" selection-end-line="41" selection-end-column="61" />
+            <state relative-caret-position="1896">
+              <caret line="79" selection-start-line="79" selection-end-line="79" />
               <folding>
                 <element signature="e#1#12#0" expanded="true" />
-                <element signature="e#1427#1584#0" />
-                <element signature="e#1626#1783#0" />
-                <marker date="1538171569622" expanded="true" signature="1026:1098" ph="..." />
-                <marker date="1538171569622" expanded="true" signature="1215:1221" ph="..." />
-                <marker date="1538171569622" expanded="false" signature="1348:1353" ph="..." />
+                <marker date="1538945887120" expanded="true" signature="447:601" ph="..." />
+                <marker date="1538945887120" expanded="true" signature="1904:1909" ph="..." />
+                <marker date="1538945887120" expanded="true" signature="2186:2268" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/base/selenium_driver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="512">
+              <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+                <element signature="e#487#558#1" />
+                <element signature="e#870#1167#0" />
+                <element signature="e#1196#1288#0" />
+                <element signature="e#1322#1346#0" />
+                <element signature="e#1847#1944#0" />
+                <element signature="e#3213#3367#1" />
+                <element signature="e#3839#4503#0" />
+                <element signature="e#4023#4313#0" />
+                <element signature="e#4342#4503#0" />
+                <element signature="e#3537#3979#0" />
+                <element signature="e#5273#6236#0" />
+                <element signature="e#6291#7037#0" />
+                <element signature="e#6804#6957#0" />
+                <element signature="e#6986#7037#0" />
+                <element signature="e#7116#7263#1" />
+                <marker date="1538946048963" expanded="false" signature="549:558" ph="..." />
+                <marker date="1538946048963" expanded="true" signature="549:1367" ph="..." />
+                <marker date="1538946048963" expanded="false" signature="1386:1425" ph="..." />
+                <marker date="1538946048963" expanded="true" signature="2665:3223" ph="..." />
+                <marker date="1538946048963" expanded="false" signature="3872:4517" ph="..." />
               </folding>
             </state>
           </provider>
@@ -105,21 +181,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utilities/statusdisplay.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+            <state relative-caret-position="305">
+              <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
-                <marker date="1538170909711" expanded="true" signature="172:173" ph="..." />
+                <marker date="1538170909711" expanded="false" signature="172:173" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/automation.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-42411">
-              <caret line="155" column="24" selection-start-line="155" selection-start-column="24" selection-end-line="155" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -127,41 +194,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/conftest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+            <state relative-caret-position="279">
+              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
               <folding>
                 <element signature="e#1#14#0" expanded="true" />
-                <element signature="e#871#966#0" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base/selenium_driver.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="131" column="5" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-                <element signature="e#1327#1351#0" />
-                <element signature="e#1399#1970#0" />
-                <element signature="e#1852#1949#0" />
-                <element signature="e#2036#2521#0" />
-                <element signature="e#2589#2996#0" />
-                <element signature="e#3066#3453#0" />
-                <element signature="e#3525#4161#0" />
-                <element signature="e#4224#4595#0" />
-                <marker date="1538171046219" expanded="true" signature="478:1294" ph="..." />
-                <marker date="1538171046219" expanded="true" signature="1313:1352" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/screenshots/Wrong Title Verification.Fri Sep 28 16:44:28 2018.png">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -180,6 +219,8 @@
       <find>driver</find>
       <find>set_result</find>
       <find>max</find>
+      <find>print_stack</find>
+      <find>located</find>
     </findStrings>
     <replaceStrings>
       <replace>self.log.info</replace>
@@ -196,7 +237,6 @@
       <list>
         <option value="$PROJECT_DIR$/wait_types/explicit_wait.py" />
         <option value="$PROJECT_DIR$/wait_types/explicit-wait-demo1.py" />
-        <option value="$PROJECT_DIR$/wait_types/selenium_test.py" />
         <option value="$PROJECT_DIR$/pages/home/test-class1.py" />
         <option value="$PROJECT_DIR$/pages/home/4-login-page.py" />
         <option value="$PROJECT_DIR$/base/7-selenium-driver.py" />
@@ -204,21 +244,50 @@
         <option value="$PROJECT_DIR$/tests/test_py.py" />
         <option value="$PROJECT_DIR$/screenshots/test_py.py" />
         <option value="$PROJECT_DIR$/utilities/research.py" />
-        <option value="$PROJECT_DIR$/tests/conftest.py" />
         <option value="$PROJECT_DIR$/utilities/teststatus.py" />
         <option value="$PROJECT_DIR$/base/webdriverfactory.py" />
         <option value="$PROJECT_DIR$/utilities/statusdisplay.py" />
-        <option value="$PROJECT_DIR$/base/selenium_driver.py" />
-        <option value="$PROJECT_DIR$/pages/home/login_page.py" />
+        <option value="$PROJECT_DIR$/wait_types/RC_emergency_test_cyle.txt" />
+        <option value="$PROJECT_DIR$/base/basepage.py" />
+        <option value="$PROJECT_DIR$/utilities/util.py" />
+        <option value="$PROJECT_DIR$/pages/models/models_page.py" />
+        <option value="$PROJECT_DIR$/wait_types/selenium_test.py" />
+        <option value="$PROJECT_DIR$/tests/conftest.py" />
         <option value="$PROJECT_DIR$/tests/home/login_test.py" />
+        <option value="$PROJECT_DIR$/pages/home/login_page.py" />
+        <option value="$PROJECT_DIR$/base/selenium_driver.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1077" />
-    <option name="y" value="171" />
-    <option name="width" value="1517" />
-    <option name="height" value="1149" />
+    <option name="x" value="1216" />
+    <option name="y" value="23" />
+    <option name="width" value="1344" />
+    <option name="height" value="1410" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>Properties Files</id>
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+          <State>
+            <id>RegExp</id>
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -243,7 +312,38 @@
             <path>
               <item name="newbook" type="b2602c69:ProjectViewProjectNode" />
               <item name="newbook" type="462c0819:PsiDirectoryNode" />
+              <item name="configfiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbook" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbook" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbook" type="462c0819:PsiDirectoryNode" />
               <item name="screenshots" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbook" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbook" type="462c0819:PsiDirectoryNode" />
+              <item name="utilities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbook" type="462c0819:PsiDirectoryNode" />
+              <item name="wait_types" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="newbook" type="b2602c69:ProjectViewProjectNode" />
@@ -256,7 +356,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.breadcrumbs" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -279,7 +379,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.login_test">
+  <component name="RunManager" selected="Python.selenium_test">
     <configuration name="login_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="newbook" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -322,6 +422,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="selenium_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="newbook" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/wait_types" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wait_types/selenium_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests for 4-login-tests.LoginTests" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="newbook" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -333,20 +454,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;4-login-tests.LoginTests&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for test-class1.TestClass1.test_class1_methodA" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="newbook" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pages/home" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test-class1.TestClass1.test_class1_methodA&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -366,18 +473,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.login_test" />
-      <item itemvalue="Python tests.Unittests for test-class1.TestClass1.test_class1_methodA" />
       <item itemvalue="Python tests.Unittests in /Users/olegbushmelev/PycharmProjects/newbook/pages/home/test-class1.py" />
       <item itemvalue="Python tests.Unittests for 4-login-tests.LoginTests" />
       <item itemvalue="Python.research" />
+      <item itemvalue="Python.selenium_test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.selenium_test" />
         <item itemvalue="Python.login_test" />
         <item itemvalue="Python.research" />
         <item itemvalue="Python tests.Unittests for 4-login-tests.LoginTests" />
         <item itemvalue="Python tests.Unittests in /Users/olegbushmelev/PycharmProjects/newbook/pages/home/test-class1.py" />
-        <item itemvalue="Python tests.Unittests for test-class1.TestClass1.test_class1_methodA" />
       </list>
     </recent_temporary>
   </component>
@@ -441,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538095387766</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Screenshots work for wrong title; wait element added.">
+      <created>1538171802673</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1538171802673</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -468,19 +582,19 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1077" y="171" width="1517" height="1149" extended-state="0" />
+    <frame x="1216" y="23" width="1344" height="1410" extended-state="0" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.5141732" side_tool="true" weight="0.32947233" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.48582676" visible="true" weight="0.13770053" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.48582676" visible="true" weight="0.15948601" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49848256" visible="true" weight="0.36329234" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49848256" visible="true" weight="0.25493172" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5015175" side_tool="true" weight="0.56958765" />
-      <window_info anchor="bottom" id="Python Console" order="2" weight="0.32923368" />
+      <window_info anchor="bottom" id="Python Console" order="2" weight="0.32852808" />
       <window_info anchor="bottom" id="Message" order="3" />
-      <window_info anchor="bottom" id="Find" order="4" weight="0.32923368" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.32776934" />
       <window_info anchor="bottom" id="Version Control" order="5" weight="0.32890704" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49848256" weight="0.36991486" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.39745224" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49848256" weight="0.36949924" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.39681336" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" />
@@ -526,7 +640,8 @@
     <MESSAGE value="pytest was added and works. valid and invalid loging works." />
     <MESSAGE value="Assertion included." />
     <MESSAGE value="Assertion without stopping on problem. Screenshots don't working." />
-    <option name="LAST_COMMIT_MESSAGE" value="Assertion without stopping on problem. Screenshots don't working." />
+    <MESSAGE value="Screenshots work for wrong title; wait element added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Screenshots work for wrong title; wait element added." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/wait_types/explicit_wait.py" />
@@ -534,20 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
           <caret line="79" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wait_types/explicit-wait-demo1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="28" column="14" selection-start-line="25" selection-start-column="8" selection-end-line="28" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.local/share/virtualenvs/newbook/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="241" selection-start-line="241" selection-end-line="241" />
         </state>
       </provider>
     </entry>
@@ -567,13 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
           <caret line="175" selection-start-line="175" selection-end-line="175" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wait_types/selenium_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -627,131 +721,183 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/screenshotsTitle Verified.1538095192481.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshotsTitle Verified.1538156542080.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshotsTitle Verified.1538156819188.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utilities/research.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/screenshotsTitle Verified.1538095192481.png" />
+    <entry file="file://$PROJECT_DIR$/screenshotsTitle Verified.1538156542080.png" />
+    <entry file="file://$PROJECT_DIR$/screenshotsTitle Verified.1538156819188.png" />
+    <entry file="file://$PROJECT_DIR$/utilities/research.py" />
     <entry file="file://$PROJECT_DIR$/tests/automation.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/home/automation.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/screenshots/Title Verification.Fri Sep 28 16:25:02 2018.png" />
+    <entry file="file://$PROJECT_DIR$/screenshots/Title Verification.Fri Sep 28 16:19:50 2018.png" />
+    <entry file="file://$PROJECT_DIR$/screenshots/Title Verification.Fri Sep 28 16:22:18 2018.png" />
+    <entry file="file://$PROJECT_DIR$/screenshots/Title Verification.Fri Sep 28 16:36:51 2018.png" />
+    <entry file="file://$PROJECT_DIR$/screenshots/Title Verification.Fri Sep 28 16:42:12 2018.png" />
+    <entry file="file://$PROJECT_DIR$/screenshots/Wrong Title Verification.Fri Sep 28 16:44:28 2018.png" />
+    <entry file="file://$PROJECT_DIR$/screenshots/Wrong Title Verification.Fri Sep 28 16:48:31 2018.png" />
+    <entry file="file://$PROJECT_DIR$/screenshots/Wrong Title Verification.Fri Sep 28 16:53:13 2018.png" />
+    <entry file="file://$PROJECT_DIR$/screenshots/Wrong Title Verification.Fri Sep 28 16:55:19 2018.png" />
+    <entry file="file://$PROJECT_DIR$/wait_types/RC_emergency_test_cyle.txt" />
+    <entry file="file://$PROJECT_DIR$/wait_types/explicit-wait-demo1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/models/models_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#186#197#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utilities/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#170#181#0" expanded="true" />
+            <element signature="e#739#1469#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/basepage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/share/virtualenvs/newbook/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="605" selection-start-line="605" selection-end-line="605" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/share/virtualenvs/newbook/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="268" selection-start-line="268" selection-end-line="268" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/screenshots/Logout Verified.Sun Oct  7 15:39:20 2018.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/.local/share/virtualenvs/newbook/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="695">
+          <caret line="241" selection-start-line="241" selection-end-line="241" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/base/webdriverfactory.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="40" column="35" lean-forward="true" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#202#1" />
-          </folding>
+        <state relative-caret-position="960">
+          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/conftest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+        <state relative-caret-position="279">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
           <folding>
             <element signature="e#1#14#0" expanded="true" />
-            <element signature="e#871#966#0" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshots/Title Verification.Fri Sep 28 16:25:02 2018.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshots/Title Verification.Fri Sep 28 16:19:50 2018.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshots/Title Verification.Fri Sep 28 16:22:18 2018.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/automation.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42411">
-          <caret line="155" column="24" selection-start-line="155" selection-start-column="24" selection-end-line="155" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshots/Title Verification.Fri Sep 28 16:36:51 2018.png">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/utilities/statusdisplay.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+        <state relative-caret-position="305">
+          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
-            <marker date="1538170909711" expanded="true" signature="172:173" ph="..." />
+            <marker date="1538170909711" expanded="false" signature="172:173" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/screenshots/Title Verification.Fri Sep 28 16:42:12 2018.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshots/Wrong Title Verification.Fri Sep 28 16:44:28 2018.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/selenium_driver.py">
+    <entry file="file://$PROJECT_DIR$/wait_types/selenium_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="131" column="5" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
+        <state relative-caret-position="585">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
           <folding>
-            <element signature="e#0#43#0" expanded="true" />
-            <element signature="e#1327#1351#0" />
-            <element signature="e#1399#1970#0" />
-            <element signature="e#1852#1949#0" />
-            <element signature="e#2036#2521#0" />
-            <element signature="e#2589#2996#0" />
-            <element signature="e#3066#3453#0" />
-            <element signature="e#3525#4161#0" />
-            <element signature="e#4224#4595#0" />
-            <marker date="1538171046219" expanded="true" signature="478:1294" ph="..." />
-            <marker date="1538171046219" expanded="true" signature="1313:1352" ph="..." />
+            <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/screenshots/Wrong Title Verification.Fri Sep 28 16:48:31 2018.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/home/login_page.py">
+    <entry file="file://$PROJECT_DIR$/automation.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="41" column="61" selection-start-line="41" selection-start-column="61" selection-end-line="41" selection-end-column="61" />
-          <folding>
-            <element signature="e#1#12#0" expanded="true" />
-            <element signature="e#1427#1584#0" />
-            <element signature="e#1626#1783#0" />
-            <marker date="1538171569622" expanded="true" signature="1026:1098" ph="..." />
-            <marker date="1538171569622" expanded="true" signature="1215:1221" ph="..." />
-            <marker date="1538171569622" expanded="false" signature="1348:1353" ph="..." />
-          </folding>
+        <state relative-caret-position="-1744">
+          <caret line="3540" column="81" selection-start-line="3540" selection-start-column="81" selection-end-line="3540" selection-end-column="81" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/screenshots/Logout Verified.Sun Oct  7 15:51:28 2018.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/home/login_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+        <state relative-caret-position="450">
+          <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
           <folding>
-            <element signature="e#0#46#0" expanded="true" />
-            <element signature="e#399#462#1" />
-            <marker date="1538171569618" expanded="true" signature="311:403" ph="..." />
+            <element signature="e#0#49#0" expanded="true" />
+            <marker date="1538945793647" expanded="true" signature="311:403" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/home/login_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1896">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+          <folding>
+            <element signature="e#1#12#0" expanded="true" />
+            <marker date="1538945887120" expanded="true" signature="447:601" ph="..." />
+            <marker date="1538945887120" expanded="true" signature="1904:1909" ph="..." />
+            <marker date="1538945887120" expanded="true" signature="2186:2268" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/selenium_driver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#487#558#1" />
+            <element signature="e#870#1167#0" />
+            <element signature="e#1196#1288#0" />
+            <element signature="e#1322#1346#0" />
+            <element signature="e#1847#1944#0" />
+            <element signature="e#3213#3367#1" />
+            <element signature="e#3839#4503#0" />
+            <element signature="e#4023#4313#0" />
+            <element signature="e#4342#4503#0" />
+            <element signature="e#3537#3979#0" />
+            <element signature="e#5273#6236#0" />
+            <element signature="e#6291#7037#0" />
+            <element signature="e#6804#6957#0" />
+            <element signature="e#6986#7037#0" />
+            <element signature="e#7116#7263#1" />
+            <marker date="1538946048963" expanded="false" signature="549:558" ph="..." />
+            <marker date="1538946048963" expanded="true" signature="549:1367" ph="..." />
+            <marker date="1538946048963" expanded="false" signature="1386:1425" ph="..." />
+            <marker date="1538946048963" expanded="true" signature="2665:3223" ph="..." />
+            <marker date="1538946048963" expanded="false" signature="3872:4517" ph="..." />
           </folding>
         </state>
       </provider>
