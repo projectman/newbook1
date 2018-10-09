@@ -1,9 +1,10 @@
 
 import time
 from base.selenium_driver import SeleniumDriver
+from base.basepage import BasePage
 
 
-class LoginPage(SeleniumDriver):
+class LoginPage(BasePage):
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -17,7 +18,7 @@ class LoginPage(SeleniumDriver):
 
     def newLogPage(self):
         """ print empty line in front of every new report. """
-        str_el = "#"*10 + "  New LOG  " + 10*"#"
+        str_el = "#"*20 + 10*" " +" NEW LOG " + 10*" " + 20*"#"
         self.specialLogLine(str_el)
 
     # Actions
@@ -53,11 +54,7 @@ class LoginPage(SeleniumDriver):
 
     def verifyTitle(self, expectedTitle):
         """ Verify that tile after login as it should be. """
-        # !!! update with selenium driver class !!!
-        if expectedTitle in self.getTitle():
-            return True
-        else:
-            return False
+        return self.verifyPageTitle(expectedTitle)
 
     def waitClickAvatar(self):
         # Wait found and click
@@ -69,8 +66,7 @@ class LoginPage(SeleniumDriver):
         self.elementClick("//div[@class='link link_type_logout link_active']")
 
     def waitConfirmLoggedout(self):
-        return self.waitElementLocated("//div[text()=' Client Sign In ']")
-
+        return self.waitElementLocated("//a[text()='Log In']")
 
     def verifyLogoutSuccessfull(self):
         self.waitClickAvatar()

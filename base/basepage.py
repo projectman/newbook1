@@ -23,10 +23,8 @@ class BasePage(SeleniumDriver):
         """
         Inits BasePage class
 
-        Returns:
-            None
         """
-        super(BasePage, self).__init__(driver)
+        super().__init__(driver)
         self.driver = driver
         self.util = Util()
 

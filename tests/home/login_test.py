@@ -20,7 +20,6 @@ class LoginTest(unittest.TestCase):
         """
         # self.lp.login( 'man4testing@gmail.com', 'New12345$' )
         # Confirm login in
-        print("title:", self.lp.driver.title)
         self.lp.waitButtonAdvanced() # make sure that page downloaded.
 
         # Verify that right title exists on the page.
@@ -44,8 +43,8 @@ class LoginTest(unittest.TestCase):
     def test_validLogout(self):
         """Test Login with invalid login credentials. """
         res = self.lp.verifyLogoutSuccessfull()
-        print("res:", res)
         self.ts.mark( res, "Logout Verification." )
+
 """
     @pytest.mark.run(order=3)
     def test_invalidLogin(self):

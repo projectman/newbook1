@@ -4,6 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import *
 import utilities.custom_logger as cl
+from utilities.util import Util
 import logging
 import time, os
 
@@ -233,7 +234,6 @@ class SeleniumDriver():
                   " :: seconds for element to be LOCATED")
             wait = WebDriverWait(self.driver, timeout, pollFrequency)
             element = wait.until(EC.presence_of_element_located((byType, locator)))
-            print ("element:", element)
             self.log.info("Confirmed presence of element located with locator: " + locator + " on the web page")
         except:
             self.log.error("NOT Confirmed presence of element with locator: " + locator + " on the web page")
