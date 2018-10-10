@@ -16,6 +16,7 @@ class SeleniumDriver():
         self.driver = driver
 
     def specialLogLine(self, message):
+        """Create Announcement line for the new log."""
         self.log.info(message)
 
     def screenShot(self, resultMessage):

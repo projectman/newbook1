@@ -1,3 +1,4 @@
 {
-  "tests/home/login_test.py::LoginTest::test_validLogOut": true
+  "tests/home/login_test.py::LoginTest::test_validLogOut": true,
+  "wait_types/selenium_test.py": true
 }

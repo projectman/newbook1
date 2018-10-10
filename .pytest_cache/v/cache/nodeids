@@ -1,4 +1,5 @@
 [
-  "tests/home/login_test.py::LoginTest::test_validLogin",
-  "tests/home/login_test.py::LoginTest::test_validLogout"
+  "tests/home/login_test.py::TestLogin::()::test_validLogin",
+  "tests/home/login_test.py::TestLogin::()::test_validLogout",
+  "tests/home/login_test.py::TestLogin::()::test_invalidLogin"
 ]

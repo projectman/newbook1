@@ -1,6 +1,5 @@
 
 import time
-from base.selenium_driver import SeleniumDriver
 from base.basepage import BasePage
 
 
@@ -14,7 +13,6 @@ class LoginPage(BasePage):
     _login_xpath = "//button[text()=' Log In ']"
     _email_xpath = "//input[@placeholder='Enter E-mail address']"
     _password_xpath = "//input[@placeholder='Enter password']"
-    _submit_xpath = "//button[text()=' Log In ']"
 
     def newLogPage(self):
         """ print empty line in front of every new report. """
@@ -22,56 +20,72 @@ class LoginPage(BasePage):
         self.specialLogLine(str_el)
 
     # Actions
+    ## Actions. Waits and Clicks
     def clickLoginButton(self):
+        """ Wait Login button from Home page available
+        then ckick it if 2nd argument is True."""
+        self.waitForClickElement("//button[text()=' Log In ']", True)
+
+    def clickSubmitButton(self):
         self.elementClick(self._login_xpath)
 
+    def waitSubitButton(self):
+        self.waitForClickElement(self._login_xpath)
+
+    def clickReLoginButton(self):
+        self.waitForClickElement("//a[text()='Log In']", True)
+
+    def waitButtonAdvanced(self):
+        self.waitForClickElement("//button/span[text()='Advanced Filters']")
+
+    def waitClickAvatar(self):
+        # Wait found and click
+        self.waitForClickElement( "//div[@class='square-dummy']", True )
+
+    def waitClickLogout(self):
+        element = self.waitForClickElement( "//div[@class='link link_type_logout link_active']" )
+        self.webScrollElement( element )
+        self.elementClick( "//div[@class='link link_type_logout link_active']")
+
+    def waitConfirmLoggedout(self):
+        return self.waitElementLocated( "//a[text()='Log In']" )
+
+    ## Actions. Enters.
     def enterEmail(self, email):
         self.sendKeys(email, self._email_xpath)
 
     def enterPassword(self, password):
         self.sendKeys(password, self._password_xpath)
 
-    def clickSubmitButton(self):
-        self.elementClick(self._submit_xpath)
-
-    def login(self, email='', password=''):
-
-        # Home page
-        time.sleep(3)
-        self.clickLoginButton()
-        self.enterEmail(email)
-        self.enterPassword(password)
-        self.clickSubmitButton()
-
-    def waitButtonAdvanced(self):
-        self.waitForClickElement("//button/span[text()='Advanced Filters']")
-
     def verifyLoginSuccessful(self):
-        return self.isElementPresent("//div[contains(text(),'Filter by Category')]")
+        return self.isElementPresent( "//div[contains(text(),'Filter by Category')]" )
 
-    def verifyLoginFail(self):
-        return self.isElementPresent("//div[text()=' Client Sign In ']")
-
+    ### Actions. Verifications.
     def verifyTitle(self, expectedTitle):
         """ Verify that tile after login as it should be. """
         return self.verifyPageTitle(expectedTitle)
-
-    def waitClickAvatar(self):
-        # Wait found and click
-        self.waitForClickElement("//div[@class='square-dummy']", True)
-
-    def waitClickLogout(self):
-        element = self.waitForClickElement("//div[@class='link link_type_logout link_active']")
-        self.webScrollElement(element)
-        self.elementClick("//div[@class='link link_type_logout link_active']")
-
-    def waitConfirmLoggedout(self):
-        return self.waitElementLocated("//a[text()='Log In']")
 
     def verifyLogoutSuccessfull(self):
         self.waitClickAvatar()
         self.waitClickLogout()
         return self.waitConfirmLoggedout()
 
+    def verifyLoginFail(self):
+        self.waitElementLocated("//div[text()=' This field is required. ']")
+        return self.isElementPresent("//div[text()=' This field is required. ']")
 
+    # Logins
+    def login(self, email='', password=''):
+        # Home page
 
+        self.clickLoginButton()
+        self.enterEmail( email )
+        self.enterPassword( password )
+        self.clickSubmitButton()
+
+    def relogin(self, email='', password=''):
+        self.clickReLoginButton()
+        self.waitSubitButton()
+        self.enterEmail(email)
+        self.enterPassword(password)
+        self.clickSubmitButton()

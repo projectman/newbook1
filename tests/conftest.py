@@ -16,8 +16,8 @@ def oneTimeSetUp(request, browser):
     wdf = WebDriverFactory(browser)
     driver = wdf.getWebDriverInstance()
     lp = LoginPage(driver)
+    lp.newLogPage()  # print header for new log of new test.
     lp.login('man4testing@gmail.com', 'New12345$')
-    lp.newLogPage()
 
 
     if request.cls is not None:
