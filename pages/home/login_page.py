@@ -44,7 +44,7 @@ class LoginPage(BasePage):
 
     def waitClickLogout(self):
         element = self.waitForClickElement( "//div[@class='link link_type_logout link_active']" )
-        self.webScrollElement( element )
+        self.webScrollElement(element)
         self.elementClick( "//div[@class='link link_type_logout link_active']")
 
     def waitConfirmLoggedout(self):
@@ -63,6 +63,7 @@ class LoginPage(BasePage):
     ### Actions. Verifications.
     def verifyTitle(self, expectedTitle):
         """ Verify that tile after login as it should be. """
+        self.waitButtonAdvanced()  # make sure that page downloaded.
         return self.verifyPageTitle(expectedTitle)
 
     def verifyLogoutSuccessfull(self):
@@ -70,22 +71,17 @@ class LoginPage(BasePage):
         self.waitClickLogout()
         return self.waitConfirmLoggedout()
 
-    def verifyLoginFail(self):
-        self.waitElementLocated("//div[text()=' This field is required. ']")
-        return self.isElementPresent("//div[text()=' This field is required. ']")
-
     # Logins
     def login(self, email='', password=''):
         # Home page
-
-        self.clickLoginButton()
-        self.enterEmail( email )
-        self.enterPassword( password )
-        self.clickSubmitButton()
-
-    def relogin(self, email='', password=''):
-        self.clickReLoginButton()
-        self.waitSubitButton()
+        # self.clickLoginButton()
         self.enterEmail(email)
         self.enterPassword(password)
         self.clickSubmitButton()
+
+    def verifyInvalidLoginFail(self, email='', password=''):
+        self.clickReLoginButton()
+        self.waitSubitButton()
+        self.login(email, password)
+        self.waitElementLocated("//div[text()=' This field is required. ']")
+        return self.isElementPresent("//div[text()=' This field is required. ']")

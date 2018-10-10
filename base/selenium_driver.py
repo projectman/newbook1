@@ -41,7 +41,7 @@ class SeleniumDriver():
                           + str(screenshot_dir))
         except:
             self.log.error('### Exception Occurred with screenshot creation!')
-            # print_stack()
+            print_stack()
 
     def getTitle(self):
         return self.driver.title
@@ -104,7 +104,7 @@ class SeleniumDriver():
         except:
             self.log.error("Cannot click on the element with locator: " +
                           locator + " locatorType: " + locatorType)
-            # print_stack()
+            print_stack()
 
     def sendKeys(self, data, locator, locatorType="xpath", element=None):
         """
@@ -221,7 +221,7 @@ class SeleniumDriver():
                 self.log.info("Element clicked with locator " + locator + " on the web page")
         except:
             self.log.error("Element not appeared " + locator + " on the web page")
-            #print_stack()
+            print_stack()
         return element
 
     def waitElementLocated(self, locator, locatorType="xpath",
@@ -238,7 +238,7 @@ class SeleniumDriver():
             self.log.info("Confirmed presence of element located with locator: " + locator + " on the web page")
         except:
             self.log.error("NOT Confirmed presence of element with locator: " + locator + " on the web page")
-            #print_stack()
+            print_stack()
         return element
 
     def webScroll(self, direction="up"):

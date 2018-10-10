@@ -83,7 +83,7 @@ class Util(object):
             self.log.info("### VERIFICATION CONTAINS !!!")
             return True
         else:
-            self.log.info("### VERIFICATION DOES NOT CONTAINS !!!")
+            self.log.error("### VERIFICATION DOES NOT CONTAINS !!!")
             return False
 
     def verifyTextMatch(self, actualText, expectedText):
@@ -100,7 +100,7 @@ class Util(object):
             self.log.info("### VERIFICATION MATCHED !!!")
             return True
         else:
-            self.log.info("### VERIFICATION DOES NOT MATCHED !!!")
+            self.log.error("### VERIFICATION DOES NOT MATCHED !!!")
             return False
 
     def verifyListMatch(self, expectedList, actualList):

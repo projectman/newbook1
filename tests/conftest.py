@@ -17,6 +17,7 @@ def oneTimeSetUp(request, browser):
     driver = wdf.getWebDriverInstance()
     lp = LoginPage(driver)
     lp.newLogPage()  # print header for new log of new test.
+    lp.clickLoginButton()
     lp.login('man4testing@gmail.com', 'New12345$')
 
 

@@ -5321,3 +5321,164 @@
 10/09/2018 08:31:07 PM - BasePage - INFO: Element Found in getElement with locator: //div[text()=' This field is required. '] and  locatorType: xpath
 10/09/2018 08:31:07 PM - BasePage - INFO: Element with locator: //div[text()=' This field is required. ']Found with locator type: xpath
 10/09/2018 08:31:07 PM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Failed wrong credentials verification.
+10/10/2018 09:59:00 AM - BasePage - INFO: ####################           NEW LOG           ####################
+10/10/2018 09:59:00 AM - BasePage - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+10/10/2018 09:59:02 AM - BasePage - INFO: Element appeared //button[text()=' Log In '] on the web page
+10/10/2018 09:59:03 AM - BasePage - INFO: Element clicked with locator //button[text()=' Log In '] on the web page
+10/10/2018 09:59:03 AM - BasePage - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+10/10/2018 09:59:03 AM - BasePage - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+10/10/2018 09:59:03 AM - BasePage - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+10/10/2018 09:59:03 AM - BasePage - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+10/10/2018 09:59:03 AM - BasePage - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+10/10/2018 09:59:03 AM - BasePage - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+10/10/2018 09:59:03 AM - BasePage - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+10/10/2018 09:59:06 AM - BasePage - INFO: Element appeared //button/span[text()='Advanced Filters'] on the web page
+10/10/2018 09:59:06 AM - Util - INFO: Actual Text From Application Web UI --> :: Newbook
+10/10/2018 09:59:06 AM - Util - INFO: Expected Text From Application Web UI --> :: Newbook
+10/10/2018 09:59:06 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+10/10/2018 09:59:06 AM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Title Verification.
+10/10/2018 09:59:06 AM - BasePage - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+10/10/2018 09:59:06 AM - BasePage - INFO: Element appeared //button/span[text()='Advanced Filters'] on the web page
+10/10/2018 09:59:06 AM - Util - INFO: Actual Text From Application Web UI --> :: Newbook
+10/10/2018 09:59:06 AM - Util - INFO: Expected Text From Application Web UI --> :: Newbook
+10/10/2018 09:59:06 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+10/10/2018 09:59:06 AM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Wrong Title Verification.
+10/10/2018 09:59:06 AM - BasePage - INFO: Element Found in getElement with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+10/10/2018 09:59:06 AM - BasePage - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+10/10/2018 09:59:06 AM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Login Successful Verification.
+10/10/2018 09:59:06 AM - StatusDisplay - INFO: Login frame testing:  : SUCCESSFUL
+10/10/2018 09:59:06 AM - BasePage - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+10/10/2018 09:59:06 AM - BasePage - INFO: Element appeared //div[@class='square-dummy'] on the web page
+10/10/2018 09:59:07 AM - BasePage - INFO: Element clicked with locator //div[@class='square-dummy'] on the web page
+10/10/2018 09:59:07 AM - BasePage - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+10/10/2018 09:59:07 AM - BasePage - INFO: Element appeared //div[@class='link link_type_logout link_active'] on the web page
+10/10/2018 09:59:07 AM - BasePage - INFO: Web is scrolled to element: Log out of your account.
+10/10/2018 09:59:07 AM - BasePage - INFO: Element Found in getElement with locator: //div[@class='link link_type_logout link_active'] and  locatorType: xpath
+10/10/2018 09:59:07 AM - BasePage - INFO: Clicked on element with locator: //div[@class='link link_type_logout link_active'] locatorType: xpath
+10/10/2018 09:59:07 AM - BasePage - INFO: Waiting for maximum :: 10 :: seconds for element to be LOCATED
+10/10/2018 09:59:07 AM - BasePage - INFO: Confirmed presence of element located with locator: //a[text()='Log In'] on the web page
+10/10/2018 09:59:07 AM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Logout Verification.
+10/10/2018 09:59:07 AM - BasePage - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+10/10/2018 09:59:07 AM - BasePage - INFO: Element appeared //a[text()='Log In'] on the web page
+10/10/2018 09:59:08 AM - BasePage - INFO: Element clicked with locator //a[text()='Log In'] on the web page
+10/10/2018 09:59:08 AM - BasePage - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+10/10/2018 09:59:08 AM - BasePage - INFO: Element appeared //button[text()=' Log In '] on the web page
+10/10/2018 09:59:08 AM - BasePage - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+10/10/2018 09:59:08 AM - BasePage - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+10/10/2018 09:59:08 AM - BasePage - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+10/10/2018 09:59:08 AM - BasePage - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+10/10/2018 09:59:08 AM - BasePage - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+10/10/2018 09:59:08 AM - BasePage - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+10/10/2018 09:59:08 AM - BasePage - INFO: Waiting for maximum :: 10 :: seconds for element to be LOCATED
+10/10/2018 09:59:08 AM - BasePage - INFO: Confirmed presence of element located with locator: //div[text()=' This field is required. '] on the web page
+10/10/2018 09:59:08 AM - BasePage - INFO: Element Found in getElement with locator: //div[text()=' This field is required. '] and  locatorType: xpath
+10/10/2018 09:59:08 AM - BasePage - INFO: Element with locator: //div[text()=' This field is required. ']Found with locator type: xpath
+10/10/2018 09:59:08 AM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Failed wrong credentials verification.
+10/10/2018 10:04:55 AM - BasePage - INFO: ####################           NEW LOG           ####################
+10/10/2018 10:04:55 AM - BasePage - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+10/10/2018 10:04:57 AM - BasePage - INFO: Element appeared //button[text()=' Log In '] on the web page
+10/10/2018 10:04:58 AM - BasePage - INFO: Element clicked with locator //button[text()=' Log In '] on the web page
+10/10/2018 10:04:58 AM - BasePage - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+10/10/2018 10:04:58 AM - BasePage - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+10/10/2018 10:04:58 AM - BasePage - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+10/10/2018 10:04:58 AM - BasePage - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+10/10/2018 10:04:58 AM - BasePage - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+10/10/2018 10:04:58 AM - BasePage - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+10/10/2018 10:04:58 AM - BasePage - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+10/10/2018 10:04:59 AM - BasePage - INFO: Element appeared //button/span[text()='Advanced Filters'] on the web page
+10/10/2018 10:04:59 AM - Util - INFO: Actual Text From Application Web UI --> :: Newbook
+10/10/2018 10:04:59 AM - Util - INFO: Expected Text From Application Web UI --> :: Newbook
+10/10/2018 10:04:59 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+10/10/2018 10:04:59 AM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Title Verification SUCCESS.
+10/10/2018 10:04:59 AM - BasePage - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+10/10/2018 10:04:59 AM - BasePage - INFO: Element appeared //button/span[text()='Advanced Filters'] on the web page
+10/10/2018 10:04:59 AM - Util - INFO: Actual Text From Application Web UI --> :: Newbook
+10/10/2018 10:04:59 AM - Util - INFO: Expected Text From Application Web UI --> :: Nebook
+10/10/2018 10:04:59 AM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+10/10/2018 10:04:59 AM - StatusDisplay - INFO: ### VERIFICATION FAILED : Wrong Title Verification SUCCESS.
+10/10/2018 10:04:59 AM - StatusDisplay - INFO: Screenshot: Wrong Title Verification SUCCESS.Wed Oct 10 10:04:59 2018.png saved to directory: ../screenshots
+10/10/2018 10:04:59 AM - BasePage - INFO: Element Found in getElement with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+10/10/2018 10:04:59 AM - BasePage - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+10/10/2018 10:04:59 AM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Right credentials Login SUCCESS.
+10/10/2018 10:04:59 AM - StatusDisplay - ERROR: Login frame testing:  : TEST FAILED: Right credentials Login SUCCESS.
+10/10/2018 10:05:00 AM - BasePage - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+10/10/2018 10:05:00 AM - BasePage - INFO: Element appeared //div[@class='square-dummy'] on the web page
+10/10/2018 10:05:00 AM - BasePage - INFO: Element clicked with locator //div[@class='square-dummy'] on the web page
+10/10/2018 10:05:00 AM - BasePage - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+10/10/2018 10:05:01 AM - BasePage - INFO: Element appeared //div[@class='link link_type_logout link_active'] on the web page
+10/10/2018 10:05:01 AM - BasePage - INFO: Web is scrolled to element: Log out of your account.
+10/10/2018 10:05:01 AM - BasePage - INFO: Element Found in getElement with locator: //div[@class='link link_type_logout link_active'] and  locatorType: xpath
+10/10/2018 10:05:01 AM - BasePage - INFO: Clicked on element with locator: //div[@class='link link_type_logout link_active'] locatorType: xpath
+10/10/2018 10:05:01 AM - BasePage - INFO: Waiting for maximum :: 10 :: seconds for element to be LOCATED
+10/10/2018 10:05:01 AM - BasePage - INFO: Confirmed presence of element located with locator: //a[text()='Log In'] on the web page
+10/10/2018 10:05:01 AM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Logout Verification SUCCESS.
+10/10/2018 10:05:01 AM - BasePage - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+10/10/2018 10:05:01 AM - BasePage - INFO: Element appeared //a[text()='Log In'] on the web page
+10/10/2018 10:05:02 AM - BasePage - INFO: Element clicked with locator //a[text()='Log In'] on the web page
+10/10/2018 10:05:02 AM - BasePage - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+10/10/2018 10:05:02 AM - BasePage - INFO: Element appeared //button[text()=' Log In '] on the web page
+10/10/2018 10:05:02 AM - BasePage - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+10/10/2018 10:05:02 AM - BasePage - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+10/10/2018 10:05:02 AM - BasePage - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+10/10/2018 10:05:02 AM - BasePage - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+10/10/2018 10:05:02 AM - BasePage - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+10/10/2018 10:05:03 AM - BasePage - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+10/10/2018 10:05:03 AM - BasePage - INFO: Waiting for maximum :: 10 :: seconds for element to be LOCATED
+10/10/2018 10:05:03 AM - BasePage - INFO: Confirmed presence of element located with locator: //div[text()=' This field is required. '] on the web page
+10/10/2018 10:05:03 AM - BasePage - INFO: Element Found in getElement with locator: //div[text()=' This field is required. '] and  locatorType: xpath
+10/10/2018 10:05:03 AM - BasePage - INFO: Element with locator: //div[text()=' This field is required. ']Found with locator type: xpath
+10/10/2018 10:05:03 AM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Wrong credentials DON'T PASS.
+10/10/2018 10:11:10 AM - BasePage - INFO: ####################           NEW LOG           ####################
+10/10/2018 10:11:10 AM - BasePage - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+10/10/2018 10:11:12 AM - BasePage - INFO: Element appeared //button[text()=' Log In '] on the web page
+10/10/2018 10:11:12 AM - BasePage - INFO: Element clicked with locator //button[text()=' Log In '] on the web page
+10/10/2018 10:11:12 AM - BasePage - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+10/10/2018 10:11:12 AM - BasePage - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+10/10/2018 10:11:12 AM - BasePage - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+10/10/2018 10:11:13 AM - BasePage - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+10/10/2018 10:11:13 AM - BasePage - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+10/10/2018 10:11:13 AM - BasePage - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+10/10/2018 10:11:13 AM - BasePage - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+10/10/2018 10:11:14 AM - BasePage - INFO: Element appeared //button/span[text()='Advanced Filters'] on the web page
+10/10/2018 10:11:14 AM - Util - INFO: Actual Text From Application Web UI --> :: Newbook
+10/10/2018 10:11:14 AM - Util - INFO: Expected Text From Application Web UI --> :: Newbook
+10/10/2018 10:11:14 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+10/10/2018 10:11:14 AM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Title Verification SUCCESS.
+10/10/2018 10:11:14 AM - BasePage - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+10/10/2018 10:11:14 AM - BasePage - INFO: Element appeared //button/span[text()='Advanced Filters'] on the web page
+10/10/2018 10:11:14 AM - Util - INFO: Actual Text From Application Web UI --> :: Newbook
+10/10/2018 10:11:14 AM - Util - INFO: Expected Text From Application Web UI --> :: Nebook
+10/10/2018 10:11:14 AM - Util - ERROR: ### VERIFICATION DOES NOT CONTAINS !!!
+10/10/2018 10:11:14 AM - StatusDisplay - INFO: ### VERIFICATION FAILED : Wrong Title Verification SUCCESS.
+10/10/2018 10:11:14 AM - StatusDisplay - INFO: Screenshot: Wrong Title Verification SUCCESS.Wed Oct 10 10:11:14 2018.png saved to directory: ../screenshots
+10/10/2018 10:11:15 AM - BasePage - INFO: Element Found in getElement with locator: //div[contains(text(),'Filter by Category')] and  locatorType: xpath
+10/10/2018 10:11:15 AM - BasePage - INFO: Element with locator: //div[contains(text(),'Filter by Category')]Found with locator type: xpath
+10/10/2018 10:11:15 AM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Right credentials Login SUCCESS.
+10/10/2018 10:11:15 AM - StatusDisplay - ERROR: Login frame testing:  : TEST FAILED: Right credentials Login SUCCESS.
+10/10/2018 10:11:15 AM - BasePage - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+10/10/2018 10:11:16 AM - BasePage - INFO: Element appeared //div[@class='square-dummy'] on the web page
+10/10/2018 10:11:17 AM - BasePage - INFO: Element clicked with locator //div[@class='square-dummy'] on the web page
+10/10/2018 10:11:17 AM - BasePage - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+10/10/2018 10:11:18 AM - BasePage - INFO: Element appeared //div[@class='link link_type_logout link_active'] on the web page
+10/10/2018 10:11:18 AM - BasePage - INFO: Web is scrolled to element: Log out of your account.
+10/10/2018 10:11:18 AM - BasePage - INFO: Element Found in getElement with locator: //div[@class='link link_type_logout link_active'] and  locatorType: xpath
+10/10/2018 10:11:19 AM - BasePage - INFO: Clicked on element with locator: //div[@class='link link_type_logout link_active'] locatorType: xpath
+10/10/2018 10:11:19 AM - BasePage - INFO: Waiting for maximum :: 10 :: seconds for element to be LOCATED
+10/10/2018 10:11:19 AM - BasePage - INFO: Confirmed presence of element located with locator: //a[text()='Log In'] on the web page
+10/10/2018 10:11:19 AM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Logout Verification SUCCESS.
+10/10/2018 10:11:19 AM - BasePage - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+10/10/2018 10:11:19 AM - BasePage - INFO: Element appeared //a[text()='Log In'] on the web page
+10/10/2018 10:11:19 AM - BasePage - INFO: Element clicked with locator //a[text()='Log In'] on the web page
+10/10/2018 10:11:19 AM - BasePage - INFO: Waiting for maximum :: 10 :: seconds for element to be clickable
+10/10/2018 10:11:19 AM - BasePage - INFO: Element appeared //button[text()=' Log In '] on the web page
+10/10/2018 10:11:19 AM - BasePage - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+10/10/2018 10:11:19 AM - BasePage - INFO: Sent data on element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+10/10/2018 10:11:19 AM - BasePage - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+10/10/2018 10:11:19 AM - BasePage - INFO: Sent data on element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+10/10/2018 10:11:19 AM - BasePage - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+10/10/2018 10:11:20 AM - BasePage - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+10/10/2018 10:11:20 AM - BasePage - INFO: Waiting for maximum :: 10 :: seconds for element to be LOCATED
+10/10/2018 10:11:20 AM - BasePage - INFO: Confirmed presence of element located with locator: //div[text()=' This field is required. '] on the web page
+10/10/2018 10:11:20 AM - BasePage - INFO: Element Found in getElement with locator: //div[text()=' This field is required. '] and  locatorType: xpath
+10/10/2018 10:11:20 AM - BasePage - INFO: Element with locator: //div[text()=' This field is required. ']Found with locator type: xpath
+10/10/2018 10:11:20 AM - StatusDisplay - INFO: ### VERIFICATION SUCCESSFUL : Wrong credentials DON'T PASS.
