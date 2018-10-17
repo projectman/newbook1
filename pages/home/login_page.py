@@ -36,7 +36,7 @@ class LoginPage(BasePage):
     def clickSubmitButton(self):
         self.elementClick(self._login_xpath)
 
-    def waitSubitButton(self):
+    def waitSubmitButton(self):
         self.waitForClickElement(self._login_xpath)
 
     def clickReLoginButton(self):
@@ -65,7 +65,7 @@ class LoginPage(BasePage):
         self.sendKeys(password, self._password_xpath)
 
     def verifyLoginSuccessful(self):
-        return self.isElementPresent( "//div[contains(text(),'Filter by Category')]" )
+        return self.isElementPresent("//div[contains(text()]")
 
     ### Actions. Verifications.
     def verifyTitle(self, expectedTitle):
@@ -78,6 +78,26 @@ class LoginPage(BasePage):
         self.waitClickLogout()
         return self.waitConfirmLoggedout()
 
+    def verifyInvalidLoginFail(self):
+        """Verify that wrong credentials doesn't allow to login the account."""
+        self.clickReLoginButton()
+
+        result = True
+        for item in self.data["wrong_cr"]:
+
+            self.login(item["user"], item["pass"])
+            self.waitSubmitButton()
+            # Check that 1st element is available on page
+            el_1 = self.isElementPresent(item["el_1"])
+            # Check the 2nd element is available on page
+            el_2 = self.isElementPresent(item["el_2"])
+            result = el_1 and el_2
+
+        return result
+
+    # "//div[text()='Password']/div[text()=' This field is required. ']"
+    #  "//div[text()='E-mail Address']/div[text()=' This field is required. ']"
+
     # Logins
     def login(self, email='', password=''):
         # Home page
@@ -86,9 +106,4 @@ class LoginPage(BasePage):
         self.enterPassword(password)
         self.clickSubmitButton()
 
-    def verifyInvalidLoginFail(self, email='', password=''):
-        self.clickReLoginButton()
-        self.waitSubitButton()
-        self.login(email, password)
-        self.waitElementLocated("//div[text()=' This field is required. ']")
-        return self.isElementPresent("//div[text()=' This field is required. ']")
+

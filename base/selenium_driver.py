@@ -74,7 +74,7 @@ class SeleniumDriver():
             self.log.info("Element Found in getElement with locator: " + locator +
                           " and  locatorType: " + locatorType)
         except:
-            self.log.error("Element not found with locator: " + locator +
+            self.log.error("Element NOT found in getElement with locator: " + locator +
                   " and  locatorType: " + locatorType)
         return element
 
@@ -113,29 +113,32 @@ class SeleniumDriver():
         """
         try:
             if locator:  # This means if locator is not empty
-                element = self.getElement( locator, locatorType )
-            element.send_keys( data )
-            self.log.info( "Sent data on element with locator: " + locator +
+                element = self.getElement(locator, locatorType)
+                element.clear()
+                element.send_keys(data)
+                self.log.info( "Sent data '" + data + "' on element with locator: "
+                           + locator +
                            " locatorType: " + locatorType )
         except:
-            self.log.info( "Cannot send data on the element with locator: " + locator +
+            self.log.error( "Cannot send data '" + data + "' on the element with locator: "
+                           + locator +
                            " locatorType: " + locatorType )
-            # print_stack()
+            print_stack()
 
     def isElementPresent(self, locator, locatorType="xpath"):
         try:
             element = self.getElement(locator, locatorType)
             if element is not None:
                 self.log.info("Element with locator: " +
-                              locator + "Found with locator type: " + locatorType)
+                              locator + "Present with locator type: " + locatorType)
                 return True
             else:
                 self.log.error("Element with locator: " + locator +
-                              "NOT Found with locator type: " + locatorType)
+                              " NOT Present with locator type: " + locatorType)
                 return False
         except:
             self.log.error("Element with locator: " + locator +
-                          "NOT Found with locator type: " + locatorType)
+                          " NOT Found with locator type: " + locatorType)
             return False
 
     def getText(self, locator="", locatorType="xpath", element=None, info=""):
@@ -205,27 +208,27 @@ class SeleniumDriver():
             return False
 
     def waitForClickElement(self, locator, click=False, locatorType="xpath",
-                               timeout=10, pollFrequency=0.5):
+                               timeout=5, pollFrequency=0.5):
         """Wait Element with locator, and click after found if True. """
         element = None
         try:
             byType = self.getByType(locatorType)
             self.log.info("Waiting for maximum :: " + str(timeout) +
-                  " :: seconds for element to be clickable")
+                  " :: seconds for element '" + locator + "' to be clickable")
             wait = WebDriverWait(self.driver, timeout, pollFrequency
                                  )
             element = wait.until(EC.element_to_be_clickable((byType, locator)))
-            self.log.info("Element appeared " + locator + " on the web page")
+            self.log.info("Element '" + locator + "' appeared " + locator + " on the web page")
             if click:
                 element.click()
-                self.log.info("Element clicked with locator " + locator + " on the web page")
+                self.log.info("Element '" + locator + "' clicked with locator " + locator + " on the web page")
         except:
-            self.log.error("Element not appeared " + locator + " on the web page")
+            self.log.error("Element '" + locator + "' NOT appeared " + locator + " on the web page")
             print_stack()
         return element
 
     def waitElementLocated(self, locator, locatorType="xpath",
-                               timeout=10, pollFrequency=0.5):
+                               timeout=5, pollFrequency=0.5):
         """Wait until Element will be located with locator,
         and click after found if True. """
         element = None

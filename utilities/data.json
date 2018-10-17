@@ -6,10 +6,48 @@
     {"user":"man4testing@gmail.com", "pass":"New12345$"},
 
   "wrong_cr": [
-    {"user":"", "pass":""}, {"user":"user", "pass":""},
-    {"user":"user@mail.com", "pass":""}, {"user":"man4testing@gmail.com", "pass":""},
-    {"user":"man4testing@gmail.com", "pass":"123"},
-    {"user":"", "pass":"New12345$"}, {"user":"user", "pass":"New12345$"},
-    {"user":"user@mail.com", "pass":"New12345$"}
+    {
+      "user":"",
+      "pass":"",
+      "el_1":"//common-input[@type='email-underline-responsive']//div[text()=' This field is required. ']",
+      "el_2":"//common-input[@type='password-underline-responsive']//div[text()=' This field is required. ']"
+    },
+    {
+      "user":"user",
+      "pass":"",
+      "el_1":"//common-input[@type='email-underline-responsive']//div[text()=' Invalid email address. ']",
+      "el_2":"//common-input[@type='password-underline-responsive']//div[text()=' This field is required. ']"
+    },
+    {
+      "user":"user@mail.com",
+      "pass":"",
+
+      "el_1":"//input[@type='email']",
+      "el_2":"//common-input[@type='password-underline-responsive']//div[text()=' This field is required. ']"
+    },
+    {
+      "user":"man4testing@gmail.com",
+      "pass":"",
+      "el_1":"//input[@type='email']",
+      "el_2":"//common-input[@type='password-underline-responsive']//div[text()=' This field is required. ']"
+    },
+    {
+      "user":"man4testing@gmail.com",
+      "pass":"123",
+      "el_1":"//input[@type='email']",
+      "el_2":"//a[text()='Log In']"
+    },
+    {
+      "user":"user",
+      "pass":"New12345$",
+      "el_1":"//common-input[@type='email-underline-responsive']//div[text()=' Invalid email address. ']",
+      "el_2":"//a[text()='Log In']"
+    },
+    {
+      "user":"user@mail.com",
+      "pass":"New12345$",
+      "el_1":"//input[@type='email']",
+      "el_2":"//a[text()='Log In']"
+    }
   ]
 }
