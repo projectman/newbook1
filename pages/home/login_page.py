@@ -1,6 +1,7 @@
 
 import time
 from base.basepage import BasePage
+import json
 
 
 class LoginPage(BasePage):
@@ -8,22 +9,28 @@ class LoginPage(BasePage):
     def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver
-
+        # get dictionary with data testing from data.json
+        self.data = json.load(open('utilities/data.json'))
 
     _login_xpath = "//button[text()=' Log In ']"
     _email_xpath = "//input[@placeholder='Enter E-mail address']"
     _password_xpath = "//input[@placeholder='Enter password']"
 
+    def get_data(self):
+        """ Return dictionary with data for testing."""
+        return self.data
+
     def newLogPage(self):
         """ print empty line in front of every new report. """
         str_el = "#"*20 + 10*" " +" NEW LOG " + 10*" " + 20*"#"
-        self.specialLogLine(str_el)
+
+        self.specialLogLine(str_el+"; "+self.driver.title)
 
     # Actions
     ## Actions. Waits and Clicks
     def clickLoginButton(self):
         """ Wait Login button from Home page available
-        then ckick it if 2nd argument is True."""
+        then click it if 2nd argument is True."""
         self.waitForClickElement("//button[text()=' Log In ']", True)
 
     def clickSubmitButton(self):

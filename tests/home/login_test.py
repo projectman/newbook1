@@ -38,7 +38,7 @@ class TestLogin():
         self.ts.mark(res, "Logout Verification SUCCESS.")
         assert res
 
-    def test_invalidLogin(self):
+    def test_invalidLoginEmpty(self):
 
         # Confirm login in with wrong credential
         res = self.lp.verifyInvalidLoginFail()

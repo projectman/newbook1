@@ -8,7 +8,7 @@ Example:
     wdf = WebDriverFactory(browser)
     wdf.getWebDriverInstance()
 """
-
+from pages.home.login_page import LoginPage
 from selenium import webdriver
 
 class WebDriverFactory():
@@ -18,6 +18,8 @@ class WebDriverFactory():
         Inits WebDriverFactory class
         """
         self.browser = browser
+        lp = LoginPage(webdriver)
+        self.data = lp.get_data()
     """
         Set chrome driver and iexplorer environment based on OS
 
@@ -35,7 +37,6 @@ class WebDriverFactory():
         Returns:
             'WebDriver Instance'
         """
-        baseURL = 'https://stage1.fmny.mobi'
         if self.browser == "iexplorer":
             # Set ie driver
             driver = webdriver.Ie()
@@ -51,5 +52,5 @@ class WebDriverFactory():
         # Maximize the window
         # driver.maximize_window()
         # Loading browser with App URL
-        driver.get(baseURL)
+        driver.get(self.data["url"])
         return driver

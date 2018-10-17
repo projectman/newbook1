@@ -15,10 +15,13 @@ def oneTimeSetUp(request, browser):
     print("\nRunning one time setUp")
     wdf = WebDriverFactory(browser)
     driver = wdf.getWebDriverInstance()
+    # get variables from data.json
     lp = LoginPage(driver)
+
     lp.newLogPage()  # print header for new log of new test.
     lp.clickLoginButton()
-    lp.login('man4testing@gmail.com', 'New12345$')
+    creden = lp.get_data()["right_cr"]
+    lp.login(creden["user"], creden["pass"])
 
 
     if request.cls is not None:

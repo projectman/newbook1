@@ -1,0 +1,15 @@
+
+{
+  "url": "https://stage1.fmny.mobi",
+
+  "right_cr":
+    {"user":"man4testing@gmail.com", "pass":"New12345$"},
+
+  "wrong_cr": [
+    {"user":"", "pass":""}, {"user":"user", "pass":""},
+    {"user":"user@mail.com", "pass":""}, {"user":"man4testing@gmail.com", "pass":""},
+    {"user":"man4testing@gmail.com", "pass":"123"},
+    {"user":"", "pass":"New12345$"}, {"user":"user", "pass":"New12345$"},
+    {"user":"user@mail.com", "pass":"New12345$"}
+  ]
+}
