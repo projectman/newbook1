@@ -1,3 +1,0 @@
-1. relogin split to buttom relogin + login;
-2. in proess for every test - split "login" button and login().
-3. Make only one statement for every test "VerifyWrongLogin" - example.
