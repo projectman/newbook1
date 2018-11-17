@@ -1,6 +1,18 @@
 
 {
   "url": "https://stage1.fmny.mobi",
+  "up_login_link": "//a[text()='Log In']",
+  "models_url": "https://stage1.fmny.mobi/browse",
+  "avatar_link": "//div[@class='avatar__letter-in']",
+  "filter_btn": "//div[contains(text(), 'Filter by Category')]",
+  "signin_text": "//div[contains(text(), 'Client Sign In')]",
+  "nb_logo": "//div[@class='header__logo']",
+  "made_better": "//div[contains(text(), 'Made Better')]",
+  "signup_model": "//a[contains(text(), 'Sign up as a model')]",
+  "up_login": "//button[contains(text(), 'Log In')]",
+  "signin_login_btn": "//button[text()=' Log In ']",
+  "email_field": "//input[@placeholder='Enter E-mail address']",
+  "pass_field": "//input[@placeholder='Enter password']",
 
   "right_cr":
     {"user":"man4testing@gmail.com", "pass":"New12345$"},
@@ -13,7 +25,7 @@
       "el_2":"//common-input[@type='password-underline-responsive']//div[text()=' This field is required. ']"
     },
     {
-      "user":"user",
+      "user":"man",
       "pass":"",
       "el_1":"//common-input[@type='email-underline-responsive']//div[text()=' Invalid email address. ']",
       "el_2":"//common-input[@type='password-underline-responsive']//div[text()=' This field is required. ']"

@@ -12,46 +12,46 @@ class StatusDisplay (SeleniumDriver):
         super(StatusDisplay, self).__init__(driver)
         self.result_list = []
 
-    def setResult(self, result, result_message):
+    def setResult(self, result, test_name):
         try:
             if result is not None:
                 if result:
                     self.result_list.append( "PASS" )
                     self.log.info(
-                        "### VERIFICATION SUCCESSFUL : " + str(result_message))
+                        "### TEST PASSED SUCCESSFUL : " + str(test_name))
                 else:
                     self.result_list.append("FAIL")
-                    self.log.info("### VERIFICATION FAILED : " + str(result_message))
-                    self.screenShot(result_message)
+                    self.log.error("### TEST FAILED as False: " + str(test_name))
+                    self.screenShot(test_name)
             else:
                 self.result_list.append("FAIL")
-                self.log.info("### VERIFICATION FAILED : " + str(result_message))
-                self.screenShot( result_message )
+                self.log.error("### TESTS FAILED as None: " + str(test_name))
+                self.screenShot(test_name)
         except:
             self.result_list.append("FAIL")
-            self.log.info("### EXEPTION OCCURED!!!")
-            self.screenShot( result_message )
-            print_stack()
+            self.log.error("### EXEPTION OCCURED!!!")
+            self.screenShot(test_name)
+            # print_stack()
 
-    def mark(self, result, result_message):
+    def mark(self, result, test_name):
         """
         Mark the result of the verification point in a test case.
         """
-        self.setResult(result, result_message)
+        self.setResult(result, test_name)
 
-    def markFinal(self, test_name, result, result_message):
+    def markFinal(self, test_name, result, problem_discrition):
         """
         Mark the final rusult of the verification point in a test case
         this needs to be called at least onece in a test case
         This should be final test status of the test case.
         """
-        self.setResult(result, result_message)
+        self.setResult(result, test_name)
         if "FAIL" in self.result_list:
-            self.log.error(test_name + " : TEST FAILED: "+ result_message)
+            self.log.error(test_name + ": FULL TEST FAILED: " + problem_discrition)
             self.result_list.clear()
             assert True == False
         else:
-            self.log.info(str(test_name) + " : SUCCESSFUL")
+            self.log.info(str(test_name) + ": FULL TEST SUCCESSFUL")
             self.result_list.clear()
             assert True == True
 

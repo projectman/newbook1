@@ -15,6 +15,7 @@ class SeleniumDriver():
     def __init__(self, driver):
         self.driver = driver
 
+
     def specialLogLine(self, message):
         """Create Announcement line for the new log."""
         self.log.info(message)
@@ -41,7 +42,14 @@ class SeleniumDriver():
                           + str(screenshot_dir))
         except:
             self.log.error('### Exception Occurred with screenshot creation!')
-            print_stack()
+            # print_stack()
+
+    def getUrl(self):
+        url = self.driver.current_url
+        self.log.info("Current page URL from getUrl method is "+url)
+        return url
+
+
 
     def getTitle(self):
         return self.driver.title
@@ -104,7 +112,7 @@ class SeleniumDriver():
         except:
             self.log.error("Cannot click on the element with locator: " +
                           locator + " locatorType: " + locatorType)
-            print_stack()
+            # print_stack()
 
     def sendKeys(self, data, locator, locatorType="xpath", element=None):
         """
@@ -116,16 +124,17 @@ class SeleniumDriver():
                 element = self.getElement(locator, locatorType)
                 element.clear()
                 element.send_keys(data)
-                self.log.info( "Sent data '" + data + "' on element with locator: "
+                self.log.info( "Sent data '" + data + "' to element with locator: "
                            + locator +
                            " locatorType: " + locatorType )
         except:
-            self.log.error( "Cannot send data '" + data + "' on the element with locator: "
+            self.log.error( "Cannot send data '" + data + "' to element with locator: "
                            + locator +
                            " locatorType: " + locatorType )
-            print_stack()
+            # print_stack()
 
     def isElementPresent(self, locator, locatorType="xpath"):
+        """ Return True if element Present and False if not. """
         try:
             element = self.getElement(locator, locatorType)
             if element is not None:
@@ -161,7 +170,7 @@ class SeleniumDriver():
                 text = text.strip()
         except:
             self.log.error( "Failed to get text on element " + info )
-            print_stack()
+            # print_stack()
             text = None
         return text
 
@@ -187,7 +196,6 @@ class SeleniumDriver():
 
     def isElementDisplayed(self, locator="", locatorType="xpath", element=None):
         """
-        NEW METHOD
         Check if element is displayed
         Either provide element or a combination of locator and locatorType
         """
@@ -199,10 +207,11 @@ class SeleniumDriver():
                 isDisplayed = element.is_displayed()
                 self.log.info( "Element is displayed with locator: " + locator +
                                " locatorType: " + locatorType )
+                return True
             else:
                 self.log.error( "Element not displayed with locator: " + locator +
                                " locatorType: " + locatorType )
-            return isDisplayed
+                return False
         except:
             print( "Element not found" )
             return False
@@ -224,13 +233,12 @@ class SeleniumDriver():
                 self.log.info("Element '" + locator + "' clicked with locator " + locator + " on the web page")
         except:
             self.log.error("Element '" + locator + "' NOT appeared " + locator + " on the web page")
-            print_stack()
+            # print_stack()
         return element
 
     def waitElementLocated(self, locator, locatorType="xpath",
                                timeout=5, pollFrequency=0.5):
-        """Wait until Element will be located with locator,
-        and click after found if True. """
+        """Wait until Element will be located with locator. Return element. """
         element = None
         try:
             byType = self.getByType(locatorType)
@@ -241,7 +249,7 @@ class SeleniumDriver():
             self.log.info("Confirmed presence of element located with locator: " + locator + " on the web page")
         except:
             self.log.error("NOT Confirmed presence of element with locator: " + locator + " on the web page")
-            print_stack()
+            # print_stack()
         return element
 
     def webScroll(self, direction="up"):

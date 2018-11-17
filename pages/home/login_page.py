@@ -12,10 +12,6 @@ class LoginPage(BasePage):
         # get dictionary with data testing from data.json
         self.data = json.load(open('utilities/data.json'))
 
-    _login_xpath = "//button[text()=' Log In ']"
-    _email_xpath = "//input[@placeholder='Enter E-mail address']"
-    _password_xpath = "//input[@placeholder='Enter password']"
-
     def get_data(self):
         """ Return dictionary with data for testing."""
         return self.data
@@ -28,72 +24,156 @@ class LoginPage(BasePage):
 
     # Actions
     ## Actions. Waits and Clicks
-    def clickLoginButton(self):
-        """ Wait Login button from Home page available
+    def clickUpLoginButton(self):
+        """ Wait Login UP-RIGHT button from Home page available
         then click it if 2nd argument is True."""
         self.waitForClickElement("//button[text()=' Log In ']", True)
 
     def clickSubmitButton(self):
-        self.elementClick(self._login_xpath)
+        self.elementClick(self.data["signin_login_btn"])
 
     def waitSubmitButton(self):
-        self.waitForClickElement(self._login_xpath)
+        self.waitForClickElement(self.data["signin_login_btn"])
 
     def clickReLoginButton(self):
-        self.waitForClickElement("//a[text()='Log In']", True)
+        self.waitForClickElement(self.data["up_login"], True)
 
     def waitButtonAdvanced(self):
         self.waitForClickElement("//button/span[text()='Advanced Filters']")
 
     def waitClickAvatar(self):
         # Wait found and click
-        self.waitForClickElement( "//div[@class='square-dummy']", True )
+        self.waitForClickElement("//div[@class='square-dummy']", True )
 
     def waitClickLogout(self):
-        element = self.waitForClickElement( "//div[@class='link link_type_logout link_active']" )
+        element = self.waitForClickElement("//div[@class='link link_type_logout link_active']")
         self.webScrollElement(element)
-        self.elementClick( "//div[@class='link link_type_logout link_active']")
+        self.elementClick("//div[@class='link link_type_logout link_active']")
 
-    def waitConfirmLoggedout(self):
-        return self.waitElementLocated( "//a[text()='Log In']" )
+    def getCurrentPageUrl(self):
+        return self.getUrl()
 
     ## Actions. Enters.
     def enterEmail(self, email):
-        self.sendKeys(email, self._email_xpath)
+        self.sendKeys(email, self.data["email_field"])
 
     def enterPassword(self, password):
-        self.sendKeys(password, self._password_xpath)
+        self.sendKeys(password, self.data["pass_field"])
 
     def verifyLoginSuccessful(self):
         return self.isElementPresent("//div[contains(text()]")
 
-    ### Actions. Verifications.
+    ### Verifications.
+    def verifySigninText(self):
+        # Verify that text "Client Sign In is available on page.
+        return self.isElementDisplayed(self.data["signin_text"])
+
     def verifyTitle(self, expectedTitle):
         """ Verify that tile after login as it should be. """
         self.waitButtonAdvanced()  # make sure that page downloaded.
         return self.verifyPageTitle(expectedTitle)
 
+    ########################### VERIFiCations  ##################################
+    #                                                                           #
+    def verifyFilterExists(self):
+        """Verification that Filter button exists on the page. TC #003.1; #004.3
+        Return True or False."""
+        # Wait first element clickable.
+        # As element has default locator XPATH, it abasement.
+
+        return self.isElementDisplayed(self.data["filter_btn"])
+
+    def verifyUrlHome(self):
+        """ Verification that URL of "/browser" page is the requested for TC #003.2
+        Return True or False."""
+        return self.util.verifyTextContains(self.getUrl(), self.data["models_url"])
+
+    def verifyAvatarExists(self):
+        """ Verification that URL of "/browser" page is the requested for TC #003.3; TC #004.4
+        Return True or False."""
+        return self.isElementDisplayed(self.data["avatar_link"])
+
     def verifyLogoutSuccessfull(self):
+        """ Click on avatar, move on Account Settings Page,
+        Log out of your Account. Check URL ...mobi/browse. TC 004.1"""
         self.waitClickAvatar()
         self.waitClickLogout()
-        return self.waitConfirmLoggedout()
+        return self.util.verifyTextContains(self.getUrl(),
+                                            self.data["models_url"])
+
+    def verifyLoginExists(self):
+        """ Return True if link to "Log In" exists.TC 004.2; 002.4"""
+        return self.isElementDisplayed(self.data["up_login_link"])   # Here need to be found <a href > with "Log In"
+
+    def verifyBackBrowser(self):
+        """ Click on BACK button in Browser.
+        Verify Sign In text exists then return True. TC # 005.1"""
+        self.driver.back()
+        return self.verifySigninText()
+
+    def verifyHomePage(self):
+        """ Visit home page when user logoffed.
+        Verify title "New book. TC 006.1 """
+        self.driver.get(self.data["url"])
+        return self.isElementDisplayed(self.data["nb_logo"])
+
+    def verifyMadeBetter(self):
+        """
+        Visit home page when user logout verify title "New book. TC 006.2
+        :return: True/False.
+        """
+        return self.isElementDisplayed(self.data["made_better"])
+
+    def verifySingupModel(self):
+        """
+        Visit home page when user logout verify link "Sing Up as Model" TC 006.2
+        :return: True/False.
+        """
+        return self.isElementPresent(self.data["signup_model"])
+
+    def verifySignupPage(self):
+        """
+        Open singUp page and verify it. TC #002.1
+        :return:   True if Client SignU on Sing Up page avaible.
+        """
+        self.clickReLoginButton()
+        return self.verifySigninText()
 
     def verifyInvalidLoginFail(self):
-        """Verify that wrong credentials doesn't allow to login the account."""
-        self.clickReLoginButton()
+        """Verify that wrong credentials doesn't allow
+        to login the account.
+        Return list of tuples (boolean PASS, user, pass)
+        ,results of tests for every combination for
+        all variants with boolean. TC # 007 """
+        # 1. Need to be clicked on Login for for the beginning
+        self.waitForClickElement(self.data["up_login_link"], True)
 
-        result = True
+        result = []
         for item in self.data["wrong_cr"]:
 
             self.login(item["user"], item["pass"])
-            self.waitSubmitButton()
+            self.waitSubmitButton()    # 007.1-16
             # Check that 1st element is available on page
             el_1 = self.isElementPresent(item["el_1"])
             # Check the 2nd element is available on page
             el_2 = self.isElementPresent(item["el_2"])
-            result = el_1 and el_2
+            result.append((el_1 and el_2, item["user"], item["pass"]))
 
         return result
+
+    def verifyEmailAvailable(self):
+        """
+        Verify that email field available then return True. Other way false.
+        """
+        return self.isElementPresent(self.data["email_field"])
+
+    def verifyPassAvailable(self):
+        """
+        Verify that password field available then return True. Other way false.
+        """
+        return self.isElementPresent(self.data["pass_field"])                 #
+    #########################
+
 
     # "//div[text()='Password']/div[text()=' This field is required. ']"
     #  "//div[text()='E-mail Address']/div[text()=' This field is required. ']"
@@ -101,7 +181,6 @@ class LoginPage(BasePage):
     # Logins
     def login(self, email='', password=''):
         # Home page
-        # self.clickLoginButton()
         self.enterEmail(email)
         self.enterPassword(password)
         self.clickSubmitButton()

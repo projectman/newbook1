@@ -1,5 +1,6 @@
 
 import pytest
+import time
 from base.webdriverfactory import WebDriverFactory
 from pages.home.login_page import LoginPage
 
@@ -19,9 +20,18 @@ def oneTimeSetUp(request, browser):
     lp = LoginPage(driver)
 
     lp.newLogPage()  # print header for new log of new test.
-    lp.clickLoginButton()
+    lp.clickUpLoginButton() # UP RIGHT button on Home page;
+
+
     creden = lp.get_data()["right_cr"]
     lp.login(creden["user"], creden["pass"])
+
+    # Pop up after first log in
+    # Find element 'close' and click
+    try:
+        lp.waitElementLocated("//button[@title='Close']").click()
+    except:
+        print("Element close not found.")
 
 
     if request.cls is not None:
