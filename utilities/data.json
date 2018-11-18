@@ -87,5 +87,9 @@
     }
   ],
 
-  "category": "//div[@class='item__image']"
+  "models_page": "########       JUST SEPARATOR        ###########",
+  "category": "//div[@class='item__title']",
+  "rows": "//nb-model-list-item",
+  "match_text": "match your search criteria:"
+
 }

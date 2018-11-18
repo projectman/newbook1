@@ -1,3 +1,5 @@
 [
-  "tests/models/models_test.py::TestModels::()::test_elementsAvailable"
+  "tests/models/models_test.py::TestModels::()::test_elementsAvailable",
+  "tests/models/models_test.py::TestModels::()::test_galeryRowsAvailable",
+  "tests/models/models_test.py::TestModels::()::test_verifyCategories"
 ]

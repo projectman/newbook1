@@ -14,6 +14,7 @@ class SeleniumDriver():
 
     def __init__(self, driver):
         self.driver = driver
+        self.util = Util()
 
 
     def specialLogLine(self, message):
@@ -252,6 +253,32 @@ class SeleniumDriver():
             # print_stack()
         return element
 
+    def verifyPageIncludesText(self, expectedText):
+        """
+        Return: True if page include the 'expectedText. In other case: False.
+        """
+        try:
+            actualText = self.driver.page_source
+            if expectedText in actualText:
+                result = True
+                self.log.info(
+                    "Does current page includes text: " + str(expectedText)
+                          + ": " + str(result))
+            else:
+                result = False
+                self.log.error(
+                    "Current page DOES NOT include text: " + str(expectedText)
+                    + ": " + str(result))
+        except:
+            result = False
+            self.log.error(
+                "Process FAILTURE: current page includes text: "
+                + str(expectedText)
+                + ": " + str(result))
+
+        return result
+
+
     def webScroll(self, direction="up"):
         """
         Scroll element on 1000 pixels up or down.
@@ -273,3 +300,4 @@ class SeleniumDriver():
             self.log.info( "Web is scrolled to element: " + element.text + "." )
         except:
             self.log.error( "Web CAN NOT be scrolled to element: " + element.text + "." )
+

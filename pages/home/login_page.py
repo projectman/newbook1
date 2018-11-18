@@ -56,7 +56,7 @@ class LoginPage(BasePage):
     def waitAndConfirmElementLocated(self, locator, locator_type="xpath"):
         """Wait until element can be located,
         return: True if element was located after explicit waiting."""
-        found = self.waitElementLocated(locator, locator_type)
+        found = self.waitElementLocated(locator, locator_type)   #!!! Refact
         if found is not None:
             return True
         else:
