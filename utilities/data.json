@@ -18,6 +18,7 @@
     {"user":"man4testing@gmail.com", "pass":"New12345$"},
 
   "wrong_cr": [
+
     {
       "user":"",
       "pass":"",
@@ -31,9 +32,20 @@
       "el_2":"//common-input[@type='password-underline-responsive']//div[text()=' This field is required. ']"
     },
     {
+      "user":"man@for",
+      "pass":"",
+      "el_1":"//common-input[@type='email-underline-responsive']//div[text()=' Invalid email address. ']",
+      "el_2":"//common-input[@type='password-underline-responsive']//div[text()=' This field is required. ']"
+    },
+    {
+      "user":"@man@for",
+      "pass":"",
+      "el_1":"//common-input[@type='email-underline-responsive']//div[text()=' Invalid email address. ']",
+      "el_2":"//common-input[@type='password-underline-responsive']//div[text()=' This field is required. ']"
+    },
+    {
       "user":"user@mail.com",
       "pass":"",
-
       "el_1":"//input[@type='email']",
       "el_2":"//common-input[@type='password-underline-responsive']//div[text()=' This field is required. ']"
     },
@@ -45,8 +57,8 @@
     },
     {
       "user":"man4testing@gmail.com",
-      "pass":"123",
-      "el_1":"//input[@type='email']",
+      "pass":"s",
+      "el_1":"//span[contains(text(), 'correct email and password')]",
       "el_2":"//a[text()='Log In']"
     },
     {
@@ -56,10 +68,29 @@
       "el_2":"//a[text()='Log In']"
     },
     {
+      "user":"",
+      "pass":"s",
+      "el_1":"//common-input[@type='email-underline-responsive']//div[text()=' This field is required. ']",
+      "el_2":"//common-input[@type='password-underline-responsive']//div[text()=' Invalid password. ']"
+    },
+    {
       "user":"user@mail.com",
       "pass":"New12345$",
-      "el_1":"//input[@type='email']",
+      "el_1":"//span[contains(text(), 'correct email and password')]",
+      "el_2":"//a[text()='Log In']"
+    },
+    {
+      "user":"",
+      "pass":"New12345$",
+      "el_1":"//common-input[@type='email-underline-responsive']//div[text()=' This field is required. ']",
       "el_2":"//a[text()='Log In']"
     }
-  ]
+  ],
+
+  "do_not_use":{
+      "user":"",
+      "pass":"New12345$",
+      "el_1":"//common-input[@type='email-underline-responsive']//div[text()=' This field is required. ']",
+      "el_2":"//a[text()='Log In']"
+    }
 }

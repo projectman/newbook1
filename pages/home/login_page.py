@@ -32,8 +32,11 @@ class LoginPage(BasePage):
     def clickSubmitButton(self):
         self.elementClick(self.data["signin_login_btn"])
 
-    def waitSubmitButton(self):
-        self.waitForClickElement(self.data["signin_login_btn"])
+    def existSubmitButton(self):
+        """
+        Return True if the central submit button "Log In" on Sign In page exists
+        """
+        return self.isElementPresent(self.data["signin_login_btn"])
 
     def clickReLoginButton(self):
         self.waitForClickElement(self.data["up_login"], True)
@@ -49,6 +52,15 @@ class LoginPage(BasePage):
         element = self.waitForClickElement("//div[@class='link link_type_logout link_active']")
         self.webScrollElement(element)
         self.elementClick("//div[@class='link link_type_logout link_active']")
+
+    def waitAndConfirmElementLocated(self, locator, locator_type="xpath"):
+        """Wait until element can be located,
+        return: True if element was located after explicit waiting."""
+        found = self.waitElementLocated(locator, locator_type)
+        if found is not None:
+            return True
+        else:
+            return False
 
     def getCurrentPageUrl(self):
         return self.getUrl()
@@ -149,15 +161,29 @@ class LoginPage(BasePage):
         self.waitForClickElement(self.data["up_login_link"], True)
 
         result = []
+        counter = 7
         for item in self.data["wrong_cr"]:
 
             self.login(item["user"], item["pass"])
-            self.waitSubmitButton()    # 007.1-16
-            # Check that 1st element is available on page
-            el_1 = self.isElementPresent(item["el_1"])
-            # Check the 2nd element is available on page
-            el_2 = self.isElementPresent(item["el_2"])
-            result.append((el_1 and el_2, item["user"], item["pass"]))
+            # 007.1-016.1
+            # if we don't find the button, as logged in- no reasons to wait.
+            # !!! create service method for braking loops when elment is not
+            # exists in loop with logs.
+
+            out = False
+            if not self.existSubmitButton():
+                break
+            # Check that 1st element is available on page; # 007.2 - 017.2
+            if self.waitAndConfirmElementLocated(item["el_1"]):
+                # Check the 2nd element is available on page
+                if self.isElementDisplayed(item["el_2"]):
+                    out = True
+            else:
+                out = False
+            # ??? add in future control text in the text field  !!!
+            # Check that 1st element is available on page; # 007.3cata - 017.3
+            result.append((out, item["user"], item["pass"]))
+            time.sleep(2)    # For visual debugging. !!! delete
 
         return result
 
@@ -172,17 +198,11 @@ class LoginPage(BasePage):
         Verify that password field available then return True. Other way false.
         """
         return self.isElementPresent(self.data["pass_field"])                 #
-    #########################
 
-
-    # "//div[text()='Password']/div[text()=' This field is required. ']"
-    #  "//div[text()='E-mail Address']/div[text()=' This field is required. ']"
-
-    # Logins
     def login(self, email='', password=''):
-        # Home page
+        """
+        Action on Sign IN page for sign in.
+        """
         self.enterEmail(email)
         self.enterPassword(password)
         self.clickSubmitButton()
-
-

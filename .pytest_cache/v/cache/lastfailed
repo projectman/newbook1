@@ -1,6 +1,7 @@
 {
   "tests/home/login_test.py::LoginTest::test_validLogOut": true,
   "tests/home/login_test.py::TestLogin::()::test_backBrowser": true,
+  "tests/home/login_test.py::TestLogin::()::test_invalidLogin": true,
   "tests/home/login_test.py::TestLogin::()::test_invalidLoginEmpty": true,
   "wait_types/selenium_test.py": true
 }

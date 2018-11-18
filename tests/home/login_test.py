@@ -32,7 +32,7 @@ class TestLogin():
         final = res_1 and res_2 and res_3
         self.ts.markFinal(
             "TC #003: Test Models page after log in with valid credentials: ", final,
-            " : TC #003 TOTALLY FAILED.")
+            ": TC #003 TOTALLY FAILED.")
 
     def test_validLogout(self):
         """Test Login out from the site. TC004"""
@@ -52,7 +52,7 @@ class TestLogin():
         final = res_1 and res_2 and res_3 and res_4
         self.ts.markFinal(
             "TC #004: Test Models page after log off successful: ", final,
-            " : TC #004 TOTALLY FAILED.")
+            ": TC #004 TOTALLY FAILED.")
 
     def test_backBrowser(self):
         """Go "Back" in browser, after Log out. TC #005
@@ -65,7 +65,7 @@ class TestLogin():
         final = res_1 # and res_2 and res_3 and res_4
         self.ts.markFinal(
             "TC #005: Push BACK button on browser with Logoffed user: ", final,
-            " : TC #005 TOTALLY FAILED.")
+            ": TC #005 TOTALLY FAILED.")
 
     def test_homePageLogoffed (self):
         """Visit "Home page", after log out. TC #006, 001"""
@@ -81,7 +81,7 @@ class TestLogin():
         final = res_1  and res_2 and res_3
         self.ts.markFinal(
             "TC #006 & 001: Visit on Home Page with Logoffed user: ", final ,
-            " : TC #006 TOTALLY FAILED.")
+            ": TC #006 TOTALLY FAILED.")
 
 
     def test_signupPage (self):
@@ -112,18 +112,20 @@ class TestLogin():
         # Confirm login in with wrong credentials. TC # 007
         # For the first step we need move from the
         final = self.lp.verifyInvalidLoginFail()
+
         # Check if any items in list:
-        if len(final) > 0 and False in final:
+        if len(final) > 0:
             for result in final:
-                self.ts.mark("TC 007 with "+str(result[1])+", "+str(result[2])
-                             +"result:", result[0])
+                print("inside loop test_invalidLogin:", result)
+                self.ts.mark(result[0], ("TC 007 with "+str(result[1])+", "+str(result[2])
+                             +"result:"))
             self.ts.markFinal(
                 "TC #007: Login with invalid credentials impossible? ", final,
-                " : TC #007 TOTALLY FAILED.")
+                ": TC #007 TOTALLY FAILED.")
         else:
             self.ts.markFinal(
-                "TC #007: Nor results of invalid login tries. WRONG PROCESS:",
-                "CREDENTIALS", "TOTALLY INVALID LOGIN TEST FAILED")
+                "TC #007: WRONG PROCESS: No results of invalid login tries :",
+                None, ": TC #007 TOTALLY FAILED.")
 
 # ff = LoginTest()
 # ff.valid_login()
