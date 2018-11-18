@@ -39,9 +39,20 @@ class TestModels:
         """ Check the every category is filtering on Models Page
         There are more than 5 rows of model's gallery on page. TC # 019
         """
-
+        # !!! switch on all elements of classes list.
         res = self.mp.verifyCategoriesUrls()
         self.ts.markFinal(
             "TC #020 Check the every category is filtering on Models Page"
             "on Models Page. ",
             res[0] , (": TC #020 TOTALLY FAILED. " + str(res[1])))
+
+    def test_verifyAllAvatars(self):
+        """
+        Check that all models have avatar in row. TC # 021.
+        """
+
+        res = self.mp.verifyAllHaveAvatars()
+        self.ts.markFinal(
+            "TC #021 Check the every category is filtering on Models Page"
+            "on Models Page. ",
+            res, ": TC #021 TOTALLY FAILED. " )

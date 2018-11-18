@@ -63,7 +63,7 @@ class ModelsPage(BasePage):
         urls = self.getListOfItems(locator)
 
         # Process every element in list.
-        for indx in range(len(urls)):
+        for indx in range(2):    #   len(urls)):
             # Create list of results
             results = []
             # for protection if element has changed after refresh;
@@ -98,3 +98,13 @@ class ModelsPage(BasePage):
         # Need Back browser after test every time.
 
         return final # !!!
+
+    def verifyAllHaveAvatars(self):
+        """
+        Collect number of rows and compare with number of avatars on pages,
+        the numbers must be equal.
+        """
+        expectedNumber = self.getListOfItems(self.data["rows"])
+        actualNumber = self.getListOfItems(self.data["avatars"])
+        is_eqal = len(expectedNumber) == len(actualNumber)
+        return is_eqal
