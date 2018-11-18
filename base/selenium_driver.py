@@ -87,18 +87,18 @@ class SeleniumDriver():
         return element
 
     def getElementList(self, locator, locatorType='xpath'):
-        """Get list of elements."""
-        element = None
+        """Get list of elements with given locator."""
+        result = []
         try:
             locatorType = locatorType.lower()
             byType = self.getByType(locatorType)
-            element = self.driver.find_elements(byType, locator)
+            result = self.driver.find_elements(byType, locator)
             self.log.info( "Element List Found with locator: " + locator +
                        " and  locatorType: " + locatorType )
         except:
             self.log.error( "Element LIST not Found with locator: " + locator +
                            " and  locatorType: " + locatorType )
-        return element
+        return result
 
     def elementClick(self, locator='', locatorType="xpath"):
         """

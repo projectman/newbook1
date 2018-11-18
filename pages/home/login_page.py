@@ -13,7 +13,7 @@ class LoginPage(BasePage):
         self.data = json.load(open('utilities/data.json'))
 
     def get_data(self):
-        """ Return dictionary with data for testing."""
+        """ Return dictionary with data JSON for testing."""
         return self.data
 
     def newLogPage(self):

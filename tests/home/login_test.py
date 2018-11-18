@@ -3,9 +3,8 @@ from pages.home.login_page import LoginPage
 import pytest
 import time
 
-# import time
 @pytest.mark.usefixtures("oneTimeSetUp")
-class TestLogin():
+class TestLogin:
 
     @pytest.fixture(autouse=True)
     def classSetup(self, oneTimeSetUp):
@@ -83,7 +82,6 @@ class TestLogin():
             "TC #006 & 001: Visit on Home Page with Logoffed user: ", final ,
             ": TC #006 TOTALLY FAILED.")
 
-
     def test_signupPage (self):
         """Sign in page elememts availability; . TC #002"""
         res_1 = self.lp.verifySignupPage()  # # 002.1
@@ -117,8 +115,8 @@ class TestLogin():
         if len(final) > 0:
             for result in final:
                 print("inside loop test_invalidLogin:", result)
-                self.ts.mark(result[0], ("TC 007 with "+str(result[1])+", "+str(result[2])
-                             +"result:"))
+                self.ts.mark(result[0], ("TC 007 with " + str(result[1]) + ", "
+                                         + str(result[2] + "result:")))
             self.ts.markFinal(
                 "TC #007: Login with invalid credentials impossible? ", final,
                 ": TC #007 TOTALLY FAILED.")

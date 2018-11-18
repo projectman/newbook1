@@ -87,10 +87,5 @@
     }
   ],
 
-  "do_not_use":{
-      "user":"",
-      "pass":"New12345$",
-      "el_1":"//common-input[@type='email-underline-responsive']//div[text()=' This field is required. ']",
-      "el_2":"//a[text()='Log In']"
-    }
+  "category": "//div[@class='item__image']"
 }
