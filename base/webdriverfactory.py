@@ -10,6 +10,7 @@ Example:
 """
 from pages.home.login_page import LoginPage
 from selenium import webdriver
+from base.selenium_driver import SeleniumDriver
 
 class WebDriverFactory():
 
@@ -18,8 +19,9 @@ class WebDriverFactory():
         Inits WebDriverFactory class
         """
         self.browser = browser
-        lp = LoginPage(webdriver)
-        self.data = lp.get_data()
+        sd = SeleniumDriver(webdriver)
+
+        self.data = sd.get_data()
     """
         Set chrome driver and iexplorer environment based on OS
 

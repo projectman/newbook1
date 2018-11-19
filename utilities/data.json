@@ -90,7 +90,11 @@
   "models_page": "########       JUST SEPARATOR        ###########",
   "category": "//div[@class='item__title']",
   "rows": "//nb-model-list-item",
+  "number_avatars": 3,
+  "number_of_rows": 7,
+  "minimal_number_rows": 5,
   "match_text": "match your search criteria:",
-  "avatars": "//common-avatar-model[@class='avatar']"
+  "avatars": "//common-avatar-model[@class='avatar']",
+  "names": "//span[@class='name']"
 
 }

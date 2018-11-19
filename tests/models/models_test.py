@@ -15,8 +15,7 @@ class TestModels:
         """ Check all filter elements available on Models Page
         There are 7 items for "Filter by Category" on Models Page. TC # 018
         """
-        number_of_categories = 7
-        res = self.mp.verify_num_categories(number_of_categories)
+        res = self.mp.equal_num_categories()
 
         self.ts.markFinal(
             "TC #018 There must be 7 items for 'Filter by Category' "
@@ -25,10 +24,11 @@ class TestModels:
 
     def test_galeryRowsAvailable(self):
         """ Check models gallery rows available on Models page
-        There are more than 5 rows of model's gallery on page. TC # 019
+        There are more than 5 (data.json:"minimal_number_rows";
+         rows of model's gallery on page. TC # 019
         """
-        number_of_rows = 5
-        res = self.mp.verifyRows(number_of_rows)
+        num = self.mp.data["minimal_number_rows"]
+        res = self.mp.verifyRows(num)
 
         self.ts.markFinal(
             "TC #019 There must be more ro equal 5 rows in gallery"
@@ -46,13 +46,23 @@ class TestModels:
             "on Models Page. ",
             res[0] , (": TC #020 TOTALLY FAILED. " + str(res[1])))
 
-    def test_verifyAllAvatars(self):
+    def test_verifyNumberAvatars(self):
         """
         Check that all models have avatar in row. TC # 021.
         """
 
-        res = self.mp.verifyAllHaveAvatars()
+        res = self.mp.verifyNumberAvatars()
         self.ts.markFinal(
-            "TC #021 Check the every category is filtering on Models Page"
-            "on Models Page. ",
-            res, ": TC #021 TOTALLY FAILED. " )
+            "TC #021 Check the number of avatars on Models Page",
+            res, ": TC #021 TOTALLY FAILED. ")
+
+    def test_verifyEveryAvatar(self):
+        """
+        Check that all models have avatar in row. TC # 022.
+        number of avatars for checking described by data.json:"number_avatars";
+        """
+
+        res = self.mp.verifyEachAvatars()
+        self.ts.markFinal(
+            "TC #022 Check the every category is filtering on Models Page",
+            res, ": TC #021 TOTALLY FAILED. ")

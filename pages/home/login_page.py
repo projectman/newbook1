@@ -1,20 +1,14 @@
 
 import time
-from base.basepage import BasePage
+from base.selenium_driver import SeleniumDriver
 import json
 
 
-class LoginPage(BasePage):
+class LoginPage(SeleniumDriver):
 
     def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver
-        # get dictionary with data testing from data.json
-        self.data = json.load(open('utilities/data.json'))
-
-    def get_data(self):
-        """ Return dictionary with data JSON for testing."""
-        return self.data
 
     def newLogPage(self):
         """ print empty line in front of every new report. """

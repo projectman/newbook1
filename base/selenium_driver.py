@@ -5,6 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import *
 import utilities.custom_logger as cl
 from utilities.util import Util
+import json
 import logging
 import time, os
 
@@ -16,6 +17,12 @@ class SeleniumDriver():
         self.driver = driver
         self.util = Util()
 
+        # get dictionary with data testing from data.json
+        self.data = json.load(open('utilities/data.json'))
+
+    def get_data(self):
+        """ Return dictionary with data JSON for testing."""
+        return self.data
 
     def specialLogLine(self, message):
         """Create Announcement line for the new log."""
@@ -301,3 +308,17 @@ class SeleniumDriver():
         except:
             self.log.error( "Web CAN NOT be scrolled to element: " + element.text + "." )
 
+
+    def verifyPageTitle(self, titleToVerify):
+        """
+        Verify the page Title
+        Parameters:
+        titleToVerify: Title on the page that needs to be verified
+        """
+        try:
+            actualTitle = self.getTitle()
+            return self.util.verifyTextContains(actualTitle, titleToVerify)
+        except:
+            self.log.error("Failed to get page title")
+            print_stack()
+            return False

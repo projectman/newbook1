@@ -1,6 +1,8 @@
 [
-  "tests/models/models_test.py::TestModels::()::test_elementsAvailable",
-  "tests/models/models_test.py::TestModels::()::test_galeryRowsAvailable",
-  "tests/models/models_test.py::TestModels::()::test_verifyCategories",
-  "tests/models/models_test.py::TestModels::()::test_verifyAllAvatars"
+  "tests/home/login_test.py::TestLogin::()::test_validLogin",
+  "tests/home/login_test.py::TestLogin::()::test_validLogout",
+  "tests/home/login_test.py::TestLogin::()::test_backBrowser",
+  "tests/home/login_test.py::TestLogin::()::test_homePageLogoffed",
+  "tests/home/login_test.py::TestLogin::()::test_signupPage",
+  "tests/home/login_test.py::TestLogin::()::test_invalidLogin"
 ]
