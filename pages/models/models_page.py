@@ -4,6 +4,9 @@ It needs to be launched after login.
 """
 
 import time
+
+from selenium.webdriver import ActionChains
+
 from base.selenium_driver import SeleniumDriver
 import json
 import random
@@ -64,7 +67,7 @@ class ModelsPage(SeleniumDriver):
         urls = self.getListOfItems(locator)
 
         # Process every element in list.
-        for indx in range(2):    #   len(urls)):
+        for indx in range(1):    #   len(urls)): # !!! change for production
             # Create list of results
             results = []
             # for protection if element has changed after refresh;
@@ -89,7 +92,7 @@ class ModelsPage(SeleniumDriver):
             # 3. There are more than 1 row of models gallery on page;
             results.append(self.verifyRows(1))
             ## Find final result. No False in list of results.
-            self.driver.back()
+            self.driver.back()  #  !!! change to the cross.click() on icon catergory
             if False in results:
                 final = (False, results)
                 break
@@ -118,33 +121,86 @@ class ModelsPage(SeleniumDriver):
         number of avatars for checking described by data.json:"number_avatars";
         """
 
+
         # collect all avatars of gallery rows.
         avatars = self.getListOfItems(self.data["avatars"])
+        time.sleep(5)
         # collect all names of current models of gallery rows.
         names = self.getListOfItems(self.data["names"])
         equal_number = avatars == names
+
         # Chose random avatar from list with index... ;
         index_list = list(range(len(avatars)))
-        random_avatars = []
+        res_random_avatars = []
+        res_random_names = []
         for _ in range(self.data["number_avatars"]):
             # get random item from basic list of indexes
             random_indx = random.choice(index_list)
+
             # find the current index of random item in basic list of indexes
             index = index_list.index(random_indx)
+
             # took the index element from the total list
             random_element_index = index_list.pop(index)
-            # took from the avatars the item with index
-            random_avatars.append(avatars[random_element_index])
 
+            # took from the avatars hrefs afttribute of elem the item with index
+            href_property = avatars[random_element_index].get_property("href")
+            # include in list of href locator only after 25 element
+            res_random_avatars.append(href_property[24:])
+            res_random_names.append(names[random_element_index])
+
+        # Process the list of the avata
+        # rs and names
         # Took the name with this index
+        result =()
 
-        # click on the avatar
+        # Find parent handle -> Main Window
+        parent_window = self.driver.current_window_handle
+        for _ in range(len(res_random_names)):
+            act = ActionChains(self.driver)
+            expected_name = res_random_names[_].text
+            print("exected name:", expected_name)
+            # click on the avatar
+            href = res_random_avatars[_]
+            locator = "//a[@href='" + href + "']"
+            print("locator", locator)
+            avatar = self.waitElementLocated(locator)
+            self.webScrollElement(avatar)
+            # scroll from top menu panel
+            self.webScroll("up")
+            time.sleep(5)
 
-        # Verify that page of profile contains the text of chosen name with same index.
+            act.move_to_element(avatar).click(avatar).perform()
+            time.sleep(5)
 
-        # Add result in result with tuple (Boolean, "model's name")
+            # Fin all handles
+            handles = self.driver.window_handles
+            # Change the window
+            for handle in handles:
+                if handle not in parent_window:
+                    self.driver.switch_to.window(handle)
+                    print("window switched to handle")
+                    self.waitElementLocated(
+                                            self.data["name_in_profile"])
+                    self.driver.close()
+            self.driver.switch_to.window(parent_window)
+            print("window switchec to parent window")
+            # Switch to parent window  back.
 
-        # Click browser back.
+
+            # Add result in result with tuple (Boolean, "model's name")
+            # result = (expected_name == actual_name)
+            #print("expected_name, actual_name", expected_name, dir(actual_name))
+
+
+
+
+
+
+
+
+
+
 
 
         return True

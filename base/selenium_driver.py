@@ -292,11 +292,13 @@ class SeleniumDriver():
         """
         if direction == "up":
             # Scroll Up
-            self.driver.execute_script( "window.scrollBy(0, -1000);" )
+            self.driver.execute_script("window.scrollBy(0, -400);")
+            self.log.info("Web is scrolled up on 400 points.")
 
         if direction == "down":
             # Scroll Down
-            self.driver.execute_script( "window.scrollBy(0, 1000);" )
+            self.driver.execute_script("window.scrollBy(0, 400);")
+            self.log.info("Web is scrolled down on 400 points.")
 
     def webScrollElement(self, element):
         """
@@ -304,7 +306,7 @@ class SeleniumDriver():
         """
         try:
             self.driver.execute_script("arguments[0].scrollIntoView(true);", element)
-            self.log.info( "Web is scrolled to element: " + element.text + "." )
+            self.log.info( "Web is scrolled to element: " + element.get_property("href") + "." )
         except:
             self.log.error( "Web CAN NOT be scrolled to element: " + element.text + "." )
 

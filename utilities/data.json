@@ -94,7 +94,9 @@
   "number_of_rows": 7,
   "minimal_number_rows": 5,
   "match_text": "match your search criteria:",
-  "avatars": "//common-avatar-model[@class='avatar']",
-  "names": "//span[@class='name']"
+  "avatars": "//a[@common-ui='ImageURLs']",
+  "names": "//span[@class='name']",
+  "name_in_profile": "//div[@class='model-name d-flex flex-row justify-content-center justify-content-lg-start']",
+  "portfolio": "//div[contains(text(), 'Portfolio')]"
 
 }
