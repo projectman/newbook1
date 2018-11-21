@@ -3426,3 +3426,367 @@
 11/21/2018 03:48:25 PM - StatusDisplay - INFO: result on enter in markFinal is: [(True, '', ''), (True, 'man', ''), (False, 'man@for', ''), (True, '@man@for', ''), (True, 'user@mail.com', ''), (True, 'man4testing@gmail.com', ''), (True, 'man4testing@gmail.com', 's'), (True, 'user', 'New12345$'), (False, '', 's'), (True, 'user@mail.com', 'New12345$'), (False, '', 'New12345$')]
 11/21/2018 03:48:25 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #007: Login with invalid credentials impossible? 
 11/21/2018 03:48:25 PM - StatusDisplay - ERROR: TC #007: Login with invalid credentials impossible? : FULL TEST FAILED: FINALLY TC#007 INVALID LOGIN TEST FAILED
+11/21/2018 03:53:17 PM - MainDriver - INFO: ####################           NEW LOG           ####################; Newbook
+11/21/2018 03:53:17 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//a[@href='/auth/signin']' to be clickable
+11/21/2018 03:53:17 PM - MainDriver - INFO: Element '//a[@href='/auth/signin']' appeared //a[@href='/auth/signin'] on the web page
+11/21/2018 03:53:17 PM - MainDriver - INFO: Element '//a[@href='/auth/signin']' clicked with locator //a[@href='/auth/signin'] on the web page
+11/21/2018 03:53:17 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+11/21/2018 03:53:17 PM - MainDriver - INFO: Sent data 'man4testing@gmail.com' to element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+11/21/2018 03:53:17 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+11/21/2018 03:53:17 PM - MainDriver - INFO: Sent data 'New12345$' to element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+11/21/2018 03:53:17 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/21/2018 03:53:18 PM - MainDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+11/21/2018 03:53:18 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/21/2018 03:53:18 PM - MainDriver - INFO: Confirmed presence of element located with locator: //button[@title='Close'] on the web page
+11/21/2018 03:53:19 PM - MainDriver - INFO: Element Found in getElement with locator: //div[contains(text(), 'Filter by Category')] and  locatorType: xpath
+11/21/2018 03:53:19 PM - MainDriver - INFO: Element is displayed with locator: //div[contains(text(), 'Filter by Category')] locatorType: xpath
+11/21/2018 03:53:19 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : #003.1: Login verification.
+11/21/2018 03:53:19 PM - MainDriver - INFO: Current page URL from getUrl method is https://stage1.fmny.mobi/browse
+11/21/2018 03:53:19 PM - Util - INFO: Actual Text From Application Web UI --> :: https://stage1.fmny.mobi/browse
+11/21/2018 03:53:19 PM - Util - INFO: Expected Text From Application Web UI --> :: https://stage1.fmny.mobi/browse
+11/21/2018 03:53:19 PM - Util - INFO: ### VERIFICATION CONTAINS !!! Actual Text https://stage1.fmny.mobi/browseExpected text: https://stage1.fmny.mobi/browse
+11/21/2018 03:53:19 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : #003.2: Home pages URL verification.
+11/21/2018 03:53:19 PM - MainDriver - INFO: Element Found in getElement with locator: //div[@class='avatar__letter-in'] and  locatorType: xpath
+11/21/2018 03:53:19 PM - MainDriver - INFO: Element is displayed with locator: //div[@class='avatar__letter-in'] locatorType: xpath
+11/21/2018 03:53:19 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : #003.3 Avatar availability verification.
+11/21/2018 03:53:19 PM - StatusDisplay - INFO: result on enter in markFinal is: True
+11/21/2018 03:53:19 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #003: Test Models page after log in with valid credentials: 
+11/21/2018 03:53:19 PM - StatusDisplay - INFO: TC #003: Test Models page after log in with valid credentials: : FULL TEST SUCCESSFUL
+11/21/2018 03:53:19 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//div[@class='square-dummy']' to be clickable
+11/21/2018 03:53:19 PM - MainDriver - INFO: Element '//div[@class='square-dummy']' appeared //div[@class='square-dummy'] on the web page
+11/21/2018 03:53:19 PM - MainDriver - INFO: Element '//div[@class='square-dummy']' clicked with locator //div[@class='square-dummy'] on the web page
+11/21/2018 03:53:19 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//div[@class='link link_type_logout link_active']' to be clickable
+11/21/2018 03:53:19 PM - MainDriver - INFO: Element '//div[@class='link link_type_logout link_active']' appeared //div[@class='link link_type_logout link_active'] on the web page
+11/21/2018 03:53:19 PM - MainDriver - INFO: After finding element, size of text is: 23
+11/21/2018 03:53:19 PM - MainDriver - INFO: Getting text on element :: Log out of your accountNo additional info.
+11/21/2018 03:53:19 PM - MainDriver - INFO: Web is scrolled to element: Log out of your account.
+11/21/2018 03:53:19 PM - MainDriver - INFO: Element Found in getElement with locator: //div[@class='link link_type_logout link_active'] and  locatorType: xpath
+11/21/2018 03:53:19 PM - MainDriver - INFO: Clicked on element with locator: //div[@class='link link_type_logout link_active'] locatorType: xpath
+11/21/2018 03:53:19 PM - MainDriver - INFO: Current page URL from getUrl method is https://stage1.fmny.mobi/browse
+11/21/2018 03:53:19 PM - Util - INFO: Actual Text From Application Web UI --> :: https://stage1.fmny.mobi/browse
+11/21/2018 03:53:19 PM - Util - INFO: Expected Text From Application Web UI --> :: https://stage1.fmny.mobi/browse
+11/21/2018 03:53:19 PM - Util - INFO: ### VERIFICATION CONTAINS !!! Actual Text https://stage1.fmny.mobi/browseExpected text: https://stage1.fmny.mobi/browse
+11/21/2018 03:53:19 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : #004.1: URL after logout as expected.
+11/21/2018 03:53:19 PM - MainDriver - INFO: Element Found in getElement with locator: //a[text()='Log In'] and  locatorType: xpath
+11/21/2018 03:53:19 PM - MainDriver - INFO: Element is displayed with locator: //a[text()='Log In'] locatorType: xpath
+11/21/2018 03:53:19 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : #004.2: Log In link exists.
+11/21/2018 03:53:23 PM - MainDriver - ERROR: Element NOT found in getElement with locator: //div[contains(text(), 'Filter by Category')] and  locatorType: xpath
+11/21/2018 03:53:23 PM - MainDriver - ERROR: Element not displayed with locator: //div[contains(text(), 'Filter by Category')] locatorType: xpath
+11/21/2018 03:53:23 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : #004.3: Button Filter must not exist.
+11/21/2018 03:53:26 PM - MainDriver - ERROR: Element NOT found in getElement with locator: //div[@class='avatar__letter-in'] and  locatorType: xpath
+11/21/2018 03:53:26 PM - MainDriver - ERROR: Element not displayed with locator: //div[@class='avatar__letter-in'] locatorType: xpath
+11/21/2018 03:53:26 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : Avatar must not exist.
+11/21/2018 03:53:26 PM - StatusDisplay - INFO: result on enter in markFinal is: True
+11/21/2018 03:53:26 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #004: Test Models page after log off successful: 
+11/21/2018 03:53:26 PM - StatusDisplay - INFO: TC #004: Test Models page after log off successful: : FULL TEST SUCCESSFUL
+11/21/2018 03:53:29 PM - MainDriver - ERROR: Element NOT found in getElement with locator: //div[contains(text(), 'Client Sign In')] and  locatorType: xpath
+11/21/2018 03:53:29 PM - MainDriver - ERROR: Element not displayed with locator: //div[contains(text(), 'Client Sign In')] locatorType: xpath
+11/21/2018 03:53:29 PM - StatusDisplay - ERROR: ### TEST FAILED as False: #005.1: BACK button pushed.
+11/21/2018 03:53:29 PM - StatusDisplay - INFO: Screenshot: #005.1: BACK button pushed.Wed Nov 21 15:53:29 2018.png saved to directory: ../screenshots
+11/21/2018 03:53:29 PM - StatusDisplay - INFO: result on enter in markFinal is: False
+11/21/2018 03:53:29 PM - StatusDisplay - ERROR: ### TEST FAILED as False: TC #005: Push BACK button on browser with Logoffed user: 
+11/21/2018 03:53:29 PM - StatusDisplay - INFO: Screenshot: TC #005: Push BACK button on browser with Logoffed user: Wed Nov 21 15:53:29 2018.png saved to directory: ../screenshots
+11/21/2018 03:53:29 PM - StatusDisplay - ERROR: TC #005: Push BACK button on browser with Logoffed user: : FULL TEST FAILED:  : TC #005 TOTALLY FAILED.
+11/21/2018 03:53:30 PM - MainDriver - INFO: Element Found in getElement with locator: //a[@class='Navbar__logo--2skpi'] and  locatorType: xpath
+11/21/2018 03:53:30 PM - MainDriver - INFO: Element is displayed with locator: //a[@class='Navbar__logo--2skpi'] locatorType: xpath
+11/21/2018 03:53:30 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : #006.1: Visit to Home Page: Logo exists
+11/21/2018 03:53:30 PM - MainDriver - INFO: Element Found in getElement with locator: //h1[contains(text(), 'Top Local Models')] and  locatorType: xpath
+11/21/2018 03:53:30 PM - MainDriver - INFO: Element is displayed with locator: //h1[contains(text(), 'Top Local Models')] locatorType: xpath
+11/21/2018 03:53:30 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : #006.2: Visit to Home Page: 'Making better' exists 
+11/21/2018 03:53:30 PM - MainDriver - INFO: Element Found in getElement with locator: //button[contains(text(), 'Sign Up')] and  locatorType: xpath
+11/21/2018 03:53:30 PM - MainDriver - INFO: Element with locator: //button[contains(text(), 'Sign Up')]Present with locator type: xpath
+11/21/2018 03:53:30 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : #006.3: Visit to Home Page: 'Sign Up as a model' exists
+11/21/2018 03:53:30 PM - StatusDisplay - INFO: result on enter in markFinal is: True
+11/21/2018 03:53:30 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #006 & 001: Visit on Home Page with Logoffed user: 
+11/21/2018 03:53:30 PM - StatusDisplay - INFO: TC #006 & 001: Visit on Home Page with Logoffed user: : FULL TEST SUCCESSFUL
+11/21/2018 03:53:30 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//a[@href='/auth/signin']' to be clickable
+11/21/2018 03:53:30 PM - MainDriver - INFO: Element '//a[@href='/auth/signin']' appeared //a[@href='/auth/signin'] on the web page
+11/21/2018 03:53:30 PM - MainDriver - INFO: Element '//a[@href='/auth/signin']' clicked with locator //a[@href='/auth/signin'] on the web page
+11/21/2018 03:53:30 PM - MainDriver - INFO: Element Found in getElement with locator: //div[contains(text(), 'Client Sign In')] and  locatorType: xpath
+11/21/2018 03:53:30 PM - MainDriver - INFO: Element is displayed with locator: //div[contains(text(), 'Client Sign In')] locatorType: xpath
+11/21/2018 03:53:30 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : #002.1: Visit to SignIn Page: 'Client Sign In' exists 
+11/21/2018 03:53:30 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+11/21/2018 03:53:30 PM - MainDriver - INFO: Element with locator: //input[@placeholder='Enter E-mail address']Present with locator type: xpath
+11/21/2018 03:53:30 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : #002.2: Visit to SignIn Page: E-mail field is available.
+11/21/2018 03:53:30 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+11/21/2018 03:53:30 PM - MainDriver - INFO: Element with locator: //input[@placeholder='Enter password']Present with locator type: xpath
+11/21/2018 03:53:30 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : #002.3: Visit to SignIn Page: Password field is available? 
+11/21/2018 03:53:30 PM - MainDriver - INFO: Element Found in getElement with locator: //a[text()='Log In'] and  locatorType: xpath
+11/21/2018 03:53:30 PM - MainDriver - INFO: Element is displayed with locator: //a[text()='Log In'] locatorType: xpath
+11/21/2018 03:53:30 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : #002.4: Visit to SignIn Page: E-mail field available? 
+11/21/2018 03:53:30 PM - StatusDisplay - INFO: result on enter in markFinal is: True
+11/21/2018 03:53:30 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #002: Visit on SingIn Page with Logoffed user:
+11/21/2018 03:53:30 PM - StatusDisplay - INFO: TC #002: Visit on SingIn Page with Logoffed user:: FULL TEST SUCCESSFUL
+11/21/2018 03:53:30 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//a[text()='Log In']' to be clickable
+11/21/2018 03:53:30 PM - MainDriver - INFO: Element '//a[text()='Log In']' appeared //a[text()='Log In'] on the web page
+11/21/2018 03:53:31 PM - MainDriver - INFO: Element '//a[text()='Log In']' clicked with locator //a[text()='Log In'] on the web page
+11/21/2018 03:53:31 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+11/21/2018 03:53:31 PM - MainDriver - INFO: Sent data '' to element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+11/21/2018 03:53:31 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+11/21/2018 03:53:31 PM - MainDriver - INFO: Sent data '' to element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+11/21/2018 03:53:31 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/21/2018 03:53:31 PM - MainDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+11/21/2018 03:53:31 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/21/2018 03:53:31 PM - MainDriver - INFO: Element with locator: //button[text()=' Log In ']Present with locator type: xpath
+11/21/2018 03:53:31 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/21/2018 03:53:31 PM - MainDriver - INFO: Confirmed presence of element located with locator: //common-input[@type='email-underline-responsive']//div[text()=' This field is required. '] on the web page
+11/21/2018 03:53:31 PM - MainDriver - INFO: Element Found in getElement with locator: //common-input[@type='password-underline-responsive']//div[text()=' This field is required. '] and  locatorType: xpath
+11/21/2018 03:53:31 PM - MainDriver - INFO: Element is displayed with locator: //common-input[@type='password-underline-responsive']//div[text()=' This field is required. '] locatorType: xpath
+11/21/2018 03:53:33 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+11/21/2018 03:53:34 PM - MainDriver - INFO: Sent data 'man' to element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+11/21/2018 03:53:34 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+11/21/2018 03:53:34 PM - MainDriver - INFO: Sent data '' to element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+11/21/2018 03:53:34 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/21/2018 03:53:34 PM - MainDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+11/21/2018 03:53:34 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/21/2018 03:53:34 PM - MainDriver - INFO: Element with locator: //button[text()=' Log In ']Present with locator type: xpath
+11/21/2018 03:53:34 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/21/2018 03:53:34 PM - MainDriver - INFO: Confirmed presence of element located with locator: //common-input[@type='email-underline-responsive']//div[text()=' Invalid email address. '] on the web page
+11/21/2018 03:53:34 PM - MainDriver - INFO: Element Found in getElement with locator: //common-input[@type='password-underline-responsive']//div[text()=' This field is required. '] and  locatorType: xpath
+11/21/2018 03:53:34 PM - MainDriver - INFO: Element is displayed with locator: //common-input[@type='password-underline-responsive']//div[text()=' This field is required. '] locatorType: xpath
+11/21/2018 03:53:36 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+11/21/2018 03:53:36 PM - MainDriver - INFO: Sent data 'man@for' to element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+11/21/2018 03:53:36 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+11/21/2018 03:53:36 PM - MainDriver - INFO: Sent data '' to element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+11/21/2018 03:53:36 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/21/2018 03:53:36 PM - MainDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+11/21/2018 03:53:36 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/21/2018 03:53:36 PM - MainDriver - INFO: Element with locator: //button[text()=' Log In ']Present with locator type: xpath
+11/21/2018 03:53:36 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/21/2018 03:53:43 PM - MainDriver - ERROR: NOT Confirmed presence of element with locator: //common-input[@type='email-underline-responsive']//div[text()=' Invalid email address. '] on the web page
+11/21/2018 03:53:45 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+11/21/2018 03:53:45 PM - MainDriver - INFO: Sent data '@man@for' to element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+11/21/2018 03:53:45 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+11/21/2018 03:53:45 PM - MainDriver - INFO: Sent data '' to element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+11/21/2018 03:53:45 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/21/2018 03:53:46 PM - MainDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+11/21/2018 03:53:46 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/21/2018 03:53:46 PM - MainDriver - INFO: Element with locator: //button[text()=' Log In ']Present with locator type: xpath
+11/21/2018 03:53:46 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/21/2018 03:53:46 PM - MainDriver - INFO: Confirmed presence of element located with locator: //common-input[@type='email-underline-responsive']//div[text()=' Invalid email address. '] on the web page
+11/21/2018 03:53:46 PM - MainDriver - INFO: Element Found in getElement with locator: //common-input[@type='password-underline-responsive']//div[text()=' This field is required. '] and  locatorType: xpath
+11/21/2018 03:53:46 PM - MainDriver - INFO: Element is displayed with locator: //common-input[@type='password-underline-responsive']//div[text()=' This field is required. '] locatorType: xpath
+11/21/2018 03:53:48 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+11/21/2018 03:53:48 PM - MainDriver - INFO: Sent data 'user@mail.com' to element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+11/21/2018 03:53:48 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+11/21/2018 03:53:48 PM - MainDriver - INFO: Sent data '' to element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+11/21/2018 03:53:48 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/21/2018 03:53:48 PM - MainDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+11/21/2018 03:53:48 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/21/2018 03:53:48 PM - MainDriver - INFO: Element with locator: //button[text()=' Log In ']Present with locator type: xpath
+11/21/2018 03:53:48 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/21/2018 03:53:48 PM - MainDriver - INFO: Confirmed presence of element located with locator: //input[@type='email'] on the web page
+11/21/2018 03:53:48 PM - MainDriver - INFO: Element Found in getElement with locator: //common-input[@type='password-underline-responsive']//div[text()=' This field is required. '] and  locatorType: xpath
+11/21/2018 03:53:48 PM - MainDriver - INFO: Element is displayed with locator: //common-input[@type='password-underline-responsive']//div[text()=' This field is required. '] locatorType: xpath
+11/21/2018 03:53:50 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+11/21/2018 03:53:50 PM - MainDriver - INFO: Sent data 'man4testing@gmail.com' to element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+11/21/2018 03:53:50 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+11/21/2018 03:53:50 PM - MainDriver - INFO: Sent data '' to element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+11/21/2018 03:53:50 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/21/2018 03:53:50 PM - MainDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+11/21/2018 03:53:50 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/21/2018 03:53:50 PM - MainDriver - INFO: Element with locator: //button[text()=' Log In ']Present with locator type: xpath
+11/21/2018 03:53:50 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/21/2018 03:53:50 PM - MainDriver - INFO: Confirmed presence of element located with locator: //input[@type='email'] on the web page
+11/21/2018 03:53:50 PM - MainDriver - INFO: Element Found in getElement with locator: //common-input[@type='password-underline-responsive']//div[text()=' This field is required. '] and  locatorType: xpath
+11/21/2018 03:53:50 PM - MainDriver - INFO: Element is displayed with locator: //common-input[@type='password-underline-responsive']//div[text()=' This field is required. '] locatorType: xpath
+11/21/2018 03:53:52 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+11/21/2018 03:53:52 PM - MainDriver - INFO: Sent data 'man4testing@gmail.com' to element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+11/21/2018 03:53:52 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+11/21/2018 03:53:52 PM - MainDriver - INFO: Sent data 's' to element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+11/21/2018 03:53:52 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/21/2018 03:53:53 PM - MainDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+11/21/2018 03:53:53 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/21/2018 03:53:53 PM - MainDriver - INFO: Element with locator: //button[text()=' Log In ']Present with locator type: xpath
+11/21/2018 03:53:53 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/21/2018 03:53:53 PM - MainDriver - INFO: Confirmed presence of element located with locator: //span[contains(text(), 'correct email and password')] on the web page
+11/21/2018 03:53:53 PM - MainDriver - INFO: Element Found in getElement with locator: //a[text()='Log In'] and  locatorType: xpath
+11/21/2018 03:53:53 PM - MainDriver - INFO: Element is displayed with locator: //a[text()='Log In'] locatorType: xpath
+11/21/2018 03:53:55 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+11/21/2018 03:53:55 PM - MainDriver - INFO: Sent data 'user' to element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+11/21/2018 03:53:55 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+11/21/2018 03:53:55 PM - MainDriver - INFO: Sent data 'New12345$' to element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+11/21/2018 03:53:55 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/21/2018 03:53:56 PM - MainDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+11/21/2018 03:53:56 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/21/2018 03:53:56 PM - MainDriver - INFO: Element with locator: //button[text()=' Log In ']Present with locator type: xpath
+11/21/2018 03:53:56 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/21/2018 03:53:56 PM - MainDriver - INFO: Confirmed presence of element located with locator: //common-input[@type='email-underline-responsive']//div[text()=' Invalid email address. '] on the web page
+11/21/2018 03:53:56 PM - MainDriver - INFO: Element Found in getElement with locator: //a[text()='Log In'] and  locatorType: xpath
+11/21/2018 03:53:56 PM - MainDriver - INFO: Element is displayed with locator: //a[text()='Log In'] locatorType: xpath
+11/21/2018 03:53:58 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+11/21/2018 03:53:58 PM - MainDriver - INFO: Sent data '' to element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+11/21/2018 03:53:58 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+11/21/2018 03:53:58 PM - MainDriver - INFO: Sent data 's' to element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+11/21/2018 03:53:58 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/21/2018 03:53:58 PM - MainDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+11/21/2018 03:53:58 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/21/2018 03:53:58 PM - MainDriver - INFO: Element with locator: //button[text()=' Log In ']Present with locator type: xpath
+11/21/2018 03:53:58 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/21/2018 03:54:05 PM - MainDriver - ERROR: NOT Confirmed presence of element with locator: //common-input[@type='email-underline-responsive']//div[text()=' This field is required. '] on the web page
+11/21/2018 03:54:07 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+11/21/2018 03:54:07 PM - MainDriver - INFO: Sent data 'user@mail.com' to element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+11/21/2018 03:54:07 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+11/21/2018 03:54:07 PM - MainDriver - INFO: Sent data 'New12345$' to element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+11/21/2018 03:54:07 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/21/2018 03:54:07 PM - MainDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+11/21/2018 03:54:07 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/21/2018 03:54:07 PM - MainDriver - INFO: Element with locator: //button[text()=' Log In ']Present with locator type: xpath
+11/21/2018 03:54:07 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/21/2018 03:54:07 PM - MainDriver - INFO: Confirmed presence of element located with locator: //span[contains(text(), 'correct email and password')] on the web page
+11/21/2018 03:54:07 PM - MainDriver - INFO: Element Found in getElement with locator: //a[text()='Log In'] and  locatorType: xpath
+11/21/2018 03:54:07 PM - MainDriver - INFO: Element is displayed with locator: //a[text()='Log In'] locatorType: xpath
+11/21/2018 03:54:09 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+11/21/2018 03:54:09 PM - MainDriver - INFO: Sent data '' to element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+11/21/2018 03:54:09 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+11/21/2018 03:54:10 PM - MainDriver - INFO: Sent data 'New12345$' to element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+11/21/2018 03:54:10 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/21/2018 03:54:10 PM - MainDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+11/21/2018 03:54:10 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/21/2018 03:54:10 PM - MainDriver - INFO: Element with locator: //button[text()=' Log In ']Present with locator type: xpath
+11/21/2018 03:54:10 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/21/2018 03:54:17 PM - MainDriver - ERROR: NOT Confirmed presence of element with locator: //common-input[@type='email-underline-responsive']//div[text()=' This field is required. '] on the web page
+11/21/2018 03:54:19 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC 007 with , result:
+11/21/2018 03:54:19 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC 007 with man, result:
+11/21/2018 03:54:19 PM - StatusDisplay - ERROR: ### TEST FAILED as False: TC 007 with man@for, result:
+11/21/2018 03:54:19 PM - StatusDisplay - INFO: Screenshot: TC 007 with man@for, result:Wed Nov 21 15:54:19 2018.png saved to directory: ../screenshots
+11/21/2018 03:54:19 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC 007 with @man@for, result:
+11/21/2018 03:54:19 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC 007 with user@mail.com, result:
+11/21/2018 03:54:19 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC 007 with man4testing@gmail.com, result:
+11/21/2018 03:54:19 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC 007 with man4testing@gmail.com, sresult:
+11/21/2018 03:54:19 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC 007 with user, New12345$result:
+11/21/2018 03:54:19 PM - StatusDisplay - ERROR: ### TEST FAILED as False: TC 007 with , sresult:
+11/21/2018 03:54:19 PM - StatusDisplay - INFO: Screenshot: TC 007 with , sresult:Wed Nov 21 15:54:19 2018.png saved to directory: ../screenshots
+11/21/2018 03:54:19 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC 007 with user@mail.com, New12345$result:
+11/21/2018 03:54:19 PM - StatusDisplay - ERROR: ### TEST FAILED as False: TC 007 with , New12345$result:
+11/21/2018 03:54:19 PM - StatusDisplay - INFO: Screenshot: TC 007 with , New12345$result:Wed Nov 21 15:54:19 2018.png saved to directory: ../screenshots
+11/21/2018 03:54:19 PM - StatusDisplay - INFO: result on enter in markFinal is: [(True, '', ''), (True, 'man', ''), (False, 'man@for', ''), (True, '@man@for', ''), (True, 'user@mail.com', ''), (True, 'man4testing@gmail.com', ''), (True, 'man4testing@gmail.com', 's'), (True, 'user', 'New12345$'), (False, '', 's'), (True, 'user@mail.com', 'New12345$'), (False, '', 'New12345$')]
+11/21/2018 03:54:19 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #007: Login with invalid credentials impossible? 
+11/21/2018 03:54:19 PM - StatusDisplay - ERROR: TC #007: Login with invalid credentials impossible? : FULL TEST FAILED: FINALLY TC#007 INVALID LOGIN TEST FAILED
+11/21/2018 03:57:19 PM - MainDriver - INFO: ####################           NEW LOG           ####################; Newbook
+11/21/2018 03:57:19 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//a[@href='/auth/signin']' to be clickable
+11/21/2018 03:57:19 PM - MainDriver - INFO: Element '//a[@href='/auth/signin']' appeared //a[@href='/auth/signin'] on the web page
+11/21/2018 03:57:19 PM - MainDriver - INFO: Element '//a[@href='/auth/signin']' clicked with locator //a[@href='/auth/signin'] on the web page
+11/21/2018 03:57:19 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+11/21/2018 03:57:20 PM - MainDriver - INFO: Sent data 'man4testing@gmail.com' to element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+11/21/2018 03:57:20 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+11/21/2018 03:57:20 PM - MainDriver - INFO: Sent data 'New12345$' to element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+11/21/2018 03:57:20 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/21/2018 03:57:20 PM - MainDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+11/21/2018 03:57:20 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/21/2018 03:57:21 PM - MainDriver - INFO: Confirmed presence of element located with locator: //button[@title='Close'] on the web page
+11/21/2018 03:57:22 PM - MainDriver - INFO: Element List with length: 7; Found with locator: //div[@class='item__title'] and  locatorType: xpath
+11/21/2018 03:57:22 PM - Util - INFO: Expected number: 7is equal actual number: 7
+11/21/2018 03:57:22 PM - StatusDisplay - INFO: result on enter in markFinal is: True
+11/21/2018 03:57:22 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #018 There must be 7 items for 'Filter by Category' on Models Page. 
+11/21/2018 03:57:22 PM - StatusDisplay - INFO: TC #018 There must be 7 items for 'Filter by Category' on Models Page. : FULL TEST SUCCESSFUL
+11/21/2018 03:57:22 PM - MainDriver - INFO: Element List with length: 12; Found with locator: //nb-model-list-item and  locatorType: xpath
+11/21/2018 03:57:22 PM - StatusDisplay - INFO: result on enter in markFinal is: True
+11/21/2018 03:57:22 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #019 There must be more ro equal 5 rows in galleryon Models Page. 
+11/21/2018 03:57:22 PM - StatusDisplay - INFO: TC #019 There must be more ro equal 5 rows in galleryon Models Page. : FULL TEST SUCCESSFUL
+11/21/2018 03:57:23 PM - MainDriver - INFO: Element List with length: 7; Found with locator: //div[@class='item__title'] and  locatorType: xpath
+11/21/2018 03:57:23 PM - MainDriver - INFO: Element List with length: 7; Found with locator: //div[@class='item__title'] and  locatorType: xpath
+11/21/2018 03:57:27 PM - MainDriver - INFO: Current page URL from getUrl method is https://stage1.fmny.mobi/browse?tag=swim
+11/21/2018 03:57:27 PM - Util - INFO: Actual Text From Application Web UI --> :: swim
+11/21/2018 03:57:27 PM - Util - INFO: Expected Text From Application Web UI --> :: swim
+11/21/2018 03:57:27 PM - Util - INFO: ### VERIFICATION CONTAINS !!! Actual Text swimExpected text: swim
+11/21/2018 03:57:27 PM - MainDriver - INFO: Does current page includes text: match your search criteria:: True
+11/21/2018 03:57:27 PM - MainDriver - INFO: Element List with length: 5; Found with locator: //nb-model-list-item and  locatorType: xpath
+11/21/2018 03:57:28 PM - StatusDisplay - INFO: result on enter in markFinal is: True
+11/21/2018 03:57:28 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #020 Check the every category is filtering on Models Pageon Models Page. 
+11/21/2018 03:57:28 PM - StatusDisplay - INFO: TC #020 Check the every category is filtering on Models Pageon Models Page. : FULL TEST SUCCESSFUL
+11/21/2018 03:57:28 PM - MainDriver - INFO: Element List with length: 5; Found with locator: //nb-model-list-item and  locatorType: xpath
+11/21/2018 03:57:28 PM - MainDriver - INFO: Element List with length: 5; Found with locator: //a[@common-ui='ImageURLs'] and  locatorType: xpath
+11/21/2018 03:57:28 PM - StatusDisplay - INFO: result on enter in markFinal is: True
+11/21/2018 03:57:28 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #021 Check the number of avatars on Models Page
+11/21/2018 03:57:28 PM - StatusDisplay - INFO: TC #021 Check the number of avatars on Models Page: FULL TEST SUCCESSFUL
+11/21/2018 03:57:38 PM - MainDriver - INFO: Element List with length: 12; Found with locator: //a[@common-ui='ImageURLs'] and  locatorType: xpath
+11/21/2018 03:57:38 PM - MainDriver - INFO: Element List with length: 12; Found with locator: //span[@class='name'] and  locatorType: xpath
+11/21/2018 03:57:38 PM - MainDriver - INFO: Property: href of element: 
+11/21/2018 03:57:38 PM - MainDriver - INFO: Property: href of element: 
+11/21/2018 03:57:38 PM - MainDriver - INFO: Property: href of element: 
+11/21/2018 03:57:38 PM - MainDriver - INFO: After finding element, size of text is: 7
+11/21/2018 03:57:38 PM - MainDriver - INFO: Getting text on element :: Lana M.No additional info.
+11/21/2018 03:57:38 PM - MainDriver - INFO: Parent Window handle found.
+11/21/2018 03:57:38 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/21/2018 03:57:38 PM - MainDriver - INFO: Confirmed presence of element located with locator: //a[@href='/model/6d32a6b2-01b5-4e95-9bc5-1d12e64946b0'] on the web page
+11/21/2018 03:57:38 PM - MainDriver - INFO: After finding element, size of text is: 0
+11/21/2018 03:57:38 PM - MainDriver - INFO: Web is scrolled to element: .
+11/21/2018 03:57:38 PM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/21/2018 03:57:38 PM - MainDriver - INFO: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="e0b8708f-ced2-2b41-9da3-d3dd8bed0a28", element="7c2e05ce-b7b0-1748-a074-4287a5239d38")>in moveToElement hover and clicked.
+11/21/2018 03:57:43 PM - MainDriver - INFO: All Window handles found.
+11/21/2018 03:57:43 PM - MainDriver - INFO: Switched to Window in given handle argument.
+11/21/2018 03:57:43 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/21/2018 03:57:43 PM - MainDriver - INFO: Confirmed presence of element located with locator: //div[@class='model-name d-flex flex-row justify-content-center justify-content-lg-start'] on the web page
+11/21/2018 03:57:43 PM - MainDriver - INFO: After finding element, size of text is: 7
+11/21/2018 03:57:43 PM - MainDriver - INFO: Getting text on element :: Lana M.No additional info.
+11/21/2018 03:57:43 PM - Util - INFO: Actual Text From Application Web UI --> :: Lana M.
+11/21/2018 03:57:43 PM - Util - INFO: Expected Text From Application Web UI --> :: Lana M.
+11/21/2018 03:57:43 PM - Util - INFO: ### VERIFICATION CONTAINS !!! Actual Text Lana M.Expected text: Lana M.
+11/21/2018 03:57:43 PM - MainDriver - INFO: Current window had been closed.
+11/21/2018 03:57:43 PM - MainDriver - INFO: Switched to Window in given handle argument.
+11/21/2018 03:57:43 PM - MainDriver - INFO: After finding element, size of text is: 8
+11/21/2018 03:57:43 PM - MainDriver - INFO: Getting text on element :: Alisa W.No additional info.
+11/21/2018 03:57:43 PM - MainDriver - INFO: Parent Window handle found.
+11/21/2018 03:57:43 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/21/2018 03:57:43 PM - MainDriver - INFO: Confirmed presence of element located with locator: //a[@href='/model/84fb6ec7-50ed-4db9-94de-387e11ed841b'] on the web page
+11/21/2018 03:57:44 PM - MainDriver - INFO: After finding element, size of text is: 0
+11/21/2018 03:57:44 PM - MainDriver - INFO: Web is scrolled to element: .
+11/21/2018 03:57:44 PM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/21/2018 03:57:44 PM - MainDriver - INFO: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="e0b8708f-ced2-2b41-9da3-d3dd8bed0a28", element="9cdb3f26-f02b-3849-b2f4-243a35edfe59")>in moveToElement hover and clicked.
+11/21/2018 03:57:49 PM - MainDriver - INFO: All Window handles found.
+11/21/2018 03:57:49 PM - MainDriver - INFO: Switched to Window in given handle argument.
+11/21/2018 03:57:49 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/21/2018 03:57:49 PM - MainDriver - INFO: Confirmed presence of element located with locator: //div[@class='model-name d-flex flex-row justify-content-center justify-content-lg-start'] on the web page
+11/21/2018 03:57:49 PM - MainDriver - INFO: After finding element, size of text is: 8
+11/21/2018 03:57:49 PM - MainDriver - INFO: Getting text on element :: Alisa W.No additional info.
+11/21/2018 03:57:49 PM - Util - INFO: Actual Text From Application Web UI --> :: Alisa W.
+11/21/2018 03:57:49 PM - Util - INFO: Expected Text From Application Web UI --> :: Alisa W.
+11/21/2018 03:57:49 PM - Util - INFO: ### VERIFICATION CONTAINS !!! Actual Text Alisa W.Expected text: Alisa W.
+11/21/2018 03:57:49 PM - MainDriver - INFO: Current window had been closed.
+11/21/2018 03:57:49 PM - MainDriver - INFO: Switched to Window in given handle argument.
+11/21/2018 03:57:49 PM - MainDriver - INFO: After finding element, size of text is: 6
+11/21/2018 03:57:49 PM - MainDriver - INFO: Getting text on element :: Ann Z.No additional info.
+11/21/2018 03:57:49 PM - MainDriver - INFO: Parent Window handle found.
+11/21/2018 03:57:49 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/21/2018 03:57:49 PM - MainDriver - INFO: Confirmed presence of element located with locator: //a[@href='/model/6cc68122-65e2-49ff-9caa-ae20abdb405f'] on the web page
+11/21/2018 03:57:49 PM - MainDriver - INFO: After finding element, size of text is: 0
+11/21/2018 03:57:49 PM - MainDriver - INFO: Web is scrolled to element: .
+11/21/2018 03:57:49 PM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/21/2018 03:57:50 PM - MainDriver - INFO: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="e0b8708f-ced2-2b41-9da3-d3dd8bed0a28", element="623e33c6-5d6c-8a44-ab80-0eafd842ba97")>in moveToElement hover and clicked.
+11/21/2018 03:57:55 PM - MainDriver - INFO: All Window handles found.
+11/21/2018 03:57:55 PM - MainDriver - INFO: Switched to Window in given handle argument.
+11/21/2018 03:57:55 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/21/2018 03:57:55 PM - MainDriver - INFO: Confirmed presence of element located with locator: //div[@class='model-name d-flex flex-row justify-content-center justify-content-lg-start'] on the web page
+11/21/2018 03:57:55 PM - MainDriver - INFO: After finding element, size of text is: 6
+11/21/2018 03:57:55 PM - MainDriver - INFO: Getting text on element :: Ann Z.No additional info.
+11/21/2018 03:57:55 PM - Util - INFO: Actual Text From Application Web UI --> :: Ann Z.
+11/21/2018 03:57:55 PM - Util - INFO: Expected Text From Application Web UI --> :: Ann Z.
+11/21/2018 03:57:55 PM - Util - INFO: ### VERIFICATION CONTAINS !!! Actual Text Ann Z.Expected text: Ann Z.
+11/21/2018 03:57:55 PM - MainDriver - INFO: Current window had been closed.
+11/21/2018 03:57:55 PM - MainDriver - INFO: Switched to Window in given handle argument.
+11/21/2018 03:57:55 PM - StatusDisplay - INFO: result on enter in markFinal is: True
+11/21/2018 03:57:55 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #022 Check the every category is filtering on Models Page
+11/21/2018 03:57:55 PM - StatusDisplay - INFO: TC #022 Check the every category is filtering on Models Page: FULL TEST SUCCESSFUL
+11/21/2018 03:57:55 PM - MainDriver - INFO: Element List with length: 24; Found with locator: //nb-model-list-item and  locatorType: xpath
+11/21/2018 03:57:55 PM - MainDriver - INFO: Element List with length: 96; Found with locator: photo-container and  locatorType: class
+11/21/2018 03:57:55 PM - MainDriver - ERROR: Element DOES NOT clickable: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="e0b8708f-ced2-2b41-9da3-d3dd8bed0a28", element="53eba739-5dc2-ac46-980a-e3b38bc83b5d")>
+11/21/2018 03:57:55 PM - MainDriver - ERROR: Element DOES NOT clickable: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="e0b8708f-ced2-2b41-9da3-d3dd8bed0a28", element="632ccfc6-37f7-8b43-a4eb-573b65e257eb")>
+11/21/2018 03:57:55 PM - MainDriver - ERROR: Element DOES NOT clickable: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="e0b8708f-ced2-2b41-9da3-d3dd8bed0a28", element="942c12fa-2166-7e45-a686-c7158e98a035")>
+11/21/2018 03:57:55 PM - MainDriver - ERROR: Element DOES NOT clickable: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="e0b8708f-ced2-2b41-9da3-d3dd8bed0a28", element="73ffd335-1f70-6744-a244-a880ab890091")>
+11/21/2018 03:57:55 PM - MainDriver - ERROR: Element DOES NOT clickable: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="e0b8708f-ced2-2b41-9da3-d3dd8bed0a28", element="babdfc5f-3934-f548-a3c5-76e1aeb72a1f")>
+11/21/2018 03:57:55 PM - MainDriver - ERROR: Element DOES NOT clickable: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="e0b8708f-ced2-2b41-9da3-d3dd8bed0a28", element="c4ecf1ec-1b93-1f4a-b583-2bf906ab31a4")>
+11/21/2018 03:57:55 PM - MainDriver - ERROR: Element DOES NOT clickable: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="e0b8708f-ced2-2b41-9da3-d3dd8bed0a28", element="cb8a18bc-d51b-e64f-9fbd-5f1362211e61")>
+11/21/2018 03:57:55 PM - MainDriver - ERROR: Element DOES NOT clickable: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="e0b8708f-ced2-2b41-9da3-d3dd8bed0a28", element="87da7d70-ac88-2947-954a-5190b5c95590")>
+11/21/2018 03:57:55 PM - MainDriver - ERROR: Element DOES NOT clickable: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="e0b8708f-ced2-2b41-9da3-d3dd8bed0a28", element="d708b4e9-14b5-ae4f-be34-413deff3a559")>
+11/21/2018 03:57:55 PM - MainDriver - ERROR: Element DOES NOT clickable: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="e0b8708f-ced2-2b41-9da3-d3dd8bed0a28", element="92c63b31-6fb4-ef4c-8440-25bdf8ca7daf")>
+11/21/2018 03:57:55 PM - MainDriver - ERROR: Element DOES NOT clickable: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="e0b8708f-ced2-2b41-9da3-d3dd8bed0a28", element="c4f035d5-31ef-1743-b0a7-8aeffe48bb4c")>
+11/21/2018 03:57:55 PM - MainDriver - ERROR: Element DOES NOT clickable: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="e0b8708f-ced2-2b41-9da3-d3dd8bed0a28", element="cc3c029a-25f4-4242-95b3-5f56aa915661")>
+11/21/2018 03:57:55 PM - MainDriver - ERROR: Element DOES NOT clickable: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="e0b8708f-ced2-2b41-9da3-d3dd8bed0a28", element="e0ca4cfb-fdc2-4a46-a8ce-c8707b12b150")>
+11/21/2018 03:57:55 PM - MainDriver - ERROR: Element DOES NOT clickable: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="e0b8708f-ced2-2b41-9da3-d3dd8bed0a28", element="52a80fdc-eda9-1e4b-9765-3a84ff64e7ad")>
+11/21/2018 03:57:55 PM - MainDriver - ERROR: Element DOES NOT clickable: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="e0b8708f-ced2-2b41-9da3-d3dd8bed0a28", element="a307614e-2eb3-2d4e-aeda-efc855b5037b")>
+11/21/2018 03:57:55 PM - MainDriver - ERROR: Element DOES NOT clickable: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="e0b8708f-ced2-2b41-9da3-d3dd8bed0a28", element="50dc66cf-641f-b34a-a392-6ff78df27927")>
+11/21/2018 03:57:55 PM - MainDriver - ERROR: Element DOES NOT clickable: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="e0b8708f-ced2-2b41-9da3-d3dd8bed0a28", element="e60a61fc-7d01-9e45-b163-38e5e6458fa8")>
+11/21/2018 03:57:55 PM - MainDriver - ERROR: Element DOES NOT clickable: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="e0b8708f-ced2-2b41-9da3-d3dd8bed0a28", element="f7d12a5f-d22d-5a4e-bfa9-475ea78b06f7")>
+11/21/2018 03:57:55 PM - MainDriver - ERROR: Element DOES NOT clickable: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="e0b8708f-ced2-2b41-9da3-d3dd8bed0a28", element="b6c97825-671e-5f4d-b6e4-d37b09303957")>
+11/21/2018 03:57:55 PM - MainDriver - ERROR: Element DOES NOT clickable: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="e0b8708f-ced2-2b41-9da3-d3dd8bed0a28", element="fa709199-5e73-f64e-ad81-2b43e0a12f84")>

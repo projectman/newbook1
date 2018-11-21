@@ -1,10 +1,10 @@
 
 import time
-from base.selenium_driver import SeleniumDriver
+from base.main_driver import MainDriver
 import json
 
 
-class LoginPage(SeleniumDriver):
+class LoginPage(MainDriver):
 
     def __init__(self, driver):
         super().__init__(driver)

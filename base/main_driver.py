@@ -10,7 +10,7 @@ import json
 import logging
 import time, os
 
-class SeleniumDriver():
+class MainDriver():
 
     log = cl.customLogger(logging.DEBUG)
 

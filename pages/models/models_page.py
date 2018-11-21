@@ -5,11 +5,11 @@ It needs to be launched after login.
 
 import time
 
-from base.selenium_driver import SeleniumDriver
+from base.main_driver import MainDriver
 import json
 import random
 
-class ModelsPage(SeleniumDriver):
+class ModelsPage(MainDriver):
 
     def __init__(self, driver):
         super().__init__(driver)

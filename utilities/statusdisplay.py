@@ -1,9 +1,9 @@
 import utilities.custom_logger as cl
 import logging
-from base.selenium_driver import SeleniumDriver
+from base.main_driver import MainDriver
 from traceback import print_stack
 
-class StatusDisplay (SeleniumDriver):
+class StatusDisplay (MainDriver):
 
     log = cl.customLogger(logging.INFO)
 
