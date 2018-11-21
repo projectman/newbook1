@@ -39,20 +39,23 @@ class StatusDisplay (SeleniumDriver):
         """
         self.setResult(result, test_name)
 
-    def markFinal(self, test_name, result, problem_discrition):
+    def markFinal(self, test_name, result, problem_discription):
         """
         Mark the final rusult of the verification point in a test case
         this needs to be called at least onece in a test case
         This should be final test status of the test case.
         """
+        self.log.info(("result on enter in markFinal is: " + str(result)))
         self.setResult(result, test_name)
+
         if "FAIL" in self.result_list:
-            self.log.error(test_name + ": FULL TEST FAILED: " + problem_discrition)
+            self.log.error(test_name + ": FULL TEST FAILED: "
+                           + problem_discription)
             self.result_list.clear()
-            assert True == False
+            assert False
         else:
             self.log.info(str(test_name) + ": FULL TEST SUCCESSFUL")
             self.result_list.clear()
-            assert True == True
+            assert True
 
-
+    

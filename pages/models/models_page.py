@@ -5,8 +5,6 @@ It needs to be launched after login.
 
 import time
 
-from selenium.webdriver import ActionChains
-
 from base.selenium_driver import SeleniumDriver
 import json
 import random
@@ -19,7 +17,7 @@ class ModelsPage(SeleniumDriver):
 
     ########### Service methods #####################
     def getListOfItems(self, locator, locator_type="xpath"):
-        """ Return list of elments with 'locator'."""
+        """ Return list of elmenets with 'locator'."""
         return self.getElementList(locator, locator_type)
 
     def containsTextFlag(self, expected_text, actual_text):
@@ -35,13 +33,12 @@ class ModelsPage(SeleniumDriver):
         on Models Page.TC # 018, in other case False. """
 
         # Find list of elements categories icons.
-        res = self.getListOfItems(self.data["category"])
+        actual_num = len(self.getListOfItems(self.data["category"]))
 
         # !!! move to the Util() class with logs and try:
-        if len(res) == self.data["number_of_rows"]:
-            return True
-        else:
-            return False
+        expected_num = self.data["number_of_categories"]
+
+        return self.util.verifyNumbersMatch(expected_num, actual_num)
 
     def verifyRows(self, number_rows):
         """
@@ -82,9 +79,10 @@ class ModelsPage(SeleniumDriver):
             # Get actual text on the end of URL after '='
             # 1. URL page need to include title of icon category;
             actual_text = self.getUrl().split('=')[-1]
-            results.append(self.containsTextFlag(expected_text, actual_text))
+            results.append(self.util.verifyTextContains(
+                                                    expected_text, actual_text))
 
-            ## Handle with Text "models match your search criteria"
+            ## Handle with Text "modelsu match your search criteria"
             # 2. Page contains text ""... models match your search criteria""
             results.append(self.verifyPageIncludesText(self.data["match_text"]))
 
@@ -116,23 +114,22 @@ class ModelsPage(SeleniumDriver):
 
     def verifyEachAvatars(self):
         """
-        Return True if after clicking 'number' eventually chosen avatars,
+        Return Tuple of [0] boolean results compares of names
+        with tuple of names for comparing (True, (Name_expected, Name_actual).
+         if after clicking 'number' eventually chosen avatars,
         will check that it alive profile linked to avatar.
         number of avatars for checking described by data.json:"number_avatars";
         """
-
-
         # collect all avatars of gallery rows.
-        avatars = self.getListOfItems(self.data["avatars"])
-        time.sleep(5)
+        avatars = self.getElementList(self.data["avatars"])
         # collect all names of current models of gallery rows.
-        names = self.getListOfItems(self.data["names"])
-        equal_number = avatars == names
+        names = self.getElementList(self.data["names"])
 
         # Chose random avatar from list with index... ;
         index_list = list(range(len(avatars)))
         res_random_avatars = []
         res_random_names = []
+        # Arrange loop for the number of circles as in "number_avatars" json.
         for _ in range(self.data["number_avatars"]):
             # get random item from basic list of indexes
             random_indx = random.choice(index_list)
@@ -144,63 +141,92 @@ class ModelsPage(SeleniumDriver):
             random_element_index = index_list.pop(index)
 
             # took from the avatars hrefs afttribute of elem the item with index
-            href_property = avatars[random_element_index].get_property("href")
+            href_property = self.getElementProperty(
+                avatars[random_element_index], "href")
+
             # include in list of href locator only after 25 element
             res_random_avatars.append(href_property[24:])
             res_random_names.append(names[random_element_index])
 
-        # Process the list of the avata
-        # rs and names
+        # Processing of list randomly chosen names and avatars.
         # Took the name with this index
-        result =()
-
-        # Find parent handle -> Main Window
-        parent_window = self.driver.current_window_handle
+        result =[]
         for _ in range(len(res_random_names)):
-            act = ActionChains(self.driver)
-            expected_name = res_random_names[_].text
-            print("exected name:", expected_name)
+            # For current randomly chosen name
+            expected_name = self.getText(res_random_names[_])
+
+            # Find parent handle -> Main Window
+            parent_window = self.findParentWindow()
+
             # click on the avatar
             href = res_random_avatars[_]
             locator = "//a[@href='" + href + "']"
-            print("locator", locator)
             avatar = self.waitElementLocated(locator)
+            # scroll that element will be seen.
             self.webScrollElement(avatar)
             # scroll from top menu panel
             self.webScroll("up")
-            time.sleep(5)
+            # Click by JS, to open new window with profile
+            self.moveToElementAndClick(avatar, True)
 
-            act.move_to_element(avatar).click(avatar).perform()
+            # !!! Refactor via waiting that list of handles > 1
             time.sleep(5)
-
-            # Fin all handles
-            handles = self.driver.window_handles
+            # Find all handles
+            handles = self.findAllHandles()
             # Change the window
+            current_res = False
+            actual_name = ""
             for handle in handles:
                 if handle not in parent_window:
-                    self.driver.switch_to.window(handle)
-                    print("window switched to handle")
-                    self.waitElementLocated(
-                                            self.data["name_in_profile"])
-                    self.driver.close()
-            self.driver.switch_to.window(parent_window)
-            print("window switchec to parent window")
-            # Switch to parent window  back.
+                    self.switchToWindow(handle)
+                    # Find text element with Name.
+                    actual_el = self.waitElementLocated(
+                        self.data["name_in_profile"])
+                    actual_name = self.getText(actual_el)
 
+                    # Check that found text contains expectedText
+                    current_res = self.util.verifyTextContains(
+                                            expected_name, actual_name)
+                    self.closeWindow()
+                    # Switch back to parent window.
+                    self.switchToWindow(parent_window)
+                else:
+                    actual_name = "Name was not found."
+
+            # Actual name doesn't consists expected name.
+            result.append((current_res, (expected_name, actual_name)))
 
             # Add result in result with tuple (Boolean, "model's name")
             # result = (expected_name == actual_name)
-            #print("expected_name, actual_name", expected_name, dir(actual_name))
+
+        return result
+
+    def verifyNumberImagesRow(self):
+        """
+        Return: True if all first "minimal number of rows" in gallery of Models
+        have "images_per_row" (4) images per row.
+        """
+        # Collect Rows
+        rows = self.getElementList(self.data["rows"])
+        # Take only first minimal number of rows for testing (5)
+        used = self.data["minimal_number_rows"]
+        # in the second section there are 4 divs with "photo container"
+        # We need to check 20 (5 * 4) photo container elements is clickable
+        images_el = self.getElementList("photo-container", "class")
+
+        print("images len:", len(images_el))
+        res = False
+        for _ in range(used * 4):
+            # Collect number of images in row
+            # Get href of row to recognise current row
+            is_clicable = self.isElementClickable(images_el[_])
+
+            # Collect all images for the curren row.
+            # Create xpath for the images inherited curren row with href
+            # Every row: <nb-model-listt-item> has 2 sections.
 
 
+            # Compare number of images in the row with "images per row"
 
-
-
-
-
-
-
-
-
-
-        return True
+            # Create res_list result list of tuples with Bulean then Tuples
+            # of numbers expected and actual.

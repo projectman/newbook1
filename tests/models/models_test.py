@@ -61,8 +61,28 @@ class TestModels:
         Check that all models have avatar in row. TC # 022.
         number of avatars for checking described by data.json:"number_avatars";
         """
+        time.sleep(10)
+        final_list = []
+        results = self.mp.verifyEachAvatars()
+        for result in results:
+            final_list.append(result[0])
+        # is in list False - res out False
+        if False in final_list:
+            res = False
+        else:
+            res = True
 
-        res = self.mp.verifyEachAvatars()
         self.ts.markFinal(
             "TC #022 Check the every category is filtering on Models Page",
-            res, ": TC #021 TOTALLY FAILED. ")
+            res, (str(results) + ": TC #022 TOTALLY FAILED. "))
+
+    def test_allModelsAllImages(self):
+        """
+        Check all first 5 models has all 4 images in gallery row;
+        1. Check all images in rows of one Model's gallery
+        Collect all rows of images of the 1st 5 Models. Every row must have 4
+        images (neither more nor less). TC # 023.
+        """
+
+        res = self.mp.verifyNumberImagesRow()
+

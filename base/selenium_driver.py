@@ -1,3 +1,4 @@
+from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 from traceback import print_stack
 from selenium.webdriver.support.ui import WebDriverWait
@@ -19,6 +20,7 @@ class SeleniumDriver():
 
         # get dictionary with data testing from data.json
         self.data = json.load(open('utilities/data.json'))
+
 
     def get_data(self):
         """ Return dictionary with data JSON for testing."""
@@ -101,7 +103,8 @@ class SeleniumDriver():
             locatorType = locatorType.lower()
             byType = self.getByType(locatorType)
             result = self.driver.find_elements(byType, locator)
-            self.log.info( "Element List Found with locator: " + locator +
+            self.log.info( "Element List with length: " +str(len(result)) +
+                        "; Found with locator: " + locator +
                        " and  locatorType: " + locatorType )
         except:
             self.log.error( "Element LIST not Found with locator: " + locator +
@@ -158,26 +161,47 @@ class SeleniumDriver():
                           " NOT Found with locator type: " + locatorType)
             return False
 
-    def getText(self, locator="", locatorType="xpath", element=None, info=""):
+    # !!! ???? If need method for if the location is for clickable element - use this
+    # method again.
+    def isElementClickable(self, element=None):
+        """
+        Return True if element from argument is clickable.
+        In ther case return False of None if element in arguments doesn't exist.
+        """
+        # print ("methods of element: ", dir(element))
+        try:
+            if element.is_clickable:
+                self.log.info(("Element : " +
+                              str(element) + " is clickable."))
+                return True
+            else:
+                self.log.error(("Element : " +
+                              str(element) + " is NOT clickable."))
+                return False
+        except:
+            self.log.error(("Element DOES NOT clickable: " + str(element)))
+            return False
+
+    def getText(self, element, locator="", locatorType="xpath", info="No additional info."):
         """
         Get 'Text' on an element
         Either provide element or a combination of locator and locatorType
         """
         try:
-            if locator:  # This means if locator is not empty
-                self.log.debug( "In locator condition" )
-                element = self.getElement( locator, locatorType )
-            self.log.debug( "Before finding text" )
+            if element is None:  # This means if element is empty
+                self.log.info( "In locator condition: " + str(element) )
+                element = self.getElement(locator, locatorType )
+                self.log.info("Before finding text")
             text = element.text
-            self.log.debug("After finding element, size is: " + str(len(text)))
+            self.log.info("After finding element, size of text is: " + str(len(text)))
             if len( text ) == 0:
                 text = element.get_attribute( "innerText" )
             if len( text ) != 0:
-                self.log.info( "Getting text on element :: " + info )
-                self.log.info( "The text is :: '" + text + "'" )
-                text = text.strip()
+                self.log.info(("Getting text on element :: " + str(text) + info))
+                text = text
         except:
-            self.log.error( "Failed to get text on element " + info )
+            self.log.error( "Failed to get text on element " + str(element)
+                            + "; " + info)
             # print_stack()
             text = None
         return text
@@ -213,11 +237,12 @@ class SeleniumDriver():
                 element = self.getElement( locator, locatorType )
             if element is not None:
                 isDisplayed = element.is_displayed()
-                self.log.info( "Element is displayed with locator: " + locator +
-                               " locatorType: " + locatorType )
+                self.log.info( "Element is displayed with locator: "
+                               + locator + " locatorType: " + locatorType )
                 return True
             else:
-                self.log.error( "Element not displayed with locator: " + locator +
+                self.log.error(
+                    "Element not displayed with locator: " + locator +
                                " locatorType: " + locatorType )
                 return False
         except:
@@ -285,7 +310,6 @@ class SeleniumDriver():
 
         return result
 
-
     def webScroll(self, direction="up"):
         """
         Scroll element on 1000 pixels up or down.
@@ -302,14 +326,14 @@ class SeleniumDriver():
 
     def webScrollElement(self, element):
         """
-        Scroll element on 1000 pixels up or down.
+        Scroll to the element.
         """
         try:
             self.driver.execute_script("arguments[0].scrollIntoView(true);", element)
-            self.log.info( "Web is scrolled to element: " + element.get_property("href") + "." )
+            self.log.info(
+                "Web is scrolled to element: " + str(self.getText(element)) + "." )
         except:
             self.log.error( "Web CAN NOT be scrolled to element: " + element.text + "." )
-
 
     def verifyPageTitle(self, titleToVerify):
         """
@@ -324,3 +348,93 @@ class SeleniumDriver():
             self.log.error("Failed to get page title")
             print_stack()
             return False
+
+    def moveToElementAndClick(self, element, click=False):
+        """
+        It will place mose over element arg, Click on element if click=True
+        return: Noting.
+
+        """
+        try:
+            action = ActionChains(self.driver)
+            if click:
+                action.move_to_element(element).click(element).perform()
+                self.log.info("Element: " + str(element) +
+                              "in moveToElement hover and clicked.")
+            else:
+                action.move_to_element(element).perform()
+                self.log.info("Element: " + str(element) +
+                              "in moveToElement hover only.")
+        except:
+            self.log.error("Element: " + str(element) +
+                          "in moveToElement NOT hovered and clicked.")
+
+    def findParentWindow(self):
+        """
+        Return handle object of parent window. If not return None.
+        """
+
+        try:
+            res = self.driver.current_window_handle
+            self.log.info("Parent Window handle found.")
+            return res
+        except:
+            self.log.error("Parent Window handle was NOT found.")
+            return None
+
+    def findAllHandles(self):
+        """
+        Return handle object of parent window. If not return None.
+        """
+
+        try:
+            res = self.driver.window_handles
+            self.log.info("All Window handles found.")
+            return res
+        except:
+            self.log.error("NO Window handles was found.")
+            return None
+
+    def switchToWindow(self, handle):
+        """
+        Switching to the window in handle, Return nothing.
+        """
+        try:
+            self.driver.switch_to.window(handle)
+            self.log.info("Switched to Window in given handle argument.")
+        except:
+            self.log.info("CAN NOT Switch to Window in given handle argument.")
+
+    def closeWindow(self):
+        """Closing current window. Return nothing."""
+        try:
+            self.driver.close()
+            self.log.info("Current window had been closed.")
+        except:
+            self.log.info("Current window CAN NOT been closed.")
+
+    def getElementProperty(self, element, property):
+        """
+        Return property (string) of element (WebDriver element), return None if
+        there in no element, property.
+        """
+        res = None
+        try:
+            if (element is not None) and (property is not None):
+                res = element.get_property(property)
+                self.log.info(("Property: " + str(property) + " of element: " +
+                              str(element.text)))
+            else:
+                self.log.error("Property DOES NOT exists: " + str(property)
+                               + " of element: " +
+                               str(element.text))
+        except:
+            self.log.info(("Impossible to get property: " + str(property)
+                           + " of element: " + str(element.text)))
+
+        return res
+
+
+
+
+

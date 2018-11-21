@@ -19,7 +19,9 @@ def oneTimeSetUp(request, browser):
     # get variables from data.json
     lp = LoginPage(driver)
 
-    lp.newLogPage()  # print header for new log of new test.
+    lp.newLogPage()  # print header for new line for new log of new test.
+
+
     lp.clickUpLoginButton() # UP RIGHT button on Home page;
 
 

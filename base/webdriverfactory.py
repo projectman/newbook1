@@ -10,7 +10,6 @@ Example:
 """
 from pages.home.login_page import LoginPage
 from selenium import webdriver
-from base.selenium_driver import SeleniumDriver
 
 class WebDriverFactory():
 
@@ -19,9 +18,8 @@ class WebDriverFactory():
         Inits WebDriverFactory class
         """
         self.browser = browser
-        sd = SeleniumDriver(webdriver)
-
-        self.data = sd.get_data()
+        lp = LoginPage(webdriver)
+        self.data = lp.get_data()
     """
         Set chrome driver and iexplorer environment based on OS
 
@@ -55,4 +53,5 @@ class WebDriverFactory():
         # driver.maximize_window()
         # Loading browser with App URL
         driver.get(self.data["url"])
+
         return driver

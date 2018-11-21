@@ -70,7 +70,7 @@ class Util(object):
             nameList.append(self.getUniqueName(itemLength[i]))
         return nameList
 
-    def verifyTextContains(self, actualText, expectedText):
+    def verifyTextContains(self, expectedText, actualText):
         """
         Verify actual text contains expected text string
         Parameters:
@@ -128,3 +128,19 @@ class Util(object):
                 return False
         else:
             return True
+
+    def verifyNumbersMatch(self, expected_num, actual_num):
+        """
+            Return True, if the expected_num is equal actual_num.
+            In other case: False.
+        """
+        res = (expected_num == actual_num)
+        if res:
+            self.log.info(("Expected number: " + str(expected_num) +
+                           "is equal actual number: " + str(actual_num)))
+        else:
+            self.log.error(("Expected number: " + str(expected_num) +
+                            " is NOT equal actual number: " + str(
+                        actual_num)))
+        return res
+

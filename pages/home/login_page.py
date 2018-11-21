@@ -10,6 +10,10 @@ class LoginPage(SeleniumDriver):
         super().__init__(driver)
         self.driver = driver
 
+    def get_data(self):
+        """ Return dictionary with data JSON for testing."""
+        return self.data
+
     def newLogPage(self):
         """ print empty line in front of every new report. """
         str_el = "#"*20 + 10*" " +" NEW LOG " + 10*" " + 20*"#"
@@ -19,9 +23,9 @@ class LoginPage(SeleniumDriver):
     # Actions
     ## Actions. Waits and Clicks
     def clickUpLoginButton(self):
-        """ Wait Login UP-RIGHT button from Home page available
+        """ Wait Login TOP-RIGHT button from Home page available
         then click it if 2nd argument is True."""
-        self.waitForClickElement("//button[text()=' Log In ']", True)
+        self.waitForClickElement(self.data["up_login"], True)
 
     def clickSubmitButton(self):
         self.elementClick(self.data["signin_login_btn"])
@@ -82,8 +86,9 @@ class LoginPage(SeleniumDriver):
     ########################### VERIFiCations  ##################################
     #                                                                           #
     def verifyFilterExists(self):
-        """Verification that Filter button exists on the page. TC #003.1; #004.3
-        Return True or False."""
+        """Verification that Filter button exists on the page.
+        TC #003.1; #004.3
+        Return True if filter exists and Flase if doesn't exist. ."""
         # Wait first element clickable.
         # As element has default locator XPATH, it abasement.
 
@@ -95,7 +100,8 @@ class LoginPage(SeleniumDriver):
         return self.util.verifyTextContains(self.getUrl(), self.data["models_url"])
 
     def verifyAvatarExists(self):
-        """ Verification that URL of "/browser" page is the requested for TC #003.3; TC #004.4
+        """ Verification that URL of "/browser" page is the requested for
+        TC #003.3; TC #004.4
         Return True or False."""
         return self.isElementDisplayed(self.data["avatar_link"])
 
@@ -128,14 +134,14 @@ class LoginPage(SeleniumDriver):
         Visit home page when user logout verify title "New book. TC 006.2
         :return: True/False.
         """
-        return self.isElementDisplayed(self.data["made_better"])
+        return self.isElementDisplayed(self.data["text_top_local"])
 
     def verifySingupModel(self):
         """
         Visit home page when user logout verify link "Sing Up as Model" TC 006.2
         :return: True/False.
         """
-        return self.isElementPresent(self.data["signup_model"])
+        return self.isElementPresent(self.data["signup_topright"])
 
     def verifySignupPage(self):
         """
