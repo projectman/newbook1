@@ -27,6 +27,12 @@ class ModelsPage(MainDriver):
         else:
             return False
 
+    def scrolELementForClick(self, element):
+        # scroll that element will be seen.
+        self.webScrollElement(element)
+        # scroll from top menu panel
+        self.webScroll("up")
+
     ########### Main Methods #######################
     def equal_num_categories(self):
         """Return True, if are 7 items for "Filter by Category"
@@ -162,10 +168,7 @@ class ModelsPage(MainDriver):
             href = res_random_avatars[_]
             locator = "//a[@href='" + href + "']"
             avatar = self.waitElementLocated(locator)
-            # scroll that element will be seen.
-            self.webScrollElement(avatar)
-            # scroll from top menu panel
-            self.webScroll("up")
+            self.scrolELementForClick(avatar)
             # Click by JS, to open new window with profile
             self.moveToElementAndClick(avatar, True)
 
@@ -212,21 +215,34 @@ class ModelsPage(MainDriver):
         used = self.data["minimal_number_rows"]
         # in the second section there are 4 divs with "photo container"
         # We need to check 20 (5 * 4) photo container elements is clickable
-        images_el = self.getElementList("photo-container", "class")
+        images_elements = self.getElementList("photo-container", "class")
+        number_images_checking = self.data["number_images_checking"]
+        result = []
+        for _ in range(number_images_checking):
+            current_element = images_elements[_]
+            self.scrolELementForClick(current_element)
+            self.elementClick("", "", current_element)
+            # Wait cross for closing new window of photo page
 
-        print("images len:", len(images_el))
-        res = False
-        for _ in range(used * 4):
-            # Collect number of images in row
-            # Get href of row to recognise current row
-            is_clicable = self.isElementClickable(images_el[_])
+            click_el = self.waitForClickElement(self.data["image_library_close"], True)
+            if click_el is not None:
+                result.append(True)
 
-            # Collect all images for the curren row.
-            # Create xpath for the images inherited curren row with href
-            # Every row: <nb-model-listt-item> has 2 sections.
+        return self.util.absentFalseInList(result)
 
+    def verifyBookModelButton(self):
+        """Return True if possible click and get booking page for the
+        first 3 (number of booking) Models in rows of Model page. """
+        # Book models elements:
+        result = []
+        book_model_elements = self.getElementList(self.data["book_locator"])
+        number_of_booking = self.data["number_of_booking"]
+        for _ in range(number_of_booking):
+            self.elementClick("", "", book_model_elements[_])
+            # Page source contains "booking_page_text" from data.json.
+            expected_text = self.data["booking_page_text"]
+            result.append(self.verifyPageIncludesText(expected_text))
+            element = self.getElement(self.data["almost_there_close"])
+            self.moveToElementAndClick(element, True)
 
-            # Compare number of images in the row with "images per row"
-
-            # Create res_list result list of tuples with Bulean then Tuples
-            # of numbers expected and actual.
+        return self.util.absentFalseInList(result)

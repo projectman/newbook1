@@ -31,7 +31,7 @@ def oneTimeSetUp(request, browser):
     # Pop up after first log in
     # Find element 'close' and click
     try:
-        lp.waitElementLocated("//button[@title='Close']").click()
+        lp.waitForClickElement("//button[@title='Close']", True)
     except:
         print("Element close not found.")
 

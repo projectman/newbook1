@@ -15,6 +15,7 @@ class TestModels:
         """ Check all filter elements available on Models Page
         There are 7 items for "Filter by Category" on Models Page. TC # 018
         """
+        time.sleep(7)
         res = self.mp.equal_num_categories()
 
         self.ts.markFinal(
@@ -79,10 +80,25 @@ class TestModels:
     def test_allModelsAllImages(self):
         """
         Check all first 5 models has all 4 images in gallery row;
-        1. Check all images in rows of one Model's gallery
-        Collect all rows of images of the 1st 5 Models. Every row must have 4
+        1. Check 10 images in rows of one Model's gallery
+        Verify first 10 images that they are availble.
+        This number described by key "number_images_checking' in data.json
         images (neither more nor less). TC # 023.
         """
 
         res = self.mp.verifyNumberImagesRow()
+        self.ts.markFinal(
+            "TC #023 Check first 12 images on Models Page, they are clickable",
+            res,": TC #023. test_allModelsAllImages TOTALLY FAILED. ")
+
+    def test_verifyBookModels(self):
+        """
+        Check the frist 3 models can be clicked by "Book model".
+        TC # 024.
+        """
+        res = self.mp.verifyBookModelButton()
+        self.ts.markFinal(
+            "TC #024 Check first 3 Models on 'Book Model' button on Models Page, ",
+            res, ": TC #024. test_verifyBookModels TOTALLY FAILED. ")
+
 

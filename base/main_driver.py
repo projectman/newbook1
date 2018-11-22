@@ -111,14 +111,18 @@ class MainDriver():
                            " and  locatorType: " + locatorType )
         return result
 
-    def elementClick(self, locator='', locatorType="xpath"):
+    def elementClick(self, locator='', locatorType="xpath", element=None):
         """
         Either provide element or a combination of locator and locatorType
         """
         try:
-            element = self.getElement(locator, locatorType)
-            element.click()
-            self.log.info("Clicked on element with locator: " + locator +
+            if element is not None:
+                element.click()
+                self.log.info(("Clicked on recieved element: " + str(element)))
+            else:
+                element = self.getElement(locator, locatorType)
+                element.click()
+                self.log.info("Clicked on element with locator: " + locator +
                           " locatorType: " + locatorType)
         except:
             self.log.error("Cannot click on the element with locator: " +

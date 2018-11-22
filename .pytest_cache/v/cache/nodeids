@@ -4,5 +4,6 @@
   "tests/models/models_test.py::TestModels::()::test_verifyCategories",
   "tests/models/models_test.py::TestModels::()::test_verifyNumberAvatars",
   "tests/models/models_test.py::TestModels::()::test_verifyEveryAvatar",
-  "tests/models/models_test.py::TestModels::()::test_allModelsAllImages"
+  "tests/models/models_test.py::TestModels::()::test_allModelsAllImages",
+  "tests/models/models_test.py::TestModels::()::test_verifyBookModels"
 ]

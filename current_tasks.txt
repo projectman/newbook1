@@ -4,5 +4,8 @@
 
 Tasks before production:
 
-1. delete time.slip in invalid login test;
+1. distribute login by pages?
+2. delete time.slip in invalid login test;
 2. increase number of loops in control of category filter;
+3. "number_images_checking" of images increase to
+4. clean code: change the functions names as function_name etc;

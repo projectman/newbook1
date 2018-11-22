@@ -86,7 +86,6 @@
       "el_2":"//a[text()='Log In']"
     }
   ],
-
   "models_page": "########       JUST SEPARATOR        ###########",
   "category": "//div[@class='item__title']",
   "rows": "//nb-model-list-item",
@@ -99,6 +98,11 @@
   "names": "//span[@class='name']",
   "name_in_profile": "//div[@class='model-name d-flex flex-row justify-content-center justify-content-lg-start']",
   "portfolio": "//div[contains(text(), 'Portfolio')]",
-  "photo_container": "'photo-container', 'class'"
-
+  "photo_container": "'photo-container', 'class'",
+  "number_images_checking": 3,
+  "image_library_close": "//nb-browse//div[@class='modal__close']",
+  "almost_there_close": "//common-pending-modal[@id='pending-contact']//div[@class='modal__close']",
+  "number_of_booking": 3,
+  "book_locator": "//button[contains(text(), ' Book Model ')]",
+  "booking_page_text": "Almost there"
 }

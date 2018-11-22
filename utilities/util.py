@@ -137,10 +137,29 @@ class Util(object):
         res = (expected_num == actual_num)
         if res:
             self.log.info(("Expected number: " + str(expected_num) +
-                           "is equal actual number: " + str(actual_num)))
+                           " is equal actual number: " + str(actual_num)))
         else:
             self.log.error(("Expected number: " + str(expected_num) +
                             " is NOT equal actual number: " + str(
                         actual_num)))
         return res
 
+    def absentFalseInList(self, list_in):
+        """
+        Return False if in the list_in (list of booleans)
+        will be found one False. In other case return True.
+        """
+        try:
+            if all(list_in) and len(list_in) > 0:
+                self.log.info(("In incoming list only True: "
+                               + str(list_in)))
+                return True
+
+            else:
+                self.log.info(("In incoming list has False or lenght == 0 : "
+                               + str(list_in)))
+                return False
+        except:
+            self.log.error(("Incoming argument list_in is not sequence: "
+                            + str(list_in)))
+            return False
