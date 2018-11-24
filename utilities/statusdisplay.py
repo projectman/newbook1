@@ -52,10 +52,10 @@ class StatusDisplay (MainDriver):
             self.log.error(test_name + ": FULL TEST FAILED: "
                            + problem_discription)
             self.result_list.clear()
-            assert False
+            assert False == True
         else:
             self.log.info(str(test_name) + ": FULL TEST SUCCESSFUL")
             self.result_list.clear()
-            assert True
+            assert True == True
 
     

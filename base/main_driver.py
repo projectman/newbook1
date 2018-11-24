@@ -118,7 +118,7 @@ class MainDriver():
         try:
             if element is not None:
                 element.click()
-                self.log.info(("Clicked on recieved element: " + str(element)))
+                self.log.info(("Clicked on received element: " + str(element)))
             else:
                 element = self.getElement(locator, locatorType)
                 element.click()

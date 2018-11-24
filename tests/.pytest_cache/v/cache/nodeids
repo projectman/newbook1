@@ -1,0 +1,5 @@
+[
+  "test_py.py::test_set_comparison",
+  "home/login_test.py::LoginTests::test_invalidLogin",
+  "home/login_test.py::LoginTests::test_validLogin"
+]

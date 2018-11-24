@@ -5414,3 +5414,734 @@
 11/22/2018 10:44:54 AM - StatusDisplay - INFO: result on enter in markFinal is: True
 11/22/2018 10:44:54 AM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #024 Check first 3 Models on 'Book Model' button on Models Page, 
 11/22/2018 10:44:54 AM - StatusDisplay - INFO: TC #024 Check first 3 Models on 'Book Model' button on Models Page, : FULL TEST SUCCESSFUL
+11/24/2018 10:52:34 AM - MainDriver - INFO: ####################           NEW LOG           ####################; Newbook
+11/24/2018 10:52:34 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//a[@href='/auth/signin']' to be clickable
+11/24/2018 10:52:34 AM - MainDriver - INFO: Element '//a[@href='/auth/signin']' appeared //a[@href='/auth/signin'] on the web page
+11/24/2018 10:52:34 AM - MainDriver - INFO: Element '//a[@href='/auth/signin']' clicked with locator //a[@href='/auth/signin'] on the web page
+11/24/2018 10:52:34 AM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+11/24/2018 10:52:34 AM - MainDriver - INFO: Sent data 'man4testing@gmail.com' to element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+11/24/2018 10:52:34 AM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+11/24/2018 10:52:35 AM - MainDriver - INFO: Sent data 'New12345$' to element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+11/24/2018 10:52:35 AM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/24/2018 10:52:35 AM - MainDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+11/24/2018 10:52:35 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//button[@title='Close']' to be clickable
+11/24/2018 10:52:36 AM - MainDriver - INFO: Element '//button[@title='Close']' appeared //button[@title='Close'] on the web page
+11/24/2018 10:52:36 AM - MainDriver - INFO: Element '//button[@title='Close']' clicked with locator //button[@title='Close'] on the web page
+11/24/2018 10:52:43 AM - MainDriver - INFO: Element List with length: 7; Found with locator: //div[@class='item__title'] and  locatorType: xpath
+11/24/2018 10:52:43 AM - Util - INFO: Expected number: 7 is equal actual number: 7
+11/24/2018 10:52:43 AM - StatusDisplay - INFO: result on enter in markFinal is: True
+11/24/2018 10:52:43 AM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #018 There must be 7 items for 'Filter by Category' on Models Page. 
+11/24/2018 10:52:43 AM - StatusDisplay - INFO: TC #018 There must be 7 items for 'Filter by Category' on Models Page. : FULL TEST SUCCESSFUL
+11/24/2018 10:52:43 AM - MainDriver - INFO: Element List with length: 12; Found with locator: //nb-model-list-item and  locatorType: xpath
+11/24/2018 10:52:43 AM - StatusDisplay - INFO: result on enter in markFinal is: True
+11/24/2018 10:52:43 AM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #019 There must be more ro equal 5 rows in galleryon Models Page. 
+11/24/2018 10:52:43 AM - StatusDisplay - INFO: TC #019 There must be more ro equal 5 rows in galleryon Models Page. : FULL TEST SUCCESSFUL
+11/24/2018 10:52:43 AM - MainDriver - INFO: Element List with length: 7; Found with locator: //div[@class='item__title'] and  locatorType: xpath
+11/24/2018 10:52:43 AM - MainDriver - INFO: Element List with length: 7; Found with locator: //div[@class='item__title'] and  locatorType: xpath
+11/24/2018 10:52:46 AM - MainDriver - INFO: Current page URL from getUrl method is https://stage1.fmny.mobi/browse?tag=swim
+11/24/2018 10:52:46 AM - Util - INFO: Actual Text From Application Web UI --> :: swim
+11/24/2018 10:52:46 AM - Util - INFO: Expected Text From Application Web UI --> :: swim
+11/24/2018 10:52:46 AM - Util - INFO: ### VERIFICATION CONTAINS !!! Actual Text swimExpected text: swim
+11/24/2018 10:52:47 AM - MainDriver - INFO: Does current page includes text: match your search criteria:: True
+11/24/2018 10:52:47 AM - MainDriver - INFO: Element List with length: 5; Found with locator: //nb-model-list-item and  locatorType: xpath
+11/24/2018 10:52:47 AM - StatusDisplay - INFO: result on enter in markFinal is: True
+11/24/2018 10:52:47 AM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #020 Check the every category is filtering on Models Pageon Models Page. 
+11/24/2018 10:52:47 AM - StatusDisplay - INFO: TC #020 Check the every category is filtering on Models Pageon Models Page. : FULL TEST SUCCESSFUL
+11/24/2018 10:52:47 AM - MainDriver - INFO: Element List with length: 5; Found with locator: //nb-model-list-item and  locatorType: xpath
+11/24/2018 10:52:47 AM - MainDriver - INFO: Element List with length: 5; Found with locator: //a[@common-ui='ImageURLs'] and  locatorType: xpath
+11/24/2018 10:52:47 AM - StatusDisplay - INFO: result on enter in markFinal is: True
+11/24/2018 10:52:47 AM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #021 Check the number of avatars on Models Page
+11/24/2018 10:52:47 AM - StatusDisplay - INFO: TC #021 Check the number of avatars on Models Page: FULL TEST SUCCESSFUL
+11/24/2018 10:52:57 AM - MainDriver - INFO: Element List with length: 12; Found with locator: //a[@common-ui='ImageURLs'] and  locatorType: xpath
+11/24/2018 10:52:57 AM - MainDriver - INFO: Element List with length: 12; Found with locator: //span[@class='name'] and  locatorType: xpath
+11/24/2018 10:52:57 AM - MainDriver - INFO: Property: href of element: 
+11/24/2018 10:52:57 AM - MainDriver - INFO: Property: href of element: 
+11/24/2018 10:52:57 AM - MainDriver - INFO: Property: href of element: 
+11/24/2018 10:52:57 AM - MainDriver - INFO: After finding element, size of text is: 9
+11/24/2018 10:52:57 AM - MainDriver - INFO: Getting text on element :: Johnny J.No additional info.
+11/24/2018 10:52:57 AM - MainDriver - INFO: Parent Window handle found.
+11/24/2018 10:52:57 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 10:52:57 AM - MainDriver - INFO: Confirmed presence of element located with locator: //a[@href='/model/1f582cf5-f060-45d8-ac01-5b336b1618e3'] on the web page
+11/24/2018 10:52:57 AM - MainDriver - INFO: After finding element, size of text is: 0
+11/24/2018 10:52:57 AM - MainDriver - INFO: Web is scrolled to element: .
+11/24/2018 10:52:57 AM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/24/2018 10:52:57 AM - MainDriver - INFO: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="60fa38a1-f070-1f4c-9f38-5a874c2dab4b", element="b2dbf5f2-e395-6247-82dd-4f89b6e54c1f")>in moveToElement hover and clicked.
+11/24/2018 10:53:02 AM - MainDriver - INFO: All Window handles found.
+11/24/2018 10:53:02 AM - MainDriver - INFO: After finding element, size of text is: 7
+11/24/2018 10:53:02 AM - MainDriver - INFO: Getting text on element :: Lana M.No additional info.
+11/24/2018 10:53:02 AM - MainDriver - INFO: Parent Window handle found.
+11/24/2018 10:53:02 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 10:53:02 AM - MainDriver - INFO: Confirmed presence of element located with locator: //a[@href='/model/6d32a6b2-01b5-4e95-9bc5-1d12e64946b0'] on the web page
+11/24/2018 10:53:02 AM - MainDriver - INFO: After finding element, size of text is: 0
+11/24/2018 10:53:02 AM - MainDriver - INFO: Web is scrolled to element: .
+11/24/2018 10:53:02 AM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/24/2018 10:53:03 AM - MainDriver - INFO: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="60fa38a1-f070-1f4c-9f38-5a874c2dab4b", element="1343f166-7d81-1e40-8d44-a7ca4e3e5816")>in moveToElement hover and clicked.
+11/24/2018 10:53:08 AM - MainDriver - INFO: All Window handles found.
+11/24/2018 10:53:08 AM - MainDriver - INFO: Switched to Window in given handle argument.
+11/24/2018 10:53:08 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 10:53:08 AM - MainDriver - INFO: Confirmed presence of element located with locator: //div[@class='model-name d-flex flex-row justify-content-center justify-content-lg-start'] on the web page
+11/24/2018 10:53:08 AM - MainDriver - INFO: After finding element, size of text is: 7
+11/24/2018 10:53:08 AM - MainDriver - INFO: Getting text on element :: Lana M.No additional info.
+11/24/2018 10:53:08 AM - Util - INFO: Actual Text From Application Web UI --> :: Lana M.
+11/24/2018 10:53:08 AM - Util - INFO: Expected Text From Application Web UI --> :: Lana M.
+11/24/2018 10:53:08 AM - Util - INFO: ### VERIFICATION CONTAINS !!! Actual Text Lana M.Expected text: Lana M.
+11/24/2018 10:53:08 AM - MainDriver - INFO: Current window had been closed.
+11/24/2018 10:53:08 AM - MainDriver - INFO: Switched to Window in given handle argument.
+11/24/2018 10:53:08 AM - MainDriver - INFO: After finding element, size of text is: 8
+11/24/2018 10:53:08 AM - MainDriver - INFO: Getting text on element :: Anna+ Z.No additional info.
+11/24/2018 10:53:08 AM - MainDriver - INFO: Parent Window handle found.
+11/24/2018 10:53:08 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 10:53:08 AM - MainDriver - INFO: Confirmed presence of element located with locator: //a[@href='/model/e65e3ea2-e760-4d96-99de-32db549bd818'] on the web page
+11/24/2018 10:53:08 AM - MainDriver - INFO: After finding element, size of text is: 0
+11/24/2018 10:53:08 AM - MainDriver - INFO: Web is scrolled to element: .
+11/24/2018 10:53:08 AM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/24/2018 10:53:09 AM - MainDriver - INFO: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="60fa38a1-f070-1f4c-9f38-5a874c2dab4b", element="7eab10a6-6780-d844-94f0-d5ec4fa0dcc7")>in moveToElement hover and clicked.
+11/24/2018 10:53:14 AM - MainDriver - INFO: All Window handles found.
+11/24/2018 10:53:14 AM - MainDriver - INFO: Switched to Window in given handle argument.
+11/24/2018 10:53:14 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 10:53:14 AM - MainDriver - INFO: Confirmed presence of element located with locator: //div[@class='model-name d-flex flex-row justify-content-center justify-content-lg-start'] on the web page
+11/24/2018 10:53:14 AM - MainDriver - INFO: After finding element, size of text is: 8
+11/24/2018 10:53:14 AM - MainDriver - INFO: Getting text on element :: Anna+ Z.No additional info.
+11/24/2018 10:53:14 AM - Util - INFO: Actual Text From Application Web UI --> :: Anna+ Z.
+11/24/2018 10:53:14 AM - Util - INFO: Expected Text From Application Web UI --> :: Anna+ Z.
+11/24/2018 10:53:14 AM - Util - INFO: ### VERIFICATION CONTAINS !!! Actual Text Anna+ Z.Expected text: Anna+ Z.
+11/24/2018 10:53:14 AM - MainDriver - INFO: Current window had been closed.
+11/24/2018 10:53:14 AM - MainDriver - INFO: Switched to Window in given handle argument.
+11/24/2018 10:53:14 AM - StatusDisplay - INFO: result on enter in markFinal is: False
+11/24/2018 10:53:14 AM - StatusDisplay - ERROR: ### TEST FAILED as False: TC #022 Check the every category is filtering on Models Page
+11/24/2018 10:53:14 AM - StatusDisplay - INFO: Screenshot: TC #022 Check the every category is filtering on Models PageSat Nov 24 10:53:14 2018.png saved to directory: ../screenshots
+11/24/2018 10:53:14 AM - StatusDisplay - ERROR: TC #022 Check the every category is filtering on Models Page: FULL TEST FAILED: [(False, ('Johnny J.', 'Name was not found.')), (True, ('Lana M.', 'Lana M.')), (True, ('Anna+ Z.', 'Anna+ Z.'))]: TC #022 test_verifyEveryAvatar TOTALLY FAILED. 
+11/24/2018 10:53:14 AM - MainDriver - INFO: Element List with length: 24; Found with locator: //nb-model-list-item and  locatorType: xpath
+11/24/2018 10:53:14 AM - MainDriver - INFO: Element List with length: 96; Found with locator: photo-container and  locatorType: class
+11/24/2018 10:53:14 AM - MainDriver - INFO: After finding element, size of text is: 0
+11/24/2018 10:53:14 AM - MainDriver - INFO: Getting text on element :: Quick PreviewNo additional info.
+11/24/2018 10:53:14 AM - MainDriver - INFO: Web is scrolled to element: Quick Preview.
+11/24/2018 10:53:14 AM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/24/2018 10:53:15 AM - MainDriver - INFO: Clicked on recieved element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="60fa38a1-f070-1f4c-9f38-5a874c2dab4b", element="f6ce27f7-4de9-0340-9f43-8fe78db90e7d")>
+11/24/2018 10:53:15 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//nb-browse//div[@class='modal__close']' to be clickable
+11/24/2018 10:53:15 AM - MainDriver - INFO: Element '//nb-browse//div[@class='modal__close']' appeared //nb-browse//div[@class='modal__close'] on the web page
+11/24/2018 10:53:15 AM - MainDriver - INFO: Element '//nb-browse//div[@class='modal__close']' clicked with locator //nb-browse//div[@class='modal__close'] on the web page
+11/24/2018 10:53:15 AM - MainDriver - INFO: After finding element, size of text is: 0
+11/24/2018 10:53:15 AM - MainDriver - INFO: Getting text on element :: Quick PreviewNo additional info.
+11/24/2018 10:53:15 AM - MainDriver - INFO: Web is scrolled to element: Quick Preview.
+11/24/2018 10:53:15 AM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/24/2018 10:53:16 AM - MainDriver - INFO: Clicked on recieved element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="60fa38a1-f070-1f4c-9f38-5a874c2dab4b", element="a21766f2-2acd-284c-968d-b7639e0e7c8f")>
+11/24/2018 10:53:16 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//nb-browse//div[@class='modal__close']' to be clickable
+11/24/2018 10:53:16 AM - MainDriver - INFO: Element '//nb-browse//div[@class='modal__close']' appeared //nb-browse//div[@class='modal__close'] on the web page
+11/24/2018 10:53:16 AM - MainDriver - INFO: Element '//nb-browse//div[@class='modal__close']' clicked with locator //nb-browse//div[@class='modal__close'] on the web page
+11/24/2018 10:53:17 AM - MainDriver - INFO: After finding element, size of text is: 0
+11/24/2018 10:53:17 AM - MainDriver - INFO: Getting text on element :: Quick PreviewNo additional info.
+11/24/2018 10:53:17 AM - MainDriver - INFO: Web is scrolled to element: Quick Preview.
+11/24/2018 10:53:17 AM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/24/2018 10:53:17 AM - MainDriver - INFO: Clicked on recieved element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="60fa38a1-f070-1f4c-9f38-5a874c2dab4b", element="b6ec543f-cbeb-dd4a-82b0-f292adb00dfe")>
+11/24/2018 10:53:17 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//nb-browse//div[@class='modal__close']' to be clickable
+11/24/2018 10:53:17 AM - MainDriver - INFO: Element '//nb-browse//div[@class='modal__close']' appeared //nb-browse//div[@class='modal__close'] on the web page
+11/24/2018 10:53:18 AM - MainDriver - INFO: Element '//nb-browse//div[@class='modal__close']' clicked with locator //nb-browse//div[@class='modal__close'] on the web page
+11/24/2018 10:53:18 AM - Util - INFO: In incoming list only True: [True, True, True]
+11/24/2018 10:53:18 AM - StatusDisplay - INFO: result on enter in markFinal is: True
+11/24/2018 10:53:18 AM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #023 Check first 12 images on Models Page, they are clickable
+11/24/2018 10:53:18 AM - StatusDisplay - INFO: TC #023 Check first 12 images on Models Page, they are clickable: FULL TEST SUCCESSFUL
+11/24/2018 10:53:18 AM - MainDriver - INFO: Element List with length: 24; Found with locator: //button[contains(text(), ' Book Model ')] and  locatorType: xpath
+11/24/2018 10:53:18 AM - MainDriver - INFO: Clicked on recieved element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="60fa38a1-f070-1f4c-9f38-5a874c2dab4b", element="76dff703-a25f-6e4c-8426-e54674410531")>
+11/24/2018 10:53:18 AM - MainDriver - INFO: Does current page includes text: Almost there: True
+11/24/2018 10:53:18 AM - MainDriver - INFO: Element Found in getElement with locator: //common-pending-modal[@id='pending-contact']//div[@class='modal__close'] and  locatorType: xpath
+11/24/2018 10:53:19 AM - MainDriver - INFO: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="60fa38a1-f070-1f4c-9f38-5a874c2dab4b", element="1b57c170-05fd-3740-876f-f88fff7ff461")>in moveToElement hover and clicked.
+11/24/2018 10:53:19 AM - MainDriver - ERROR: Cannot click on the element with locator:  locatorType: 
+11/24/2018 10:53:19 AM - MainDriver - INFO: Does current page includes text: Almost there: True
+11/24/2018 10:53:19 AM - MainDriver - INFO: Element Found in getElement with locator: //common-pending-modal[@id='pending-contact']//div[@class='modal__close'] and  locatorType: xpath
+11/24/2018 10:53:19 AM - MainDriver - ERROR: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="60fa38a1-f070-1f4c-9f38-5a874c2dab4b", element="1b57c170-05fd-3740-876f-f88fff7ff461")>in moveToElement NOT hovered and clicked.
+11/24/2018 10:53:19 AM - MainDriver - INFO: Clicked on recieved element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="60fa38a1-f070-1f4c-9f38-5a874c2dab4b", element="a62c1fbc-b134-1143-ac0d-addd2ee2377d")>
+11/24/2018 10:53:20 AM - MainDriver - INFO: Does current page includes text: Almost there: True
+11/24/2018 10:53:20 AM - MainDriver - INFO: Element Found in getElement with locator: //common-pending-modal[@id='pending-contact']//div[@class='modal__close'] and  locatorType: xpath
+11/24/2018 10:53:20 AM - MainDriver - INFO: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="60fa38a1-f070-1f4c-9f38-5a874c2dab4b", element="1b57c170-05fd-3740-876f-f88fff7ff461")>in moveToElement hover and clicked.
+11/24/2018 10:53:20 AM - Util - INFO: In incoming list only True: [True, True, True]
+11/24/2018 10:53:20 AM - StatusDisplay - INFO: result on enter in markFinal is: True
+11/24/2018 10:53:20 AM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #024 Check first 3 Models on 'Book Model' button on Models Page, 
+11/24/2018 10:53:20 AM - StatusDisplay - INFO: TC #024 Check first 3 Models on 'Book Model' button on Models Page, : FULL TEST SUCCESSFUL
+11/24/2018 11:26:50 AM - MainDriver - INFO: ####################           NEW LOG           ####################; Newbook
+11/24/2018 11:26:50 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//a[@href='/auth/signin']' to be clickable
+11/24/2018 11:26:50 AM - MainDriver - INFO: Element '//a[@href='/auth/signin']' appeared //a[@href='/auth/signin'] on the web page
+11/24/2018 11:26:51 AM - MainDriver - INFO: Element '//a[@href='/auth/signin']' clicked with locator //a[@href='/auth/signin'] on the web page
+11/24/2018 11:26:51 AM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+11/24/2018 11:26:51 AM - MainDriver - INFO: Sent data 'man4testing@gmail.com' to element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+11/24/2018 11:26:51 AM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+11/24/2018 11:26:52 AM - MainDriver - INFO: Sent data 'New12345$' to element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+11/24/2018 11:26:52 AM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/24/2018 11:26:52 AM - MainDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+11/24/2018 11:26:52 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//button[@title='Close']' to be clickable
+11/24/2018 11:26:59 AM - MainDriver - ERROR: Element '//button[@title='Close']' NOT appeared //button[@title='Close'] on the web page
+11/24/2018 11:27:06 AM - MainDriver - INFO: Element List with length: 7; Found with locator: //div[@class='item__title'] and  locatorType: xpath
+11/24/2018 11:27:06 AM - Util - INFO: Expected number: 7 is equal actual number: 7
+11/24/2018 11:27:06 AM - StatusDisplay - INFO: result on enter in markFinal is: True
+11/24/2018 11:27:06 AM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #018 There must be 7 items for 'Filter by Category' on Models Page. 
+11/24/2018 11:27:06 AM - StatusDisplay - INFO: TC #018 There must be 7 items for 'Filter by Category' on Models Page. : FULL TEST SUCCESSFUL
+11/24/2018 11:27:06 AM - MainDriver - INFO: Element List with length: 12; Found with locator: //nb-model-list-item and  locatorType: xpath
+11/24/2018 11:27:06 AM - StatusDisplay - INFO: result on enter in markFinal is: True
+11/24/2018 11:27:06 AM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #019 There must be more ro equal 5 rows in galleryon Models Page. 
+11/24/2018 11:27:06 AM - StatusDisplay - INFO: TC #019 There must be more ro equal 5 rows in galleryon Models Page. : FULL TEST SUCCESSFUL
+11/24/2018 11:27:06 AM - MainDriver - INFO: Element List with length: 7; Found with locator: //div[@class='item__title'] and  locatorType: xpath
+11/24/2018 11:27:06 AM - MainDriver - INFO: Element List with length: 7; Found with locator: //div[@class='item__title'] and  locatorType: xpath
+11/24/2018 11:27:06 AM - MainDriver - INFO: Element List with length: 12; Found with locator: //nb-model-list-item and  locatorType: xpath
+11/24/2018 11:27:06 AM - MainDriver - INFO: Element List with length: 12; Found with locator: //a[@common-ui='ImageURLs'] and  locatorType: xpath
+11/24/2018 11:27:06 AM - StatusDisplay - INFO: result on enter in markFinal is: True
+11/24/2018 11:27:06 AM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #021 Check the number of avatars on Models Page
+11/24/2018 11:27:06 AM - StatusDisplay - INFO: TC #021 Check the number of avatars on Models Page: FULL TEST SUCCESSFUL
+11/24/2018 11:27:06 AM - MainDriver - INFO: Element List with length: 12; Found with locator: //a[@common-ui='ImageURLs'] and  locatorType: xpath
+11/24/2018 11:27:06 AM - MainDriver - INFO: Element List with length: 12; Found with locator: //span[@class='name'] and  locatorType: xpath
+11/24/2018 11:27:06 AM - MainDriver - INFO: Property: href of element: 
+11/24/2018 11:27:06 AM - MainDriver - INFO: Property: href of element: 
+11/24/2018 11:27:06 AM - MainDriver - INFO: Property: href of element: 
+11/24/2018 11:27:06 AM - MainDriver - INFO: After finding element, size of text is: 7
+11/24/2018 11:27:06 AM - MainDriver - INFO: Getting text on element :: Lana M.No additional info.
+11/24/2018 11:27:06 AM - MainDriver - INFO: Parent Window handle found.
+11/24/2018 11:27:06 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 11:27:06 AM - MainDriver - INFO: Confirmed presence of element located with locator: //a[@href='/model/6d32a6b2-01b5-4e95-9bc5-1d12e64946b0'] on the web page
+11/24/2018 11:27:06 AM - MainDriver - INFO: After finding element, size of text is: 0
+11/24/2018 11:27:06 AM - MainDriver - INFO: Web is scrolled to element: .
+11/24/2018 11:27:06 AM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/24/2018 11:27:07 AM - MainDriver - INFO: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="854b2502-6619-f44d-b474-28f46e719bd2", element="c1945f1e-1560-cf41-89db-a2b83ee228e5")>in moveToElement hover and clicked.
+11/24/2018 11:27:12 AM - MainDriver - INFO: All Window handles found.
+11/24/2018 11:27:12 AM - MainDriver - INFO: After finding element, size of text is: 6
+11/24/2018 11:27:12 AM - MainDriver - INFO: Getting text on element :: Ann Z.No additional info.
+11/24/2018 11:27:12 AM - MainDriver - INFO: Parent Window handle found.
+11/24/2018 11:27:12 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 11:27:12 AM - MainDriver - INFO: Confirmed presence of element located with locator: //a[@href='/model/6cc68122-65e2-49ff-9caa-ae20abdb405f'] on the web page
+11/24/2018 11:27:12 AM - MainDriver - INFO: After finding element, size of text is: 0
+11/24/2018 11:27:12 AM - MainDriver - INFO: Web is scrolled to element: .
+11/24/2018 11:27:12 AM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/24/2018 11:27:12 AM - MainDriver - INFO: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="854b2502-6619-f44d-b474-28f46e719bd2", element="68a346dd-b620-5046-90a3-885e0055634e")>in moveToElement hover and clicked.
+11/24/2018 11:27:17 AM - MainDriver - INFO: All Window handles found.
+11/24/2018 11:27:17 AM - MainDriver - INFO: Switched to Window in given handle argument.
+11/24/2018 11:27:17 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 11:27:17 AM - MainDriver - INFO: Confirmed presence of element located with locator: //div[@class='model-name d-flex flex-row justify-content-center justify-content-lg-start'] on the web page
+11/24/2018 11:27:17 AM - MainDriver - INFO: After finding element, size of text is: 6
+11/24/2018 11:27:17 AM - MainDriver - INFO: Getting text on element :: Ann Z.No additional info.
+11/24/2018 11:27:17 AM - Util - INFO: Actual Text From Application Web UI --> :: Ann Z.
+11/24/2018 11:27:17 AM - Util - INFO: Expected Text From Application Web UI --> :: Ann Z.
+11/24/2018 11:27:17 AM - Util - INFO: ### VERIFICATION CONTAINS !!! Actual Text Ann Z.Expected text: Ann Z.
+11/24/2018 11:27:17 AM - MainDriver - INFO: Current window had been closed.
+11/24/2018 11:27:18 AM - MainDriver - INFO: Switched to Window in given handle argument.
+11/24/2018 11:27:18 AM - MainDriver - INFO: After finding element, size of text is: 12
+11/24/2018 11:27:18 AM - MainDriver - INFO: Getting text on element :: Sebastian F.No additional info.
+11/24/2018 11:27:18 AM - MainDriver - INFO: Parent Window handle found.
+11/24/2018 11:27:18 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 11:27:18 AM - MainDriver - INFO: Confirmed presence of element located with locator: //a[@href='/model/28b50aff-0bb3-444c-99aa-800876167d82'] on the web page
+11/24/2018 11:27:18 AM - MainDriver - INFO: After finding element, size of text is: 0
+11/24/2018 11:27:18 AM - MainDriver - INFO: Web is scrolled to element: .
+11/24/2018 11:27:18 AM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/24/2018 11:27:18 AM - MainDriver - INFO: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="854b2502-6619-f44d-b474-28f46e719bd2", element="87f07144-3115-e348-8338-96f98a067ffc")>in moveToElement hover and clicked.
+11/24/2018 11:27:23 AM - MainDriver - INFO: All Window handles found.
+11/24/2018 11:27:23 AM - MainDriver - INFO: Switched to Window in given handle argument.
+11/24/2018 11:27:23 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 11:27:23 AM - MainDriver - INFO: Confirmed presence of element located with locator: //div[@class='model-name d-flex flex-row justify-content-center justify-content-lg-start'] on the web page
+11/24/2018 11:27:23 AM - MainDriver - INFO: After finding element, size of text is: 12
+11/24/2018 11:27:23 AM - MainDriver - INFO: Getting text on element :: Sebastian F.No additional info.
+11/24/2018 11:27:23 AM - Util - INFO: Actual Text From Application Web UI --> :: Sebastian F.
+11/24/2018 11:27:23 AM - Util - INFO: Expected Text From Application Web UI --> :: Sebastian F.
+11/24/2018 11:27:23 AM - Util - INFO: ### VERIFICATION CONTAINS !!! Actual Text Sebastian F.Expected text: Sebastian F.
+11/24/2018 11:27:23 AM - MainDriver - INFO: Current window had been closed.
+11/24/2018 11:27:23 AM - MainDriver - INFO: Switched to Window in given handle argument.
+11/24/2018 11:27:23 AM - Util - INFO: In incoming list has False or lenght == 0 : [False, True, True]
+11/24/2018 11:27:23 AM - StatusDisplay - INFO: result on enter in markFinal is: False
+11/24/2018 11:27:23 AM - StatusDisplay - ERROR: ### TEST FAILED as False: TC #022 Check the every category is filtering on Models Page
+11/24/2018 11:27:24 AM - StatusDisplay - INFO: Screenshot: TC #022 Check the every category is filtering on Models PageSat Nov 24 11:27:23 2018.png saved to directory: ../screenshots
+11/24/2018 11:27:24 AM - StatusDisplay - ERROR: TC #022 Check the every category is filtering on Models Page: FULL TEST FAILED: : TC #022 test_verifyEveryAvatar TOTALLY FAILED. 
+11/24/2018 11:27:24 AM - MainDriver - INFO: Element List with length: 24; Found with locator: //nb-model-list-item and  locatorType: xpath
+11/24/2018 11:27:24 AM - MainDriver - INFO: Element List with length: 96; Found with locator: photo-container and  locatorType: class
+11/24/2018 11:27:24 AM - MainDriver - INFO: After finding element, size of text is: 0
+11/24/2018 11:27:24 AM - MainDriver - INFO: Getting text on element :: Quick PreviewNo additional info.
+11/24/2018 11:27:24 AM - MainDriver - INFO: Web is scrolled to element: Quick Preview.
+11/24/2018 11:27:24 AM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/24/2018 11:27:24 AM - MainDriver - INFO: Clicked on recieved element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="854b2502-6619-f44d-b474-28f46e719bd2", element="327b9c90-69ac-1a47-82e3-2270ed7b622a")>
+11/24/2018 11:27:24 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//nb-browse//div[@class='modal__close']' to be clickable
+11/24/2018 11:27:25 AM - MainDriver - INFO: Element '//nb-browse//div[@class='modal__close']' appeared //nb-browse//div[@class='modal__close'] on the web page
+11/24/2018 11:27:25 AM - MainDriver - INFO: Element '//nb-browse//div[@class='modal__close']' clicked with locator //nb-browse//div[@class='modal__close'] on the web page
+11/24/2018 11:27:25 AM - MainDriver - INFO: After finding element, size of text is: 0
+11/24/2018 11:27:25 AM - MainDriver - INFO: Getting text on element :: Quick PreviewNo additional info.
+11/24/2018 11:27:25 AM - MainDriver - INFO: Web is scrolled to element: Quick Preview.
+11/24/2018 11:27:25 AM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/24/2018 11:27:25 AM - MainDriver - INFO: Clicked on recieved element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="854b2502-6619-f44d-b474-28f46e719bd2", element="83e3c474-016f-204d-a868-a599551c8440")>
+11/24/2018 11:27:25 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//nb-browse//div[@class='modal__close']' to be clickable
+11/24/2018 11:27:26 AM - MainDriver - INFO: Element '//nb-browse//div[@class='modal__close']' appeared //nb-browse//div[@class='modal__close'] on the web page
+11/24/2018 11:27:26 AM - MainDriver - INFO: Element '//nb-browse//div[@class='modal__close']' clicked with locator //nb-browse//div[@class='modal__close'] on the web page
+11/24/2018 11:27:26 AM - MainDriver - INFO: After finding element, size of text is: 0
+11/24/2018 11:27:26 AM - MainDriver - INFO: Getting text on element :: Quick PreviewNo additional info.
+11/24/2018 11:27:26 AM - MainDriver - INFO: Web is scrolled to element: Quick Preview.
+11/24/2018 11:27:26 AM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/24/2018 11:27:26 AM - MainDriver - INFO: Clicked on recieved element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="854b2502-6619-f44d-b474-28f46e719bd2", element="14e873c0-cd1b-eb48-aa2e-dab561ce7ac6")>
+11/24/2018 11:27:26 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//nb-browse//div[@class='modal__close']' to be clickable
+11/24/2018 11:27:27 AM - MainDriver - INFO: Element '//nb-browse//div[@class='modal__close']' appeared //nb-browse//div[@class='modal__close'] on the web page
+11/24/2018 11:27:27 AM - MainDriver - INFO: Element '//nb-browse//div[@class='modal__close']' clicked with locator //nb-browse//div[@class='modal__close'] on the web page
+11/24/2018 11:27:27 AM - Util - INFO: In incoming list only True: [True, True, True]
+11/24/2018 11:27:27 AM - StatusDisplay - INFO: result on enter in markFinal is: True
+11/24/2018 11:27:27 AM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #023 Check first 12 images on Models Page, they are clickable
+11/24/2018 11:27:27 AM - StatusDisplay - INFO: TC #023 Check first 12 images on Models Page, they are clickable: FULL TEST SUCCESSFUL
+11/24/2018 11:27:27 AM - MainDriver - INFO: Element List with length: 24; Found with locator: //button[contains(text(), ' Book Model ')] and  locatorType: xpath
+11/24/2018 11:27:27 AM - MainDriver - INFO: Clicked on recieved element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="854b2502-6619-f44d-b474-28f46e719bd2", element="08d2028f-173f-d147-a2b9-99cf636736de")>
+11/24/2018 11:27:28 AM - MainDriver - INFO: Does current page includes text: Almost there: True
+11/24/2018 11:27:28 AM - MainDriver - INFO: Element Found in getElement with locator: //common-pending-modal[@id='pending-contact']//div[@class='modal__close'] and  locatorType: xpath
+11/24/2018 11:27:28 AM - MainDriver - INFO: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="854b2502-6619-f44d-b474-28f46e719bd2", element="5a31723f-2e8b-744b-86d6-20ed74251fdf")>in moveToElement hover and clicked.
+11/24/2018 11:27:28 AM - MainDriver - ERROR: Cannot click on the element with locator:  locatorType: 
+11/24/2018 11:27:29 AM - MainDriver - INFO: Does current page includes text: Almost there: True
+11/24/2018 11:27:29 AM - MainDriver - INFO: Element Found in getElement with locator: //common-pending-modal[@id='pending-contact']//div[@class='modal__close'] and  locatorType: xpath
+11/24/2018 11:27:29 AM - MainDriver - ERROR: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="854b2502-6619-f44d-b474-28f46e719bd2", element="5a31723f-2e8b-744b-86d6-20ed74251fdf")>in moveToElement NOT hovered and clicked.
+11/24/2018 11:27:29 AM - MainDriver - INFO: Clicked on recieved element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="854b2502-6619-f44d-b474-28f46e719bd2", element="ff5c6ea3-96ea-c143-b8b9-8c52d1e6a6f7")>
+11/24/2018 11:27:29 AM - MainDriver - INFO: Does current page includes text: Almost there: True
+11/24/2018 11:27:29 AM - MainDriver - INFO: Element Found in getElement with locator: //common-pending-modal[@id='pending-contact']//div[@class='modal__close'] and  locatorType: xpath
+11/24/2018 11:27:30 AM - MainDriver - INFO: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="854b2502-6619-f44d-b474-28f46e719bd2", element="5a31723f-2e8b-744b-86d6-20ed74251fdf")>in moveToElement hover and clicked.
+11/24/2018 11:27:30 AM - Util - INFO: In incoming list only True: [True, True, True]
+11/24/2018 11:27:30 AM - StatusDisplay - INFO: result on enter in markFinal is: True
+11/24/2018 11:27:30 AM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #024 Check first 3 Models on 'Book Model' button on Models Page, 
+11/24/2018 11:27:30 AM - StatusDisplay - INFO: TC #024 Check first 3 Models on 'Book Model' button on Models Page, : FULL TEST SUCCESSFUL
+11/24/2018 11:34:12 AM - MainDriver - INFO: ####################           NEW LOG           ####################; Newbook
+11/24/2018 11:34:12 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//a[@href='/auth/signin']' to be clickable
+11/24/2018 11:34:12 AM - MainDriver - INFO: Element '//a[@href='/auth/signin']' appeared //a[@href='/auth/signin'] on the web page
+11/24/2018 11:34:12 AM - MainDriver - INFO: Element '//a[@href='/auth/signin']' clicked with locator //a[@href='/auth/signin'] on the web page
+11/24/2018 11:34:12 AM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+11/24/2018 11:34:13 AM - MainDriver - INFO: Sent data 'man4testing@gmail.com' to element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+11/24/2018 11:34:13 AM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+11/24/2018 11:34:13 AM - MainDriver - INFO: Sent data 'New12345$' to element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+11/24/2018 11:34:13 AM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/24/2018 11:34:13 AM - MainDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+11/24/2018 11:34:13 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//button[@title='Close']' to be clickable
+11/24/2018 11:34:14 AM - MainDriver - INFO: Element '//button[@title='Close']' appeared //button[@title='Close'] on the web page
+11/24/2018 11:34:14 AM - MainDriver - INFO: Element '//button[@title='Close']' clicked with locator //button[@title='Close'] on the web page
+11/24/2018 11:34:15 AM - MainDriver - INFO: Element List with length: 7; Found with locator: //div[@class='item__title'] and  locatorType: xpath
+11/24/2018 11:34:45 AM - MainDriver - INFO: ####################           NEW LOG           ####################; Newbook
+11/24/2018 11:34:45 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//a[@href='/auth/signin']' to be clickable
+11/24/2018 11:34:45 AM - MainDriver - INFO: Element '//a[@href='/auth/signin']' appeared //a[@href='/auth/signin'] on the web page
+11/24/2018 11:34:45 AM - MainDriver - INFO: Element '//a[@href='/auth/signin']' clicked with locator //a[@href='/auth/signin'] on the web page
+11/24/2018 11:34:45 AM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+11/24/2018 11:34:46 AM - MainDriver - INFO: Sent data 'man4testing@gmail.com' to element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+11/24/2018 11:34:46 AM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+11/24/2018 11:34:46 AM - MainDriver - INFO: Sent data 'New12345$' to element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+11/24/2018 11:34:46 AM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/24/2018 11:34:46 AM - MainDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+11/24/2018 11:34:46 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//button[@title='Close']' to be clickable
+11/24/2018 11:34:47 AM - MainDriver - INFO: Element '//button[@title='Close']' appeared //button[@title='Close'] on the web page
+11/24/2018 11:34:47 AM - MainDriver - INFO: Element '//button[@title='Close']' clicked with locator //button[@title='Close'] on the web page
+11/24/2018 11:34:49 AM - MainDriver - INFO: Element List with length: 7; Found with locator: //div[@class='item__title'] and  locatorType: xpath
+11/24/2018 11:34:50 AM - MainDriver - INFO: Clicked on received element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="69cb55b0-dd39-7248-a3fb-3dcbdf401c2e", element="9a07a8d0-1d89-fd4f-b3ac-c23f4d255226")>
+11/24/2018 11:34:53 AM - MainDriver - INFO: Current page URL from getUrl method is https://stage1.fmny.mobi/browse?tag=swim
+11/24/2018 11:34:53 AM - Util - INFO: Actual Text From Application Web UI --> :: swim
+11/24/2018 11:34:53 AM - Util - INFO: Expected Text From Application Web UI --> :: swim
+11/24/2018 11:34:53 AM - Util - INFO: ### VERIFICATION CONTAINS !!! Actual Text swimExpected text: swim
+11/24/2018 11:34:53 AM - MainDriver - INFO: Does current page includes text: match your search criteria:: True
+11/24/2018 11:34:53 AM - MainDriver - INFO: Element List with length: 5; Found with locator: //nb-model-list-item and  locatorType: xpath
+11/24/2018 11:34:53 AM - StatusDisplay - INFO: result on enter in markFinal is: True
+11/24/2018 11:34:53 AM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #020 Check the every category is filtering on Models Pageon Models Page. 
+11/24/2018 11:34:53 AM - StatusDisplay - INFO: TC #020 Check the every category is filtering on Models Pageon Models Page. : FULL TEST SUCCESSFUL
+11/24/2018 11:42:11 AM - MainDriver - INFO: ####################           NEW LOG           ####################; Newbook
+11/24/2018 11:42:11 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//a[@href='/auth/signin']' to be clickable
+11/24/2018 11:42:11 AM - MainDriver - INFO: Element '//a[@href='/auth/signin']' appeared //a[@href='/auth/signin'] on the web page
+11/24/2018 11:42:12 AM - MainDriver - INFO: Element '//a[@href='/auth/signin']' clicked with locator //a[@href='/auth/signin'] on the web page
+11/24/2018 11:42:12 AM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+11/24/2018 11:42:12 AM - MainDriver - INFO: Sent data 'man4testing@gmail.com' to element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+11/24/2018 11:42:12 AM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+11/24/2018 11:42:12 AM - MainDriver - INFO: Sent data 'New12345$' to element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+11/24/2018 11:42:12 AM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/24/2018 11:42:12 AM - MainDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+11/24/2018 11:42:12 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//button[@title='Close']' to be clickable
+11/24/2018 11:42:13 AM - MainDriver - INFO: Element '//button[@title='Close']' appeared //button[@title='Close'] on the web page
+11/24/2018 11:42:14 AM - MainDriver - INFO: Element '//button[@title='Close']' clicked with locator //button[@title='Close'] on the web page
+11/24/2018 11:42:16 AM - MainDriver - INFO: Element List with length: 12; Found with locator: //a[@common-ui='ImageURLs'] and  locatorType: xpath
+11/24/2018 11:42:16 AM - MainDriver - INFO: Element List with length: 12; Found with locator: //span[@class='name'] and  locatorType: xpath
+11/24/2018 11:42:17 AM - MainDriver - INFO: Property: href of element: 
+11/24/2018 11:42:17 AM - MainDriver - INFO: Property: href of element: 
+11/24/2018 11:42:17 AM - MainDriver - INFO: Property: href of element: 
+11/24/2018 11:42:17 AM - MainDriver - INFO: After finding element, size of text is: 9
+11/24/2018 11:42:17 AM - MainDriver - INFO: Getting text on element :: Johnny J.No additional info.
+11/24/2018 11:42:17 AM - MainDriver - INFO: Parent Window handle found.
+11/24/2018 11:42:17 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 11:42:17 AM - MainDriver - INFO: Confirmed presence of element located with locator: //a[@href='/model/1f582cf5-f060-45d8-ac01-5b336b1618e3'] on the web page
+11/24/2018 11:42:18 AM - MainDriver - INFO: After finding element, size of text is: 0
+11/24/2018 11:42:18 AM - MainDriver - INFO: Web is scrolled to element: .
+11/24/2018 11:42:18 AM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/24/2018 11:42:18 AM - MainDriver - INFO: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="5a747663-56d4-2541-ab51-1fd59fd74c47", element="fb2d785e-7052-9b47-8fb7-697dbf23a756")>in moveToElement hover and clicked.
+11/24/2018 11:42:23 AM - MainDriver - INFO: All Window handles found.
+11/24/2018 11:42:23 AM - MainDriver - INFO: After finding element, size of text is: 8
+11/24/2018 11:42:23 AM - MainDriver - INFO: Getting text on element :: Witch W.No additional info.
+11/24/2018 11:42:23 AM - MainDriver - INFO: Parent Window handle found.
+11/24/2018 11:42:23 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 11:42:23 AM - MainDriver - INFO: Confirmed presence of element located with locator: //a[@href='/model/2a18087e-882a-4238-8f8f-3bec29e83247'] on the web page
+11/24/2018 11:42:23 AM - MainDriver - INFO: After finding element, size of text is: 0
+11/24/2018 11:42:23 AM - MainDriver - INFO: Web is scrolled to element: .
+11/24/2018 11:42:23 AM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/24/2018 11:42:24 AM - MainDriver - INFO: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="5a747663-56d4-2541-ab51-1fd59fd74c47", element="2c724613-93cd-f34e-a066-b16f4c681697")>in moveToElement hover and clicked.
+11/24/2018 11:42:29 AM - MainDriver - INFO: All Window handles found.
+11/24/2018 11:42:29 AM - MainDriver - INFO: Switched to Window in given handle argument.
+11/24/2018 11:42:29 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 11:42:29 AM - MainDriver - INFO: Confirmed presence of element located with locator: //div[@class='model-name d-flex flex-row justify-content-center justify-content-lg-start'] on the web page
+11/24/2018 11:42:29 AM - MainDriver - INFO: After finding element, size of text is: 8
+11/24/2018 11:42:29 AM - MainDriver - INFO: Getting text on element :: Witch W.No additional info.
+11/24/2018 11:42:29 AM - Util - INFO: Actual Text From Application Web UI --> :: Witch W.
+11/24/2018 11:42:29 AM - Util - INFO: Expected Text From Application Web UI --> :: Witch W.
+11/24/2018 11:42:29 AM - Util - INFO: ### VERIFICATION CONTAINS !!! Actual Text Witch W.Expected text: Witch W.
+11/24/2018 11:42:29 AM - MainDriver - INFO: Current window had been closed.
+11/24/2018 11:42:29 AM - MainDriver - INFO: Switched to Window in given handle argument.
+11/24/2018 11:42:29 AM - MainDriver - INFO: After finding element, size of text is: 8
+11/24/2018 11:42:29 AM - MainDriver - INFO: Getting text on element :: Anna+ Z.No additional info.
+11/24/2018 11:42:29 AM - MainDriver - INFO: Parent Window handle found.
+11/24/2018 11:42:29 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 11:42:29 AM - MainDriver - INFO: Confirmed presence of element located with locator: //a[@href='/model/e65e3ea2-e760-4d96-99de-32db549bd818'] on the web page
+11/24/2018 11:42:29 AM - MainDriver - INFO: After finding element, size of text is: 0
+11/24/2018 11:42:29 AM - MainDriver - INFO: Web is scrolled to element: .
+11/24/2018 11:42:29 AM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/24/2018 11:42:30 AM - MainDriver - INFO: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="5a747663-56d4-2541-ab51-1fd59fd74c47", element="c538263b-7f14-254f-8d14-d30672ea31c4")>in moveToElement hover and clicked.
+11/24/2018 11:42:35 AM - MainDriver - INFO: All Window handles found.
+11/24/2018 11:42:35 AM - MainDriver - INFO: Switched to Window in given handle argument.
+11/24/2018 11:42:35 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 11:42:35 AM - MainDriver - INFO: Confirmed presence of element located with locator: //div[@class='model-name d-flex flex-row justify-content-center justify-content-lg-start'] on the web page
+11/24/2018 11:42:35 AM - MainDriver - INFO: After finding element, size of text is: 8
+11/24/2018 11:42:35 AM - MainDriver - INFO: Getting text on element :: Anna+ Z.No additional info.
+11/24/2018 11:42:35 AM - Util - INFO: Actual Text From Application Web UI --> :: Anna+ Z.
+11/24/2018 11:42:35 AM - Util - INFO: Expected Text From Application Web UI --> :: Anna+ Z.
+11/24/2018 11:42:35 AM - Util - INFO: ### VERIFICATION CONTAINS !!! Actual Text Anna+ Z.Expected text: Anna+ Z.
+11/24/2018 11:42:35 AM - MainDriver - INFO: Current window had been closed.
+11/24/2018 11:42:35 AM - MainDriver - INFO: Switched to Window in given handle argument.
+11/24/2018 11:42:35 AM - Util - INFO: In incoming list has False or lenght == 0 : [False, True, True]
+11/24/2018 11:42:35 AM - StatusDisplay - INFO: result on enter in markFinal is: False
+11/24/2018 11:42:35 AM - StatusDisplay - ERROR: ### TEST FAILED as False: TC #022 Check the every category is filtering on Models Page
+11/24/2018 11:42:35 AM - StatusDisplay - INFO: Screenshot: TC #022 Check the every category is filtering on Models PageSat Nov 24 11:42:35 2018.png saved to directory: ../screenshots
+11/24/2018 11:42:35 AM - StatusDisplay - ERROR: TC #022 Check the every category is filtering on Models Page: FULL TEST FAILED: : TC #022 test_verifyEveryAvatar TOTALLY FAILED. 
+11/24/2018 11:44:42 AM - MainDriver - INFO: ####################           NEW LOG           ####################; Newbook
+11/24/2018 11:44:42 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//a[@href='/auth/signin']' to be clickable
+11/24/2018 11:44:42 AM - MainDriver - INFO: Element '//a[@href='/auth/signin']' appeared //a[@href='/auth/signin'] on the web page
+11/24/2018 11:44:42 AM - MainDriver - INFO: Element '//a[@href='/auth/signin']' clicked with locator //a[@href='/auth/signin'] on the web page
+11/24/2018 11:44:42 AM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+11/24/2018 11:44:43 AM - MainDriver - INFO: Sent data 'man4testing@gmail.com' to element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+11/24/2018 11:44:43 AM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+11/24/2018 11:44:43 AM - MainDriver - INFO: Sent data 'New12345$' to element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+11/24/2018 11:44:43 AM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/24/2018 11:44:43 AM - MainDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+11/24/2018 11:44:43 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//button[@title='Close']' to be clickable
+11/24/2018 11:44:44 AM - MainDriver - INFO: Element '//button[@title='Close']' appeared //button[@title='Close'] on the web page
+11/24/2018 11:44:44 AM - MainDriver - INFO: Element '//button[@title='Close']' clicked with locator //button[@title='Close'] on the web page
+11/24/2018 11:44:46 AM - MainDriver - INFO: Element List with length: 12; Found with locator: //a[@common-ui='ImageURLs'] and  locatorType: xpath
+11/24/2018 11:44:46 AM - MainDriver - INFO: Element List with length: 12; Found with locator: //span[@class='name'] and  locatorType: xpath
+11/24/2018 11:44:46 AM - MainDriver - INFO: Property: href of element: 
+11/24/2018 11:44:47 AM - MainDriver - INFO: Property: href of element: 
+11/24/2018 11:44:47 AM - MainDriver - INFO: Property: href of element: 
+11/24/2018 11:44:47 AM - MainDriver - INFO: After finding element, size of text is: 6
+11/24/2018 11:44:47 AM - MainDriver - INFO: Getting text on element :: Pam P.No additional info.
+11/24/2018 11:44:47 AM - MainDriver - INFO: Parent Window handle found.
+11/24/2018 11:44:47 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 11:44:47 AM - MainDriver - INFO: Confirmed presence of element located with locator: //a[@href='/model/5dc0ee43-464a-4dbc-8bfd-8f94f3c1ae04'] on the web page
+11/24/2018 11:44:47 AM - MainDriver - INFO: After finding element, size of text is: 0
+11/24/2018 11:44:47 AM - MainDriver - INFO: Web is scrolled to element: .
+11/24/2018 11:44:47 AM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/24/2018 11:44:47 AM - MainDriver - INFO: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="0091b889-cf85-7843-bd83-772178a9f599", element="f2f9cab7-8e2f-e24e-8775-79445a53d630")>in moveToElement hover and clicked.
+11/24/2018 11:44:52 AM - MainDriver - INFO: All Window handles found.
+11/24/2018 11:44:52 AM - MainDriver - INFO: Switched to Window in given handle argument.
+11/24/2018 11:44:52 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 11:44:52 AM - MainDriver - INFO: Confirmed presence of element located with locator: //div[@class='model-name d-flex flex-row justify-content-center justify-content-lg-start'] on the web page
+11/24/2018 11:44:52 AM - MainDriver - INFO: After finding element, size of text is: 6
+11/24/2018 11:44:52 AM - MainDriver - INFO: Getting text on element :: Pam P.No additional info.
+11/24/2018 11:44:52 AM - Util - INFO: Actual Text From Application Web UI --> :: Pam P.
+11/24/2018 11:44:52 AM - Util - INFO: Expected Text From Application Web UI --> :: Pam P.
+11/24/2018 11:44:52 AM - Util - INFO: ### VERIFICATION CONTAINS !!! Actual Text Pam P.Expected text: Pam P.
+11/24/2018 11:44:52 AM - MainDriver - INFO: Current window had been closed.
+11/24/2018 11:44:52 AM - MainDriver - INFO: Switched to Window in given handle argument.
+11/24/2018 11:44:52 AM - MainDriver - INFO: After finding element, size of text is: 7
+11/24/2018 11:44:52 AM - MainDriver - INFO: Getting text on element :: Hhhh H.No additional info.
+11/24/2018 11:44:52 AM - MainDriver - INFO: Parent Window handle found.
+11/24/2018 11:44:52 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 11:44:52 AM - MainDriver - INFO: Confirmed presence of element located with locator: //a[@href='/model/057ddc30-ab38-4dfe-9162-a4bd79b96f09'] on the web page
+11/24/2018 11:44:52 AM - MainDriver - INFO: After finding element, size of text is: 0
+11/24/2018 11:44:52 AM - MainDriver - INFO: Web is scrolled to element: .
+11/24/2018 11:44:53 AM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/24/2018 11:44:53 AM - MainDriver - INFO: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="0091b889-cf85-7843-bd83-772178a9f599", element="5489aefd-66ff-d24a-ae52-634916c9e4db")>in moveToElement hover and clicked.
+11/24/2018 11:44:58 AM - MainDriver - INFO: All Window handles found.
+11/24/2018 11:44:58 AM - MainDriver - INFO: Switched to Window in given handle argument.
+11/24/2018 11:44:58 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 11:44:58 AM - MainDriver - INFO: Confirmed presence of element located with locator: //div[@class='model-name d-flex flex-row justify-content-center justify-content-lg-start'] on the web page
+11/24/2018 11:44:58 AM - MainDriver - INFO: After finding element, size of text is: 7
+11/24/2018 11:44:58 AM - MainDriver - INFO: Getting text on element :: Hhhh H.No additional info.
+11/24/2018 11:44:58 AM - Util - INFO: Actual Text From Application Web UI --> :: Hhhh H.
+11/24/2018 11:44:58 AM - Util - INFO: Expected Text From Application Web UI --> :: Hhhh H.
+11/24/2018 11:44:58 AM - Util - INFO: ### VERIFICATION CONTAINS !!! Actual Text Hhhh H.Expected text: Hhhh H.
+11/24/2018 11:44:58 AM - MainDriver - INFO: Current window had been closed.
+11/24/2018 11:44:58 AM - MainDriver - INFO: Switched to Window in given handle argument.
+11/24/2018 11:44:58 AM - MainDriver - INFO: After finding element, size of text is: 9
+11/24/2018 11:44:58 AM - MainDriver - INFO: Getting text on element :: Johnny J.No additional info.
+11/24/2018 11:44:58 AM - MainDriver - INFO: Parent Window handle found.
+11/24/2018 11:44:58 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 11:44:58 AM - MainDriver - INFO: Confirmed presence of element located with locator: //a[@href='/model/1f582cf5-f060-45d8-ac01-5b336b1618e3'] on the web page
+11/24/2018 11:44:58 AM - MainDriver - INFO: After finding element, size of text is: 0
+11/24/2018 11:44:58 AM - MainDriver - INFO: Web is scrolled to element: .
+11/24/2018 11:44:58 AM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/24/2018 11:44:59 AM - MainDriver - INFO: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="0091b889-cf85-7843-bd83-772178a9f599", element="d7079abc-5fc7-0b4f-825b-39432a2e1d01")>in moveToElement hover and clicked.
+11/24/2018 11:45:04 AM - MainDriver - INFO: All Window handles found.
+11/24/2018 11:45:04 AM - MainDriver - INFO: Switched to Window in given handle argument.
+11/24/2018 11:45:04 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 11:45:04 AM - MainDriver - INFO: Confirmed presence of element located with locator: //div[@class='model-name d-flex flex-row justify-content-center justify-content-lg-start'] on the web page
+11/24/2018 11:45:04 AM - MainDriver - INFO: After finding element, size of text is: 9
+11/24/2018 11:45:04 AM - MainDriver - INFO: Getting text on element :: Johnny J.No additional info.
+11/24/2018 11:45:04 AM - Util - INFO: Actual Text From Application Web UI --> :: Johnny J.
+11/24/2018 11:45:04 AM - Util - INFO: Expected Text From Application Web UI --> :: Johnny J.
+11/24/2018 11:45:04 AM - Util - INFO: ### VERIFICATION CONTAINS !!! Actual Text Johnny J.Expected text: Johnny J.
+11/24/2018 11:45:04 AM - MainDriver - INFO: Current window had been closed.
+11/24/2018 11:45:04 AM - MainDriver - INFO: Switched to Window in given handle argument.
+11/24/2018 11:45:04 AM - Util - INFO: In incoming list only True: [True, True, True]
+11/24/2018 11:45:04 AM - StatusDisplay - INFO: result on enter in markFinal is: True
+11/24/2018 11:45:04 AM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #022 Check the every category is filtering on Models Page
+11/24/2018 11:45:04 AM - StatusDisplay - INFO: TC #022 Check the every category is filtering on Models Page: FULL TEST SUCCESSFUL
+11/24/2018 11:45:34 AM - MainDriver - INFO: ####################           NEW LOG           ####################; Newbook
+11/24/2018 11:45:34 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//a[@href='/auth/signin']' to be clickable
+11/24/2018 11:45:34 AM - MainDriver - INFO: Element '//a[@href='/auth/signin']' appeared //a[@href='/auth/signin'] on the web page
+11/24/2018 11:45:34 AM - MainDriver - INFO: Element '//a[@href='/auth/signin']' clicked with locator //a[@href='/auth/signin'] on the web page
+11/24/2018 11:45:34 AM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+11/24/2018 11:45:34 AM - MainDriver - INFO: Sent data 'man4testing@gmail.com' to element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+11/24/2018 11:45:34 AM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+11/24/2018 11:45:34 AM - MainDriver - INFO: Sent data 'New12345$' to element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+11/24/2018 11:45:34 AM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/24/2018 11:45:35 AM - MainDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+11/24/2018 11:45:35 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//button[@title='Close']' to be clickable
+11/24/2018 11:45:36 AM - MainDriver - INFO: Element '//button[@title='Close']' appeared //button[@title='Close'] on the web page
+11/24/2018 11:45:36 AM - MainDriver - INFO: Element '//button[@title='Close']' clicked with locator //button[@title='Close'] on the web page
+11/24/2018 11:45:37 AM - MainDriver - INFO: Element List with length: 12; Found with locator: //a[@common-ui='ImageURLs'] and  locatorType: xpath
+11/24/2018 11:45:38 AM - MainDriver - INFO: Element List with length: 12; Found with locator: //span[@class='name'] and  locatorType: xpath
+11/24/2018 11:45:38 AM - MainDriver - INFO: Property: href of element: 
+11/24/2018 11:45:38 AM - MainDriver - INFO: Property: href of element: 
+11/24/2018 11:45:38 AM - MainDriver - INFO: Property: href of element: 
+11/24/2018 11:45:38 AM - MainDriver - INFO: After finding element, size of text is: 8
+11/24/2018 11:45:38 AM - MainDriver - INFO: Getting text on element :: Witch W.No additional info.
+11/24/2018 11:45:38 AM - MainDriver - INFO: Parent Window handle found.
+11/24/2018 11:45:38 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 11:45:38 AM - MainDriver - INFO: Confirmed presence of element located with locator: //a[@href='/model/2a18087e-882a-4238-8f8f-3bec29e83247'] on the web page
+11/24/2018 11:45:38 AM - MainDriver - INFO: After finding element, size of text is: 0
+11/24/2018 11:45:38 AM - MainDriver - INFO: Web is scrolled to element: .
+11/24/2018 11:45:38 AM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/24/2018 11:45:38 AM - MainDriver - ERROR: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="518592a6-3e0d-fb46-ac03-f4ced6643024", element="ce3fec70-a3be-7d4a-a4f4-9ca28d17c2d6")>in moveToElement NOT hovered and clicked.
+11/24/2018 11:45:43 AM - MainDriver - INFO: All Window handles found.
+11/24/2018 11:45:43 AM - MainDriver - INFO: After finding element, size of text is: 7
+11/24/2018 11:45:43 AM - MainDriver - INFO: Getting text on element :: Hhhh H.No additional info.
+11/24/2018 11:45:43 AM - MainDriver - INFO: Parent Window handle found.
+11/24/2018 11:45:43 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 11:45:43 AM - MainDriver - INFO: Confirmed presence of element located with locator: //a[@href='/model/057ddc30-ab38-4dfe-9162-a4bd79b96f09'] on the web page
+11/24/2018 11:45:43 AM - MainDriver - INFO: After finding element, size of text is: 0
+11/24/2018 11:45:43 AM - MainDriver - INFO: Web is scrolled to element: .
+11/24/2018 11:45:43 AM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/24/2018 11:45:44 AM - MainDriver - INFO: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="518592a6-3e0d-fb46-ac03-f4ced6643024", element="46f46074-1f11-4e4e-b282-daa6a436ec4a")>in moveToElement hover and clicked.
+11/24/2018 11:45:49 AM - MainDriver - INFO: All Window handles found.
+11/24/2018 11:45:49 AM - MainDriver - INFO: Switched to Window in given handle argument.
+11/24/2018 11:45:49 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 11:45:49 AM - MainDriver - INFO: Confirmed presence of element located with locator: //div[@class='model-name d-flex flex-row justify-content-center justify-content-lg-start'] on the web page
+11/24/2018 11:45:49 AM - MainDriver - INFO: After finding element, size of text is: 7
+11/24/2018 11:45:49 AM - MainDriver - INFO: Getting text on element :: Hhhh H.No additional info.
+11/24/2018 11:45:49 AM - Util - INFO: Actual Text From Application Web UI --> :: Hhhh H.
+11/24/2018 11:45:49 AM - Util - INFO: Expected Text From Application Web UI --> :: Hhhh H.
+11/24/2018 11:45:49 AM - Util - INFO: ### VERIFICATION CONTAINS !!! Actual Text Hhhh H.Expected text: Hhhh H.
+11/24/2018 11:45:49 AM - MainDriver - INFO: Current window had been closed.
+11/24/2018 11:45:49 AM - MainDriver - INFO: Switched to Window in given handle argument.
+11/24/2018 11:45:49 AM - MainDriver - INFO: After finding element, size of text is: 8
+11/24/2018 11:45:49 AM - MainDriver - INFO: Getting text on element :: Masha K.No additional info.
+11/24/2018 11:45:49 AM - MainDriver - INFO: Parent Window handle found.
+11/24/2018 11:45:49 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 11:45:49 AM - MainDriver - INFO: Confirmed presence of element located with locator: //a[@href='/model/d8f670a5-98ea-45e3-9c08-4f4f7705beca'] on the web page
+11/24/2018 11:45:49 AM - MainDriver - INFO: After finding element, size of text is: 0
+11/24/2018 11:45:49 AM - MainDriver - INFO: Web is scrolled to element: .
+11/24/2018 11:45:49 AM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/24/2018 11:45:50 AM - MainDriver - INFO: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="518592a6-3e0d-fb46-ac03-f4ced6643024", element="c44b9876-7a6e-ce47-a414-3cdde9585311")>in moveToElement hover and clicked.
+11/24/2018 11:45:55 AM - MainDriver - INFO: All Window handles found.
+11/24/2018 11:45:55 AM - MainDriver - INFO: Switched to Window in given handle argument.
+11/24/2018 11:45:55 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 11:45:55 AM - MainDriver - INFO: Confirmed presence of element located with locator: //div[@class='model-name d-flex flex-row justify-content-center justify-content-lg-start'] on the web page
+11/24/2018 11:45:55 AM - MainDriver - INFO: After finding element, size of text is: 8
+11/24/2018 11:45:55 AM - MainDriver - INFO: Getting text on element :: Masha K.No additional info.
+11/24/2018 11:45:55 AM - Util - INFO: Actual Text From Application Web UI --> :: Masha K.
+11/24/2018 11:45:55 AM - Util - INFO: Expected Text From Application Web UI --> :: Masha K.
+11/24/2018 11:45:55 AM - Util - INFO: ### VERIFICATION CONTAINS !!! Actual Text Masha K.Expected text: Masha K.
+11/24/2018 11:45:55 AM - MainDriver - INFO: Current window had been closed.
+11/24/2018 11:45:55 AM - MainDriver - INFO: Switched to Window in given handle argument.
+11/24/2018 11:45:55 AM - Util - INFO: In incoming list has False or lenght == 0 : [False, True, True]
+11/24/2018 11:45:55 AM - StatusDisplay - INFO: result on enter in markFinal is: False
+11/24/2018 11:45:55 AM - StatusDisplay - ERROR: ### TEST FAILED as False: TC #022 Check the every category is filtering on Models Page
+11/24/2018 11:45:55 AM - StatusDisplay - INFO: Screenshot: TC #022 Check the every category is filtering on Models PageSat Nov 24 11:45:55 2018.png saved to directory: ../screenshots
+11/24/2018 11:45:55 AM - StatusDisplay - ERROR: TC #022 Check the every category is filtering on Models Page: FULL TEST FAILED: : TC #022 test_verifyEveryAvatar TOTALLY FAILED. 
+11/24/2018 11:46:31 AM - MainDriver - INFO: ####################           NEW LOG           ####################; Newbook
+11/24/2018 11:46:31 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//a[@href='/auth/signin']' to be clickable
+11/24/2018 11:46:31 AM - MainDriver - INFO: Element '//a[@href='/auth/signin']' appeared //a[@href='/auth/signin'] on the web page
+11/24/2018 11:46:32 AM - MainDriver - INFO: Element '//a[@href='/auth/signin']' clicked with locator //a[@href='/auth/signin'] on the web page
+11/24/2018 11:46:32 AM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+11/24/2018 11:46:32 AM - MainDriver - INFO: Sent data 'man4testing@gmail.com' to element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+11/24/2018 11:46:32 AM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+11/24/2018 11:46:32 AM - MainDriver - INFO: Sent data 'New12345$' to element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+11/24/2018 11:46:32 AM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/24/2018 11:46:32 AM - MainDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+11/24/2018 11:46:32 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//button[@title='Close']' to be clickable
+11/24/2018 11:46:33 AM - MainDriver - INFO: Element '//button[@title='Close']' appeared //button[@title='Close'] on the web page
+11/24/2018 11:46:34 AM - MainDriver - INFO: Element '//button[@title='Close']' clicked with locator //button[@title='Close'] on the web page
+11/24/2018 11:46:36 AM - MainDriver - INFO: Element List with length: 12; Found with locator: //a[@common-ui='ImageURLs'] and  locatorType: xpath
+11/24/2018 11:46:36 AM - MainDriver - INFO: Element List with length: 12; Found with locator: //span[@class='name'] and  locatorType: xpath
+11/24/2018 11:46:36 AM - MainDriver - INFO: Property: href of element: 
+11/24/2018 11:46:36 AM - MainDriver - INFO: Property: href of element: 
+11/24/2018 11:46:36 AM - MainDriver - INFO: Property: href of element: 
+11/24/2018 11:46:36 AM - MainDriver - INFO: After finding element, size of text is: 7
+11/24/2018 11:46:36 AM - MainDriver - INFO: Getting text on element :: Hhhh H.No additional info.
+11/24/2018 11:46:36 AM - MainDriver - INFO: Parent Window handle found.
+11/24/2018 11:46:36 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 11:46:36 AM - MainDriver - INFO: Confirmed presence of element located with locator: //a[@href='/model/057ddc30-ab38-4dfe-9162-a4bd79b96f09'] on the web page
+11/24/2018 11:46:36 AM - MainDriver - INFO: After finding element, size of text is: 0
+11/24/2018 11:46:36 AM - MainDriver - INFO: Web is scrolled to element: .
+11/24/2018 11:46:36 AM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/24/2018 11:46:37 AM - MainDriver - INFO: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="19109939-7ae7-354e-aa51-a33222520ad0", element="d23469ee-9326-c64c-829c-3d51dc46a7b9")>in moveToElement hover and clicked.
+11/24/2018 11:46:42 AM - MainDriver - INFO: All Window handles found.
+11/24/2018 11:46:42 AM - MainDriver - INFO: Switched to Window in given handle argument.
+11/24/2018 11:46:42 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 11:46:42 AM - MainDriver - INFO: Confirmed presence of element located with locator: //div[@class='model-name d-flex flex-row justify-content-center justify-content-lg-start'] on the web page
+11/24/2018 11:46:42 AM - MainDriver - INFO: After finding element, size of text is: 7
+11/24/2018 11:46:42 AM - MainDriver - INFO: Getting text on element :: Hhhh H.No additional info.
+11/24/2018 11:46:42 AM - Util - INFO: Actual Text From Application Web UI --> :: Hhhh H.
+11/24/2018 11:46:42 AM - Util - INFO: Expected Text From Application Web UI --> :: Hhhh H.
+11/24/2018 11:46:42 AM - Util - INFO: ### VERIFICATION CONTAINS !!! Actual Text Hhhh H.Expected text: Hhhh H.
+11/24/2018 11:46:42 AM - MainDriver - INFO: Current window had been closed.
+11/24/2018 11:46:42 AM - MainDriver - INFO: Switched to Window in given handle argument.
+11/24/2018 11:46:42 AM - MainDriver - INFO: After finding element, size of text is: 12
+11/24/2018 11:46:42 AM - MainDriver - INFO: Getting text on element :: Sebastian F.No additional info.
+11/24/2018 11:46:42 AM - MainDriver - INFO: Parent Window handle found.
+11/24/2018 11:46:42 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 11:46:42 AM - MainDriver - INFO: Confirmed presence of element located with locator: //a[@href='/model/28b50aff-0bb3-444c-99aa-800876167d82'] on the web page
+11/24/2018 11:46:42 AM - MainDriver - INFO: After finding element, size of text is: 0
+11/24/2018 11:46:42 AM - MainDriver - INFO: Web is scrolled to element: .
+11/24/2018 11:46:42 AM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/24/2018 11:46:43 AM - MainDriver - INFO: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="19109939-7ae7-354e-aa51-a33222520ad0", element="0b7f5537-b9af-cb4b-9b5f-7cf10f1ffaef")>in moveToElement hover and clicked.
+11/24/2018 11:46:48 AM - MainDriver - INFO: All Window handles found.
+11/24/2018 11:46:48 AM - MainDriver - INFO: Switched to Window in given handle argument.
+11/24/2018 11:46:48 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 11:46:48 AM - MainDriver - INFO: Confirmed presence of element located with locator: //div[@class='model-name d-flex flex-row justify-content-center justify-content-lg-start'] on the web page
+11/24/2018 11:46:48 AM - MainDriver - INFO: After finding element, size of text is: 12
+11/24/2018 11:46:48 AM - MainDriver - INFO: Getting text on element :: Sebastian F.No additional info.
+11/24/2018 11:46:48 AM - Util - INFO: Actual Text From Application Web UI --> :: Sebastian F.
+11/24/2018 11:46:48 AM - Util - INFO: Expected Text From Application Web UI --> :: Sebastian F.
+11/24/2018 11:46:48 AM - Util - INFO: ### VERIFICATION CONTAINS !!! Actual Text Sebastian F.Expected text: Sebastian F.
+11/24/2018 11:46:48 AM - MainDriver - INFO: Current window had been closed.
+11/24/2018 11:46:48 AM - MainDriver - INFO: Switched to Window in given handle argument.
+11/24/2018 11:46:48 AM - MainDriver - INFO: After finding element, size of text is: 8
+11/24/2018 11:46:48 AM - MainDriver - INFO: Getting text on element :: Anna+ Z.No additional info.
+11/24/2018 11:46:48 AM - MainDriver - INFO: Parent Window handle found.
+11/24/2018 11:46:48 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 11:46:48 AM - MainDriver - INFO: Confirmed presence of element located with locator: //a[@href='/model/e65e3ea2-e760-4d96-99de-32db549bd818'] on the web page
+11/24/2018 11:46:48 AM - MainDriver - INFO: After finding element, size of text is: 0
+11/24/2018 11:46:48 AM - MainDriver - INFO: Web is scrolled to element: .
+11/24/2018 11:46:48 AM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/24/2018 11:46:49 AM - MainDriver - INFO: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="19109939-7ae7-354e-aa51-a33222520ad0", element="13f808fb-5ae0-dd46-b8f1-365b008d8a03")>in moveToElement hover and clicked.
+11/24/2018 11:46:54 AM - MainDriver - INFO: All Window handles found.
+11/24/2018 11:46:54 AM - MainDriver - INFO: Switched to Window in given handle argument.
+11/24/2018 11:46:54 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 11:46:54 AM - MainDriver - INFO: Confirmed presence of element located with locator: //div[@class='model-name d-flex flex-row justify-content-center justify-content-lg-start'] on the web page
+11/24/2018 11:46:54 AM - MainDriver - INFO: After finding element, size of text is: 8
+11/24/2018 11:46:54 AM - MainDriver - INFO: Getting text on element :: Anna+ Z.No additional info.
+11/24/2018 11:46:54 AM - Util - INFO: Actual Text From Application Web UI --> :: Anna+ Z.
+11/24/2018 11:46:54 AM - Util - INFO: Expected Text From Application Web UI --> :: Anna+ Z.
+11/24/2018 11:46:54 AM - Util - INFO: ### VERIFICATION CONTAINS !!! Actual Text Anna+ Z.Expected text: Anna+ Z.
+11/24/2018 11:46:54 AM - MainDriver - INFO: Current window had been closed.
+11/24/2018 11:46:54 AM - MainDriver - INFO: Switched to Window in given handle argument.
+11/24/2018 11:46:54 AM - Util - INFO: In incoming list only True: [True, True, True]
+11/24/2018 11:46:54 AM - StatusDisplay - INFO: result on enter in markFinal is: True
+11/24/2018 11:46:54 AM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #022 Check the every category is filtering on Models Page
+11/24/2018 11:46:54 AM - StatusDisplay - INFO: TC #022 Check the every category is filtering on Models Page: FULL TEST SUCCESSFUL
+11/24/2018 11:47:09 AM - MainDriver - INFO: ####################           NEW LOG           ####################; Newbook
+11/24/2018 11:47:09 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//a[@href='/auth/signin']' to be clickable
+11/24/2018 11:47:09 AM - MainDriver - INFO: Element '//a[@href='/auth/signin']' appeared //a[@href='/auth/signin'] on the web page
+11/24/2018 11:47:09 AM - MainDriver - INFO: Element '//a[@href='/auth/signin']' clicked with locator //a[@href='/auth/signin'] on the web page
+11/24/2018 11:47:09 AM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locatorType: xpath
+11/24/2018 11:47:09 AM - MainDriver - INFO: Sent data 'man4testing@gmail.com' to element with locator: //input[@placeholder='Enter E-mail address'] locatorType: xpath
+11/24/2018 11:47:09 AM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locatorType: xpath
+11/24/2018 11:47:09 AM - MainDriver - INFO: Sent data 'New12345$' to element with locator: //input[@placeholder='Enter password'] locatorType: xpath
+11/24/2018 11:47:09 AM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locatorType: xpath
+11/24/2018 11:47:10 AM - MainDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locatorType: xpath
+11/24/2018 11:47:10 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//button[@title='Close']' to be clickable
+11/24/2018 11:47:10 AM - MainDriver - INFO: Element '//button[@title='Close']' appeared //button[@title='Close'] on the web page
+11/24/2018 11:47:11 AM - MainDriver - INFO: Element '//button[@title='Close']' clicked with locator //button[@title='Close'] on the web page
+11/24/2018 11:47:18 AM - MainDriver - INFO: Element List with length: 7; Found with locator: //div[@class='item__title'] and  locatorType: xpath
+11/24/2018 11:47:18 AM - Util - INFO: Expected number: 7 is equal actual number: 7
+11/24/2018 11:47:18 AM - StatusDisplay - INFO: result on enter in markFinal is: True
+11/24/2018 11:47:18 AM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #018 There must be 7 items for 'Filter by Category' on Models Page. 
+11/24/2018 11:47:18 AM - StatusDisplay - INFO: TC #018 There must be 7 items for 'Filter by Category' on Models Page. : FULL TEST SUCCESSFUL
+11/24/2018 11:47:18 AM - MainDriver - INFO: Element List with length: 12; Found with locator: //nb-model-list-item and  locatorType: xpath
+11/24/2018 11:47:18 AM - StatusDisplay - INFO: result on enter in markFinal is: True
+11/24/2018 11:47:18 AM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #019 There must be more ro equal 5 rows in galleryon Models Page. 
+11/24/2018 11:47:18 AM - StatusDisplay - INFO: TC #019 There must be more ro equal 5 rows in galleryon Models Page. : FULL TEST SUCCESSFUL
+11/24/2018 11:47:18 AM - MainDriver - INFO: Element List with length: 7; Found with locator: //div[@class='item__title'] and  locatorType: xpath
+11/24/2018 11:47:18 AM - MainDriver - INFO: Clicked on received element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="01a00f36-b68a-a741-9649-c457c59c8503", element="71e81832-ddec-dd43-91f3-a93baa9aa970")>
+11/24/2018 11:47:21 AM - MainDriver - INFO: Current page URL from getUrl method is https://stage1.fmny.mobi/browse?tag=swim
+11/24/2018 11:47:21 AM - Util - INFO: Actual Text From Application Web UI --> :: swim
+11/24/2018 11:47:21 AM - Util - INFO: Expected Text From Application Web UI --> :: swim
+11/24/2018 11:47:21 AM - Util - INFO: ### VERIFICATION CONTAINS !!! Actual Text swimExpected text: swim
+11/24/2018 11:47:21 AM - MainDriver - INFO: Does current page includes text: match your search criteria:: True
+11/24/2018 11:47:21 AM - MainDriver - INFO: Element List with length: 5; Found with locator: //nb-model-list-item and  locatorType: xpath
+11/24/2018 11:47:21 AM - StatusDisplay - INFO: result on enter in markFinal is: True
+11/24/2018 11:47:21 AM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #020 Check the every category is filtering on Models Pageon Models Page. 
+11/24/2018 11:47:21 AM - StatusDisplay - INFO: TC #020 Check the every category is filtering on Models Pageon Models Page. : FULL TEST SUCCESSFUL
+11/24/2018 11:47:21 AM - MainDriver - INFO: Element List with length: 5; Found with locator: //nb-model-list-item and  locatorType: xpath
+11/24/2018 11:47:21 AM - MainDriver - INFO: Element List with length: 5; Found with locator: //a[@common-ui='ImageURLs'] and  locatorType: xpath
+11/24/2018 11:47:21 AM - StatusDisplay - INFO: result on enter in markFinal is: True
+11/24/2018 11:47:21 AM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #021 Check the number of avatars on Models Page
+11/24/2018 11:47:21 AM - StatusDisplay - INFO: TC #021 Check the number of avatars on Models Page: FULL TEST SUCCESSFUL
+11/24/2018 11:47:21 AM - MainDriver - INFO: Element List with length: 5; Found with locator: //a[@common-ui='ImageURLs'] and  locatorType: xpath
+11/24/2018 11:47:21 AM - MainDriver - INFO: Element List with length: 5; Found with locator: //span[@class='name'] and  locatorType: xpath
+11/24/2018 11:47:21 AM - MainDriver - INFO: Property: href of element: 
+11/24/2018 11:47:21 AM - MainDriver - INFO: Property: href of element: 
+11/24/2018 11:47:22 AM - MainDriver - INFO: Property: href of element: 
+11/24/2018 11:47:22 AM - MainDriver - INFO: After finding element, size of text is: 7
+11/24/2018 11:47:22 AM - MainDriver - INFO: Getting text on element :: Alan P.No additional info.
+11/24/2018 11:47:22 AM - MainDriver - INFO: Parent Window handle found.
+11/24/2018 11:47:22 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 11:47:22 AM - MainDriver - INFO: Confirmed presence of element located with locator: //a[@href='/model/3fea5928-08f0-4087-bbf9-3f9209c345b8'] on the web page
+11/24/2018 11:47:22 AM - MainDriver - INFO: After finding element, size of text is: 0
+11/24/2018 11:47:22 AM - MainDriver - INFO: Web is scrolled to element: .
+11/24/2018 11:47:22 AM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/24/2018 11:47:22 AM - MainDriver - ERROR: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="01a00f36-b68a-a741-9649-c457c59c8503", element="c7fd9377-24d6-a540-93f9-4c383ffd4d46")>in moveToElement NOT hovered and clicked.
+11/24/2018 11:47:27 AM - MainDriver - INFO: All Window handles found.
+11/24/2018 11:47:27 AM - MainDriver - ERROR: Failed to get text on element <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="01a00f36-b68a-a741-9649-c457c59c8503", element="04cf9f58-7dc0-874e-920c-fc8fce984505")>; No additional info.
+11/24/2018 11:47:27 AM - MainDriver - INFO: Parent Window handle found.
+11/24/2018 11:47:27 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be LOCATED
+11/24/2018 11:47:34 AM - MainDriver - ERROR: NOT Confirmed presence of element with locator: //a[@href='/model/d91ffa10-662d-4ea4-b71c-f873be6ab47a'] on the web page
+11/24/2018 11:47:34 AM - MainDriver - INFO: Element List with length: 12; Found with locator: //nb-model-list-item and  locatorType: xpath
+11/24/2018 11:47:34 AM - MainDriver - INFO: Element List with length: 48; Found with locator: photo-container and  locatorType: class
+11/24/2018 11:47:35 AM - MainDriver - INFO: After finding element, size of text is: 0
+11/24/2018 11:47:35 AM - MainDriver - INFO: Getting text on element :: Quick PreviewNo additional info.
+11/24/2018 11:47:35 AM - MainDriver - INFO: Web is scrolled to element: Quick Preview.
+11/24/2018 11:47:35 AM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/24/2018 11:47:36 AM - MainDriver - INFO: Clicked on received element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="01a00f36-b68a-a741-9649-c457c59c8503", element="faa6346d-9c88-3541-9e98-9926474a4abc")>
+11/24/2018 11:47:36 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//nb-browse//div[@class='modal__close']' to be clickable
+11/24/2018 11:47:36 AM - MainDriver - INFO: Element '//nb-browse//div[@class='modal__close']' appeared //nb-browse//div[@class='modal__close'] on the web page
+11/24/2018 11:47:37 AM - MainDriver - INFO: Element '//nb-browse//div[@class='modal__close']' clicked with locator //nb-browse//div[@class='modal__close'] on the web page
+11/24/2018 11:47:37 AM - MainDriver - INFO: After finding element, size of text is: 0
+11/24/2018 11:47:37 AM - MainDriver - INFO: Getting text on element :: Quick PreviewNo additional info.
+11/24/2018 11:47:37 AM - MainDriver - INFO: Web is scrolled to element: Quick Preview.
+11/24/2018 11:47:37 AM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/24/2018 11:47:37 AM - MainDriver - INFO: Clicked on received element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="01a00f36-b68a-a741-9649-c457c59c8503", element="6a5affc8-4322-2d49-919d-8255e30abe5f")>
+11/24/2018 11:47:37 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//nb-browse//div[@class='modal__close']' to be clickable
+11/24/2018 11:47:38 AM - MainDriver - INFO: Element '//nb-browse//div[@class='modal__close']' appeared //nb-browse//div[@class='modal__close'] on the web page
+11/24/2018 11:47:38 AM - MainDriver - INFO: Element '//nb-browse//div[@class='modal__close']' clicked with locator //nb-browse//div[@class='modal__close'] on the web page
+11/24/2018 11:47:38 AM - MainDriver - INFO: After finding element, size of text is: 0
+11/24/2018 11:47:38 AM - MainDriver - INFO: Getting text on element :: Quick PreviewNo additional info.
+11/24/2018 11:47:38 AM - MainDriver - INFO: Web is scrolled to element: Quick Preview.
+11/24/2018 11:47:38 AM - MainDriver - INFO: Web is scrolled up on 400 points.
+11/24/2018 11:47:38 AM - MainDriver - INFO: Clicked on received element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="01a00f36-b68a-a741-9649-c457c59c8503", element="3f07aa8f-9666-4942-b0a4-d02c3ec68e06")>
+11/24/2018 11:47:38 AM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//nb-browse//div[@class='modal__close']' to be clickable
+11/24/2018 11:47:39 AM - MainDriver - INFO: Element '//nb-browse//div[@class='modal__close']' appeared //nb-browse//div[@class='modal__close'] on the web page
+11/24/2018 11:47:39 AM - MainDriver - INFO: Element '//nb-browse//div[@class='modal__close']' clicked with locator //nb-browse//div[@class='modal__close'] on the web page
+11/24/2018 11:47:39 AM - Util - INFO: In incoming list only True: [True, True, True]
+11/24/2018 11:47:39 AM - StatusDisplay - INFO: result on enter in markFinal is: True
+11/24/2018 11:47:39 AM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #023 Check first 12 images on Models Page, they are clickable
+11/24/2018 11:47:39 AM - StatusDisplay - INFO: TC #023 Check first 12 images on Models Page, they are clickable: FULL TEST SUCCESSFUL
+11/24/2018 11:47:39 AM - MainDriver - INFO: Element List with length: 12; Found with locator: //button[contains(text(), ' Book Model ')] and  locatorType: xpath
+11/24/2018 11:47:39 AM - MainDriver - INFO: Clicked on received element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="01a00f36-b68a-a741-9649-c457c59c8503", element="278ce7c7-cc89-5148-9d24-71410580d013")>
+11/24/2018 11:47:40 AM - MainDriver - INFO: Does current page includes text: Almost there: True
+11/24/2018 11:47:40 AM - MainDriver - INFO: Element Found in getElement with locator: //common-pending-modal[@id='pending-contact']//div[@class='modal__close'] and  locatorType: xpath
+11/24/2018 11:47:40 AM - MainDriver - INFO: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="01a00f36-b68a-a741-9649-c457c59c8503", element="9835f818-be97-de44-8013-031c7a6aa49e")>in moveToElement hover and clicked.
+11/24/2018 11:47:40 AM - MainDriver - ERROR: Cannot click on the element with locator:  locatorType: 
+11/24/2018 11:47:41 AM - MainDriver - INFO: Does current page includes text: Almost there: True
+11/24/2018 11:47:41 AM - MainDriver - INFO: Element Found in getElement with locator: //common-pending-modal[@id='pending-contact']//div[@class='modal__close'] and  locatorType: xpath
+11/24/2018 11:47:41 AM - MainDriver - ERROR: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="01a00f36-b68a-a741-9649-c457c59c8503", element="9835f818-be97-de44-8013-031c7a6aa49e")>in moveToElement NOT hovered and clicked.
+11/24/2018 11:47:41 AM - MainDriver - INFO: Clicked on received element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="01a00f36-b68a-a741-9649-c457c59c8503", element="d6432490-3aa8-3242-8575-66ee31f218ca")>
+11/24/2018 11:47:41 AM - MainDriver - INFO: Does current page includes text: Almost there: True
+11/24/2018 11:47:41 AM - MainDriver - INFO: Element Found in getElement with locator: //common-pending-modal[@id='pending-contact']//div[@class='modal__close'] and  locatorType: xpath
+11/24/2018 11:47:42 AM - MainDriver - INFO: Element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="01a00f36-b68a-a741-9649-c457c59c8503", element="9835f818-be97-de44-8013-031c7a6aa49e")>in moveToElement hover and clicked.
+11/24/2018 11:47:42 AM - Util - INFO: In incoming list only True: [True, True, True]
+11/24/2018 11:47:42 AM - StatusDisplay - INFO: result on enter in markFinal is: True
+11/24/2018 11:47:42 AM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #024 Check first 3 Models on 'Book Model' button on Models Page, 
+11/24/2018 11:47:42 AM - StatusDisplay - INFO: TC #024 Check first 3 Models on 'Book Model' button on Models Page, : FULL TEST SUCCESSFUL

@@ -62,22 +62,13 @@ class TestModels:
         Check that all models have avatar in row. TC # 022.
         number of avatars for checking described by data.json:"number_avatars";
         """
-        time.sleep(10)
-        final_list = []
-        results = self.mp.verifyEachAvatars()
-        for result in results:
-            final_list.append(result[0])
-        # is in list False - res out False
-        if False in final_list:
-            res = False
-        else:
-            res = True
+        result = self.mp.verifyEachAvatars()
 
         self.ts.markFinal(
             "TC #022 Check the every category is filtering on Models Page",
-            res, (str(results) + ": TC #022 TOTALLY FAILED. "))
+            result,  ": TC #022 test_verifyEveryAvatar TOTALLY FAILED. ")
 
-    def test_allModelsAllImages(self):
+    def test_verifyAllModelsHasImages(self):
         """
         Check all first 5 models has all 4 images in gallery row;
         1. Check 10 images in rows of one Model's gallery
@@ -89,7 +80,7 @@ class TestModels:
         res = self.mp.verifyNumberImagesRow()
         self.ts.markFinal(
             "TC #023 Check first 12 images on Models Page, they are clickable",
-            res,": TC #023. test_allModelsAllImages TOTALLY FAILED. ")
+            res,": TC #023. test_verifyAllModelsHasImages TOTALLY FAILED. ")
 
     def test_verifyBookModels(self):
         """
@@ -101,4 +92,13 @@ class TestModels:
             "TC #024 Check first 3 Models on 'Book Model' button on Models Page, ",
             res, ": TC #024. test_verifyBookModels TOTALLY FAILED. ")
 
+    def test_verifyFavoriteButton(self):
+        """
+        Check the first 3 models can be clicked by "Favorite".
+        TC # 025.
+        """
+        res = self.mp.verifyFavoritesButton()
+        self.ts.markFinal(
+            "TC #025 Check first 3 Models on 'Book Model' button on Models Page, ",
+            res, ": TC #024. test_verifyBookModels TOTALLY FAILED. ")
 

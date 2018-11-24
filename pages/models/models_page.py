@@ -74,12 +74,12 @@ class ModelsPage(MainDriver):
             # Create list of results
             results = []
             # for protection if element has changed after refresh;
-            elem = self.getListOfItems(locator)[indx]
+            element = urls[indx]
             # Get lowercase of expected text inside of div tag
-            expected_text = elem.text.lower()
-            elem.click()
+            expected_text = element.text.lower()
+            self.elementClick("", "", element)
 
-            time.sleep(3)  # !!! dicide to exlicite wait.
+            time.sleep(3)  # !!! decide to explicit wait.
 
             ## Handle URL
             # Get actual text on the end of URL after '='
@@ -197,12 +197,12 @@ class ModelsPage(MainDriver):
                     actual_name = "Name was not found."
 
             # Actual name doesn't consists expected name.
-            result.append((current_res, (expected_name, actual_name)))
+            result.append(current_res)
 
             # Add result in result with tuple (Boolean, "model's name")
             # result = (expected_name == actual_name)
 
-        return result
+        return self.util.absentFalseInList(result)
 
     def verifyNumberImagesRow(self):
         """
@@ -246,3 +246,14 @@ class ModelsPage(MainDriver):
             self.moveToElementAndClick(element, True)
 
         return self.util.absentFalseInList(result)
+
+    def verifyFavoritesButton(self):
+        """
+        Return Ttrue if all models in gallery with number
+        self.data["favorit_num"] open Add to Favorites page.
+        If not: False
+        """
+        favorit_num = self.data["favorit_num"]
+
+        # For first favorit_num models try to click on Favorit.
+        pass
