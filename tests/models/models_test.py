@@ -70,7 +70,7 @@ class TestModels:
 
     def test_verifyAllModelsHasImages(self):
         """
-        Check all first 5 models has all 4 images in gallery row;
+        Check randomly chosen 5 models has all 4 images in gallery row;
         1. Check 10 images in rows of one Model's gallery
         Verify first 10 images that they are availble.
         This number described by key "number_images_checking' in data.json
@@ -84,7 +84,7 @@ class TestModels:
 
     def test_verifyBookModels(self):
         """
-        Check the frist 3 models can be clicked by "Book model".
+        Check the randomly 3 models can be clicked by "Book model".
         TC # 024.
         """
         res = self.mp.verifyBookModelButton()
@@ -94,11 +94,22 @@ class TestModels:
 
     def test_verifyFavoriteButton(self):
         """
-        Check the first 3 models can be clicked by "Favorite".
+        Check randomly for 3 models can be clicked by "Favorite".
         TC # 025.
         """
         res = self.mp.verifyFavoritesButton()
         self.ts.markFinal(
-            "TC #025 Check first 3 Models on 'Book Model' button on Models Page, ",
-            res, ": TC #024. test_verifyBookModels TOTALLY FAILED. ")
+            "TC #025 Check the first 3 models can be clicked by 'Favorite', ",
+            res, ": TC #025. test_verifyFavoritesButton TOTALLY FAILED. ")
 
+    def test_verifyPortfolioButton(self):
+        """
+        Check the randomly chosen 3 models (data.json:"portfolio_num")
+        can be clicked by "Favorite".
+        TC # 026.
+        """
+        res = self.mp.verifySeePortfolioButton()
+        self.ts.markFinal(
+            "TC #026 Check randomly chosen 3 models can be "
+            "clicked by 'Profile' button, ",
+            res, ": TC #026. test_verifyPortfolioButton TOTALLY FAILED. ")

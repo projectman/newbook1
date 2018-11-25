@@ -102,7 +102,12 @@
   "number_images_checking": 3,
   "image_library_close": "//nb-browse//div[@class='modal__close']",
   "almost_there_close": "//common-pending-modal[@id='pending-contact']//div[@class='modal__close']",
-  "number_of_booking": 3,
+  "booking_num": 3,
   "book_locator": "//button[contains(text(), ' Book Model ')]",
-  "booking_page_text": "Almost there"
+  "booking_page_text": "Almost there",
+  "favorite_num": 3,
+  "favorite_btn": "//div[@class='FavoriteButton__buttonWrapper--Dh4AG']",
+  "close_favorite": "//div[@class='FavoriteModal__right--2taCv']//button[@title='Close']",
+  "portfolio_num":3,
+  "see_portfolio": "//button[contains(text(), 'See Portfolio')]"
 }

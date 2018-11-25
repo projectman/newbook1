@@ -56,38 +56,38 @@ class Util(object):
         """
         return self.getAlphaNumeric(charCount, 'lower')
 
-    def getUniqueNameList(self, listSize=5, itemLength=None):
+    def getUniqueNameList(self, list_size=5, item_length=None):
         """
         Get a list of valid email ids
 
         Parameters:
-            listSize: Number of names. Default is 5 names in a list
-            itemLength: It should be a list containing number of items equal to the listSize
+            list_size: Number of names. Default is 5 names in a list
+            item_length: It should be a list containing number of items equal to the listSize
                         This determines the length of the each item in the list -> [1, 2, 3, 4, 5]
         """
         nameList = []
-        for i in range(0, listSize):
-            nameList.append(self.getUniqueName(itemLength[i]))
+        for i in range(0, list_size):
+            nameList.append(self.getUniqueName(item_length[i]))
         return nameList
 
-    def verifyTextContains(self, expectedText, actualText):
+    def verifyTextContains(self, expected_text, actual_text):
         """
         Verify actual text contains expected text string
         Parameters:
             expectedList: Expected Text
             actualList: Actual Text
         """
-        self.log.info("Actual Text From Application Web UI --> :: " + actualText)
-        self.log.info("Expected Text From Application Web UI --> :: " + expectedText)
-        if expectedText.lower() in actualText.lower():
+        self.log.info("Actual Text From Application Web UI --> :: " + actual_text)
+        self.log.info("Expected Text From Application Web UI --> :: " + expected_text)
+        if expected_text.lower() in actual_text.lower():
             self.log.info("### VERIFICATION CONTAINS !!! Actual Text "
-                          + actualText + "Expected text: " + expectedText)
+                          + actual_text + "Expected text: " + expected_text)
             return True
         else:
             self.log.error("### VERIFICATION DOES NOT CONTAINS !!!")
             return False
 
-    def verifyTextMatch(self, actualText, expectedText):
+    def verifyTextMatch(self, actual_text, expected_text):
         """
         Verify text match
 
@@ -95,24 +95,24 @@ class Util(object):
             expectedList: Expected Text
             actualList: Actual Text
         """
-        self.log.info("Actual Text From Application Web UI --> :: " + actualText)
-        self.log.info("Expected Text From Application Web UI --> :: " + expectedText)
-        if actualText.lower() == expectedText.lower():
+        self.log.info("Actual Text From Application Web UI --> :: " + actual_text)
+        self.log.info("Expected Text From Application Web UI --> :: " + expected_text)
+        if actual_text.lower() == expected_text.lower():
             self.log.info("### VERIFICATION MATCHED !!!")
             return True
         else:
             self.log.error("### VERIFICATION DOES NOT MATCHED !!!")
             return False
 
-    def verifyListMatch(self, expectedList, actualList):
+    def verifyListMatch(self, expected_list, actual_list):
         """
         Verify two list matches
 
         Parameters:
-            expectedList: Expected List
-            actualList: Actual List
+            expected_list: Expected List
+            actual_list: Actual List
         """
-        return set(expectedList) == set(actualList)
+        return set(expected_list) == set(actual_list)
 
     def verifyListContains(self, expectedList, actualList):
         """
@@ -163,3 +163,16 @@ class Util(object):
             self.log.error(("Incoming argument list_in is not sequence: "
                             + str(list_in)))
             return False
+
+    def randomIndexList(self, size_of_range, out_list_size):
+        """
+        Function that takes size_of_range, out_list_size <- 2 integers.
+        # create range of indexes length with size of range.
+        # shuffle them and took first out_list_size elements.
+        """
+        index_list = list(range(size_of_range))
+        random.shuffle(index_list)
+        return index_list[:out_list_size]
+
+
+

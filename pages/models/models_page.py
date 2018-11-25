@@ -30,8 +30,87 @@ class ModelsPage(MainDriver):
     def scrolELementForClick(self, element):
         # scroll that element will be seen.
         self.webScrollElement(element)
-        # scroll from top menu panel
+        # scroll up to move element from top menu panel
         self.webScroll("up")
+
+    def collectListModelsNames(self, locator, locator_type="xpath"):
+        """
+        Return the list of the names of models in elments of rows in
+        models' gallery. locator to the "Name of model" in the rows of models.
+        """
+        return self.getElementList(locator, locator_type)
+
+
+    def porfolioControl(self, elements_num, elements_locator, names_locator,
+                        expected_el_locator):
+        """
+        Universal method for control of portfolio opening in new
+        window (the same for avatar and for button "See Portfolio"
+        For this method arguments needed:
+        Return true if all elements opened, found and equal.
+        """
+
+        # visit main page to avoid influence of previous test.
+        self.openHomePageWaitLogin()
+
+        # number will be randomly tested
+        testing_num = elements_num
+
+        # list of names for comparing with name in Portfolio
+        names = self.waitAllElementsLocated(names_locator)
+
+        size_of_index = len(names)
+        random_index_list = self.util.randomIndexList(
+            size_of_index, testing_num)
+
+        result = []
+        for indx in random_index_list:
+            # collect all "See Portfolio" web elements
+            elements_list = self.getElementList(elements_locator)
+
+            # collect all names of current models of gallery rows.
+            names = self.collectListModelsNames(names_locator)
+
+            # For current randomly chosen name
+            expected_name = self.getText(names[indx])
+
+            # Find parent handle -> Main Window
+            parent_window = self.findParentWindow()
+
+            # Scroll to the element seen for clicking
+            self.scrolELementForClick(elements_list[indx])
+            # Click by JS, to open new window with profile
+            self.moveToElementAndClick(elements_list[indx], True)
+
+            # wait until EC.new_window_is_opened(current_handles)
+            self.waitNewWindowOpen([parent_window])
+            # Find all handles
+            handles = self.findAllHandles()
+            # Change the window
+            current_res = False
+            for handle in handles:
+                if handle != parent_window:
+                    self.switchToWindow(handle)
+                    # Find text element with Name.
+                    actual_el = self.waitElementLocated(expected_el_locator)
+                    actual_name = self.getText(actual_el)
+
+                    # Check that found text contains expectedText
+                    current_res = self.util.verifyTextContains(
+                        expected_name, actual_name)
+                    self.closeWindow()
+                    # Switch back to parent window.
+                    self.switchToWindow(parent_window)
+                    current_res = True
+            # Actual name doesn't consists expected name.
+            result.append(current_res)
+
+            # Add result in result with tuple (Boolean, "model's name")
+            # result = (expected_name == actual_name)
+
+        return self.util.absentFalseInList(result)
+
+
 
     ########### Main Methods #######################
     def equal_num_categories(self):
@@ -112,6 +191,8 @@ class ModelsPage(MainDriver):
         Return True if number of avatars in gallery is the same as number
         of rows.
         """
+        # visit main page to avoid influence of previouse test.
+        self.openHomePageWaitLogin()
 
         rows = self.getListOfItems(self.data["rows"])
         avatars = self.getListOfItems(self.data["avatars"])
@@ -126,119 +207,69 @@ class ModelsPage(MainDriver):
         will check that it alive profile linked to avatar.
         number of avatars for checking described by data.json:"number_avatars";
         """
-        # collect all avatars of gallery rows.
-        avatars = self.getElementList(self.data["avatars"])
-        # collect all names of current models of gallery rows.
-        names = self.getElementList(self.data["names"])
+        result = self.porfolioControl(
+            self.data["number_avatars"],
+            self.data["avatars"],
+            self.data["names"],
+            self.data["name_in_profile"]
+        )
 
-        # Chose random avatar from list with index... ;
-        index_list = list(range(len(avatars)))
-        res_random_avatars = []
-        res_random_names = []
-        # Arrange loop for the number of circles as in "number_avatars" json.
-        for _ in range(self.data["number_avatars"]):
-            # get random item from basic list of indexes
-            random_indx = random.choice(index_list)
-
-            # find the current index of random item in basic list of indexes
-            index = index_list.index(random_indx)
-
-            # took the index element from the total list
-            random_element_index = index_list.pop(index)
-
-            # took from the avatars hrefs afttribute of elem the item with index
-            href_property = self.getElementProperty(
-                avatars[random_element_index], "href")
-
-            # include in list of href locator only after 25 element
-            res_random_avatars.append(href_property[24:])
-            res_random_names.append(names[random_element_index])
-
-        # Processing of list randomly chosen names and avatars.
-        # Took the name with this index
-        result =[]
-        for _ in range(len(res_random_names)):
-            # For current randomly chosen name
-            expected_name = self.getText(res_random_names[_])
-
-            # Find parent handle -> Main Window
-            parent_window = self.findParentWindow()
-
-            # click on the avatar
-            href = res_random_avatars[_]
-            locator = "//a[@href='" + href + "']"
-            avatar = self.waitElementLocated(locator)
-            self.scrolELementForClick(avatar)
-            # Click by JS, to open new window with profile
-            self.moveToElementAndClick(avatar, True)
-
-            # !!! Refactor via waiting that list of handles > 1
-            time.sleep(5)
-            # Find all handles
-            handles = self.findAllHandles()
-            # Change the window
-            current_res = False
-            actual_name = ""
-            for handle in handles:
-                if handle not in parent_window:
-                    self.switchToWindow(handle)
-                    # Find text element with Name.
-                    actual_el = self.waitElementLocated(
-                        self.data["name_in_profile"])
-                    actual_name = self.getText(actual_el)
-
-                    # Check that found text contains expectedText
-                    current_res = self.util.verifyTextContains(
-                                            expected_name, actual_name)
-                    self.closeWindow()
-                    # Switch back to parent window.
-                    self.switchToWindow(parent_window)
-                else:
-                    actual_name = "Name was not found."
-
-            # Actual name doesn't consists expected name.
-            result.append(current_res)
-
-            # Add result in result with tuple (Boolean, "model's name")
-            # result = (expected_name == actual_name)
-
-        return self.util.absentFalseInList(result)
+        return result
 
     def verifyNumberImagesRow(self):
         """
         Return: True if all first "minimal number of rows" in gallery of Models
         have "images_per_row" (4) images per row.
         """
+        # visit main page to avoid influence of previous test.
+        self.openHomePageWaitLogin()
+
         # Collect Rows
         rows = self.getElementList(self.data["rows"])
+        number_rows = len(rows)
         # Take only first minimal number of rows for testing (5)
-        used = self.data["minimal_number_rows"]
         # in the second section there are 4 divs with "photo container"
         # We need to check 20 (5 * 4) photo container elements is clickable
         images_elements = self.getElementList("photo-container", "class")
-        number_images_checking = self.data["number_images_checking"]
+        number_models_checking = self.data["number_images_checking"]
+        random_index_list = self.util.randomIndexList(
+            number_rows, number_models_checking)
         result = []
-        for _ in range(number_images_checking):
-            current_element = images_elements[_]
-            self.scrolELementForClick(current_element)
-            self.elementClick("", "", current_element)
-            # Wait cross for closing new window of photo page
+        for _ in random_index_list:
+            # Every models has 4 images in row so we need check 0...3 images
+            # for every random_index_list: (0 + _ ) to (3 + _ ) element
+            for counter in range(4):
+                cur_index = _ + counter
+                current_element = images_elements[cur_index]
+                self.scrolELementForClick(current_element)
+                self.elementClick("", "", current_element)
+                # Wait cross for closing new window of photo page
 
-            click_el = self.waitForClickElement(self.data["image_library_close"], True)
-            if click_el is not None:
-                result.append(True)
+                click_el = self.waitForClickElement(self.data["image_library_close"], True)
+                if click_el is not None:
+                    result.append(True)
 
         return self.util.absentFalseInList(result)
 
     def verifyBookModelButton(self):
-        """Return True if possible click and get booking page for the
-        first 3 (number of booking) Models in rows of Model page. """
+        """
+        Return True if possible click and get booking page for the
+        randomly chosen 3 (booking_nu) Models in rows of Model page.
+        """
+        # visit main page to avoid influence of previous test.
+        self.openHomePageWaitLogin()
+
         # Book models elements:
         result = []
         book_model_elements = self.getElementList(self.data["book_locator"])
-        number_of_booking = self.data["number_of_booking"]
-        for _ in range(number_of_booking):
-            self.elementClick("", "", book_model_elements[_])
+
+        size_of_index = len(book_model_elements)
+        number_of_booking = self.data["booking_num"]
+        random_index_list = self.util.randomIndexList(
+            size_of_index, number_of_booking)
+
+        for _ in random_index_list:
+            self.moveToElementAndClick(book_model_elements[_], True)
             # Page source contains "booking_page_text" from data.json.
             expected_text = self.data["booking_page_text"]
             result.append(self.verifyPageIncludesText(expected_text))
@@ -249,11 +280,63 @@ class ModelsPage(MainDriver):
 
     def verifyFavoritesButton(self):
         """
-        Return Ttrue if all models in gallery with number
-        self.data["favorit_num"] open Add to Favorites page.
+        Return True if all models in gallery with number
+        self.data["favorite_num"] open "Add to Favorites" page.
         If not: False
         """
-        favorit_num = self.data["favorit_num"]
+        # visit main page to avoid influence of previous test.
+        self.openHomePageWaitLogin()
 
-        # For first favorit_num models try to click on Favorit.
-        pass
+        favorit_num = self.data["favorite_num"]
+        names = self.collectListModelsNames(self.data["names"])
+        size_of_index = len(names)
+        random_index_list = self.util.randomIndexList(
+            size_of_index, favorit_num)
+
+        result = []
+        for _ in random_index_list:
+            # Check that model page downloaded.
+            self.isElementDisplayed(self.data["avatar_link"])
+            # Create list of elements: favorites button
+            favorite_list = self.getElementList(self.data["favorite_btn"])
+            # Click on favorite button
+            # after scroll the elements re-initialised !!!
+            self.scrolELementForClick(favorite_list[_])
+            favorite_list = self.getElementList(self.data["favorite_btn"])
+            self.elementClick("", "", favorite_list[_])
+            # Wait is available Favorite page with text model's name
+            element = self.waitElementLocated( # !!! move to json
+                "//div[@class='FavoriteModal__modelName--3iP_4']")
+            expected_text = self.getText(names[_])
+            actual_text = self.getText(element)
+            result.append(self.util.verifyTextContains(
+                expected_text, actual_text))
+            # Close favorite window.
+            self.elementClick(self.data["close_favorite"])
+
+        return self.util.absentFalseInList(result)
+
+    def verifySeePortfolioButton(self):
+        """
+        Return True if all randomly chosen models in gallery with number
+        self.data["favorite_num"] open "Portfolio" window.
+        Portfolio page include the name the same as the model's row in gallery.
+        If not: False
+        """
+
+        # Create universal method for control of portfolio opening in new
+        # window (the same for avatar and for button "See Portfolio"
+        # For this method arguments needed:
+        # Xpath for the names on gallery rows. : data.json:"names"
+        # Xpath for the buttons "See Portfolio" : data.json:"see_portfolio"
+        # Number of models will be tested: data.json:"porfolio_num"
+
+        result = self.porfolioControl(
+            self.data["portfolio_num"],
+            self.data["see_portfolio"],
+            self.data["names"],
+            self.data["name_in_profile"]
+        )
+
+
+        return result

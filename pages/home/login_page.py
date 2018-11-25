@@ -16,7 +16,7 @@ class LoginPage(MainDriver):
 
     def newLogPage(self):
         """ print empty line in front of every new report. """
-        str_el = "#"*20 + 10*" " +" NEW LOG " + 10*" " + 20*"#"
+        str_el = "\n" + "#"*20 + 10*" " +" NEW LOG " + 10*" " + 20*"#"
 
         self.specialLogLine(str_el+"; "+self.driver.title)
 
