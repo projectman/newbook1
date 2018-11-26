@@ -1,12 +1,7 @@
 
 Think about class: Arriving Page control.
 
-Click on something on curret page;
-Open window or pop-up,
-control some elements /(name) equal on tame on parent pages. /
-return to the parent page.
-
-
+Add ERRORs from log in separate text in the end.
 
 Tasks before production:
 

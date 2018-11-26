@@ -97,17 +97,23 @@
   "avatars": "//a[@common-ui='ImageURLs']",
   "names": "//span[@class='name']",
   "name_in_profile": "//div[@class='model-name d-flex flex-row justify-content-center justify-content-lg-start']",
+
   "portfolio": "//div[contains(text(), 'Portfolio')]",
   "photo_container": "'photo-container', 'class'",
   "number_images_checking": 3,
   "image_library_close": "//nb-browse//div[@class='modal__close']",
+  "name_in_gallery": "//nb-gallery-model-info",
+
+  "booking_page_text": "//div[contains(text(), 'Almost there')]",
   "almost_there_close": "//common-pending-modal[@id='pending-contact']//div[@class='modal__close']",
   "booking_num": 3,
   "book_locator": "//button[contains(text(), ' Book Model ')]",
-  "booking_page_text": "Almost there",
+
   "favorite_num": 3,
   "favorite_btn": "//div[@class='FavoriteButton__buttonWrapper--Dh4AG']",
+  "favorite_elem": "//div[@class='FavoriteModal__right--2taCv']//span[contains(text(), 'Add To Favor')]",
   "close_favorite": "//div[@class='FavoriteModal__right--2taCv']//button[@title='Close']",
+
   "portfolio_num":3,
   "see_portfolio": "//button[contains(text(), 'See Portfolio')]"
 }

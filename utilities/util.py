@@ -172,7 +172,9 @@ class Util(object):
         """
         index_list = list(range(size_of_range))
         random.shuffle(index_list)
-        return index_list[:out_list_size]
+        result = index_list[:out_list_size]
+        self.log.info(("Found random list of indexes: " + str(result)))
+        return result
 
 
 

@@ -238,11 +238,13 @@ class MainDriver():
                 element = self.getElement(locator, locator_type)
             if element is not None:
                 self.log.info("Element present with locator: " + locator +
-                              " locator_type: " + locator_type)
+                              " locator_type: " + locator_type + " element: "
+                              + str(element))
                 return True
             else:
                 self.log.info("Element not present with locator: " + locator +
-                              " locator_type: " + locator_type)
+                              " locator_type: " + locator_type + " element: "
+                              + str(element))
                 return False
         except:
             print("Element not found")
@@ -319,14 +321,15 @@ class MainDriver():
         result = []
         try:
             byType = self.getByType(locator_type)
-            self.log.info(("Waiting for maximum :: " + str(timeout) +
-             " :: seconds for list of elements will be present with LOCATER"))
+            self.log.info(("Waiting for maximum :: "
+                           + str(timeout) +
+             " :: seconds for All elements Located with LOCATER."))
             wait = WebDriverWait(self.driver, timeout, pollFrequency)
             result = wait.until(EC.presence_of_all_elements_located((
                 byType, locator)))
             self.log.info(
                 ("Confirmed presence of ALL elements located with locator: "
-                          + locator + " on the web page"))
+                          + locator + ", " + locator_type + " on the web page"))
 
         except:
             self.log.error(
@@ -391,9 +394,10 @@ class MainDriver():
         try:
             self.driver.execute_script("arguments[0].scrollIntoView(true);", element)
             self.log.info(
-                "Web is scrolled to element: " + str(self.getText(element)) + "." )
+                "Web is scrolled to element: " + str(element) + "." )
         except:
-            self.log.error( "Web CAN NOT be scrolled to element: " + element.text + "." )
+            self.log.error( "Web CAN NOT be scrolled to element: "
+                            + str(element) + "." )
 
     def verifyPageTitle(self, title_to_verify):
         """

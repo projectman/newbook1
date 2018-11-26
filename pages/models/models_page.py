@@ -110,7 +110,48 @@ class ModelsPage(MainDriver):
 
         return self.util.absentFalseInList(result)
 
+    def newFrameControl(self, elements_num, elements_locator, locator_rows,
+                        expected_element_locator,
+                        expected_element_close, element_locator_type="xpath",
+                        expected_el_close_type="xpath", image_per_row=4):
+        """
+        It takes some argument with locators and return the True if the
+        element with expected_locator found on opened frame.
+        Return False if any of the numbers try will not True.
+        """
+        # visit main page to avoid influence of previous test.
+        self.openHomePageWaitLogin()
+        rows = self.getElementList(locator_rows)
 
+        random_index_list = self.util.randomIndexList(
+            len(rows), elements_num)
+        # Take only first minimal number of rows for testing (5)
+        # in the second section there are 4 divs with "photo container"
+        # We need to check 20 (5 * 4) photo container elements is clickable
+
+        result = []
+        for indx in random_index_list:
+            # Every models has 4 images in row so we need check 0...3 images
+            # for every random_index_list: (0 + indx ) to (3 + indx ) element
+            rows = self.waitAllElementsLocated(locator_rows)
+            current_element = rows[indx]
+            self.scrolELementForClick(current_element)
+
+            for counter in range(image_per_row):
+                cur_index = indx * image_per_row + counter
+
+                images_elements = self.waitAllElementsLocated(
+                    elements_locator, element_locator_type)
+                self.elementClick("", "", images_elements[cur_index])
+
+                # Wait control element is available;
+                control_el = self.waitElementLocated(expected_element_locator)
+                result.append(self.isElementPresece("", "", control_el))
+                # Closing new window with closing element
+                self.waitForClickElement(expected_element_close,
+                                   True, expected_el_close_type)
+
+        return  self.util.absentFalseInList(result)
 
     ########### Main Methods #######################
     def equal_num_categories(self):
@@ -221,62 +262,36 @@ class ModelsPage(MainDriver):
         Return: True if all first "minimal number of rows" in gallery of Models
         have "images_per_row" (4) images per row.
         """
-        # visit main page to avoid influence of previous test.
-        self.openHomePageWaitLogin()
+        result = self.newFrameControl(
+            self.data["number_images_checking"],
+            "photo-container",
+            self.data["rows"],
+            self.data["name_in_gallery"],
+            self.data["image_library_close"],
+            "class"  # Need to be last to avoid using "xpath"
+        )
 
-        # Collect Rows
-        rows = self.getElementList(self.data["rows"])
-        number_rows = len(rows)
-        # Take only first minimal number of rows for testing (5)
-        # in the second section there are 4 divs with "photo container"
-        # We need to check 20 (5 * 4) photo container elements is clickable
-        images_elements = self.getElementList("photo-container", "class")
-        number_models_checking = self.data["number_images_checking"]
-        random_index_list = self.util.randomIndexList(
-            number_rows, number_models_checking)
-        result = []
-        for _ in random_index_list:
-            # Every models has 4 images in row so we need check 0...3 images
-            # for every random_index_list: (0 + _ ) to (3 + _ ) element
-            for counter in range(4):
-                cur_index = _ + counter
-                current_element = images_elements[cur_index]
-                self.scrolELementForClick(current_element)
-                self.elementClick("", "", current_element)
-                # Wait cross for closing new window of photo page
-
-                click_el = self.waitForClickElement(self.data["image_library_close"], True)
-                if click_el is not None:
-                    result.append(True)
-
-        return self.util.absentFalseInList(result)
+        return result
 
     def verifyBookModelButton(self):
         """
         Return True if possible click and get booking page for the
         randomly chosen 3 (booking_nu) Models in rows of Model page.
         """
-        # visit main page to avoid influence of previous test.
-        self.openHomePageWaitLogin()
 
-        # Book models elements:
-        result = []
-        book_model_elements = self.getElementList(self.data["book_locator"])
+        result = self.newFrameControl(
+            self.data["booking_num"],
+            self.data["book_locator"],
+            self.data["rows"],
+            self.data["booking_page_text"],
+            self.data["almost_there_close"],
+            "xpath",
+            "xpath",
+            1
+        )
 
-        size_of_index = len(book_model_elements)
-        number_of_booking = self.data["booking_num"]
-        random_index_list = self.util.randomIndexList(
-            size_of_index, number_of_booking)
 
-        for _ in random_index_list:
-            self.moveToElementAndClick(book_model_elements[_], True)
-            # Page source contains "booking_page_text" from data.json.
-            expected_text = self.data["booking_page_text"]
-            result.append(self.verifyPageIncludesText(expected_text))
-            element = self.getElement(self.data["almost_there_close"])
-            self.moveToElementAndClick(element, True)
-
-        return self.util.absentFalseInList(result)
+        return result
 
     def verifyFavoritesButton(self):
         """
@@ -284,37 +299,19 @@ class ModelsPage(MainDriver):
         self.data["favorite_num"] open "Add to Favorites" page.
         If not: False
         """
-        # visit main page to avoid influence of previous test.
-        self.openHomePageWaitLogin()
 
-        favorit_num = self.data["favorite_num"]
-        names = self.collectListModelsNames(self.data["names"])
-        size_of_index = len(names)
-        random_index_list = self.util.randomIndexList(
-            size_of_index, favorit_num)
+        result = self.newFrameControl(
+            self.data["favorite_num"],
+            self.data["favorite_btn"],
+            self.data["rows"],
+            self.data["favorite_elem"],
+            self.data["close_favorite"],
+            "xpath",
+            "xpath",
+            1
+        )
 
-        result = []
-        for _ in random_index_list:
-            # Check that model page downloaded.
-            self.isElementDisplayed(self.data["avatar_link"])
-            # Create list of elements: favorites button
-            favorite_list = self.getElementList(self.data["favorite_btn"])
-            # Click on favorite button
-            # after scroll the elements re-initialised !!!
-            self.scrolELementForClick(favorite_list[_])
-            favorite_list = self.getElementList(self.data["favorite_btn"])
-            self.elementClick("", "", favorite_list[_])
-            # Wait is available Favorite page with text model's name
-            element = self.waitElementLocated( # !!! move to json
-                "//div[@class='FavoriteModal__modelName--3iP_4']")
-            expected_text = self.getText(names[_])
-            actual_text = self.getText(element)
-            result.append(self.util.verifyTextContains(
-                expected_text, actual_text))
-            # Close favorite window.
-            self.elementClick(self.data["close_favorite"])
-
-        return self.util.absentFalseInList(result)
+        return result
 
     def verifySeePortfolioButton(self):
         """
