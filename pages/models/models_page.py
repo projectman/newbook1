@@ -6,7 +6,6 @@ It needs to be launched after login.
 import time
 
 from base.main_driver import MainDriver
-import json
 import random
 
 class ModelsPage(MainDriver):
@@ -146,7 +145,7 @@ class ModelsPage(MainDriver):
 
                 # Wait control element is available;
                 control_el = self.waitElementLocated(expected_element_locator)
-                result.append(self.isElementPresece("", "", control_el))
+                result.append(self.isElementPresent("", "", control_el))
                 # Closing new window with closing element
                 self.waitForClickElement(expected_element_close,
                                    True, expected_el_close_type)
@@ -159,7 +158,7 @@ class ModelsPage(MainDriver):
         on Models Page.TC # 018, in other case False. """
 
         # Find list of elements categories icons.
-        actual_num = len(self.getListOfItems(self.data["category"]))
+        actual_num = len(self.waitAllElementsLocated(self.data["category"]))
 
         # !!! move to the Util() class with logs and try:
         expected_num = self.data["number_of_categories"]

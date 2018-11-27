@@ -86,6 +86,7 @@
       "el_2":"//a[text()='Log In']"
     }
   ],
+
   "models_page": "########       JUST SEPARATOR        ###########",
   "category": "//div[@class='item__title']",
   "rows": "//nb-model-list-item",
@@ -115,5 +116,13 @@
   "close_favorite": "//div[@class='FavoriteModal__right--2taCv']//button[@title='Close']",
 
   "portfolio_num":3,
-  "see_portfolio": "//button[contains(text(), 'See Portfolio')]"
+  "see_portfolio": "//button[contains(text(), 'See Portfolio')]",
+
+  "home_page": "########       JUST SEPARATOR        ###########",
+  "hp_elements": ["//a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Clients')]",
+  "//a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Agencies')]",
+  "//a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Models')]",
+  "//a[contains(text(), 'Browse Talent')]",
+  "//a[@class='Navbar__navLink--3lL7S Navbar__navLinkSingle--3x6Lx Navbar__login--28b35']",
+  "//span/button[contains(text(), 'Sign Up')]"]
 }

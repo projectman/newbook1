@@ -167,7 +167,7 @@ class MainDriver():
                            " locator_type: " + locator_type)
             # print_stack()
 
-    def isElementPresent(self, locator, locator_type="xpath"):
+    def isElementPresence(self, locator, locator_type="xpath"):
         """ Return True if element Present and False if not. """
         try:
             element = self.getElement(locator, locator_type)
@@ -228,7 +228,7 @@ class MainDriver():
             text = None
         return text
 
-    def isElementPresece(self, locator="", locator_type="xpath", element=None):
+    def isElementPresent(self, locator="", locator_type="xpath", element=None):
         """
         Check if element is present ->
         Either provide element or a combination of locator and locator_type
@@ -242,7 +242,7 @@ class MainDriver():
                               + str(element))
                 return True
             else:
-                self.log.info("Element not present with locator: " + locator +
+                self.log.error("Element not present with locator: " + locator +
                               " locator_type: " + locator_type + " element: "
                               + str(element))
                 return False

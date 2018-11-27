@@ -15,7 +15,6 @@ class TestModels:
         """ Check all filter elements available on Models Page
         There are 7 items for "Filter by Category" on Models Page. TC # 018
         """
-        time.sleep(7)
         res = self.mp.equal_num_categories()
 
         self.ts.markFinal(

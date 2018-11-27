@@ -1,11 +1,3 @@
 [
-  "tests/models/models_test.py::TestModels::()::test_elementsAvailable",
-  "tests/models/models_test.py::TestModels::()::test_galeryRowsAvailable",
-  "tests/models/models_test.py::TestModels::()::test_verifyCategories",
-  "tests/models/models_test.py::TestModels::()::test_verifyNumberAvatars",
-  "tests/models/models_test.py::TestModels::()::test_verifyEveryAvatar",
-  "tests/models/models_test.py::TestModels::()::test_verifyAllModelsHasImages",
-  "tests/models/models_test.py::TestModels::()::test_verifyBookModels",
-  "tests/models/models_test.py::TestModels::()::test_verifyFavoriteButton",
-  "tests/models/models_test.py::TestModels::()::test_verifyPortfolioButton"
+  "tests/home/home_test.py::TestModels::()::test_elementsAvailable"
 ]
