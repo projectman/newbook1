@@ -25,7 +25,7 @@ def oneTimeSetUp(request, browser):
     lp.clickUpLoginButton() # UP RIGHT button on Home page;
 
 
-    creden = lp.get_data()["right_cr"]
+    creden = lp.data["right_cr"]
     lp.login(creden["user"], creden["pass"])
 
     # Pop up after first log in

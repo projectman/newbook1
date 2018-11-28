@@ -11,7 +11,7 @@ class TestModels:
         self.mp = ModelsPage(self.driver)
         self.ts = StatusDisplay(self.driver)
 
-    def test_elementsAvailable(self):
+    def test_elementsHomePageAvailable(self):
         """ Check all filter elements available on Models Page
         There are 7 items for "Filter by Category" on Models Page. TC # 018
         """

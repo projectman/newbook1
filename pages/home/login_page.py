@@ -10,10 +10,6 @@ class LoginPage(MainDriver):
         super().__init__(driver)
         self.driver = driver
 
-    def get_data(self):
-        """ Return dictionary with data JSON for testing."""
-        return self.data
-
     def newLogPage(self):
         """ print empty line in front of every new report. """
         str_el = "\n" + "#"*20 + 10*" " +" NEW LOG " + 10*" " + 20*"#"
@@ -59,9 +55,6 @@ class LoginPage(MainDriver):
             return True
         else:
             return False
-
-    def getCurrentPageUrl(self):
-        return self.getUrl()
 
     ## Actions. Enters.
     def enterEmail(self, email):
@@ -161,7 +154,6 @@ class LoginPage(MainDriver):
         self.waitForClickElement(self.data["up_login_link"], True)
 
         result = []
-        counter = 7
         for item in self.data["wrong_cr"]:
 
             self.login(item["user"], item["pass"])
