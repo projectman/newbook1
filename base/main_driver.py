@@ -22,10 +22,6 @@ class MainDriver():
         self.data = json.load(open('utilities/data.json'))
 
 
-    def get_data(self):
-        """ Return dictionary with data JSON for testing."""
-        return self.data
-
     def specialLogLine(self, message):
         """Create Announcement line for the new log."""
         self.log.info(message)
@@ -73,8 +69,6 @@ class MainDriver():
         url = self.driver.current_url
         self.log.info("Current page URL from getUrl method is "+url)
         return url
-
-
 
     def getTitle(self):
         return self.driver.title
