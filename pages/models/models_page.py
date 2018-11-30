@@ -79,6 +79,7 @@ class ModelsPage(MainDriver):
             # Scroll to the element seen for clicking
             self.scrolELementForClick(elements_list[indx])
             # Click by JS, to open new window with profile
+            elements_list = self.getElementList(elements_locator)
             self.moveToElementAndClick(elements_list[indx], True)
 
             # wait until EC.new_window_is_opened(current_handles)

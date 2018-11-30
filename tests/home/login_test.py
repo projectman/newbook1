@@ -35,6 +35,7 @@ class TestLogin():
             " : TC #003 TOTALLY FAILED.")
 
     def test_validLogout(self):
+
         """Test Login out from the site. TC004"""
         res_1  = self.lp.verifyLogoutSuccessfull() #  004.1
         self.ts.mark(res_1, "#004.1: URL after logout as expected.")

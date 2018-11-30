@@ -167,22 +167,8 @@ class MainDriver():
                            " locator_type: " + locator_type)
             # print_stack()
 
-    def isElementPresence(self, locator, locator_type="xpath"):
-        """ Return True if element Present and False if not. """
-        try:
-            element = self.getElement(locator, locator_type)
-            if element is not None:
-                self.log.info("Element with locator: " +
-                              locator + "Present with locator type: " + locator_type)
-                return True
-            else:
-                self.log.error("Element with locator: " + locator +
-                              " NOT Present with locator type: " + locator_type)
-                return False
-        except:
-            self.log.error("Element with locator: " + locator +
-                          " NOT Found with locator type: " + locator_type)
-            return False
+
+
     # !!! ???? If need method for if the location is for clickable element - use this
     # method again.
     def isElementClickable(self, element=None):
@@ -295,7 +281,7 @@ class MainDriver():
 
     def waitElementLocated(self, locator, locator_type="xpath",
                                timeout=5, pollFrequency=0.5):
-        """Wait until Element will be located with locator. Return element. """
+        """Wait until Element will be present with locator. Return element. """
         element = None
         try:
             byType = self.getByType(locator_type)
@@ -308,6 +294,25 @@ class MainDriver():
                           + locator + " on the web page")
         except:
             self.log.error("NOT Confirmed presence of element with locator: "
+                           + locator + " on the web page")
+            # print_stack()
+        return element
+
+    def waitElementVisible(self, locator, locator_type="xpath",
+                               timeout=5, pollFrequency=0.5):
+        """Wait until Element will be visible with locator. Return element. """
+        element = None
+        try:
+            byType = self.getByType(locator_type)
+            self.log.info("Waiting for maximum :: " + str(timeout) +
+                  " :: seconds for element to be VISIBLE")
+            wait = WebDriverWait(self.driver, timeout, pollFrequency)
+            element = wait.until(EC.visibility_of_element_located((
+                byType, locator)))
+            self.log.info("Confirmed VISIBILITY of element with locator: "
+                          + locator + " on the web page")
+        except:
+            self.log.error("NOT Confirmed VISIBILITY of element with locator: "
                            + locator + " on the web page")
             # print_stack()
         return element

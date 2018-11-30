@@ -87,6 +87,7 @@
     }
   ],
 
+
   "models_page": "########       JUST SEPARATOR        ###########",
   "category": "//div[@class='item__title']",
   "rows": "//nb-model-list-item",
@@ -118,11 +119,18 @@
   "portfolio_num":3,
   "see_portfolio": "//button[contains(text(), 'See Portfolio')]",
 
+
   "home_page": "########       JUST SEPARATOR        ###########",
+
   "hp_elements": ["//a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Clients')]",
   "//a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Agencies')]",
   "//a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Models')]",
   "//a[contains(text(), 'Browse Talent')]",
   "//a[@class='Navbar__navLink--3lL7S Navbar__navLinkSingle--3x6Lx Navbar__login--28b35']",
-  "//span/button[contains(text(), 'Sign Up')]"]
+  "//span/button[contains(text(), 'Sign Up')]"],
+  "for_client_top": "//a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Clients')]",
+  "save_money": "//h3[contains(text(), 'Save Money,')]",
+  "central_signup": "//div[@class='Features__headText--iCzkd']/button",
+  "create_a": "//div[contains(text(), 'Create a')]",
+  "close_create": "//div[@class='modal__close']"
 }
