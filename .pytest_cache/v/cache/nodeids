@@ -1,3 +1,4 @@
 [
+  "tests/home/home_test.py::TestHome::()::test_elementsAvailable",
   "tests/home/home_test.py::TestHome::()::test_verifyForClientsBtn"
 ]
