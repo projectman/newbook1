@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da17619f-c3ed-4627-9bb0-a1b1d4995f3f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.pytest_cache/v/cache/nodeids" beforeDir="false" afterPath="$PROJECT_DIR$/.pytest_cache/v/cache/nodeids" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/automation.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/geckodriver.log" afterDir="false" />
     </list>
@@ -38,7 +38,7 @@
           <entry key="JSON" value="7" />
           <entry key="Log" value="11" />
           <entry key="PLAIN_TEXT" value="39" />
-          <entry key="Python" value="135" />
+          <entry key="Python" value="136" />
           <entry key="PythonStub" value="1" />
         </counts>
       </usages-collector>
@@ -66,7 +66,7 @@
           <entry key="json" value="7" />
           <entry key="log" value="39" />
           <entry key="png" value="36" />
-          <entry key="py" value="135" />
+          <entry key="py" value="136" />
           <entry key="pyi" value="1" />
           <entry key="txt" value="11" />
         </counts>
@@ -91,7 +91,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/home/home_page.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="121">
@@ -99,6 +99,15 @@
               <folding>
                 <element signature="e#1#12#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/tokenize.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="451" selection-start-line="451" selection-end-line="451" />
             </state>
           </provider>
         </entry>
@@ -731,15 +740,15 @@
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48582676" visible="true" weight="0.14164905" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5141732" side_tool="true" weight="0.32947233" />
-      <window_info anchor="bottom" x="11" y="305" width="820" height="578" id="Terminal" order="0" sideWeight="0.49753347" type="WINDOWED" visible="true" weight="0.30592105" />
+      <window_info active="true" anchor="bottom" x="11" y="305" width="820" height="578" id="Terminal" order="0" sideWeight="0.49753347" type="WINDOWED" visible="true" weight="0.30592105" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5024665" side_tool="true" weight="0.366879" />
       <window_info anchor="bottom" id="Python Console" order="2" sideWeight="0.4993447" weight="0.51342976" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info active="true" anchor="bottom" id="Find" order="4" sideWeight="0.4993447" visible="true" weight="0.39256197" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="5" sideWeight="0.49727106" visible="true" weight="0.51847136" />
+      <window_info anchor="bottom" id="Version Control" order="5" sideWeight="0.49727106" weight="0.51847136" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32954547" />
       <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49753347" weight="0.60636944" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.3954717" />
+      <window_info anchor="bottom" id="Debug" order="8" visible="true" weight="0.39490446" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -832,7 +841,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Models' catalogue page after reffactoring." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/screenshots/Logout Verification.Mon Oct  8 21:49:02 2018.png" />
     <entry file="file://$PROJECT_DIR$/wait_types/selenium_test.py" />
     <entry file="file://$PROJECT_DIR$/wait_types/sample2_test.py" />
     <entry file="file://$PROJECT_DIR$/wait_types/saple_test.py" />
@@ -1008,6 +1016,13 @@
           <folding>
             <element signature="e#1#12#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/tokenize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="451" selection-start-line="451" selection-end-line="451" />
         </state>
       </provider>
     </entry>
