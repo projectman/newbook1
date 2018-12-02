@@ -1,0 +1,12 @@
+
+base/webdriverfactory.py
+
+pages/home/login_page.py
+
+configfiles/conftest.py
+
+tests/conftest.py
+
+tests/models/models_test.py
+
+pages/multy_page.py

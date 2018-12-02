@@ -1,5 +1,4 @@
 
-Think about class: Arriving Page control.
 
 Add ERRORs from log in separate text in the end.
 
