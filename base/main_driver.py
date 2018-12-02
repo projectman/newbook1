@@ -241,9 +241,8 @@ class MainDriver():
         Check if element is displayed
         Either provide element or a combination of locator and locator_type
         """
-        isDisplayed = False
         try:
-            if locator:  # This means if locator is not empty
+            if locator != "":  # This means if locator is not empty
                 element = self.getElement( locator, locator_type )
             if element is not None:
                 isDisplayed = element.is_displayed()

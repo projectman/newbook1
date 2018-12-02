@@ -132,5 +132,9 @@
   "save_money": "//h3[contains(text(), 'Save Money,')]",
   "central_signup": "//div[@class='Features__headText--iCzkd']/button",
   "create_a": "//div[contains(text(), 'Create a')]",
-  "close_create": "//div[@class='modal__close']"
+  "close_create": "//div[@class='modal__close']",
+  "for_agencies_top": "//a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Agencies')]",
+  "free_up": "//h3[contains(text(),'Free up your')]",
+  "inquire_btn": "//button[contains(text(),'Inquire')]",
+  "email_fld": "//input[@name='email']"
 }
