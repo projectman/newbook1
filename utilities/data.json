@@ -96,7 +96,7 @@
   "minimal_number_rows": 5,
   "images_per_row": 4,
   "match_text": "match your search criteria:",
-  "avatars": "//a[@common-ui='ImageURLs']",
+  "avatars": "//common-avatar-model/a[@common-ui='ImageURLs']",
   "names": "//span[@class='name']",
   "name_in_profile": "//div[@class='model-name d-flex flex-row justify-content-center justify-content-lg-start']",
 

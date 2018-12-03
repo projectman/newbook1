@@ -14,9 +14,6 @@ class TestHome:
         self.ts = StatusDisplay(self.driver)
         self.lp = LoginPage(self.driver)
         self.mp = ModelsPage(self.driver)
-        # logout first after log in.
-        self.lp.waitClickAvatar()
-        self.lp.waitClickLogout()
 
 
 
@@ -24,6 +21,9 @@ class TestHome:
         """ Check all filter elements available on Home Page after log out.
         . TC # 027
         """
+        # logout first after log in.
+        self.lp.waitClickAvatar()
+        self.lp.waitClickLogout()
         # return to home Page
         self.mp.openHomePageWaitLogin()
 

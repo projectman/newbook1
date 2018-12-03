@@ -1,3 +1,8 @@
 [
-  "tests/home/home_test.py::TestHome::()::test_verifyForAgenciesBtn"
+  "tests/home/login_test.py::TestLogin::()::test_validLogin",
+  "tests/home/login_test.py::TestLogin::()::test_validLogout",
+  "tests/home/login_test.py::TestLogin::()::test_backBrowser",
+  "tests/home/login_test.py::TestLogin::()::test_homePageLogoffed",
+  "tests/home/login_test.py::TestLogin::()::test_signupPage",
+  "tests/home/login_test.py::TestLogin::()::test_invalidLogin"
 ]

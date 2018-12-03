@@ -327,7 +327,7 @@ class MainDriver():
             byType = self.getByType(locator_type)
             self.log.info(("Waiting for maximum :: "
                            + str(timeout) +
-             " :: seconds for All elements Located with LOCATER."))
+             " :: seconds for All elements Located with LOCATOR: " + locator))
             wait = WebDriverWait(self.driver, timeout, pollFrequency)
             result = wait.until(EC.presence_of_all_elements_located((
                 byType, locator)))
