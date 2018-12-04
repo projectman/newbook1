@@ -96,7 +96,7 @@ class TestModels:
         Check randomly for 3 models can be clicked by "Favorite".
         TC # 025.
         """
-        res = self.mp.verifyFavoritesButton()
+        res = self.mp.verifyFavoriteButtons()
         self.ts.markFinal(
             "TC #025 Check the first 3 models can be clicked by 'Favorite', ",
             res, ": TC #025. test_verifyFavoritesButton TOTALLY FAILED. ")

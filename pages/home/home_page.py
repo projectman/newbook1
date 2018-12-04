@@ -42,9 +42,8 @@ class HomePage(MainDriver):
         result.append(self.isElementPresent(self.data["create_a"]))
 
         # Close the frame for create client
-        self.elementClick("", "", self.getElementList(
-                                self.data["close_create"])[0]
-                          )
+        elements_2 = self.waitAllElementsLocated(self.data["close_create"])
+        self.elementClick("", "", elements_2[0])
 
         return self.util.absentFalseInList(result)
 
@@ -66,5 +65,40 @@ class HomePage(MainDriver):
 
         # On the page still email field "Email"
         result.append(self.isElementPresent(self.data["email_fld"]))
+
+        return self.util.absentFalseInList(result)
+
+    def verifyForModelsElements(self):
+        """
+        Return True if all "For Models" elements are visible on the page.
+        """
+        # Visibility of Element "For Models" in the top menue
+        element = self.getElement(self.data["for_models_top"])
+        result = [(element is not None)]
+        self.elementClick("", "", element)
+
+        # After click on page available test "Take control" -> add True
+        result.append(self.isElementDisplayed(self.data["take_control"]))
+
+        # Find parent handle -> Main Window
+        parent_window = self.findParentWindow()
+
+        # Wait Central button "App Store" is available and click it.
+        self.waitForClickElement(self.data["app_store"], True)
+
+        # wait until EC.new_window_is_opened(current_handles)
+        self.waitNewWindowOpen([parent_window])
+        # Find all handles
+        handles = self.findAllHandles()
+        for handle in handles:
+            if handle != parent_window:
+                self.switchToWindow(handle)
+                # On the opened window there must be text "Newbook" -> add True
+                result.append(
+                    self.waitElementLocated(
+                        self.data["app_newbook"], "xpath", 15))
+                time.sleep(5)
+                # Close the window of App Store
+                self.closeWindow()
 
         return self.util.absentFalseInList(result)

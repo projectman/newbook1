@@ -126,26 +126,27 @@ class MainDriver():
                            " and  locator_type: " + locator_type )
         return result
 
-    def elementClick(self, locator='', locator_type="xpath", element=None):
+    def elementClick(self, locator, locator_type="xpath", element=None):
         """
         Either provide element or a combination of locator and locator_type
         """
         try:
-            if element is not None:
-                element.click()
-                self.log.info(("Clicked on received element: " + str(element)))
-            elif(element != ""):
-                element = self.getElement(locator, locator_type)
-                element.click()
+            if locator != "":
+                new_element = self.getElement(locator, locator_type)
+                new_element.click()
                 self.log.info("Clicked on element with locator: " + locator +
                           " locator_type: " + locator_type)
+            elif element is not None:
+                self.log.info(("Clicked on received element: " + str(element)))
+                element.click()
             else:
                 self.log.error(("Can NOT click element as NO locator: "
                                 + locator +
                                 ", and NO element: " + str(element)))
         except:
             self.log.error("Cannot click on the element with locator: " +
-                          locator + " locator_type: " + locator_type)
+                          locator + " locator_type: " + locator_type +
+                           " or element :: " + str(element))
             # print_stack()
 
     def sendKeys(self, data, locator, locator_type="xpath", element=None):
@@ -332,8 +333,9 @@ class MainDriver():
             result = wait.until(EC.presence_of_all_elements_located((
                 byType, locator)))
             self.log.info(
-                ("Confirmed presence of ALL elements located with locator: "
-                          + locator + ", " + locator_type + " on the web page"))
+                ("Confirmed presence of ALL " + str(len(result))
+                 + " elements located with locator: "
+                 + locator + ", " + locator_type + " on the web page"))
 
         except:
             self.log.error(
@@ -348,7 +350,8 @@ class MainDriver():
         """
         wait = WebDriverWait(self.driver, timeout, poll_frequency)
         wait.until(EC.new_window_is_opened(cur_handle))
-        self.log.info("The wait untill number of winodows increased.")
+        self.log.info("The wait :: " + str(timeout) +
+                      " :: untill number of winodows increased.")
 
 
 

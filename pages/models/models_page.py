@@ -40,7 +40,7 @@ class ModelsPage(MainDriver):
         return self.getElementList(locator, locator_type)
 
 
-    def porfolioControl(self, elements_num, elements_locator, names_locator,
+    def portfolioControl(self, elements_num, elements_locator, names_locator,
                         expected_el_locator):
         """
         Universal method for control of portfolio opening in new
@@ -79,8 +79,8 @@ class ModelsPage(MainDriver):
             # Scroll to the element seen for clicking
             self.scrolELementForClick(elements_list[indx])
             # Click by JS, to open new window with profile
-            elements_list = self.getElementList(elements_locator)
-            self.moveToElementAndClick(elements_list[indx], True)
+            new_element = self.waitAllElementsLocated(elements_locator)
+            self.moveToElementAndClick(new_element[indx], True)
 
             # wait until EC.new_window_is_opened(current_handles)
             self.waitNewWindowOpen([parent_window])
@@ -121,7 +121,7 @@ class ModelsPage(MainDriver):
         """
         # visit main page to avoid influence of previous test.
         self.openHomePageWaitLogin()
-        rows = self.getElementList(locator_rows)
+        rows = self.waitAllElementsLocated(locator_rows, "xpath", 10)
 
         random_index_list = self.util.randomIndexList(
             len(rows), elements_num)
@@ -159,7 +159,8 @@ class ModelsPage(MainDriver):
         on Models Page.TC # 018, in other case False. """
 
         # Find list of elements categories icons.
-        actual_num = len(self.waitAllElementsLocated(self.data["category"]))
+        actual_num = len(self.waitAllElementsLocated(
+                                        self.data["category"], "xpath", 10))
 
         # !!! move to the Util() class with logs and try:
         expected_num = self.data["number_of_categories"]
@@ -248,7 +249,7 @@ class ModelsPage(MainDriver):
         will check that it alive profile linked to avatar.
         number of avatars for checking described by data.json:"number_avatars";
         """
-        result = self.porfolioControl(
+        result = self.portfolioControl(
             self.data["number_avatars"],
             self.data["avatars"],
             self.data["names"],
@@ -293,7 +294,7 @@ class ModelsPage(MainDriver):
 
         return result
 
-    def verifyFavoritesButton(self):
+    def verifyFavoriteButtons(self):
         """
         Return True if all models in gallery with number
         self.data["favorite_num"] open "Add to Favorites" page.
@@ -326,9 +327,9 @@ class ModelsPage(MainDriver):
         # For this method arguments needed:
         # Xpath for the names on gallery rows. : data.json:"names"
         # Xpath for the buttons "See Portfolio" : data.json:"see_portfolio"
-        # Number of models will be tested: data.json:"porfolio_num"
+        # Number of models will be tested: data.json:"portfolio_num"
 
-        result = self.porfolioControl(
+        result = self.portfolioControl(
             self.data["portfolio_num"],
             self.data["see_portfolio"],
             self.data["names"],
