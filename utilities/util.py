@@ -87,7 +87,7 @@ class Util(object):
             self.log.error("### VERIFICATION DOES NOT CONTAINS !!!")
             return False
 
-    def verifyTextMatch(self, actual_text, expected_text):
+    def verifyTextMatch(self, expected_text, actual_text):
         """
         Verify text match
 
@@ -95,8 +95,11 @@ class Util(object):
             expectedList: Expected Text
             actualList: Actual Text
         """
-        self.log.info("Actual Text From Application Web UI --> :: " + actual_text)
-        self.log.info("Expected Text From Application Web UI --> :: " + expected_text)
+
+        self.log.info("Expected Text From Application Web UI --> :: "
+                                                        + expected_text)
+        self.log.info(
+            "Actual Text From Application Web UI --> :: " + actual_text)
         if actual_text.lower() == expected_text.lower():
             self.log.info("### VERIFICATION MATCHED !!!")
             return True

@@ -91,6 +91,7 @@
   "models_page": "########       JUST SEPARATOR        ###########",
   "category": "//div[@class='item__title']",
   "rows": "//nb-model-list-item",
+  "expected_number_rows": 5,
   "number_avatars": 3,
   "number_of_categories": 7,
   "minimal_number_rows": 5,
@@ -143,6 +144,9 @@
   "for_models_top": "//a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Models')]",
   "take_control": "//h3[contains(text(),'Take control')]",
   "app_store": "//a[@class='Features__headLink--3_0gW']",
-  "app_newbook": "//h1[contains(text(),'Newbook')]"
+  "app_newbook": "//h1[contains(text(),'Newbook')]",
+
+  "browse_talent_top": "//a[contains(text(), 'Browse Talent')]"
+
 
 }

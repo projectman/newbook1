@@ -21,7 +21,7 @@ class TestLogin():
         self.ts.mark(res_1, "#003.1: Login verification.")
 
         # Page url is http://stage1.fmny.mobi/browse; TC #003.2
-        res_2 = self.lp.verifyUrlHome()
+        res_2 = self.lp.isUrlModelsBrowse()
         self.ts.mark(res_2, "#003.2: Home pages URL verification.")
 
         # Avatar of user exists; TC #003.3

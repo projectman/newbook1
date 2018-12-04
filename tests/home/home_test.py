@@ -19,7 +19,7 @@ class TestHome:
 
     def test_elementsAvailable(self):
         """ Check all filter elements available on Home Page after log out.
-        . TC # 027
+        TC # 027
         """
 
         # own verify method for Home page
@@ -31,7 +31,7 @@ class TestHome:
 
     def test_verifyForClientsBtn(self):
         """ Check all elements available on Home Page after click "For Clients.
-        . TC # 028
+        TC # 028
         """
 
         # own verify method for Home page
@@ -43,7 +43,7 @@ class TestHome:
 
     def test_verifyForAgenciesBtn(self):
         """ Check all elements available on Home Page after click "For Agencies.
-        . TC # 029
+        TC # 029
         """
 
         # own verify method for Home page
@@ -55,7 +55,7 @@ class TestHome:
 
     def test_verifyForModelsBtn(self):
         """ Check elements available on Home Page after click "For Models.
-        . TC # 030
+        TC # 030
         """
 
         # own verify method for Home page
@@ -64,3 +64,16 @@ class TestHome:
         self.ts.markFinal(
             "TC #030 All elements available after click For Models :",
             res, ": TC #030 TOTALLY FAILED test_verifyForModelsBtn.")
+
+    def test_verifyBrowseTalentBtn(self):
+        """ Check Models' loggoffed catalogues available
+        after click "Browse Talent".
+        TC # 031
+        """
+
+        # own verify method for Home page
+        res = self.hp.verifyBrowseTalentElements()
+
+        self.ts.markFinal(
+            "TC #031 All elements available after click Browse Talent :",
+            res, ": TC #031 TOTALLY FAILED test_verifyBrowseTalentBtn.")

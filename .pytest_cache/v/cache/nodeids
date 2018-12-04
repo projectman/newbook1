@@ -1,6 +1,3 @@
 [
-  "tests/home/home_test.py::TestHome::()::test_elementsAvailable",
-  "tests/home/home_test.py::TestHome::()::test_verifyForClientsBtn",
-  "tests/home/home_test.py::TestHome::()::test_verifyForAgenciesBtn",
-  "tests/home/home_test.py::TestHome::()::test_verifyForModelsBtn"
+  "tests/home/home_test.py::TestHome::()::test_verifyBrowseTalentBtn"
 ]

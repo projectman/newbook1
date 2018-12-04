@@ -126,4 +126,27 @@ class HomePage(MainDriver):
 
         return self.util.absentFalseInList(result)
 
+    def verifyBrowseTalentElements(self):
+        """
+        Click on button "Browse Talent"
+        Return True if all 4 conditions are True, in other case False:
+        1. Url is https://stage1.fmny.mobi/browse;
+        2. Log in available on models' catalogue.
+        3. Filter button is absent;
+        4. There is row of models more than 5;
+        """
+        curr_url = self.getUrl()
+        result = [self.waitForClickElement(
+            self.data["browse_talent_top"], True)]
+
+        result.extend([
+                self.waitUrlChanged(curr_url),
+                self.lp.verifyLoginExists(),
+                self.lp.isUrlModelsBrowse(),
+                not self.lp.verifyFilterExists(),
+                self.mp.verifyRows(self.data["expected_number_rows"])
+            ])
+
+        return self.util.absentFalseInList(result)
+
 

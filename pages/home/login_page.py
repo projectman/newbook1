@@ -70,10 +70,19 @@ class LoginPage(MainDriver):
     def enterPassword(self, password):
         self.sendKeys(password, self.data["pass_field"])
 
-    def verifyLoginSuccessful(self):
-        return self.isElementPresent("//div[contains(text()]")
 
     ### Verifications.
+
+    def isUrlModelsBrowse(self):
+        """
+        Return True if current URL of web is equal self.data["models_url"]
+        """
+        expected_url = self.data["models_url"]
+
+        actual_url = self.getUrl()
+        print(expected_url, actual_url)
+        return self.util.verifyTextMatch(expected_url, actual_url)
+
     def verifySigninText(self):
         # Verify that text "Client Sign In is available on page.
         return self.isElementDisplayed(self.data["signin_text"])
@@ -94,11 +103,6 @@ class LoginPage(MainDriver):
 
         return self.isElementDisplayed(self.data["filter_btn"])
 
-    def verifyUrlHome(self):
-        """ Verification that URL of "/browser" page is the requested for TC #003.2
-        Return True or False."""
-        return self.util.verifyTextContains(self.getUrl(), self.data["models_url"])
-
     def verifyAvatarExists(self):
         """ Verification that URL of "/browser" page is the requested for
         TC #003.3; TC #004.4
@@ -110,12 +114,13 @@ class LoginPage(MainDriver):
         Log out of your Account. Check URL ...mobi/browse. TC 004.1"""
         self.waitClickAvatar()
         self.waitClickLogout()
-        return self.util.verifyTextContains(self.getUrl(),
-                                            self.data["models_url"])
+
+        return self.isUrlModelsBrowse()
 
     def verifyLoginExists(self):
         """ Return True if link to "Log In" exists.TC 004.2; 002.4"""
-        return self.isElementDisplayed(self.data["up_login_link"])   # Here need to be found <a href > with "Log In"
+        return self.isElementDisplayed(self.data["up_login_link"])
+        # Here need to be found <a href > with "Log In"
 
     def verifyBackBrowser(self):
         """ Click on BACK button in Browser.

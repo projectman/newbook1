@@ -129,16 +129,20 @@ class MainDriver():
     def elementClick(self, locator, locator_type="xpath", element=None):
         """
         Either provide element or a combination of locator and locator_type
+        Return True if element found and clicked; Opposite return False
         """
+        result = False
         try:
             if locator != "":
                 new_element = self.getElement(locator, locator_type)
                 new_element.click()
                 self.log.info("Clicked on element with locator: " + locator +
                           " locator_type: " + locator_type)
+                result = True
             elif element is not None:
                 self.log.info(("Clicked on received element: " + str(element)))
                 element.click()
+                result = True
             else:
                 self.log.error(("Can NOT click element as NO locator: "
                                 + locator +
@@ -148,6 +152,7 @@ class MainDriver():
                           locator + " locator_type: " + locator_type +
                            " or element :: " + str(element))
             # print_stack()
+        return result
 
     def sendKeys(self, data, locator, locator_type="xpath", element=None):
         """
@@ -353,7 +358,21 @@ class MainDriver():
         self.log.info("The wait :: " + str(timeout) +
                       " :: untill number of winodows increased.")
 
+    def waitUrlChanged(self, current_url, timeout=5, poll_frequency=0.5):
+        """
+        Wait until curent_url has changed then it returns True, or returns False
+        in opposite.
+        """
+        wait = WebDriverWait(self.driver, timeout, poll_frequency)
+        is_changed = wait.until(EC.url_changes(current_url))
+        if is_changed:
+            self.log.info("The wait :: " + str(timeout) +
+                      " :: until url: " + current_url + " has changed.")
+        else:
+            self.log.error("The wait :: " + str(timeout) +
+                      " :: until url: " + current_url + " HAS NOT changed.")
 
+        return is_changed
 
     def verifyPageIncludesText(self, expected_text):
         """
