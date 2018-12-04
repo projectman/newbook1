@@ -1,6 +1,8 @@
 
 import time
 from base.main_driver import MainDriver
+from pages.home.login_page import LoginPage
+from pages.models.models_page import ModelsPage
 
 
 class HomePage(MainDriver):
@@ -8,7 +10,28 @@ class HomePage(MainDriver):
     def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver
+        self.lp = LoginPage(self.driver)
+        self.mp = ModelsPage(self.driver)
 
+    ##############    Service Methods   #####################
+    def checkLogoffHome(self):
+        """
+        It verifies that page logged out, if not -> Log out;
+        Check it is no home page after previous verify, if not go home page.
+        Returns nothing.
+        """
+        # Verify avatar and logout if available. Then Log out.
+        if self.lp.avatarAvailableForClick():
+            self.lp.waitClickAvatar()
+            self.lp.waitClickLogout()
+
+        # Verify if not on home page: go to home page.
+        expected_url = self.data["url"]
+        actual_url = self.getUrl()
+        if not self.util.verifyTextMatch(expected_url, actual_url):
+            self.mp.openHomePageWaitLogin()
+
+    ##############     Main Methods     #####################
     def verifyHomePageElements(self):
         """ It return TRue if all elements that need to be verified are
         available on Home page. """
@@ -102,3 +125,5 @@ class HomePage(MainDriver):
                 self.closeWindow()
 
         return self.util.absentFalseInList(result)
+
+

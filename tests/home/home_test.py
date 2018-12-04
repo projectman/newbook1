@@ -12,23 +12,15 @@ class TestHome:
     def classSetup(self, oneTimeSetUp):
         self.hp = HomePage(self.driver)
         self.ts = StatusDisplay(self.driver)
-        self.lp = LoginPage(self.driver)
-        self.mp = ModelsPage(self.driver)
 
-
-    # !!! If process the test from verifyForClientsBtn - it will not logged out
-    # and it will be no on home page ??? <- TASK for update class Setup by
-    # method that check status of login and page then return to right url/login.
+        # method that check status of login and page then
+        # return to right url/login.
+        self.hp.checkLogoffHome()
 
     def test_elementsAvailable(self):
         """ Check all filter elements available on Home Page after log out.
         . TC # 027
         """
-        # logout first after log in.
-        self.lp.waitClickAvatar()
-        self.lp.waitClickLogout()
-        # return to home Page
-        self.mp.openHomePageWaitLogin()
 
         # own verify method for Home page
         res = self.hp.verifyHomePageElements()
@@ -53,8 +45,6 @@ class TestHome:
         """ Check all elements available on Home Page after click "For Agencies.
         . TC # 029
         """
-        # Return to home page for beginning of test.
-        self.mp.openHomePageWaitLogin()
 
         # own verify method for Home page
         res = self.hp.verifyForAgenciesElements()
@@ -67,8 +57,6 @@ class TestHome:
         """ Check elements available on Home Page after click "For Models.
         . TC # 030
         """
-        # Return to home page for beginning of test.
-        self.mp.openHomePageWaitLogin()
 
         # own verify method for Home page
         res = self.hp.verifyForModelsElements()

@@ -81,7 +81,7 @@ class Util(object):
         self.log.info("Expected Text From Application Web UI --> :: " + expected_text)
         if expected_text.lower() in actual_text.lower():
             self.log.info("### VERIFICATION CONTAINS !!! Actual Text "
-                          + actual_text + "Expected text: " + expected_text)
+                          + actual_text + " contains expected text: " + expected_text)
             return True
         else:
             self.log.error("### VERIFICATION DOES NOT CONTAINS !!!")

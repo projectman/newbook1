@@ -2566,3 +2566,355 @@
 12/03/2018 07:02:19 PM - StatusDisplay - INFO: result on enter in markFinal is: True
 12/03/2018 07:02:19 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #030 All elements available after click For Models :
 12/03/2018 07:02:19 PM - StatusDisplay - INFO: TC #030 All elements available after click For Models :: FULL TEST SUCCESSFUL
+12/03/2018 07:09:49 PM - MainDriver - INFO: 
+####################           NEW LOG           ####################; Newbook
+12/03/2018 07:09:49 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//a[@href='/auth/signin']' to be clickable
+12/03/2018 07:09:49 PM - MainDriver - INFO: Element '//a[@href='/auth/signin']' appeared //a[@href='/auth/signin'] on the web page
+12/03/2018 07:09:50 PM - MainDriver - INFO: Element '//a[@href='/auth/signin']' clicked with locator //a[@href='/auth/signin'] on the web page
+12/03/2018 07:09:51 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locator_type: xpath
+12/03/2018 07:09:51 PM - MainDriver - INFO: Sent data 'man4testing@gmail.com' to element with locator: //input[@placeholder='Enter E-mail address'] locator_type: xpath
+12/03/2018 07:09:51 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locator_type: xpath
+12/03/2018 07:09:51 PM - MainDriver - INFO: Sent data 'New12345$' to element with locator: //input[@placeholder='Enter password'] locator_type: xpath
+12/03/2018 07:09:51 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locator_type: xpath
+12/03/2018 07:09:51 PM - MainDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locator_type: xpath
+12/03/2018 07:09:51 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//button[@title='Close']' to be clickable
+12/03/2018 07:09:52 PM - MainDriver - INFO: Element '//button[@title='Close']' appeared //button[@title='Close'] on the web page
+12/03/2018 07:09:52 PM - MainDriver - INFO: Element '//button[@title='Close']' clicked with locator //button[@title='Close'] on the web page
+12/03/2018 07:09:52 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//div[@class='square-dummy']' to be clickable
+12/03/2018 07:09:56 PM - MainDriver - INFO: Element '//div[@class='square-dummy']' appeared //div[@class='square-dummy'] on the web page
+12/03/2018 07:09:57 PM - MainDriver - INFO: Element '//div[@class='square-dummy']' clicked with locator //div[@class='square-dummy'] on the web page
+12/03/2018 07:09:57 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//div[@class='link link_type_logout link_active']' to be clickable
+12/03/2018 07:09:57 PM - MainDriver - INFO: Element '//div[@class='link link_type_logout link_active']' appeared //div[@class='link link_type_logout link_active'] on the web page
+12/03/2018 07:09:57 PM - MainDriver - INFO: Web is scrolled to element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="1f2b5192-4c47-2040-b7dc-25657d919e72", element="8b655a2d-5ceb-714d-9023-82488872e8fe")>.
+12/03/2018 07:09:57 PM - MainDriver - INFO: Element Found in getElement with locator: //div[@class='link link_type_logout link_active'] and  locator_type: xpath
+12/03/2018 07:09:57 PM - MainDriver - INFO: Clicked on element with locator: //div[@class='link link_type_logout link_active'] locator_type: xpath
+12/03/2018 07:09:58 PM - MainDriver - INFO: Opened Home page with address: https://stage1.fmny.mobi
+12/03/2018 07:09:58 PM - MainDriver - INFO: Element Found in getElement with locator: //a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Clients')] and  locator_type: xpath
+12/03/2018 07:09:58 PM - MainDriver - INFO: Element present with locator: //a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Clients')] locator_type: xpath element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="1f2b5192-4c47-2040-b7dc-25657d919e72", element="bdb6ef6f-534a-1347-814f-e31ff72dab12")>
+12/03/2018 07:09:58 PM - MainDriver - INFO: Element Found in getElement with locator: //a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Agencies')] and  locator_type: xpath
+12/03/2018 07:09:58 PM - MainDriver - INFO: Element present with locator: //a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Agencies')] locator_type: xpath element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="1f2b5192-4c47-2040-b7dc-25657d919e72", element="0bae022c-b0c6-2740-911e-18d87fd63285")>
+12/03/2018 07:09:58 PM - MainDriver - INFO: Element Found in getElement with locator: //a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Models')] and  locator_type: xpath
+12/03/2018 07:09:58 PM - MainDriver - INFO: Element present with locator: //a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Models')] locator_type: xpath element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="1f2b5192-4c47-2040-b7dc-25657d919e72", element="b8ebecaa-82aa-f24d-94c3-199e22db4848")>
+12/03/2018 07:09:58 PM - MainDriver - INFO: Element Found in getElement with locator: //a[contains(text(), 'Browse Talent')] and  locator_type: xpath
+12/03/2018 07:09:58 PM - MainDriver - INFO: Element present with locator: //a[contains(text(), 'Browse Talent')] locator_type: xpath element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="1f2b5192-4c47-2040-b7dc-25657d919e72", element="0dbc3cf0-3f91-3e46-808d-0a804aa686ac")>
+12/03/2018 07:09:58 PM - MainDriver - INFO: Element Found in getElement with locator: //a[@class='Navbar__navLink--3lL7S Navbar__navLinkSingle--3x6Lx Navbar__login--28b35'] and  locator_type: xpath
+12/03/2018 07:09:58 PM - MainDriver - INFO: Element present with locator: //a[@class='Navbar__navLink--3lL7S Navbar__navLinkSingle--3x6Lx Navbar__login--28b35'] locator_type: xpath element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="1f2b5192-4c47-2040-b7dc-25657d919e72", element="e67bd8bb-3955-ab41-bce1-4aef4fd03676")>
+12/03/2018 07:09:58 PM - MainDriver - INFO: Element Found in getElement with locator: //span/button[contains(text(), 'Sign Up')] and  locator_type: xpath
+12/03/2018 07:09:58 PM - MainDriver - INFO: Element present with locator: //span/button[contains(text(), 'Sign Up')] locator_type: xpath element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="1f2b5192-4c47-2040-b7dc-25657d919e72", element="e9619817-c604-0e48-89a2-78ed110b0abe")>
+12/03/2018 07:09:58 PM - Util - INFO: In incoming list only True: [True, True, True, True, True, True]
+12/03/2018 07:09:58 PM - StatusDisplay - INFO: result on enter in markFinal is: True
+12/03/2018 07:09:58 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #027 All elements are available on Home page :
+12/03/2018 07:09:58 PM - StatusDisplay - INFO: TC #027 All elements are available on Home page :: FULL TEST SUCCESSFUL
+12/03/2018 07:09:58 PM - MainDriver - INFO: Element Found in getElement with locator: //a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Clients')] and  locator_type: xpath
+12/03/2018 07:09:58 PM - MainDriver - INFO: Clicked on received element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="1f2b5192-4c47-2040-b7dc-25657d919e72", element="bdb6ef6f-534a-1347-814f-e31ff72dab12")>
+12/03/2018 07:09:58 PM - MainDriver - INFO: Element Found in getElement with locator: //h3[contains(text(), 'Save Money,')] and  locator_type: xpath
+12/03/2018 07:09:58 PM - MainDriver - INFO: Element present with locator: //h3[contains(text(), 'Save Money,')] locator_type: xpath element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="1f2b5192-4c47-2040-b7dc-25657d919e72", element="e66a1535-b599-6d4c-a085-fd0d88559b87")>
+12/03/2018 07:09:58 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//div[@class='Features__headText--iCzkd']/button' to be clickable
+12/03/2018 07:09:58 PM - MainDriver - INFO: Element '//div[@class='Features__headText--iCzkd']/button' appeared //div[@class='Features__headText--iCzkd']/button on the web page
+12/03/2018 07:09:59 PM - MainDriver - INFO: Element '//div[@class='Features__headText--iCzkd']/button' clicked with locator //div[@class='Features__headText--iCzkd']/button on the web page
+12/03/2018 07:09:59 PM - MainDriver - INFO: Element Found in getElement with locator: //div[contains(text(), 'Create a')] and  locator_type: xpath
+12/03/2018 07:09:59 PM - MainDriver - INFO: Element present with locator: //div[contains(text(), 'Create a')] locator_type: xpath element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="1f2b5192-4c47-2040-b7dc-25657d919e72", element="490ba6fb-8652-6a48-b8e3-9e7282d66a2e")>
+12/03/2018 07:09:59 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for All elements Located with LOCATOR: //div[@class='modal__close']
+12/03/2018 07:09:59 PM - MainDriver - INFO: Confirmed presence of ALL 7 elements located with locator: //div[@class='modal__close'], xpath on the web page
+12/03/2018 07:09:59 PM - MainDriver - INFO: Clicked on received element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="1f2b5192-4c47-2040-b7dc-25657d919e72", element="1cff04dd-eba0-3f47-a6d4-f639ee1c74a1")>
+12/03/2018 07:09:59 PM - MainDriver - ERROR: Cannot click on the element with locator:  locator_type:  or element :: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="1f2b5192-4c47-2040-b7dc-25657d919e72", element="1cff04dd-eba0-3f47-a6d4-f639ee1c74a1")>
+12/03/2018 07:09:59 PM - Util - INFO: In incoming list only True: [True, True, True]
+12/03/2018 07:09:59 PM - StatusDisplay - INFO: result on enter in markFinal is: True
+12/03/2018 07:09:59 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #028 All elements available after click For Clients :
+12/03/2018 07:09:59 PM - StatusDisplay - INFO: TC #028 All elements available after click For Clients :: FULL TEST SUCCESSFUL
+12/03/2018 07:10:00 PM - MainDriver - INFO: Opened Home page with address: https://stage1.fmny.mobi
+12/03/2018 07:10:00 PM - MainDriver - INFO: Element Found in getElement with locator: //a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Agencies')] and  locator_type: xpath
+12/03/2018 07:10:00 PM - MainDriver - INFO: Clicked on received element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="1f2b5192-4c47-2040-b7dc-25657d919e72", element="224b6773-d463-8f48-acb0-a968802ef201")>
+12/03/2018 07:10:00 PM - MainDriver - INFO: Element Found in getElement with locator: //h3[contains(text(),'Free up your')] and  locator_type: xpath
+12/03/2018 07:10:00 PM - MainDriver - INFO: Element present with locator: //h3[contains(text(),'Free up your')] locator_type: xpath element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="1f2b5192-4c47-2040-b7dc-25657d919e72", element="f5f2a917-33fa-d049-85a2-f68668291bce")>
+12/03/2018 07:10:00 PM - MainDriver - INFO: Element Found in getElement with locator: //button[contains(text(),'Inquire')] and  locator_type: xpath
+12/03/2018 07:10:00 PM - MainDriver - INFO: Element is displayed with locator: //button[contains(text(),'Inquire')] locator_type: xpath
+12/03/2018 07:10:00 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@name='email'] and  locator_type: xpath
+12/03/2018 07:10:00 PM - MainDriver - INFO: Element present with locator: //input[@name='email'] locator_type: xpath element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="1f2b5192-4c47-2040-b7dc-25657d919e72", element="269afaa8-2b66-2947-af6f-6c9b8ca129d0")>
+12/03/2018 07:10:00 PM - Util - INFO: In incoming list only True: [True, True, True]
+12/03/2018 07:10:00 PM - StatusDisplay - INFO: result on enter in markFinal is: True
+12/03/2018 07:10:00 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #029 All elements available after click For Agencies :
+12/03/2018 07:10:00 PM - StatusDisplay - INFO: TC #029 All elements available after click For Agencies :: FULL TEST SUCCESSFUL
+12/03/2018 07:10:01 PM - MainDriver - INFO: Opened Home page with address: https://stage1.fmny.mobi
+12/03/2018 07:10:01 PM - MainDriver - INFO: Element Found in getElement with locator: //a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Models')] and  locator_type: xpath
+12/03/2018 07:10:01 PM - MainDriver - INFO: Clicked on received element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="1f2b5192-4c47-2040-b7dc-25657d919e72", element="2ade2306-cce0-644d-b5d0-5f4041a84276")>
+12/03/2018 07:10:01 PM - MainDriver - INFO: Element Found in getElement with locator: //h3[contains(text(),'Take control')] and  locator_type: xpath
+12/03/2018 07:10:01 PM - MainDriver - INFO: Element is displayed with locator: //h3[contains(text(),'Take control')] locator_type: xpath
+12/03/2018 07:10:01 PM - MainDriver - INFO: Parent Window handle found.
+12/03/2018 07:10:01 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//a[@class='Features__headLink--3_0gW']' to be clickable
+12/03/2018 07:10:02 PM - MainDriver - INFO: Element '//a[@class='Features__headLink--3_0gW']' appeared //a[@class='Features__headLink--3_0gW'] on the web page
+12/03/2018 07:10:02 PM - MainDriver - INFO: Element '//a[@class='Features__headLink--3_0gW']' clicked with locator //a[@class='Features__headLink--3_0gW'] on the web page
+12/03/2018 07:10:02 PM - MainDriver - INFO: The wait :: 5 :: untill number of winodows increased.
+12/03/2018 07:10:02 PM - MainDriver - INFO: All Window handles found: ['4294967297', '4294967327']
+12/03/2018 07:10:02 PM - MainDriver - INFO: Switched to Window in given handle argument.4294967327
+12/03/2018 07:10:02 PM - MainDriver - INFO: Waiting for maximum :: 15 :: seconds for element to be LOCATED
+12/03/2018 07:10:02 PM - MainDriver - INFO: Confirmed presence of element located with locator: //h1[contains(text(),'Newbook')] on the web page
+12/03/2018 07:10:07 PM - MainDriver - INFO: Current window had been closed.
+12/03/2018 07:10:07 PM - Util - INFO: In incoming list only True: [True, True, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="1f2b5192-4c47-2040-b7dc-25657d919e72", element="f07551a6-40d8-aa44-aff1-25a29bc68628")>]
+12/03/2018 07:10:07 PM - StatusDisplay - INFO: result on enter in markFinal is: True
+12/03/2018 07:10:07 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #030 All elements available after click For Models :
+12/03/2018 07:10:07 PM - StatusDisplay - INFO: TC #030 All elements available after click For Models :: FULL TEST SUCCESSFUL
+12/03/2018 07:11:01 PM - MainDriver - INFO: 
+####################           NEW LOG           ####################; Newbook
+12/03/2018 07:11:01 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//a[@href='/auth/signin']' to be clickable
+12/03/2018 07:11:01 PM - MainDriver - INFO: Element '//a[@href='/auth/signin']' appeared //a[@href='/auth/signin'] on the web page
+12/03/2018 07:11:02 PM - MainDriver - INFO: Element '//a[@href='/auth/signin']' clicked with locator //a[@href='/auth/signin'] on the web page
+12/03/2018 07:11:02 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locator_type: xpath
+12/03/2018 07:11:02 PM - MainDriver - INFO: Sent data 'man4testing@gmail.com' to element with locator: //input[@placeholder='Enter E-mail address'] locator_type: xpath
+12/03/2018 07:11:02 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locator_type: xpath
+12/03/2018 07:11:02 PM - MainDriver - INFO: Sent data 'New12345$' to element with locator: //input[@placeholder='Enter password'] locator_type: xpath
+12/03/2018 07:11:02 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locator_type: xpath
+12/03/2018 07:11:02 PM - MainDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locator_type: xpath
+12/03/2018 07:11:02 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//button[@title='Close']' to be clickable
+12/03/2018 07:11:08 PM - MainDriver - INFO: Element '//button[@title='Close']' appeared //button[@title='Close'] on the web page
+12/03/2018 07:11:08 PM - MainDriver - INFO: Element '//button[@title='Close']' clicked with locator //button[@title='Close'] on the web page
+12/03/2018 07:11:09 PM - MainDriver - INFO: Opened Home page with address: https://stage1.fmny.mobi
+12/03/2018 07:11:12 PM - MainDriver - ERROR: Element NOT found in getElement with locator: //a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Agencies')] and  locator_type: xpath
+12/03/2018 07:11:12 PM - MainDriver - ERROR: Can NOT click element as NO locator: , and NO element: None
+12/03/2018 07:11:15 PM - MainDriver - ERROR: Element NOT found in getElement with locator: //h3[contains(text(),'Free up your')] and  locator_type: xpath
+12/03/2018 07:11:15 PM - MainDriver - ERROR: Element not present with locator: //h3[contains(text(),'Free up your')] locator_type: xpath element: None
+12/03/2018 07:11:18 PM - MainDriver - ERROR: Element NOT found in getElement with locator: //button[contains(text(),'Inquire')] and  locator_type: xpath
+12/03/2018 07:11:18 PM - MainDriver - ERROR: Element not displayed with locator: //button[contains(text(),'Inquire')] locator_type: xpath
+12/03/2018 07:11:21 PM - MainDriver - ERROR: Element NOT found in getElement with locator: //input[@name='email'] and  locator_type: xpath
+12/03/2018 07:11:21 PM - MainDriver - ERROR: Element not present with locator: //input[@name='email'] locator_type: xpath element: None
+12/03/2018 07:11:21 PM - Util - INFO: In incoming list has False or lenght == 0 : [False, False, False]
+12/03/2018 07:11:21 PM - StatusDisplay - INFO: result on enter in markFinal is: False
+12/03/2018 07:11:21 PM - StatusDisplay - ERROR: ### TEST FAILED as False: TC #029 All elements available after click For Agencies :
+12/03/2018 07:11:21 PM - StatusDisplay - INFO: Screenshot: TC #029 All elements available after click For Agencies :Mon Dec  3 19:11:21 2018.png saved to directory: ../screenshots
+12/03/2018 07:11:21 PM - StatusDisplay - ERROR: TC #029 All elements available after click For Agencies :: FULL TEST FAILED: : TC #029 TOTALLY FAILED test_verifyForAgenciesBtn.
+12/03/2018 07:30:22 PM - MainDriver - INFO: 
+####################           NEW LOG           ####################; Newbook
+12/03/2018 07:30:22 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//a[@href='/auth/signin']' to be clickable
+12/03/2018 07:30:22 PM - MainDriver - INFO: Element '//a[@href='/auth/signin']' appeared //a[@href='/auth/signin'] on the web page
+12/03/2018 07:30:22 PM - MainDriver - INFO: Element '//a[@href='/auth/signin']' clicked with locator //a[@href='/auth/signin'] on the web page
+12/03/2018 07:30:23 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locator_type: xpath
+12/03/2018 07:30:23 PM - MainDriver - INFO: Sent data 'man4testing@gmail.com' to element with locator: //input[@placeholder='Enter E-mail address'] locator_type: xpath
+12/03/2018 07:30:23 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locator_type: xpath
+12/03/2018 07:30:24 PM - MainDriver - INFO: Sent data 'New12345$' to element with locator: //input[@placeholder='Enter password'] locator_type: xpath
+12/03/2018 07:30:24 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locator_type: xpath
+12/03/2018 07:30:24 PM - MainDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locator_type: xpath
+12/03/2018 07:30:24 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//button[@title='Close']' to be clickable
+12/03/2018 07:30:25 PM - MainDriver - INFO: Element '//button[@title='Close']' appeared //button[@title='Close'] on the web page
+12/03/2018 07:30:26 PM - MainDriver - INFO: Element '//button[@title='Close']' clicked with locator //button[@title='Close'] on the web page
+12/03/2018 07:30:26 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//div[@class='avatar__letter-in']' to be clickable
+12/03/2018 07:30:26 PM - MainDriver - INFO: Element '//div[@class='avatar__letter-in']' appeared //div[@class='avatar__letter-in'] on the web page
+12/03/2018 07:30:26 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//div[@class='square-dummy']' to be clickable
+12/03/2018 07:30:26 PM - MainDriver - INFO: Element '//div[@class='square-dummy']' appeared //div[@class='square-dummy'] on the web page
+12/03/2018 07:30:26 PM - MainDriver - INFO: Element '//div[@class='square-dummy']' clicked with locator //div[@class='square-dummy'] on the web page
+12/03/2018 07:30:26 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//div[@class='link link_type_logout link_active']' to be clickable
+12/03/2018 07:30:27 PM - MainDriver - INFO: Element '//div[@class='link link_type_logout link_active']' appeared //div[@class='link link_type_logout link_active'] on the web page
+12/03/2018 07:30:27 PM - MainDriver - INFO: Web is scrolled to element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="5b9d3e97-4e8f-4c4a-a1bf-4b27d1fece5d", element="4e3eb094-42c3-644e-990b-a6d68c1d5cfb")>.
+12/03/2018 07:30:27 PM - MainDriver - INFO: Element Found in getElement with locator: //div[@class='link link_type_logout link_active'] and  locator_type: xpath
+12/03/2018 07:30:28 PM - MainDriver - INFO: Clicked on element with locator: //div[@class='link link_type_logout link_active'] locator_type: xpath
+12/03/2018 07:30:28 PM - MainDriver - INFO: Current page URL from getUrl method is https://stage1.fmny.mobi/browse
+12/03/2018 07:30:28 PM - Util - INFO: Actual Text From Application Web UI --> :: https://stage1.fmny.mobi/browse
+12/03/2018 07:30:28 PM - Util - INFO: Expected Text From Application Web UI --> :: https://stage1.fmny.mobi
+12/03/2018 07:30:28 PM - Util - INFO: ### VERIFICATION CONTAINS !!! Actual Text https://stage1.fmny.mobi/browseExpected text: https://stage1.fmny.mobi
+12/03/2018 07:30:31 PM - MainDriver - ERROR: Element NOT found in getElement with locator: //a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Agencies')] and  locator_type: xpath
+12/03/2018 07:30:31 PM - MainDriver - ERROR: Can NOT click element as NO locator: , and NO element: None
+12/03/2018 07:30:34 PM - MainDriver - ERROR: Element NOT found in getElement with locator: //h3[contains(text(),'Free up your')] and  locator_type: xpath
+12/03/2018 07:30:34 PM - MainDriver - ERROR: Element not present with locator: //h3[contains(text(),'Free up your')] locator_type: xpath element: None
+12/03/2018 07:30:37 PM - MainDriver - ERROR: Element NOT found in getElement with locator: //button[contains(text(),'Inquire')] and  locator_type: xpath
+12/03/2018 07:30:37 PM - MainDriver - ERROR: Element not displayed with locator: //button[contains(text(),'Inquire')] locator_type: xpath
+12/03/2018 07:30:40 PM - MainDriver - ERROR: Element NOT found in getElement with locator: //input[@name='email'] and  locator_type: xpath
+12/03/2018 07:30:40 PM - MainDriver - ERROR: Element not present with locator: //input[@name='email'] locator_type: xpath element: None
+12/03/2018 07:30:40 PM - Util - INFO: In incoming list has False or lenght == 0 : [False, False, False]
+12/03/2018 07:30:40 PM - StatusDisplay - INFO: result on enter in markFinal is: False
+12/03/2018 07:30:40 PM - StatusDisplay - ERROR: ### TEST FAILED as False: TC #029 All elements available after click For Agencies :
+12/03/2018 07:30:41 PM - StatusDisplay - INFO: Screenshot: TC #029 All elements available after click For Agencies :Mon Dec  3 19:30:40 2018.png saved to directory: ../screenshots
+12/03/2018 07:30:41 PM - StatusDisplay - ERROR: TC #029 All elements available after click For Agencies :: FULL TEST FAILED: : TC #029 TOTALLY FAILED test_verifyForAgenciesBtn.
+12/03/2018 07:41:52 PM - MainDriver - INFO: 
+####################           NEW LOG           ####################; Newbook
+12/03/2018 07:41:52 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//a[@href='/auth/signin']' to be clickable
+12/03/2018 07:41:52 PM - MainDriver - INFO: Element '//a[@href='/auth/signin']' appeared //a[@href='/auth/signin'] on the web page
+12/03/2018 07:41:52 PM - MainDriver - INFO: Element '//a[@href='/auth/signin']' clicked with locator //a[@href='/auth/signin'] on the web page
+12/03/2018 07:41:53 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locator_type: xpath
+12/03/2018 07:41:53 PM - MainDriver - INFO: Sent data 'man4testing@gmail.com' to element with locator: //input[@placeholder='Enter E-mail address'] locator_type: xpath
+12/03/2018 07:41:53 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locator_type: xpath
+12/03/2018 07:41:53 PM - MainDriver - INFO: Sent data 'New12345$' to element with locator: //input[@placeholder='Enter password'] locator_type: xpath
+12/03/2018 07:41:53 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locator_type: xpath
+12/03/2018 07:41:53 PM - MainDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locator_type: xpath
+12/03/2018 07:41:53 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//button[@title='Close']' to be clickable
+12/03/2018 07:41:54 PM - MainDriver - INFO: Element '//button[@title='Close']' appeared //button[@title='Close'] on the web page
+12/03/2018 07:41:55 PM - MainDriver - INFO: Element '//button[@title='Close']' clicked with locator //button[@title='Close'] on the web page
+12/03/2018 07:41:55 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//div[@class='avatar__letter-in']' to be clickable
+12/03/2018 07:41:55 PM - MainDriver - INFO: Element '//div[@class='avatar__letter-in']' appeared //div[@class='avatar__letter-in'] on the web page
+12/03/2018 07:41:55 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//div[@class='square-dummy']' to be clickable
+12/03/2018 07:41:55 PM - MainDriver - INFO: Element '//div[@class='square-dummy']' appeared //div[@class='square-dummy'] on the web page
+12/03/2018 07:41:56 PM - MainDriver - INFO: Element '//div[@class='square-dummy']' clicked with locator //div[@class='square-dummy'] on the web page
+12/03/2018 07:41:56 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//div[@class='link link_type_logout link_active']' to be clickable
+12/03/2018 07:41:56 PM - MainDriver - INFO: Element '//div[@class='link link_type_logout link_active']' appeared //div[@class='link link_type_logout link_active'] on the web page
+12/03/2018 07:41:56 PM - MainDriver - INFO: Web is scrolled to element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="aa80e514-b252-414f-a453-c78b4f1fe660", element="8890b2a7-9c4a-8a4b-8685-713c41bf7b12")>.
+12/03/2018 07:41:56 PM - MainDriver - INFO: Element Found in getElement with locator: //div[@class='link link_type_logout link_active'] and  locator_type: xpath
+12/03/2018 07:41:56 PM - MainDriver - INFO: Clicked on element with locator: //div[@class='link link_type_logout link_active'] locator_type: xpath
+12/03/2018 07:41:56 PM - MainDriver - INFO: Current page URL from getUrl method is https://stage1.fmny.mobi/browse
+12/03/2018 07:41:56 PM - Util - INFO: Actual Text From Application Web UI --> :: https://stage1.fmny.mobi/browse
+12/03/2018 07:41:56 PM - Util - INFO: Expected Text From Application Web UI --> :: https://stage1.fmny.mobi
+12/03/2018 07:41:56 PM - Util - INFO: ### VERIFICATION CONTAINS !!! Actual Text https://stage1.fmny.mobi/browse contains expected text: https://stage1.fmny.mobi
+12/03/2018 07:41:59 PM - MainDriver - ERROR: Element NOT found in getElement with locator: //a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Agencies')] and  locator_type: xpath
+12/03/2018 07:41:59 PM - MainDriver - ERROR: Can NOT click element as NO locator: , and NO element: None
+12/03/2018 07:42:03 PM - MainDriver - ERROR: Element NOT found in getElement with locator: //h3[contains(text(),'Free up your')] and  locator_type: xpath
+12/03/2018 07:42:03 PM - MainDriver - ERROR: Element not present with locator: //h3[contains(text(),'Free up your')] locator_type: xpath element: None
+12/03/2018 07:42:06 PM - MainDriver - ERROR: Element NOT found in getElement with locator: //button[contains(text(),'Inquire')] and  locator_type: xpath
+12/03/2018 07:42:06 PM - MainDriver - ERROR: Element not displayed with locator: //button[contains(text(),'Inquire')] locator_type: xpath
+12/03/2018 07:42:09 PM - MainDriver - ERROR: Element NOT found in getElement with locator: //input[@name='email'] and  locator_type: xpath
+12/03/2018 07:42:09 PM - MainDriver - ERROR: Element not present with locator: //input[@name='email'] locator_type: xpath element: None
+12/03/2018 07:42:09 PM - Util - INFO: In incoming list has False or lenght == 0 : [False, False, False]
+12/03/2018 07:42:09 PM - StatusDisplay - INFO: result on enter in markFinal is: False
+12/03/2018 07:42:09 PM - StatusDisplay - ERROR: ### TEST FAILED as False: TC #029 All elements available after click For Agencies :
+12/03/2018 07:42:09 PM - StatusDisplay - INFO: Screenshot: TC #029 All elements available after click For Agencies :Mon Dec  3 19:42:09 2018.png saved to directory: ../screenshots
+12/03/2018 07:42:09 PM - StatusDisplay - ERROR: TC #029 All elements available after click For Agencies :: FULL TEST FAILED: : TC #029 TOTALLY FAILED test_verifyForAgenciesBtn.
+12/03/2018 07:42:59 PM - MainDriver - INFO: 
+####################           NEW LOG           ####################; Newbook
+12/03/2018 07:42:59 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//a[@href='/auth/signin']' to be clickable
+12/03/2018 07:42:59 PM - MainDriver - INFO: Element '//a[@href='/auth/signin']' appeared //a[@href='/auth/signin'] on the web page
+12/03/2018 07:42:59 PM - MainDriver - INFO: Element '//a[@href='/auth/signin']' clicked with locator //a[@href='/auth/signin'] on the web page
+12/03/2018 07:43:00 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locator_type: xpath
+12/03/2018 07:43:00 PM - MainDriver - INFO: Sent data 'man4testing@gmail.com' to element with locator: //input[@placeholder='Enter E-mail address'] locator_type: xpath
+12/03/2018 07:43:00 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locator_type: xpath
+12/03/2018 07:43:00 PM - MainDriver - INFO: Sent data 'New12345$' to element with locator: //input[@placeholder='Enter password'] locator_type: xpath
+12/03/2018 07:43:00 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locator_type: xpath
+12/03/2018 07:43:00 PM - MainDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locator_type: xpath
+12/03/2018 07:43:00 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//button[@title='Close']' to be clickable
+12/03/2018 07:43:01 PM - MainDriver - INFO: Element '//button[@title='Close']' appeared //button[@title='Close'] on the web page
+12/03/2018 07:43:02 PM - MainDriver - INFO: Element '//button[@title='Close']' clicked with locator //button[@title='Close'] on the web page
+12/03/2018 07:43:02 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//div[@class='avatar__letter-in']' to be clickable
+12/03/2018 07:43:02 PM - MainDriver - INFO: Element '//div[@class='avatar__letter-in']' appeared //div[@class='avatar__letter-in'] on the web page
+12/03/2018 07:43:02 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//div[@class='square-dummy']' to be clickable
+12/03/2018 07:43:02 PM - MainDriver - INFO: Element '//div[@class='square-dummy']' appeared //div[@class='square-dummy'] on the web page
+12/03/2018 07:43:02 PM - MainDriver - INFO: Element '//div[@class='square-dummy']' clicked with locator //div[@class='square-dummy'] on the web page
+12/03/2018 07:43:02 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//div[@class='link link_type_logout link_active']' to be clickable
+12/03/2018 07:43:02 PM - MainDriver - INFO: Element '//div[@class='link link_type_logout link_active']' appeared //div[@class='link link_type_logout link_active'] on the web page
+12/03/2018 07:43:02 PM - MainDriver - INFO: Web is scrolled to element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7e908152-229a-7c42-a853-00275e312be6", element="c51ad914-55d8-5241-ba28-eb0d585ab7cc")>.
+12/03/2018 07:43:02 PM - MainDriver - INFO: Element Found in getElement with locator: //div[@class='link link_type_logout link_active'] and  locator_type: xpath
+12/03/2018 07:43:03 PM - MainDriver - INFO: Clicked on element with locator: //div[@class='link link_type_logout link_active'] locator_type: xpath
+12/03/2018 07:43:03 PM - MainDriver - INFO: Current page URL from getUrl method is https://stage1.fmny.mobi/browse
+12/03/2018 07:43:03 PM - Util - INFO: Actual Text From Application Web UI --> :: https://stage1.fmny.mobi
+12/03/2018 07:43:03 PM - Util - INFO: Expected Text From Application Web UI --> :: https://stage1.fmny.mobi/browse
+12/03/2018 07:43:03 PM - Util - ERROR: ### VERIFICATION DOES NOT MATCHED !!!
+12/03/2018 07:43:03 PM - MainDriver - INFO: Opened Home page with address: https://stage1.fmny.mobi
+12/03/2018 07:43:03 PM - MainDriver - INFO: Element Found in getElement with locator: //a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Agencies')] and  locator_type: xpath
+12/03/2018 07:43:03 PM - MainDriver - INFO: Clicked on received element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7e908152-229a-7c42-a853-00275e312be6", element="abf0952d-a3f9-3841-9116-ae94392466a1")>
+12/03/2018 07:43:04 PM - MainDriver - INFO: Element Found in getElement with locator: //h3[contains(text(),'Free up your')] and  locator_type: xpath
+12/03/2018 07:43:04 PM - MainDriver - INFO: Element present with locator: //h3[contains(text(),'Free up your')] locator_type: xpath element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7e908152-229a-7c42-a853-00275e312be6", element="c9d6f97b-8fc9-264e-a02c-339bcdd92946")>
+12/03/2018 07:43:04 PM - MainDriver - INFO: Element Found in getElement with locator: //button[contains(text(),'Inquire')] and  locator_type: xpath
+12/03/2018 07:43:04 PM - MainDriver - INFO: Element is displayed with locator: //button[contains(text(),'Inquire')] locator_type: xpath
+12/03/2018 07:43:04 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@name='email'] and  locator_type: xpath
+12/03/2018 07:43:04 PM - MainDriver - INFO: Element present with locator: //input[@name='email'] locator_type: xpath element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7e908152-229a-7c42-a853-00275e312be6", element="cf780266-3571-bf4b-8671-75a4aa187fd1")>
+12/03/2018 07:43:04 PM - Util - INFO: In incoming list only True: [True, True, True]
+12/03/2018 07:43:04 PM - StatusDisplay - INFO: result on enter in markFinal is: True
+12/03/2018 07:43:04 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #029 All elements available after click For Agencies :
+12/03/2018 07:43:04 PM - StatusDisplay - INFO: TC #029 All elements available after click For Agencies :: FULL TEST SUCCESSFUL
+12/03/2018 07:44:15 PM - MainDriver - INFO: 
+####################           NEW LOG           ####################; Newbook
+12/03/2018 07:44:15 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//a[@href='/auth/signin']' to be clickable
+12/03/2018 07:44:15 PM - MainDriver - INFO: Element '//a[@href='/auth/signin']' appeared //a[@href='/auth/signin'] on the web page
+12/03/2018 07:44:15 PM - MainDriver - INFO: Element '//a[@href='/auth/signin']' clicked with locator //a[@href='/auth/signin'] on the web page
+12/03/2018 07:44:15 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter E-mail address'] and  locator_type: xpath
+12/03/2018 07:44:15 PM - MainDriver - INFO: Sent data 'man4testing@gmail.com' to element with locator: //input[@placeholder='Enter E-mail address'] locator_type: xpath
+12/03/2018 07:44:15 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@placeholder='Enter password'] and  locator_type: xpath
+12/03/2018 07:44:15 PM - MainDriver - INFO: Sent data 'New12345$' to element with locator: //input[@placeholder='Enter password'] locator_type: xpath
+12/03/2018 07:44:15 PM - MainDriver - INFO: Element Found in getElement with locator: //button[text()=' Log In '] and  locator_type: xpath
+12/03/2018 07:44:15 PM - MainDriver - INFO: Clicked on element with locator: //button[text()=' Log In '] locator_type: xpath
+12/03/2018 07:44:15 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//button[@title='Close']' to be clickable
+12/03/2018 07:44:16 PM - MainDriver - INFO: Element '//button[@title='Close']' appeared //button[@title='Close'] on the web page
+12/03/2018 07:44:16 PM - MainDriver - INFO: Element '//button[@title='Close']' clicked with locator //button[@title='Close'] on the web page
+12/03/2018 07:44:16 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//div[@class='avatar__letter-in']' to be clickable
+12/03/2018 07:44:16 PM - MainDriver - INFO: Element '//div[@class='avatar__letter-in']' appeared //div[@class='avatar__letter-in'] on the web page
+12/03/2018 07:44:16 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//div[@class='square-dummy']' to be clickable
+12/03/2018 07:44:16 PM - MainDriver - INFO: Element '//div[@class='square-dummy']' appeared //div[@class='square-dummy'] on the web page
+12/03/2018 07:44:17 PM - MainDriver - INFO: Element '//div[@class='square-dummy']' clicked with locator //div[@class='square-dummy'] on the web page
+12/03/2018 07:44:17 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//div[@class='link link_type_logout link_active']' to be clickable
+12/03/2018 07:44:17 PM - MainDriver - INFO: Element '//div[@class='link link_type_logout link_active']' appeared //div[@class='link link_type_logout link_active'] on the web page
+12/03/2018 07:44:17 PM - MainDriver - INFO: Web is scrolled to element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="6ebc4abc-ebc8-4349-a1d0-b4a290d895a3", element="68345b88-daaf-3b44-ad3f-47641b32401e")>.
+12/03/2018 07:44:17 PM - MainDriver - INFO: Element Found in getElement with locator: //div[@class='link link_type_logout link_active'] and  locator_type: xpath
+12/03/2018 07:44:17 PM - MainDriver - INFO: Clicked on element with locator: //div[@class='link link_type_logout link_active'] locator_type: xpath
+12/03/2018 07:44:17 PM - MainDriver - INFO: Current page URL from getUrl method is https://stage1.fmny.mobi/browse
+12/03/2018 07:44:17 PM - Util - INFO: Actual Text From Application Web UI --> :: https://stage1.fmny.mobi
+12/03/2018 07:44:17 PM - Util - INFO: Expected Text From Application Web UI --> :: https://stage1.fmny.mobi/browse
+12/03/2018 07:44:17 PM - Util - ERROR: ### VERIFICATION DOES NOT MATCHED !!!
+12/03/2018 07:44:18 PM - MainDriver - INFO: Opened Home page with address: https://stage1.fmny.mobi
+12/03/2018 07:44:18 PM - MainDriver - INFO: Element Found in getElement with locator: //a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Clients')] and  locator_type: xpath
+12/03/2018 07:44:18 PM - MainDriver - INFO: Element present with locator: //a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Clients')] locator_type: xpath element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="6ebc4abc-ebc8-4349-a1d0-b4a290d895a3", element="73da91d1-4aa1-7442-9c6a-e530cdf747fe")>
+12/03/2018 07:44:18 PM - MainDriver - INFO: Element Found in getElement with locator: //a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Agencies')] and  locator_type: xpath
+12/03/2018 07:44:18 PM - MainDriver - INFO: Element present with locator: //a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Agencies')] locator_type: xpath element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="6ebc4abc-ebc8-4349-a1d0-b4a290d895a3", element="a4a0fed3-7c6d-144d-ac7c-78ee481abf5e")>
+12/03/2018 07:44:18 PM - MainDriver - INFO: Element Found in getElement with locator: //a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Models')] and  locator_type: xpath
+12/03/2018 07:44:18 PM - MainDriver - INFO: Element present with locator: //a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Models')] locator_type: xpath element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="6ebc4abc-ebc8-4349-a1d0-b4a290d895a3", element="fb9b36a1-e9a6-4d48-9bee-55de88461bfa")>
+12/03/2018 07:44:18 PM - MainDriver - INFO: Element Found in getElement with locator: //a[contains(text(), 'Browse Talent')] and  locator_type: xpath
+12/03/2018 07:44:18 PM - MainDriver - INFO: Element present with locator: //a[contains(text(), 'Browse Talent')] locator_type: xpath element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="6ebc4abc-ebc8-4349-a1d0-b4a290d895a3", element="93b1e4bc-bdd3-1346-96ab-dca474dab7ac")>
+12/03/2018 07:44:18 PM - MainDriver - INFO: Element Found in getElement with locator: //a[@class='Navbar__navLink--3lL7S Navbar__navLinkSingle--3x6Lx Navbar__login--28b35'] and  locator_type: xpath
+12/03/2018 07:44:18 PM - MainDriver - INFO: Element present with locator: //a[@class='Navbar__navLink--3lL7S Navbar__navLinkSingle--3x6Lx Navbar__login--28b35'] locator_type: xpath element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="6ebc4abc-ebc8-4349-a1d0-b4a290d895a3", element="6807f5c7-5178-2e41-9ede-c7cb7b73c418")>
+12/03/2018 07:44:18 PM - MainDriver - INFO: Element Found in getElement with locator: //span/button[contains(text(), 'Sign Up')] and  locator_type: xpath
+12/03/2018 07:44:18 PM - MainDriver - INFO: Element present with locator: //span/button[contains(text(), 'Sign Up')] locator_type: xpath element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="6ebc4abc-ebc8-4349-a1d0-b4a290d895a3", element="7d28efc6-dab9-7140-a439-b35c2c4f59d7")>
+12/03/2018 07:44:18 PM - Util - INFO: In incoming list only True: [True, True, True, True, True, True]
+12/03/2018 07:44:18 PM - StatusDisplay - INFO: result on enter in markFinal is: True
+12/03/2018 07:44:18 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #027 All elements are available on Home page :
+12/03/2018 07:44:18 PM - StatusDisplay - INFO: TC #027 All elements are available on Home page :: FULL TEST SUCCESSFUL
+12/03/2018 07:44:18 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//div[@class='avatar__letter-in']' to be clickable
+12/03/2018 07:44:25 PM - MainDriver - ERROR: Element '//div[@class='avatar__letter-in']' NOT appeared //div[@class='avatar__letter-in'] on the web page
+12/03/2018 07:44:25 PM - MainDriver - INFO: Current page URL from getUrl method is https://stage1.fmny.mobi/
+12/03/2018 07:44:25 PM - Util - INFO: Actual Text From Application Web UI --> :: https://stage1.fmny.mobi
+12/03/2018 07:44:25 PM - Util - INFO: Expected Text From Application Web UI --> :: https://stage1.fmny.mobi/
+12/03/2018 07:44:25 PM - Util - ERROR: ### VERIFICATION DOES NOT MATCHED !!!
+12/03/2018 07:44:26 PM - MainDriver - INFO: Opened Home page with address: https://stage1.fmny.mobi
+12/03/2018 07:44:26 PM - MainDriver - INFO: Element Found in getElement with locator: //a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Clients')] and  locator_type: xpath
+12/03/2018 07:44:26 PM - MainDriver - INFO: Clicked on received element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="6ebc4abc-ebc8-4349-a1d0-b4a290d895a3", element="e18092f9-2eaf-e741-be5c-77d53edb0878")>
+12/03/2018 07:44:26 PM - MainDriver - INFO: Element Found in getElement with locator: //h3[contains(text(), 'Save Money,')] and  locator_type: xpath
+12/03/2018 07:44:26 PM - MainDriver - INFO: Element present with locator: //h3[contains(text(), 'Save Money,')] locator_type: xpath element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="6ebc4abc-ebc8-4349-a1d0-b4a290d895a3", element="df57d21c-8979-a54e-8c47-708a27f2d83a")>
+12/03/2018 07:44:26 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//div[@class='Features__headText--iCzkd']/button' to be clickable
+12/03/2018 07:44:26 PM - MainDriver - INFO: Element '//div[@class='Features__headText--iCzkd']/button' appeared //div[@class='Features__headText--iCzkd']/button on the web page
+12/03/2018 07:44:27 PM - MainDriver - INFO: Element '//div[@class='Features__headText--iCzkd']/button' clicked with locator //div[@class='Features__headText--iCzkd']/button on the web page
+12/03/2018 07:44:27 PM - MainDriver - INFO: Element Found in getElement with locator: //div[contains(text(), 'Create a')] and  locator_type: xpath
+12/03/2018 07:44:27 PM - MainDriver - INFO: Element present with locator: //div[contains(text(), 'Create a')] locator_type: xpath element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="6ebc4abc-ebc8-4349-a1d0-b4a290d895a3", element="886d157a-2a60-0944-9a9d-ead004157059")>
+12/03/2018 07:44:27 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for All elements Located with LOCATOR: //div[@class='modal__close']
+12/03/2018 07:44:27 PM - MainDriver - INFO: Confirmed presence of ALL 7 elements located with locator: //div[@class='modal__close'], xpath on the web page
+12/03/2018 07:44:27 PM - MainDriver - INFO: Clicked on received element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="6ebc4abc-ebc8-4349-a1d0-b4a290d895a3", element="5b275812-faba-574d-b56e-a06d091765b7")>
+12/03/2018 07:44:27 PM - MainDriver - ERROR: Cannot click on the element with locator:  locator_type:  or element :: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="6ebc4abc-ebc8-4349-a1d0-b4a290d895a3", element="5b275812-faba-574d-b56e-a06d091765b7")>
+12/03/2018 07:44:27 PM - Util - INFO: In incoming list only True: [True, True, True]
+12/03/2018 07:44:27 PM - StatusDisplay - INFO: result on enter in markFinal is: True
+12/03/2018 07:44:27 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #028 All elements available after click For Clients :
+12/03/2018 07:44:27 PM - StatusDisplay - INFO: TC #028 All elements available after click For Clients :: FULL TEST SUCCESSFUL
+12/03/2018 07:44:27 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//div[@class='avatar__letter-in']' to be clickable
+12/03/2018 07:44:34 PM - MainDriver - ERROR: Element '//div[@class='avatar__letter-in']' NOT appeared //div[@class='avatar__letter-in'] on the web page
+12/03/2018 07:44:34 PM - MainDriver - INFO: Current page URL from getUrl method is https://stage1.fmny.mobi/(restriction-signup:signup-step-1-referral)
+12/03/2018 07:44:34 PM - Util - INFO: Actual Text From Application Web UI --> :: https://stage1.fmny.mobi
+12/03/2018 07:44:34 PM - Util - INFO: Expected Text From Application Web UI --> :: https://stage1.fmny.mobi/(restriction-signup:signup-step-1-referral)
+12/03/2018 07:44:34 PM - Util - ERROR: ### VERIFICATION DOES NOT MATCHED !!!
+12/03/2018 07:44:35 PM - MainDriver - INFO: Opened Home page with address: https://stage1.fmny.mobi
+12/03/2018 07:44:35 PM - MainDriver - INFO: Element Found in getElement with locator: //a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Agencies')] and  locator_type: xpath
+12/03/2018 07:44:35 PM - MainDriver - INFO: Clicked on received element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="6ebc4abc-ebc8-4349-a1d0-b4a290d895a3", element="7045f99a-4e2e-9749-946d-f547f5004251")>
+12/03/2018 07:44:35 PM - MainDriver - INFO: Element Found in getElement with locator: //h3[contains(text(),'Free up your')] and  locator_type: xpath
+12/03/2018 07:44:35 PM - MainDriver - INFO: Element present with locator: //h3[contains(text(),'Free up your')] locator_type: xpath element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="6ebc4abc-ebc8-4349-a1d0-b4a290d895a3", element="fe9528f7-f48a-fe46-b1aa-eba826e7fa18")>
+12/03/2018 07:44:35 PM - MainDriver - INFO: Element Found in getElement with locator: //button[contains(text(),'Inquire')] and  locator_type: xpath
+12/03/2018 07:44:35 PM - MainDriver - INFO: Element is displayed with locator: //button[contains(text(),'Inquire')] locator_type: xpath
+12/03/2018 07:44:35 PM - MainDriver - INFO: Element Found in getElement with locator: //input[@name='email'] and  locator_type: xpath
+12/03/2018 07:44:35 PM - MainDriver - INFO: Element present with locator: //input[@name='email'] locator_type: xpath element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="6ebc4abc-ebc8-4349-a1d0-b4a290d895a3", element="3cf7fb3b-4a30-5f49-9fe6-1666bba71c93")>
+12/03/2018 07:44:35 PM - Util - INFO: In incoming list only True: [True, True, True]
+12/03/2018 07:44:35 PM - StatusDisplay - INFO: result on enter in markFinal is: True
+12/03/2018 07:44:35 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #029 All elements available after click For Agencies :
+12/03/2018 07:44:35 PM - StatusDisplay - INFO: TC #029 All elements available after click For Agencies :: FULL TEST SUCCESSFUL
+12/03/2018 07:44:35 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//div[@class='avatar__letter-in']' to be clickable
+12/03/2018 07:44:42 PM - MainDriver - ERROR: Element '//div[@class='avatar__letter-in']' NOT appeared //div[@class='avatar__letter-in'] on the web page
+12/03/2018 07:44:42 PM - MainDriver - INFO: Current page URL from getUrl method is https://stage1.fmny.mobi/#agencies
+12/03/2018 07:44:42 PM - Util - INFO: Actual Text From Application Web UI --> :: https://stage1.fmny.mobi
+12/03/2018 07:44:42 PM - Util - INFO: Expected Text From Application Web UI --> :: https://stage1.fmny.mobi/#agencies
+12/03/2018 07:44:42 PM - Util - ERROR: ### VERIFICATION DOES NOT MATCHED !!!
+12/03/2018 07:44:43 PM - MainDriver - INFO: Opened Home page with address: https://stage1.fmny.mobi
+12/03/2018 07:44:43 PM - MainDriver - INFO: Element Found in getElement with locator: //a[@class='Navbar__navLink--3lL7S']/span[contains(text(), 'For Models')] and  locator_type: xpath
+12/03/2018 07:44:43 PM - MainDriver - INFO: Clicked on received element: <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="6ebc4abc-ebc8-4349-a1d0-b4a290d895a3", element="7836ca14-c2ce-c349-bf1a-c3b0f2a2c443")>
+12/03/2018 07:44:43 PM - MainDriver - INFO: Element Found in getElement with locator: //h3[contains(text(),'Take control')] and  locator_type: xpath
+12/03/2018 07:44:43 PM - MainDriver - INFO: Element is displayed with locator: //h3[contains(text(),'Take control')] locator_type: xpath
+12/03/2018 07:44:43 PM - MainDriver - INFO: Parent Window handle found.
+12/03/2018 07:44:43 PM - MainDriver - INFO: Waiting for maximum :: 5 :: seconds for element '//a[@class='Features__headLink--3_0gW']' to be clickable
+12/03/2018 07:44:43 PM - MainDriver - INFO: Element '//a[@class='Features__headLink--3_0gW']' appeared //a[@class='Features__headLink--3_0gW'] on the web page
+12/03/2018 07:44:43 PM - MainDriver - INFO: Element '//a[@class='Features__headLink--3_0gW']' clicked with locator //a[@class='Features__headLink--3_0gW'] on the web page
+12/03/2018 07:44:43 PM - MainDriver - INFO: The wait :: 5 :: untill number of winodows increased.
+12/03/2018 07:44:43 PM - MainDriver - INFO: All Window handles found: ['4294967297', '4294967320']
+12/03/2018 07:44:43 PM - MainDriver - INFO: Switched to Window in given handle argument.4294967320
+12/03/2018 07:44:43 PM - MainDriver - INFO: Waiting for maximum :: 15 :: seconds for element to be LOCATED
+12/03/2018 07:44:44 PM - MainDriver - INFO: Confirmed presence of element located with locator: //h1[contains(text(),'Newbook')] on the web page
+12/03/2018 07:44:49 PM - MainDriver - INFO: Current window had been closed.
+12/03/2018 07:44:49 PM - Util - INFO: In incoming list only True: [True, True, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="6ebc4abc-ebc8-4349-a1d0-b4a290d895a3", element="a67416d9-9a40-4c48-829b-6baa305a8512")>]
+12/03/2018 07:44:49 PM - StatusDisplay - INFO: result on enter in markFinal is: True
+12/03/2018 07:44:49 PM - StatusDisplay - INFO: ### TEST PASSED SUCCESSFUL : TC #030 All elements available after click For Models :
+12/03/2018 07:44:49 PM - StatusDisplay - INFO: TC #030 All elements available after click For Models :: FULL TEST SUCCESSFUL
