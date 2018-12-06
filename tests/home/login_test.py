@@ -14,25 +14,26 @@ class TestLogin():
 
     def test_validLogin(self):
         """
-        FM1118-003 Test Models page after valid credentials.
+        TC-003 Test Models page after valid credentials.
         """
-        # Text "Filter by Category" exists; TC #003.1
-        res_1 = self.lp.verifyFilterExists()
+        # Text "Filter by Category" exists;
+        res_1 = self.lp.verifyFilterExists() # TC #003.1
         self.ts.mark(res_1, "#003.1: Login verification.")
 
-        # Page url is http://stage1.fmny.mobi/browse; TC #003.2
+        # Page url is http://stage1.fmny.mobi/browse; TC # 003.2
         res_2 = self.lp.isUrlModelsBrowse()
         self.ts.mark(res_2, "#003.2: Home pages URL verification.")
 
-        # Avatar of user exists; TC #003.3
-        res_3 = self.lp.verifyAvatarExists()
+        # Avatar of user exists; TC
+        res_3 = self.lp.verifyAvatarExists() # TC # 003.3
         self.ts.mark(res_3, "#003.3 Avatar availability verification.")
 
         # Final confirmation for Test Case.
         final = res_1 and res_2 and res_3
         self.ts.markFinal(
-            "TC #003: Test Models page after log in with valid credentials: ", final,
-            " : TC #003 TOTALLY FAILED.")
+            "TC #003: Test Models page after log in with valid credentials: ",
+            final,
+            " : TC #003 TOTALLY FAILED: test_validLogin.")
 
     def test_validLogout(self):
 
@@ -40,7 +41,7 @@ class TestLogin():
         res_1  = self.lp.verifyLogoutSuccessfull() #  004.1
         self.ts.mark(res_1, "#004.1: URL after logout as expected.")
 
-        res_2 = self.lp.verifyLoginExists() #  004.2
+        res_2 = self.lp.verifyUpLoginExists() #  004.2
         self.ts.mark(res_2, "#004.2: Log In link exists.")
 
         res_3 = not self.lp.verifyFilterExists() #  004.3
@@ -53,20 +54,20 @@ class TestLogin():
         final = res_1 and res_2 and res_3 and res_4
         self.ts.markFinal(
             "TC #004: Test Models page after log off successful: ", final,
-            " : TC #004 TOTALLY FAILED.")
+            " : TC #004 TOTALLY FAILED test_validLogout.")
 
     def test_backBrowser(self):
         """Go "Back" in browser, after Log out. TC #005
         Site must open Sign Up page. User still logged out.
         """
-        res_1 = self.lp.verifyBackBrowser()  # Click "BACK" and verify TC # 005.1
+        res_1 = self.lp.verifyBackBrowser()  # Click "BACK"; TC # 005.1
         self.ts.mark(res_1, "#005.1: BACK button pushed.")
 
         # Functionality not available YET. No reason to implement all tests.
         final = res_1 # and res_2 and res_3 and res_4
         self.ts.markFinal(
             "TC #005: Push BACK button on browser with Logoffed user: ", final,
-            " : TC #005 TOTALLY FAILED.")
+            " : TC #005 TOTALLY FAILED test_backBrowser.")
 
     def test_homePageLogoffed (self):
         """Visit "Home page", after log out. TC #006, 001"""
@@ -77,12 +78,13 @@ class TestLogin():
         self.ts.mark(res_2, "#006.2: Visit to Home Page: 'Making better' exists ")
 
         res_3 = self.lp.verifySingupModel()  # # 006.3
-        self.ts.mark(res_3, "#006.3: Visit to Home Page: 'Sign Up as a model' exists")
+        self.ts.mark(res_3,
+                     "#006.3: Visit to Home Page: 'Sign Up as a model' exists")
 
         final = res_1  and res_2 and res_3
         self.ts.markFinal(
             "TC #006 & 001: Visit on Home Page with Logoffed user: ", final ,
-            " : TC #006 TOTALLY FAILED.")
+            " : TC #006 TOTALLY FAILED test_homePageLogoffed.")
 
 
     def test_signupPage (self):
@@ -100,33 +102,32 @@ class TestLogin():
             res_3,
             "#002.3: Visit to SignIn Page: Password field is available? ")
 
-        res_4 = self.lp.verifyLoginExists()  # # 002.4
+        res_4 = self.lp.verifyUpLoginExists()  # # 002.4
         self.ts.mark(res_4,
                      "#002.4: Visit to SignIn Page: E-mail field available? ")
 
         final = res_1 and res_2 and res_3 and res_4
         self.ts.markFinal(
             "TC #002: Visit on SingIn Page with Logoffed user:", final,
-            ": TC #002 TOTALLY FAILED.")
+            ": TC #002 TOTALLY FAILED test_signupPage.")
 
     def test_invalidLogin(self):
         # Confirm login in with wrong credentials. TC # 007
         # For the first step we need move from the
-        final = self.lp.verifyInvalidLoginFail()
+        final = self.lp.verifyInvalidLoginFail() # 007
 
         # Check if any items in list:
         if len(final) > 0:
             for result in final:
                 print("inside loop test_invalidLogin:", result)
-                self.ts.mark(result[0], ("TC 007 with "+str(result[1])+", "+str(result[2])
-                             +"result:"))
+                self.ts.mark(result[0], ("TC 007 with "+str(result[1]) + ", "
+                                         + str(result[2])
+                                                +"result:"))
             self.ts.markFinal(
                 "TC #007: Login with invalid credentials impossible? ", final,
                 "FINALLY TC#007 INVALID LOGIN TEST FAILED")
         else:
             self.ts.markFinal(
                 "TC #007: No results of invalid login tries. WRONG PROCESS:",
-                None, "FINALLY TC#007 INVALID LOGIN TEST FAILED")
-
-# ff = LoginTest()
-# ff.valid_login()
+                None,
+                "FINALLY TC#007 INVALID LOGIN TEST FAILED test_invalidLogin.")

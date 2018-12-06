@@ -29,7 +29,7 @@ class HomePage(MainDriver):
         expected_url = self.data["url"]
         actual_url = self.getUrl()
         if not self.util.verifyTextMatch(expected_url, actual_url):
-            self.mp.openHomePageWaitLogin()
+            self.lp.openHomePage()
 
     ##############     Main Methods     #####################
     def verifyHomePageElements(self):
@@ -141,7 +141,7 @@ class HomePage(MainDriver):
 
         result.extend([
                 self.waitUrlChanged(curr_url),
-                self.lp.verifyLoginExists(),
+                self.lp.verifyUpLoginExists(),
                 self.lp.isUrlModelsBrowse(),
                 not self.lp.verifyFilterExists(),
                 self.mp.verifyRows(self.data["expected_number_rows"])

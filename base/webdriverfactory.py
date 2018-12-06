@@ -19,7 +19,7 @@ class WebDriverFactory():
         """
         self.browser = browser
         lp = LoginPage(webdriver)
-        self.data = lp.get_data()
+        self.data = lp.data
     """
         Set chrome driver and iexplorer environment based on OS
 

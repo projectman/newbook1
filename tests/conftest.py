@@ -20,12 +20,10 @@ def oneTimeSetUp(request, browser):
     lp = LoginPage(driver)
 
     lp.newLogPage()  # print header for new line for new log of new test.
+    lp.waitAndClickUpLoginButton() # UP RIGHT button on Home page;
 
 
-    lp.clickUpLoginButton() # UP RIGHT button on Home page;
-
-
-    creden = lp.get_data()["right_cr"]
+    creden = lp.data["right_cr"]
     lp.login(creden["user"], creden["pass"])
 
     # Pop up after first log in

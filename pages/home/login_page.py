@@ -10,10 +10,6 @@ class LoginPage(MainDriver):
         super().__init__(driver)
         self.driver = driver
 
-    def get_data(self):
-        """ Return dictionary with data JSON for testing."""
-        return self.data
-
     def newLogPage(self):
         """ print empty line in front of every new report. """
         str_el = "\n" + "#"*20 + 10*" " +" NEW LOG " + 10*" " + 20*"#"
@@ -21,8 +17,8 @@ class LoginPage(MainDriver):
         self.specialLogLine(str_el+"; "+self.driver.title)
 
     # Actions
-    ## Actions. Waits and Clicks
-    def clickUpLoginButton(self):
+    ## Actions. Waiters and Clicks
+    def waitAndClickUpLoginButton(self):
         """ Wait Login TOP-RIGHT button from Home page available
         then click it if 2nd argument is True."""
         self.waitForClickElement(self.data["up_login"], True)
@@ -31,25 +27,25 @@ class LoginPage(MainDriver):
         self.elementClick(self.data["signin_login_btn"])
 
     def existSubmitButton(self):
-        """
-        Return True if the central submit button "Log In" on Sign In page exists
-        """
+        # Return True if the central submit button "Log In"
+        # on Sign In page exists
         return self.isElementPresent(self.data["signin_login_btn"])
 
-    def clickReLoginButton(self):
-        self.waitForClickElement(self.data["up_login"], True)
-
     def waitButtonAdvanced(self):
-        self.waitForClickElement("//button/span[text()='Advanced Filters']")
+        # Wait until button "Advanced Filters" available for click
+        self.waitForClickElement(self.data["advanced_filters"])
 
     def waitClickAvatar(self):
-        # Wait found and click
-        self.waitForClickElement("//div[@class='square-dummy']", True )
+        # Wait Avatar area and click it
+        self.waitForClickElement(self.data["avatar_square"], True )
 
     def waitClickLogout(self):
-        element = self.waitForClickElement("//div[@class='link link_type_logout link_active']")
+        # Wait element button "Log off" available for click and click it
+        # after scroll to it.
+        element = self.waitForClickElement(self.data["logout_btn"])
         self.webScrollElement(element)
-        self.elementClick("//div[@class='link link_type_logout link_active']")
+        # After scroll the object of element may changed. Need recall again.
+        self.elementClick(self.data["logout_btn"])
 
     def waitAndConfirmElementLocated(self, locator, locator_type="xpath"):
         """Wait until element can be located,
@@ -78,19 +74,21 @@ class LoginPage(MainDriver):
         Return True if current URL of web is equal self.data["models_url"]
         """
         expected_url = self.data["models_url"]
-
         actual_url = self.getUrl()
-        print(expected_url, actual_url)
+
         return self.util.verifyTextMatch(expected_url, actual_url)
 
     def verifySigninText(self):
         # Verify that text "Client Sign In is available on page.
         return self.isElementDisplayed(self.data["signin_text"])
 
-    def verifyTitle(self, expectedTitle):
-        """ Verify that tile after login as it should be. """
-        self.waitButtonAdvanced()  # make sure that page downloaded.
-        return self.verifyPageTitle(expectedTitle)
+    def verifyEmailAvailable(self):
+        # Verify that email field available then return True. Other way false.
+        return self.isElementPresent(self.data["email_field"])
+
+    def verifyPassAvailable(self):
+        # Verify that password field available then return True. Other: false.
+        return self.isElementPresent(self.data["pass_field"])
 
     ########################### VERIFiCations  ##################################
     #                                                                           #
@@ -100,7 +98,6 @@ class LoginPage(MainDriver):
         Return True if filter exists and Flase if doesn't exist. ."""
         # Wait first element clickable.
         # As element has default locator XPATH, it abasement.
-
         return self.isElementDisplayed(self.data["filter_btn"])
 
     def verifyAvatarExists(self):
@@ -117,21 +114,20 @@ class LoginPage(MainDriver):
 
         return self.isUrlModelsBrowse()
 
-    def verifyLoginExists(self):
-        """ Return True if link to "Log In" exists.TC 004.2; 002.4"""
+    def verifyUpLoginExists(self):
+        # Return True if link to "Log In" exists.TC 004.2; 002.4
         return self.isElementDisplayed(self.data["up_login_link"])
-        # Here need to be found <a href > with "Log In"
 
     def verifyBackBrowser(self):
         """ Click on BACK button in Browser.
         Verify Sign In text exists then return True. TC # 005.1"""
-        self.driver.back()
+        self.pushBrowserBackBtn()
         return self.verifySigninText()
 
     def verifyHomePage(self):
         """ Visit home page when user logoffed.
         Verify title "New book. TC 006.1 """
-        self.driver.get(self.data["url"])
+        self.openHomePage()
         return self.isElementDisplayed(self.data["nb_logo"])
 
     def verifyMadeBetter(self):
@@ -153,7 +149,7 @@ class LoginPage(MainDriver):
         Open singUp page and verify it. TC #002.1
         :return:   True if Client SignU on Sing Up page avaible.
         """
-        self.clickReLoginButton()
+        self.waitAndClickUpLoginButton()
         return self.verifySigninText()
 
     def verifyInvalidLoginFail(self):
@@ -178,9 +174,9 @@ class LoginPage(MainDriver):
             out = False
             if not self.existSubmitButton():
                 break
-            # Check that 1st element is available on page; # 007.2 - 017.2
+            # Check 1st element of UI is available on page; # 007.2 - 017.2
             if self.waitAndConfirmElementLocated(item["el_1"]):
-                # Check the 2nd element is available on page
+                # Check the 2nd element of UI is available on page
                 if self.isElementDisplayed(item["el_2"]):
                     out = True
             else:
@@ -192,17 +188,6 @@ class LoginPage(MainDriver):
 
         return result
 
-    def verifyEmailAvailable(self):
-        """
-        Verify that email field available then return True. Other way false.
-        """
-        return self.isElementPresent(self.data["email_field"])
-
-    def verifyPassAvailable(self):
-        """
-        Verify that password field available then return True. Other way false.
-        """
-        return self.isElementPresent(self.data["pass_field"])                 #
 
     def login(self, email='', password=''):
         """

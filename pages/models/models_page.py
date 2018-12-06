@@ -21,7 +21,7 @@ class ModelsPage(MainDriver):
 
     def containsTextFlag(self, expected_text, actual_text):
         """Return True, if expectedText in actualTex."""
-        if self.util.verifyTextContains(expected_text, actual_text):
+        if self.util.actualTextContainsExpected(expected_text, actual_text):
             return True
         else:
             return False
@@ -50,7 +50,7 @@ class ModelsPage(MainDriver):
         """
 
         # visit main page to avoid influence of previous test.
-        self.openHomePageWaitLogin()
+        self.openHomePage()
 
         # number will be randomly tested
         testing_num = elements_num
@@ -96,7 +96,7 @@ class ModelsPage(MainDriver):
                     actual_name = self.getText(actual_el)
 
                     # Check that found text contains expectedText
-                    current_res = self.util.verifyTextContains(
+                    current_res = self.util.actualTextContainsExpected(
                         expected_name, actual_name)
                     self.closeWindow()
                     # Switch back to parent window.
@@ -120,7 +120,7 @@ class ModelsPage(MainDriver):
         Return False if any of the numbers try will not True.
         """
         # visit main page to avoid influence of previous test.
-        self.openHomePageWaitLogin()
+        self.openHomePage()
         rows = self.waitAllElementsLocated(locator_rows, "xpath", 10)
 
         random_index_list = self.util.randomIndexList(
@@ -154,7 +154,7 @@ class ModelsPage(MainDriver):
         return  self.util.absentFalseInList(result)
 
     ########### Main Methods #######################
-    def equal_num_categories(self):
+    def actualCategoriesNumEqualExpected(self):
         """Return True, if are 7 items for "Filter by Category"
         on Models Page.TC # 018, in other case False. """
 
@@ -165,17 +165,18 @@ class ModelsPage(MainDriver):
         # !!! move to the Util() class with logs and try:
         expected_num = self.data["number_of_categories"]
 
-        return self.util.verifyNumbersMatch(expected_num, actual_num)
+        return self.util.actualNumbersMatchExpected(expected_num, actual_num)
 
-    def verifyRows(self, number_rows):
+    def verifyRows(self, num=None):
         """
         Return True if number of found rows more/equal 'number_rows' arg.
         """
-        res = self.getListOfItems(self.data["rows"])
-        if len(res) >= number_rows:
-            return True
+        if num is None:
+            min_num = self.data["minimal_number_rows"]
         else:
-            return False
+            min_num = num
+        return len(self.getListOfItems(self.data["rows"])) >= min_num
+
 
     def verifyCategoriesUrls(self):
         """
@@ -187,13 +188,10 @@ class ModelsPage(MainDriver):
         """
         # Do not forget lowercase!
         final = (False, [])
-        locator = self.data["category"]
-        urls = self.getListOfItems(locator)
-
+        urls = self.getListOfItems(self.data["category"])
+        results = [False]
         # Process every element in list.
         for indx in range(1):    #   len(urls)): # !!! change for production
-            # Create list of results
-            results = []
             # for protection if element has changed after refresh;
             element = urls[indx]
             # Get lowercase of expected text inside of div tag
@@ -206,27 +204,23 @@ class ModelsPage(MainDriver):
             # Get actual text on the end of URL after '='
             # 1. URL page need to include title of icon category;
             actual_text = self.getUrl().split('=')[-1]
-            results.append(self.util.verifyTextContains(
-                                                    expected_text, actual_text))
+            results = [self.util.actualTextContainsExpected(
+                                             expected_text, actual_text
+                                                            )]
 
             ## Handle with Text "modelsu match your search criteria"
             # 2. Page contains text ""... models match your search criteria""
             results.append(self.verifyPageIncludesText(self.data["match_text"]))
 
             ## Handle with number of rows on page.
-            # 3. There are more than 1 row of models gallery on page;
-            results.append(self.verifyRows(1))
+            # 3. There are more than "minimal_num_rows" of models gallery;
+            results.append(self.verifyRows())
             ## Find final result. No False in list of results.
-            self.driver.back()  #  !!! change to the cross.click() on icon catergory
-            if False in results:
-                final = (False, results)
-                break
-            else:
-                final = (True, results)
+            self.pushBrowserBackBtn()
 
         # Need Back browser after test every time.
 
-        return final # !!!
+        return (self.util.absentFalseInList(results), results)
 
     def verifyNumberAvatars(self):
         """
@@ -234,7 +228,7 @@ class ModelsPage(MainDriver):
         of rows.
         """
         # visit main page to avoid influence of previouse test.
-        self.openHomePageWaitLogin()
+        self.openHomePage()
 
         rows = self.getListOfItems(self.data["rows"])
         avatars = self.getListOfItems(self.data["avatars"])

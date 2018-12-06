@@ -21,11 +21,6 @@ class MainDriver():
         # get dictionary with data testing from data.json
         self.data = json.load(open('utilities/data.json'))
 
-
-    def get_data(self):
-        """ Return dictionary with data JSON for testing."""
-        return self.data
-
     def specialLogLine(self, message):
         """Create Announcement line for the new log."""
         self.log.info(message)
@@ -36,7 +31,7 @@ class MainDriver():
         """
         return self.waitForClickElement(self.data["avatar_link"])
 
-    def openHomePageWaitLogin(self):
+    def openHomePage(self):
         """
         Open home page for logged in user. 
         Wait when avatar will be available for click.
@@ -74,7 +69,10 @@ class MainDriver():
         self.log.info("Current page URL from getUrl method is "+url)
         return url
 
-
+    def pushBrowserBackBtn(self):
+        # Push "Back" button on browser;
+        self.driver.back()
+        self.log.info("Button 'Back' was pushed on browser.")
 
     def getTitle(self):
         return self.driver.title
@@ -433,7 +431,7 @@ class MainDriver():
         """
         try:
             actualTitle = self.getTitle()
-            return self.util.verifyTextContains(actualTitle, title_to_verify)
+            return self.util.actualTextContainsExpected(actualTitle, title_to_verify)
         except:
             self.log.error("Failed to get page title")
             print_stack()
