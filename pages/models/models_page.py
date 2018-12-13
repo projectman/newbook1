@@ -15,6 +15,12 @@ class ModelsPage(MainDriver):
         self.driver = driver
 
     ########### Service methods #####################
+    def openModelPage(self):
+        # open page with URL "models_url": "https://stage1.fmny.mobi/browse"
+        self.openUrlPage(self.data["models_url"])
+
+
+
     def getListOfItems(self, locator, locator_type="xpath"):
         """ Return list of elmenets with 'locator'."""
         return self.getElementList(locator, locator_type)
@@ -49,9 +55,6 @@ class ModelsPage(MainDriver):
         Return true if all elements opened, found and equal.
         """
 
-        # visit main page to avoid influence of previous test.
-        self.openHomePage()
-
         # number will be randomly tested
         testing_num = elements_num
 
@@ -83,7 +86,7 @@ class ModelsPage(MainDriver):
             self.moveToElementAndClick(new_element[indx], True)
 
             # wait until EC.new_window_is_opened(current_handles)
-            self.waitNewWindowOpen([parent_window])
+            self.waitNewWindowOpen([parent_window], 10)
             # Find all handles
             handles = self.findAllHandles()
             # Change the window
@@ -119,8 +122,7 @@ class ModelsPage(MainDriver):
         element with expected_locator found on opened frame.
         Return False if any of the numbers try will not True.
         """
-        # visit main page to avoid influence of previous test.
-        self.openHomePage()
+
         rows = self.waitAllElementsLocated(locator_rows, "xpath", 10)
 
         random_index_list = self.util.randomIndexList(
@@ -146,7 +148,7 @@ class ModelsPage(MainDriver):
 
                 # Wait control element is available;
                 control_el = self.waitElementLocated(expected_element_locator)
-                result.append(self.isElementPresent("", "", control_el))
+                result.append(self.isElementDisplayed("", "", control_el))
                 # Closing new window with closing element
                 self.waitForClickElement(expected_element_close,
                                    True, expected_el_close_type)
@@ -186,8 +188,6 @@ class ModelsPage(MainDriver):
         2. Page contains text ""... models match your search criteria""
         3. There are more than 1 row of models gallery on page;
         """
-        # Do not forget lowercase!
-        final = (False, [])
         urls = self.getListOfItems(self.data["category"])
         results = [False]
         # Process every element in list.
@@ -196,21 +196,23 @@ class ModelsPage(MainDriver):
             element = urls[indx]
             # Get lowercase of expected text inside of div tag
             expected_text = element.text.lower()
+            cur_url = self.getUrl()
             self.elementClick("", "", element)
 
-            time.sleep(3)  # !!! decide to explicit wait.
-
+            self.waitUrlChanged(cur_url)
             ## Handle URL
             # Get actual text on the end of URL after '='
             # 1. URL page need to include title of icon category;
             actual_text = self.getUrl().split('=')[-1]
-            results = [self.util.actualTextContainsExpected(
+            is_equal = self.util.verifyTextMatch(
                                              expected_text, actual_text
-                                                            )]
+                                                 )
+            results = [is_equal]
 
             ## Handle with Text "modelsu match your search criteria"
-            # 2. Page contains text ""... models match your search criteria""
-            results.append(self.verifyPageIncludesText(self.data["match_text"]))
+            # 2. Page contains text "models match"
+            models_match = self.waitElementVisible(self.data["models_match"])
+            results.append(models_match is not None)
 
             ## Handle with number of rows on page.
             # 3. There are more than "minimal_num_rows" of models gallery;
@@ -220,15 +222,13 @@ class ModelsPage(MainDriver):
 
         # Need Back browser after test every time.
 
-        return (self.util.absentFalseInList(results), results)
+        return (self.util.absentFalseInList(results))
 
     def verifyNumberAvatars(self):
         """
         Return True if number of avatars in gallery is the same as number
         of rows.
         """
-        # visit main page to avoid influence of previouse test.
-        self.openHomePage()
 
         rows = self.getListOfItems(self.data["rows"])
         avatars = self.getListOfItems(self.data["avatars"])
@@ -329,6 +329,4 @@ class ModelsPage(MainDriver):
             self.data["names"],
             self.data["name_in_profile"]
         )
-
-
         return result

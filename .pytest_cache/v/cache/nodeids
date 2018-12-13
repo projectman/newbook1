@@ -1,3 +1,3 @@
 [
-  "tests/models/models_test.py::TestModels::()::test_verifyNumberAvatars"
+  "tests/home/login_test.py::TestLogin::()::test_homePageLogoffed"
 ]

@@ -18,8 +18,9 @@ class WebDriverFactory():
         Inits WebDriverFactory class
         """
         self.browser = browser
-        lp = LoginPage(webdriver)
-        self.data = lp.data
+        self.lp = LoginPage(webdriver)
+        self.data = self.lp.data
+
     """
         Set chrome driver and iexplorer environment based on OS
 

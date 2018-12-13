@@ -15,14 +15,14 @@ import logging
 
 class Util(object):
 
-    log = cl.customLogger(logging.INFO)
+    log = cl.customLogger(logging.DEBUG)
 
     def sleep(self, sec, info=""):
         """
         Put the program to wait for the specified amount of time
         """
         if info is not None:
-            self.log.info("Wait :: '" + str(sec) + "' seconds for " + info)
+            self.log.debug("Wait :: '" + str(sec) + "' seconds for " + info)
         try:
             time.sleep(sec)
         except InterruptedError:
@@ -77,11 +77,14 @@ class Util(object):
             expectedList: Expected Text
             actualList: Actual Text
         """
-        self.log.info("Actual Text From Application Web UI --> :: " + actual_text)
-        self.log.info("Expected Text From Application Web UI --> :: " + expected_text)
+        self.log.debug("Actual Text From Application Web UI --> :: "
+                       + actual_text)
+        self.log.debug("Expected Text From Application Web UI --> :: "
+                       + expected_text)
         if expected_text.lower() in actual_text.lower():
-            self.log.info("### VERIFICATION CONTAINS !!! Actual Text "
-                          + actual_text + " contains expected text: " + expected_text)
+            self.log.debug("### VERIFICATION CONTAINS !!! Actual Text "
+                          + actual_text + " contains expected text: "
+                           + expected_text)
             return True
         else:
             self.log.error("### VERIFICATION DOES NOT CONTAINS !!!")
@@ -96,12 +99,12 @@ class Util(object):
             actualList: Actual Text
         """
 
-        self.log.info("Expected Text From Application Web UI --> :: "
-                                                        + expected_text)
-        self.log.info(
-            "Actual Text From Application Web UI --> :: " + actual_text)
+        self.log.debug(("Expected Text From Application Web UI --> :: "
+                                            + str(expected_text)))
+        self.log.debug(("Actual Text From Application Web UI --> :: "
+                        + str(actual_text)))
         if actual_text.lower() == expected_text.lower():
-            self.log.info("### VERIFICATION MATCHED !!!")
+            self.log.debug("### VERIFICATION MATCHED !!!")
             return True
         else:
             self.log.error("### VERIFICATION DOES NOT MATCHED !!!")
@@ -139,7 +142,7 @@ class Util(object):
         """
         res = (expected_num == actual_num)
         if res:
-            self.log.info(("Expected number: " + str(expected_num) +
+            self.log.debug(("Expected number: " + str(expected_num) +
                            " is equal actual number: " + str(actual_num)))
         else:
             self.log.error(("Expected number: " + str(expected_num) +
@@ -154,12 +157,12 @@ class Util(object):
         """
         try:
             if all(list_in) and len(list_in) > 0:
-                self.log.info(("In incoming list only True: "
+                self.log.debug(("In incoming list only True: "
                                + str(list_in)))
                 return True
 
             else:
-                self.log.info(("In incoming list has False or lenght == 0 : "
+                self.log.debug(("In incoming list has False or lenght == 0 : "
                                + str(list_in)))
                 return False
         except:
@@ -176,7 +179,7 @@ class Util(object):
         index_list = list(range(size_of_range))
         random.shuffle(index_list)
         result = index_list[:out_list_size]
-        self.log.info(("Found random list of indexes: " + str(result)))
+        self.log.debug(("Found random list of indexes: " + str(result)))
         return result
 
 

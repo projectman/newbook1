@@ -8,7 +8,7 @@ import utilities.custom_logger as cl
 from utilities.util import Util
 import json
 import logging
-import time, os
+
 
 class MainDriver():
 
@@ -22,60 +22,36 @@ class MainDriver():
         self.data = json.load(open('utilities/data.json'))
 
     def specialLogLine(self, message):
-        """Create Announcement line for the new log."""
-        self.log.info(message)
+        """Any service announcement line for the new log."""
+        self.log.debug(message)
 
-    def avatarAvailableForClick(self):
+    def openUrlPage(self, url):
         """
-        Return avatar link element after waiting it is available for clicking.
+        Open the page with url address. Return nothing.
         """
-        return self.waitForClickElement(self.data["avatar_link"])
+        self.driver.get(url)
+        is_opened = self.waitUrlMatchesExpected(url)
 
-    def openHomePage(self):
-        """
-        Open home page for logged in user. 
-        Wait when avatar will be available for click.
-        Control that web page with logged in user opened.
-        """
-        self.driver.get(self.data["url"])
-        self.log.info(("Opened Home page with address: " + self.data["url"]))
-
-    def screenShot(self, resultMessage):
-        """
-        Takes screenshots of the current open web page.
-        """
-        cur_time = str(time.ctime())
-
-        file_name = resultMessage + cur_time + ".png"
-        screenshot_dir = "screenshots"
-        relative_fname = os.path.join(screenshot_dir, file_name)
-        cur_dir = os.getcwd()
-        target_dir = os.path.join(cur_dir, relative_fname)
-
-        try:
-            if not os.path.exists(screenshot_dir):
-                os.makedirs(screenshot_dir)
-
-            self.driver.save_screenshot(target_dir)
-            self.log.info("Screenshot: " + str(file_name)
-                          + " saved to directory: ../"
-                          + str(screenshot_dir))
-        except:
-            self.log.error('### Exception Occurred with screenshot creation!')
-            # print_stack()
+        if is_opened:
+            self.log.debug("Opened the page with url: " + url)
+        else:
+            self.log.error("CAN NOT open the page with url: " + url)
 
     def getUrl(self):
         url = self.driver.current_url
-        self.log.info("Current page URL from getUrl method is "+url)
+        self.log.debug("Current page URL from getUrl method is "+url)
         return url
 
     def pushBrowserBackBtn(self):
         # Push "Back" button on browser;
         self.driver.back()
-        self.log.info("Button 'Back' was pushed on browser.")
+        # !!! add waiter that url is actual.
+        self.log.debug("Button 'Back' was pushed on browser.")
 
     def getTitle(self):
-        return self.driver.title
+        title = self.driver.title
+        self.log("It got title of the page: " + title)
+        return title
 
     def getByType(self, locator_type):
         locator_type = locator_type.lower()
@@ -92,7 +68,7 @@ class MainDriver():
         elif locator_type == "link":
             return By.LINK_TEXT
         else:
-            self.log.info("Locator type " + locator_type +
+            self.log.error("Locator type " + locator_type +
                           " not correct/supported")
         return False
 
@@ -102,7 +78,7 @@ class MainDriver():
             locator_type = locator_type.lower()
             byType = self.getByType(locator_type)
             element = self.driver.find_element(byType, locator)
-            self.log.info("Element Found in getElement with locator: " + locator +
+            self.log.debug("Element Found in getElement with locator: " + locator +
                           " and  locator_type: " + locator_type)
         except:
             self.log.error("Element NOT found in getElement with locator: " + locator +
@@ -116,7 +92,7 @@ class MainDriver():
             locator_type = locator_type.lower()
             byType = self.getByType(locator_type)
             result = self.driver.find_elements(byType, locator)
-            self.log.info( "Element List with length: " +str(len(result)) +
+            self.log.debug( "Element List with length: " +str(len(result)) +
                         "; Found with locator: " + locator +
                        " and  locator_type: " + locator_type )
         except:
@@ -134,11 +110,11 @@ class MainDriver():
             if locator != "":
                 new_element = self.getElement(locator, locator_type)
                 new_element.click()
-                self.log.info("Clicked on element with locator: " + locator +
+                self.log.debug("Clicked on element with locator: " + locator +
                           " locator_type: " + locator_type)
                 result = True
             elif element is not None:
-                self.log.info(("Clicked on received element: " + str(element)))
+                self.log.debug(("Clicked on received element: " + str(element)))
                 element.click()
                 result = True
             else:
@@ -152,7 +128,46 @@ class MainDriver():
             # print_stack()
         return result
 
-    def sendKeys(self, data, locator, locator_type="xpath", element=None):
+    def verifyPageIncludesText(self, expected_text):
+        """
+        Return: True if page include the 'expectedText. In other case: False.
+        """
+        try:
+            actualText = self.driver.page_source
+            if expected_text in actualText:
+                result = True
+                self.log.debug(
+                    "Does current page includes text: " + str(expected_text)
+                          + ": " + str(result))
+            else:
+                result = False
+                self.log.error(
+                    "Current page DOES NOT include text: '" + str(expected_text)
+                    + "': " + str(result))
+        except:
+            result = False
+            self.log.error(
+                "Process FAILTURE: current page includes text: "
+                + str(expected_text)
+                + ": " + str(result))
+
+        return result
+
+    def verifyPageTitle(self, title_to_verify):
+        """
+        Verify the page Title
+        Parameters:
+        titleToVerify: Title on the page that needs to be verified
+        """
+        try:
+            actualTitle = self.getTitle()
+            return self.util.actualTextContainsExpected(actualTitle, title_to_verify)
+        except:
+            self.log.error("Failed to get page title")
+            print_stack()
+            return False
+
+    def sendKeys(self, data, locator, locator_type="xpath"):
         """
         Send keys to an element
         Either provide element or a combination of locator and locator_type
@@ -162,7 +177,7 @@ class MainDriver():
                 element = self.getElement(locator, locator_type)
                 element.clear()
                 element.send_keys(data)
-                self.log.info("Sent data '" + data + "' to element with locator: "
+                self.log.debug("Sent data '" + data + "' to element with locator: "
                            + locator +
                            " locator_type: " + locator_type)
         except:
@@ -170,8 +185,6 @@ class MainDriver():
                            + locator +
                            " locator_type: " + locator_type)
             # print_stack()
-
-
 
     # !!! ???? If need method for if the location is for clickable element - use this
     # method again.
@@ -183,7 +196,7 @@ class MainDriver():
         # print ("methods of element: ", dir(element))
         try:
             if element.is_clickable:
-                self.log.info(("Element : " +
+                self.log.debug(("Element : " +
                               str(element) + " is clickable."))
                 return True
             else:
@@ -201,15 +214,15 @@ class MainDriver():
         """
         try:
             if element is None:  # This means if element is empty
-                self.log.info( "In locator condition: " + str(element) )
+                self.log.debug( "In locator condition: " + str(element) )
                 element = self.getElement(locator, locator_type )
-                self.log.info("Before finding text")
+                self.log.debug("Before finding text")
             text = element.text
-            self.log.info("After finding element, size of text is: " + str(len(text)))
+            self.log.debug("After finding element, size of text is: " + str(len(text)))
             if len( text ) == 0:
                 text = element.get_attribute( "innerText" )
             if len( text ) != 0:
-                self.log.info(("Getting text on element :: " + str(text) + info))
+                self.log.debug(("Getting text on element :: " + str(text) + info))
                 text = text
         except:
             self.log.error( "Failed to get text on element " + str(element)
@@ -217,28 +230,6 @@ class MainDriver():
             # print_stack()
             text = None
         return text
-
-    def isElementPresent(self, locator="", locator_type="xpath", element=None):
-        """
-        Check if element is present ->
-        Either provide element or a combination of locator and locator_type
-        """
-        try:
-            if locator != "":  # This means if locator is not empty
-                element = self.getElement(locator, locator_type)
-            if element is not None:
-                self.log.info("Element present with locator: " + locator +
-                              " locator_type: " + locator_type + " element: "
-                              + str(element))
-                return True
-            else:
-                self.log.error("Element not present with locator: " + locator +
-                              " locator_type: " + locator_type + " element: "
-                              + str(element))
-                return False
-        except:
-            print("Element not found")
-            return False
 
     def isElementDisplayed(self, locator="", locator_type="xpath", element=None):
         """
@@ -249,8 +240,7 @@ class MainDriver():
             if locator != "":  # This means if locator is not empty
                 element = self.getElement( locator, locator_type )
             if element is not None:
-                isDisplayed = element.is_displayed()
-                self.log.info( "Element is displayed with locator: "
+                self.log.debug( "Element is displayed with locator: "
                                + locator + " locator_type: " + locator_type )
                 return True
             else:
@@ -264,19 +254,21 @@ class MainDriver():
 
     def waitForClickElement(self, locator, click=False, locator_type="xpath",
                                timeout=5, pollFrequency=0.5):
-        """Wait Element with locator, and click after found if True. """
+        """Wait Element with locator, and click after found if True.
+        :return: element
+        """
         element = None
         try:
             byType = self.getByType(locator_type)
-            self.log.info("Waiting for maximum :: " + str(timeout) +
+            self.log.debug("Waiting for maximum :: " + str(timeout) +
                   " :: seconds for element '" + locator + "' to be clickable")
             wait = WebDriverWait(self.driver, timeout, pollFrequency
                                  )
             element = wait.until(EC.element_to_be_clickable((byType, locator)))
-            self.log.info("Element '" + locator + "' appeared " + locator + " on the web page")
+            self.log.debug("Element '" + locator + "' appeared " + locator + " on the web page")
             if click:
                 element.click()
-                self.log.info("Element '" + locator + "' clicked with locator " + locator + " on the web page")
+                self.log.debug("Element '" + locator + "' clicked with locator " + locator + " on the web page")
         except:
             self.log.error("Element '" + locator + "' NOT appeared " + locator + " on the web page")
             # print_stack()
@@ -288,12 +280,12 @@ class MainDriver():
         element = None
         try:
             byType = self.getByType(locator_type)
-            self.log.info("Waiting for maximum :: " + str(timeout) +
+            self.log.debug("Waiting for maximum :: " + str(timeout) +
                   " :: seconds for element to be LOCATED")
             wait = WebDriverWait(self.driver, timeout, pollFrequency)
             element = wait.until(EC.presence_of_element_located((
                 byType, locator)))
-            self.log.info("Confirmed presence of element located with locator: "
+            self.log.debug("Confirmed presence of element located with locator: "
                           + locator + " on the web page")
         except:
             self.log.error("NOT Confirmed presence of element with locator: "
@@ -307,12 +299,12 @@ class MainDriver():
         element = None
         try:
             byType = self.getByType(locator_type)
-            self.log.info("Waiting for maximum :: " + str(timeout) +
+            self.log.debug("Waiting for maximum :: " + str(timeout) +
                   " :: seconds for element to be VISIBLE")
             wait = WebDriverWait(self.driver, timeout, pollFrequency)
             element = wait.until(EC.visibility_of_element_located((
                 byType, locator)))
-            self.log.info("Confirmed VISIBILITY of element with locator: "
+            self.log.debug("Confirmed VISIBILITY of element with locator: "
                           + locator + " on the web page")
         except:
             self.log.error("NOT Confirmed VISIBILITY of element with locator: "
@@ -329,13 +321,13 @@ class MainDriver():
         result = []
         try:
             byType = self.getByType(locator_type)
-            self.log.info(("Waiting for maximum :: "
+            self.log.debug(("Waiting for maximum :: "
                            + str(timeout) +
              " :: seconds for All elements Located with LOCATOR: " + locator))
             wait = WebDriverWait(self.driver, timeout, pollFrequency)
             result = wait.until(EC.presence_of_all_elements_located((
                 byType, locator)))
-            self.log.info(
+            self.log.debug(
                 ("Confirmed presence of ALL " + str(len(result))
                  + " elements located with locator: "
                  + locator + ", " + locator_type + " on the web page"))
@@ -353,7 +345,7 @@ class MainDriver():
         """
         wait = WebDriverWait(self.driver, timeout, poll_frequency)
         wait.until(EC.new_window_is_opened(cur_handle))
-        self.log.info("The wait :: " + str(timeout) +
+        self.log.debug("The wait :: " + str(timeout) +
                       " :: untill number of winodows increased.")
 
     def waitUrlChanged(self, current_url, timeout=5, poll_frequency=0.5):
@@ -364,7 +356,7 @@ class MainDriver():
         wait = WebDriverWait(self.driver, timeout, poll_frequency)
         is_changed = wait.until(EC.url_changes(current_url))
         if is_changed:
-            self.log.info("The wait :: " + str(timeout) +
+            self.log.debug("The wait :: " + str(timeout) +
                       " :: until url: " + current_url + " has changed.")
         else:
             self.log.error("The wait :: " + str(timeout) +
@@ -372,30 +364,20 @@ class MainDriver():
 
         return is_changed
 
-    def verifyPageIncludesText(self, expected_text):
+    def waitUrlMatchesExpected(self, expected_url, timeout=5, poll_freq=0.5):
         """
-        Return: True if page include the 'expectedText. In other case: False.
+        Wait until current url match expected url, then return True, in
+        other case return False.
         """
-        try:
-            actualText = self.driver.page_source
-            if expected_text in actualText:
-                result = True
-                self.log.info(
-                    "Does current page includes text: " + str(expected_text)
-                          + ": " + str(result))
-            else:
-                result = False
-                self.log.error(
-                    "Current page DOES NOT include text: " + str(expected_text)
-                    + ": " + str(result))
-        except:
-            result = False
-            self.log.error(
-                "Process FAILTURE: current page includes text: "
-                + str(expected_text)
-                + ": " + str(result))
-
-        return result
+        wait = WebDriverWait(self.driver, timeout, poll_freq)
+        is_matches = wait.until(EC.url_matches(expected_url))
+        if is_matches:
+            self.log.debug("The wait :: " + str(timeout) +
+                      " :: until url: " + expected_url + " has matched.")
+        else:
+            self.log.error("The wait :: " + str(timeout) +
+                      " :: until url: " + expected_url + " HAS NOT matched.")
+        return is_matches
 
     def webScroll(self, direction="up"):
         """
@@ -404,12 +386,12 @@ class MainDriver():
         if direction == "up":
             # Scroll Up
             self.driver.execute_script("window.scrollBy(0, -400);")
-            self.log.info("Web is scrolled up on 400 points.")
+            self.log.debug("Web is scrolled up on 400 points.")
 
         if direction == "down":
             # Scroll Down
             self.driver.execute_script("window.scrollBy(0, 400);")
-            self.log.info("Web is scrolled down on 400 points.")
+            self.log.debug("Web is scrolled down on 400 points.")
 
     def webScrollElement(self, element):
         """
@@ -417,25 +399,11 @@ class MainDriver():
         """
         try:
             self.driver.execute_script("arguments[0].scrollIntoView(true);", element)
-            self.log.info(
+            self.log.debug(
                 "Web is scrolled to element: " + str(element) + "." )
         except:
             self.log.error( "Web CAN NOT be scrolled to element: "
                             + str(element) + "." )
-
-    def verifyPageTitle(self, title_to_verify):
-        """
-        Verify the page Title
-        Parameters:
-        titleToVerify: Title on the page that needs to be verified
-        """
-        try:
-            actualTitle = self.getTitle()
-            return self.util.actualTextContainsExpected(actualTitle, title_to_verify)
-        except:
-            self.log.error("Failed to get page title")
-            print_stack()
-            return False
 
     def moveToElementAndClick(self, element, click=False):
         """
@@ -447,11 +415,11 @@ class MainDriver():
             action = ActionChains(self.driver)
             if click:
                 action.move_to_element(element).click(element).perform()
-                self.log.info("Element: " + str(element) +
+                self.log.debug("Element: " + str(element) +
                               "in moveToElement hover and clicked.")
             else:
                 action.move_to_element(element).perform()
-                self.log.info("Element: " + str(element) +
+                self.log.debug("Element: " + str(element) +
                               "in moveToElement hover only.")
         except:
             self.log.error("Element: " + str(element) +
@@ -464,7 +432,7 @@ class MainDriver():
 
         try:
             res = self.driver.current_window_handle
-            self.log.info("Parent Window handle found.")
+            self.log.debug("Parent Window handle found.")
             return res
         except:
             self.log.error("Parent Window handle was NOT found.")
@@ -477,7 +445,7 @@ class MainDriver():
 
         try:
             res = self.driver.window_handles
-            self.log.info(("All Window handles found: " + str(res)))
+            self.log.debug(("All Window handles found: " + str(res)))
             return res
         except:
             self.log.error("NO Window handles was found.")
@@ -489,7 +457,7 @@ class MainDriver():
         """
         try:
             self.driver.switch_to_window(handle)
-            self.log.info(("Switched to Window in given handle argument." +
+            self.log.debug(("Switched to Window in given handle argument." +
                            str(handle)))
         except:
             self.log.error("CAN NOT Switch to Window in given handle argument.")
@@ -498,9 +466,9 @@ class MainDriver():
         """Closing current window. Return nothing."""
         try:
             self.driver.close()
-            self.log.info("Current window had been closed.")
+            self.log.debug("Current window had been closed.")
         except:
-            self.log.info("Current window CAN NOT been closed.")
+            self.log.error("Current window CAN NOT been closed.")
 
     def getElementProperty(self, element, property):
         """
@@ -508,18 +476,18 @@ class MainDriver():
         there in no element, property.
         """
         res = None
-        self.log.info(("Arguments on enter: ", str(element), property))
+        self.log.debug(("Arguments on enter: ", str(element), property))
         try:
             if (element is not None) and (property != ""):
                 res = element.get_property(property)
-                self.log.info(("Property: " + str(property) + " of element: " +
+                self.log.debug(("Property: " + str(property) + " of element: " +
                               str(element.text)))
             else:
                 self.log.error("Property DOES NOT exists: " + str(property)
                                + " of element: " +
                                str(element.text))
         except:
-            self.log.info(("Impossible to get property: " + str(property)
+            self.log.error(("Impossible to get property: " + str(property)
                            + " of element: " + str(element.text)))
 
         return res

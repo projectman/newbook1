@@ -10,6 +10,7 @@ class TestModels:
     def classSetup(self, oneTimeSetUp):
         self.mp = ModelsPage(self.driver)
         self.ts = StatusDisplay(self.driver)
+        self.mp.openModelPage() # To prevent influence of previous test.
 
     def test_elementsAvailable(self):
         """ Check all filter elements available on Models Page
@@ -44,8 +45,8 @@ class TestModels:
         self.ts.markFinal(
             "TC #020 Check the every category is filtering on Models Page"
             "on Models Page. ",
-            res[0] , (": TC #020 TOTALLY FAILED test_verifyCategories. "
-                      + str(res[1])))
+            res , (": TC #020 TOTALLY FAILED test_verifyCategories. "
+                     ))
 
     def test_verifyNumberAvatars(self):
         """

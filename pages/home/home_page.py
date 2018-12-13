@@ -14,6 +14,14 @@ class HomePage(MainDriver):
         self.mp = ModelsPage(self.driver)
 
     ##############    Service Methods   #####################
+    def openHomePage(self):
+        """
+        Open home page for logged in user.
+        Wait when avatar will be available for click.
+        Control that web page with logged in user opened.
+        """
+        self.openUrlPage(self.data["url"])
+
     def checkLogoffHome(self):
         """
         It verifies that page logged out, if not -> Log out;
@@ -21,15 +29,16 @@ class HomePage(MainDriver):
         Returns nothing.
         """
         # Verify avatar and logout if available. Then Log out.
-        if self.lp.avatarAvailableForClick():
-            self.lp.waitClickAvatar()
+        if self.lp.isAvatarExists():
+            self.lp.waitAvatarAndClick()
             self.lp.waitClickLogout()
 
         # Verify if not on home page: go to home page.
         expected_url = self.data["url"]
         actual_url = self.getUrl()
+        # if we not on the home page after logout - go to home page
         if not self.util.verifyTextMatch(expected_url, actual_url):
-            self.lp.openHomePage()
+            self.openHomePage()
 
     ##############     Main Methods     #####################
     def verifyHomePageElements(self):
@@ -40,7 +49,7 @@ class HomePage(MainDriver):
         elements = self.data["hp_elements"]
         result =[]
         for element in elements:
-            result.append(self.isElementPresent(element))
+            result.append(self.isElementDisplayed(element))
 
 
         return self.util.absentFalseInList(result)
@@ -56,13 +65,13 @@ class HomePage(MainDriver):
         self.elementClick("", "", element)
 
         # After click on page available test "Save Money,"
-        result.append(self.isElementPresent(self.data["save_money"]))
+        result.append(self.isElementDisplayed(self.data["save_money"]))
 
         # Wait Central button "Sing Up" is available and click it.
         self.waitForClickElement(self.data["central_signup"], True)
 
         # On the opened frame there is text "Create a"
-        result.append(self.isElementPresent(self.data["create_a"]))
+        result.append(self.isElementDisplayed(self.data["create_a"]))
 
         # Close the frame for create client
         elements_2 = self.waitAllElementsLocated(self.data["close_create"])
@@ -81,13 +90,13 @@ class HomePage(MainDriver):
         self.elementClick("", "", element)
 
         # Find the text on page:"Free up your" on the page
-        result.append(self.isElementPresent(self.data["free_up"]))
+        result.append(self.isElementDisplayed(self.data["free_up"]))
 
         # Wait  button "Inquire" is available and click it.
         self.isElementDisplayed(self.data["inquire_btn"])
 
         # On the page still email field "Email"
-        result.append(self.isElementPresent(self.data["email_fld"]))
+        result.append(self.isElementDisplayed(self.data["email_fld"]))
 
         return self.util.absentFalseInList(result)
 
@@ -105,7 +114,6 @@ class HomePage(MainDriver):
 
         # Find parent handle -> Main Window
         parent_window = self.findParentWindow()
-
         # Wait Central button "App Store" is available and click it.
         self.waitForClickElement(self.data["app_store"], True)
 
@@ -123,6 +131,8 @@ class HomePage(MainDriver):
                 time.sleep(5)
                 # Close the window of App Store
                 self.closeWindow()
+                self.switchToWindow(parent_window)
+                print("current handle", self.findParentWindow())
 
         return self.util.absentFalseInList(result)
 
@@ -139,13 +149,11 @@ class HomePage(MainDriver):
         result = [self.waitForClickElement(
             self.data["browse_talent_top"], True)]
 
-        result.extend([
-                self.waitUrlChanged(curr_url),
-                self.lp.verifyUpLoginExists(),
-                self.lp.isUrlModelsBrowse(),
-                not self.lp.verifyFilterExists(),
-                self.mp.verifyRows(self.data["expected_number_rows"])
-            ])
+        result.append(self.waitUrlChanged(curr_url))
+        result.append(self.lp.isUpLoginExists())
+        result.append(self.lp.isUrlModelsBrowse())
+        result.append(not self.lp.verifyFilterExists())
+        result.append(self.mp.verifyRows(self.data["expected_number_rows"]))
 
         return self.util.absentFalseInList(result)
 

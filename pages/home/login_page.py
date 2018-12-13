@@ -10,12 +10,6 @@ class LoginPage(MainDriver):
         super().__init__(driver)
         self.driver = driver
 
-    def newLogPage(self):
-        """ print empty line in front of every new report. """
-        str_el = "\n" + "#"*20 + 10*" " +" NEW LOG " + 10*" " + 20*"#"
-
-        self.specialLogLine(str_el+"; "+self.driver.title)
-
     # Actions
     ## Actions. Waiters and Clicks
     def waitAndClickUpLoginButton(self):
@@ -29,15 +23,22 @@ class LoginPage(MainDriver):
     def existSubmitButton(self):
         # Return True if the central submit button "Log In"
         # on Sign In page exists
-        return self.isElementPresent(self.data["signin_login_btn"])
+        return self.isElementDisplayed(self.data["signin_login_btn"])
 
     def waitButtonAdvanced(self):
         # Wait until button "Advanced Filters" available for click
         self.waitForClickElement(self.data["advanced_filters"])
 
-    def waitClickAvatar(self):
-        # Wait Avatar area and click it
-        self.waitForClickElement(self.data["avatar_square"], True )
+    def waitAvatarAndClick(self):
+        # Wait Avatar area and click it. Return True if Avatar was found.
+        self.waitForClickElement(self.data["avatar_square"], True)
+
+
+    def isAvatarExists(self):
+        """
+        Return True if avatar is available for click.
+        """
+        return self.isElementDisplayed(self.data["avatar_square"])
 
     def waitClickLogout(self):
         # Wait element button "Log off" available for click and click it
@@ -59,7 +60,7 @@ class LoginPage(MainDriver):
     def getCurrentPageUrl(self):
         return self.getUrl()
 
-    ## Actions. Enters.
+    ## Actions. Entries.
     def enterEmail(self, email):
         self.sendKeys(email, self.data["email_field"])
 
@@ -84,14 +85,21 @@ class LoginPage(MainDriver):
 
     def verifyEmailAvailable(self):
         # Verify that email field available then return True. Other way false.
-        return self.isElementPresent(self.data["email_field"])
+        return self.isElementDisplayed(self.data["email_field"])
 
     def verifyPassAvailable(self):
         # Verify that password field available then return True. Other: false.
-        return self.isElementPresent(self.data["pass_field"])
+        return self.isElementDisplayed(self.data["pass_field"])
 
-    ########################### VERIFiCations  ##################################
-    #                                                                           #
+    def avatarAvailableForClick(self):
+        """
+        Return avatar link element after waiting it is available for clicking.
+        """
+        return self.isElementClickable(
+                                    self.getElement(self.data["avatar_link"]))
+
+    ########################### VERIFiCations  #################################
+    #                                                                          #
     def verifyFilterExists(self):
         """Verification that Filter button exists on the page.
         TC #003.1; #004.3
@@ -100,21 +108,17 @@ class LoginPage(MainDriver):
         # As element has default locator XPATH, it abasement.
         return self.isElementDisplayed(self.data["filter_btn"])
 
-    def verifyAvatarExists(self):
+    def avatarDoesExists(self):
         """ Verification that URL of "/browser" page is the requested for
         TC #003.3; TC #004.4
         Return True or False."""
         return self.isElementDisplayed(self.data["avatar_link"])
 
-    def verifyLogoutSuccessfull(self):
-        """ Click on avatar, move on Account Settings Page,
-        Log out of your Account. Check URL ...mobi/browse. TC 004.1"""
-        self.waitClickAvatar()
-        self.waitClickLogout()
+    def isLogoutSuccessfull(self):
+        # return True if logout is successful.
+        return not self.avatarDoesExists()
 
-        return self.isUrlModelsBrowse()
-
-    def verifyUpLoginExists(self):
+    def isUpLoginExists(self):
         # Return True if link to "Log In" exists.TC 004.2; 002.4
         return self.isElementDisplayed(self.data["up_login_link"])
 
@@ -127,7 +131,12 @@ class LoginPage(MainDriver):
     def verifyHomePage(self):
         """ Visit home page when user logoffed.
         Verify title "New book. TC 006.1 """
-        self.openHomePage()
+        # As it first method in test case we need to confirm that
+        # we're logoffed and then only open home page (data["url"])
+        if not self.isLogoutSuccessfull():
+            self.logout()
+
+        self.openUrlPage(self.data["url"])
         return self.isElementDisplayed(self.data["nb_logo"])
 
     def verifyMadeBetter(self):
@@ -135,6 +144,7 @@ class LoginPage(MainDriver):
         Visit home page when user logout verify title "New book. TC 006.2
         :return: True/False.
         """
+        self.util.sleep(6)
         return self.isElementDisplayed(self.data["text_top_local"])
 
     def verifySingupModel(self):
@@ -142,7 +152,7 @@ class LoginPage(MainDriver):
         Visit home page when user logout verify link "Sing Up as Model" TC 006.2
         :return: True/False.
         """
-        return self.isElementPresent(self.data["signup_topright"])
+        return self.isElementDisplayed(self.data["signup_topright"])
 
     def verifySignupPage(self):
         """
@@ -188,6 +198,11 @@ class LoginPage(MainDriver):
 
         return result
 
+    def logout(self):
+        """ Click on avatar, move on Account Settings Page,
+        Log out of your Account. Check URL ...mobi/browse. TC 004.1"""
+        self.waitAvatarAndClick()
+        self.waitClickLogout()
 
     def login(self, email='', password=''):
         """

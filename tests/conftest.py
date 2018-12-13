@@ -18,8 +18,11 @@ def oneTimeSetUp(request, browser):
     driver = wdf.getWebDriverInstance()
     # get variables from data.json
     lp = LoginPage(driver)
+    str_el = "\n" + "#" * 20 + 10 * " " + " NEW LOG " + 10 * " " + 20 * "#"
 
-    lp.newLogPage()  # print header for new line for new log of new test.
+    lp.specialLogLine(str_el + "; " + driver.title)
+
+    # print header for new line for new log of new test.
     lp.waitAndClickUpLoginButton() # UP RIGHT button on Home page;
 
 

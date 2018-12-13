@@ -25,7 +25,7 @@ class TestLogin():
         self.ts.mark(res_2, "#003.2: Home pages URL verification.")
 
         # Avatar of user exists; TC
-        res_3 = self.lp.verifyAvatarExists() # TC # 003.3
+        res_3 = self.lp.avatarDoesExists() # TC # 003.3
         self.ts.mark(res_3, "#003.3 Avatar availability verification.")
 
         # Final confirmation for Test Case.
@@ -38,16 +38,18 @@ class TestLogin():
     def test_validLogout(self):
 
         """Test Login out from the site. TC004"""
-        res_1  = self.lp.verifyLogoutSuccessfull() #  004.1
+        self.lp.logout()
+
+        res_1  = self.lp.isLogoutSuccessfull() #  004.1
         self.ts.mark(res_1, "#004.1: URL after logout as expected.")
 
-        res_2 = self.lp.verifyUpLoginExists() #  004.2
+        res_2 = self.lp.isUpLoginExists() #  004.2
         self.ts.mark(res_2, "#004.2: Log In link exists.")
 
         res_3 = not self.lp.verifyFilterExists() #  004.3
         self.ts.mark(res_3, "#004.3: Button Filter must not exist.")
 
-        res_4 = not self.lp.verifyAvatarExists()  # 004.4
+        res_4 = not self.lp.avatarDoesExists()  # 004.4
         self.ts.mark(res_4, "Avatar must not exist.")
 
         # Final confirmation for Test Case.
@@ -102,7 +104,7 @@ class TestLogin():
             res_3,
             "#002.3: Visit to SignIn Page: Password field is available? ")
 
-        res_4 = self.lp.verifyUpLoginExists()  # # 002.4
+        res_4 = self.lp.isUpLoginExists()  # # 002.4
         self.ts.mark(res_4,
                      "#002.4: Visit to SignIn Page: E-mail field available? ")
 

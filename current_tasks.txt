@@ -1,6 +1,6 @@
 
 
-Add ERRORs from log in separate text in the end.
+openHomePage - move to HomePage, with execution MainDriver::openUrlPage(?).
 
 Tasks before production:
 

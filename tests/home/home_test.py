@@ -61,6 +61,7 @@ class TestHome:
         # own verify method for Home page
         res = self.hp.verifyForModelsElements()
 
+
         self.ts.markFinal(
             "TC #030 All elements available after click For Models :",
             res, ": TC #030 TOTALLY FAILED test_verifyForModelsBtn.")
